@@ -1,0 +1,31 @@
+   4.
+          * --with-network-olk: Include Oliver Delise’s multi-pilot networking support,
+          * --with-new-environment: Include new experimental environment subsystem,
+          * --with-weathercm: Use WeatherCM instead of FGEnvironment,
+          * --with-plib=PREFIX: Specify the prefix path to PLIB,
+          * --with-metakit=PREFIX: Specify the prefix path to Metakit,
+          * --with-simgear=PREFIX: Specify the prefix path to SimGear,
+          * --prefix=/XXX: Install FlightGear in the directory XXX.
+          * --disable-jsbsim: Disable JSBSimm FDM (in case of trouble compiling it).
+          * --disable-yasim: Disable YASim FDM (in case of trouble compiling it).
+          * --disable-larcsim: Disable LaRCsim FDM (in case of trouble compiling it).
+          * --disable-uiuc: Disable UIUC FDM (in case of trouble compiling it).
+
+      A good choice would be --prefix=/usr/local/FlightGear. In this case FlightGear’s binaries will live under /usr/local/FlightGear/bin. (If you don’t specify a --prefix the binaries will go into /usr/local/bin while the base package files are expected under /usr/local/lib/FlightGear.)
+
+      Assuming configure finished successfully, run
+
+      make
+      make install.
+
+      Again, under Linux, you have to become root for being able to make install, for instance via the su command.
+
+      Note: You can save a significant amount of space by stripping all the debugging symbols off the executable. To do this, make a
+
+      cd /usr/local/FlightGear/bin
+
+      to the directory in the install tree where your binaries live and run
+
+      strip *.
+
+This completes building the executable and should result in a file fgfs (Unix) or fgfs.exe (Windows) under /usr/local/FlightGear/bin

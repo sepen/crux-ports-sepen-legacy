@@ -1,0 +1,21 @@
+# $Id: $
+# Description:  Single player 3D Opengl 3rd person action adventure game
+# URL:          http://loose-cannon.sourceforge.net/
+# Maintainer:   Jose V Beneyto, <joberui@ei.upv.es>
+# Packager:     Jose V Beneyto, <joberui@ei.upv.es>
+# Depends on:   openal,sdl_image
+
+name=loose-cannon
+version=0.5.0
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/loosecannon-$version.tar.gz)
+
+build() {
+	cd loosecannon-$version
+	./configure --prefix=/usr \
+		    --disable-simd \
+		    --disable-sdltest
+	make
+	#make DESTDIR=$PKG install
+read
+}

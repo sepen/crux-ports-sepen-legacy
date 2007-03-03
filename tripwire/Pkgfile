@@ -1,0 +1,27 @@
+# $Id: $
+# Description:  Security/data integrity tool useful for monitoring/alerting file change(s) on a range of systems.
+# URL:          http://sourceforge.net/projects/tripwire/
+# Maintainer:   Jose V Beneyto, <joberui at ei dot upv dot es>
+# Packager:     Jose V Beneyto, <joberui at ei dot upv dot es>
+# Depends on:   stl
+
+name=tripwire
+version=2.3.1
+release=2
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version-$release.tar.gz)
+
+build() {
+	cd $name-$version-$release/src
+	sed -i 's/gmake/make/g' Makefile
+	sed -i 's|gmake|make|g' make_include/i686-pc-linux.inc
+	make release
+	cd ../install
+	sed -i 's|/bin/vi|/usr/bin/vi|g' install.cfg
+	sed -i 's|/usr/lib/sendmail|/usr/sbin/sendmail|g' install.cfg
+	chmod +x install.sh
+	./install.sh
+	ls -la ../bin
+	ls -la ../install
+	ls -la ../lib
+read
+}

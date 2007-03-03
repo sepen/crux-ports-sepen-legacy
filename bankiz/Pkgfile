@@ -1,0 +1,34 @@
+# $Id: $
+# Description: 	Multiplayer deathmatch arena penguins game 
+# URL: 		http://bankiz.org/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 	scons,sdl_image,sdl_net,sdl_ttf,sdl_mixer,sdl_gfx,lua,zziplib,libxml2,libgmp,gettext,cegui
+
+name=bankiz
+version=2cvs
+release=1
+source=(bankiz.sh bankizded.sh)
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+	if cd bankiz2 ; then
+		cvs update
+	else
+		cvs -d:pserver:anonymous@cvs.gna.org:/cvs/bankiz co bankiz2
+	fi
+	cp -r $PKGMK_SOURCE_DIR/bankiz2 $SRC
+	
+	cd $SRC/bankiz2
+	sed -i 's|/usr/local/|/usr/|g' SConstruct
+	sed -i 's|pkg-config freealut --cflags --lib|openal-config --cflags --libs|g' SConstruct
+	sed -i 's|pkg-config cegui cegui-opengl --cflags --libs|pkg-config CEGUI CEGUI-OPENGL --cflags --libs|g' SConstruct
+	sed -i 's|pkg-config cegui --cflags --libs|pkg-config CEGUI --cflags --lib|g' SConstruct
+	scons
+read
+	install -d $PKG/usr/{bin,share/$name}
+	#linux-i386-static-$version/bin/* $PKG/usr/share/$name
+	install -m 755 $SRC/bankiz.sh $PKG/usr/bin/bankiz
+	install -m 755 $SRC/bankizded.sh $PKG/usr/bin/bankizded
+}
+

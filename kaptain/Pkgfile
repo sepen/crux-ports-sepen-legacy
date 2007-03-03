@@ -1,0 +1,21 @@
+# $Id: $
+# Description:  universal graphical front-end for command line programs.
+# URL:          http://kaptain.sourceforge.net/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   qt3
+
+name=kaptain
+version=0.72
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz \
+	http://kaptain.sourceforge.net/Makefile)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	diff $SRC/Makefile Makefile
+	read
+	make
+	make DESTDIR=$PKG install
+}

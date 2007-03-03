@@ -1,0 +1,25 @@
+# $Id: $
+# Description:  Gambas XML-RPC protocol base component
+# URL:          http://gambasdl.sourceforge.net/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   gambas-gb-xml
+
+name=gambas-gb-xml-rpc
+version=1.9.28
+release=2
+source=(http://dl.sourceforge.net/sourceforge/gambas/gambas2-$version.tar.bz2)
+
+build() {
+	install -d $PKG/usr/bin
+	ln -sf /usr/bin/gb*2 $PKG/usr/bin
+	cd gambas2-$version/gb.xml
+	./reconf
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+	gbi2
+	rm -rf $PKG/usr/bin
+	rm -rf $PKG/usr/lib/gambas2/{gb.xml.component*,gb.xml.la,gb.xml.so*,gb.xml.xslt*}
+	rm -rf $PKG/usr/share/gambas2/info/{gb.xml.info,gb.xml.list,gb.xml.xslt*}
+}

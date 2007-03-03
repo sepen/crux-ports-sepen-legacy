@@ -1,0 +1,25 @@
+# $Id: $
+# Description:  Amaya is a Web editor, i.e. a tool used to create and update documents directly on the Web
+# URL: 		http://www.w3.org/Amaya/
+# Mantainer:	Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: 	Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 	x11,gtk,freetype
+
+name=amaya
+version=9.52
+release=1
+
+source=(http://www.w3.org/Amaya/Distribution/$name-fullsrc-$version.tgz)
+
+build() {
+	mkdir $SRC/Amaya/GTK
+	cd Amaya/GTK
+	vi ../config.sub
+	../configure --prefix=/usr \ 
+		     --with-gtk \
+		     --disable-svg \
+		     --disable-annot \
+	 	     --disable-redland 
+	make
+#	make DESDIR=$PKG install
+}

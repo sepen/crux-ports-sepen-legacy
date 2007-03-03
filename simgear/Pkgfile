@@ -1,0 +1,22 @@
+# $Id: $
+# Description:  Open-source libraries for quickly assembling 3d simulations, games, etc.
+# URL:          http://www.simgear.org/
+# Maintainer:   Jose V Beneyto, <joberui@eui.upv.es>
+# Packager:     Jose V Beneyto, <joberui@eui.upv.es>
+# Depends on:   x11,expat,fontconfig,freetype.freealut,mesalib,libglut,plib,zlib,libjpeg,metakit
+
+name=simgear
+version=0.3.10
+release=1
+
+source=(ftp://ftp.flightgear.org/pub/simgear/Source/SimGear-$version.tar.gz)
+
+build() {
+	cd SimGear-$version
+	./configure --prefix=/usr \
+		    --with-jpeg-factory \
+		    --with-x
+	cat config.log | grep -i openal
+	make
+	make DESTDIR=$PKG install
+}

@@ -1,0 +1,19 @@
+# $Id: $
+# Description:  Customizable 2D fighting game engine for playing and/or creating your own fighting games
+# URL:          http://openmugen.sourceforge.net/
+# Maintainer:   Jose V Beneyto, <joberui@eui.upv.es>
+# Packager:     Jose V Beneyto, <joberui@eui.upv.es>
+# Depends on:   x11,libsdl,sdl_mixer,sdl_image,zlib,freetype,libjpeg,libpng,libvorbis,libogg
+
+name=openmugen
+version=alpha-demo
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/OpenMugenLinuxBin.zip \
+	openmugen.sh)
+
+build() {
+	mkdir -p $PKG/usr/{bin,share/$name}
+	cp -dpR bin/* $PKG/usr/share/$name
+	chmod 755 $PKG/usr/share/$name/$name
+	install -m 755 openmugen.sh $PKG/usr/bin/openmugen
+}

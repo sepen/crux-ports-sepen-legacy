@@ -1,0 +1,37 @@
+# $Id: $
+# Packager:  sepen <sepen_@hotmail.com>
+# Maintainer:
+# Description: Complete XP desktop environment for Linux
+# URL: http://www.xpde.com
+# Depends on: 
+
+
+name=xpde
+version=0.4.2
+release=1
+source=(http://www.xpde.com/builds/$name-$version-20030820.tar.gz)
+
+build() {
+    cd $name-$version
+
+    mkdir -p $PKG/usr/bin    
+    mkdir -p $PKG/usr/share/xpde/bin/{apps,applets}
+    mkdir -p $PKG/usr/share/xpde/share/{apps,applets,fonts,icons}
+    mkdir -p $PKG/usr/share/xpde/themes
+
+    cp -dpR themes/default $PKG/usr/share/xpde/themes
+    cp -dpR defaultdesktop $PKG/usr/share/xpde
+    cp -dpR *.so* $PKG/usr/share/xpde/bin
+    sed -i 's/\/opt\//\/usr\/share\//g' stub.sh
+    cp XPde XPwm stub.sh $PKG/usr/share/xpde/bin
+    cp DateTimeProps appexec networkstatus networkproperties systemproperties  $PKG/usr/share/xpde/bin/applets
+    cp xpsu mouse keyboard regional desk $PKG/usr/share/xpde/bin/applets
+    cp taskmanager notepad calculator fontview regedit fileexplorer $PKG/usr/share/xpde/bin/apps
+    sed -i 's/\/opt\//\/usr\/share\//g' xinitrcDEFAULT
+    cp xinitrcDEFAULT $PKG/usr/share/xpde/bin/startxpde
+    
+    chmod a+x $PKG/usr/share/xpde/bin/startxpde
+    ln -s /usr/share/xpde/bin/startxpde $PKG/usr/bin/startxpde    
+    
+    chown -R root:root $PKG
+}

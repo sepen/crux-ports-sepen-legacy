@@ -1,0 +1,21 @@
+# $Id: $
+# Packager:  sepen <sepen_@hotmail.com>
+# Maintainer:
+# Description: Dockapp that monitors: users logged in, processes, forks and the system load average.
+# URL: http://dockapps.org/file.php/id/160
+# Depends on: 
+
+
+name=wmmisc
+version=0.9
+release=1
+source=(http://dockapps.org/download.php/id/460/$name-$version.tar.bz2)
+
+build() {
+    cd $name-$version
+    make
+    mkdir -p $PKG/usr/bin
+    cp src/$name $PKG/usr/bin/    
+    chown -R root:root $PKG
+}
+

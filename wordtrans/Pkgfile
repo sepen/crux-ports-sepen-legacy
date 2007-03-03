@@ -1,0 +1,24 @@
+# $Id: $
+# Description:  
+# URL:          http://www.escomposlinux.org/rvm/wordtrans/
+# Maintainer:   Jose V Beneyto, <joberui@eui.upv.es>
+# Packager:     Jose V Beneyto, <joberui@eui.upv.es>
+# Depends on:   
+
+name=wordtrans
+version=1.1pre15
+release=1
+source=(http://www.escomposlinux.org/rvm/$name/$name-normal/latest/source/${name}_${version}.tar.gz)
+
+build() {
+	cd $name-$version
+	sed -i 's/KDE_INC/#KDE_INC/g' Makefile.dirs
+	sed -i 's/KDE_LIB/#KDE_LIB/g' Makefile.dirs
+	sed -i 's/USE_FRIBIDI_LIB/#USE_FRIBIDI_LIB/g' Makefile.dirs
+	cat Makefile.dirs
+	export QTDIR=/usr/share/qt 
+	export QTLINK=-lqt-mt
+	cd src
+	make all
+	ls -la src
+}

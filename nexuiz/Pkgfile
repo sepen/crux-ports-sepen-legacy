@@ -1,0 +1,29 @@
+# $Id: $
+# Description:  A fast-paced, chaotic, and intense multiplayer first person shooter
+# URL:          http://www.alientrap.org/nexuiz/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   x11,aalib,libjpeg,libdrm,libvorbis,opengl,libsdl
+
+name=nexuiz
+version=2.1
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-21.zip)
+
+build() {
+	cd Nexuiz/sources
+	unzip -qq -o -d $SRC/engine enginesource20060905.zip
+	unzip -qq -o -d $SRC/game gamesource20060905.zip
+read
+	cd $SRC/engine/darkplaces
+	cp makefile Makefile
+read
+	make cl-nexuiz
+	install -d $PKG/usr/share/$name/data
+	install -m 0755 nexuiz-glx $PKG/usr/share/$name
+	install -m 0644 nexuiz.ico nexuiz.rc $PKG/usr/share/$name
+	install -d $PKG/usr/bin
+	echo -ne "#!/bin/sh\n\ncd /usr/share/nexuiz\n./nexuiz-glx\ncd -\n#End of File" > $PKG/usr/bin/$name
+	chmod 755 $PKG/usr/bin/$name
+	install -m 0644 $SRC/engine/Nexuiz/data/{common-spog.pk3,data20060905.pk3} $PKG/usr/share/$name/data
+}

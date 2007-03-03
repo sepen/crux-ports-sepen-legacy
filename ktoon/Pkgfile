@@ -1,0 +1,17 @@
+# $Id: $
+# Description:  2D Animation Toolkit designed by animators for animators, focused to the Cartoon Industry.
+# URL:         	http://ktoon.toonka.com/ 
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   
+
+name=ktoon
+version=0.8
+release=1
+source=(http://download.berlios.de/$name/$name-$version-stable-sources.tar.gz)
+
+build() {
+	cd $name-$version
+ls -la
+read
+}

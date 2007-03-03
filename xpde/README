@@ -1,0 +1,6 @@
+POST-INSTALL:
+
+                * -Edit the .xinitrc or .xsession file of the user 
+		you want to run XPde and put this line:
+		 
+                /usr/share/xpde/bin/startxpde

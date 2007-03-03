@@ -1,0 +1,22 @@
+9,10c9,10
+< CXXFLAGS=-I$(ODEPREFIX)/include -I$(PLIBPREFIX)/include -O2 -g -Wall
+< LFLAGS=-L$(PLIBPREFIX)/lib -L/usr/X11R6/lib
+---
+> CXXFLAGS=-I/usr/include -I/usr/include -O2 -g -Wall
+> LFLAGS=-L/usr/lib -L/usr/X11R6/lib
+14c14
+< LIBS= $(ODEPREFIX)/lib/libode.a -lplibssgaux -lplibssg -lplibsg -lplibpu -lplibfnt -lplibul -lglut -lGLU -lGL -lasound
+---
+> LIBS= /usr/lib/libode.a -lplibssgaux -lplibssg -lplibsg -lplibpu -lplibfnt -lplibul -lglut -lGLU -lGL -lasound
+68c68
+< GAMEDIR=$(DESTDIR)/usr/share/games/sturmbahnfahrer
+---
+> GAMEDIR=$(DESTDIR)/usr/share/sturmbahnfahrer
+71c71
+< 	mkdir -p $(DESTDIR)/usr/games/
+---
+> 	mkdir -p $(DESTDIR)/usr/bin/
+76c76
+< 	install sturmbahnfahrer $(DESTDIR)/usr/games/sturmbahnfahrer
+---
+> 	install sturmbahnfahrer $(DESTDIR)/usr/bin/sturmbahnfahrer

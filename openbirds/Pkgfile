@@ -1,0 +1,18 @@
+# $Id: $
+# Description:  OpenBirds is a massive multiplayer war simulation situated in second world war
+# URL:          http://openbirds.sourceforge.net/
+# Maintainer:   Jose V Beneyto, <joberui@ei.upv.es>
+# Packager:     Jose V Beneyto, <joberui@ei.upv.es>
+# Depends on:   rpm2targz
+
+name=openbirds
+version=0.6
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version-$release.i386.rpm \
+	http://dl.sourceforge.net/sourceforge/$name/$name-data-$version-$release.i386.rpm)
+
+build() {
+	rpm2targz *
+ls -la
+read
+}

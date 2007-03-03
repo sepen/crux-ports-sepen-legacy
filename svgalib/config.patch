@@ -1,0 +1,63 @@
+--- Makefile.cfg	2006-07-14 13:38:58.000000000 +0200
++++ Makefile.2.cfg	2006-10-24 14:27:10.000000000 +0200
+@@ -23,11 +23,11 @@
+ S_KERNELRELEASE = $(shell uname -r)
+ endif
+ 
+-INCLUDEDIR = /lib/modules/$(S_KERNELRELEASE)/build/include
++INCLUDEDIR = _PKG_/lib/modules/$(S_KERNELRELEASE)/build/include
+ 
+ DIREXIST = $(shell if [ -e $(INCLUDEDIR) ] ; then echo OK ; fi)
+ ifneq ($(DIREXIST), OK)
+-INCLUDEDIR = /usr/src/linux/include
++INCLUDEDIR = _PKG_/usr/src/linux/include
+ endif
+ 
+ ARCH := $(shell uname -m | sed -e s/i.86/i386/ -e s/sun4u/sparc64/ -e s/arm.*/arm/ -e s/sa110/arm/)
+@@ -43,8 +43,8 @@
+ 
+ # Common prefix for installation directories.
+ # NOTE: This directory must exist when you start the install.
+-TOPDIR=
+-prefix = $(TOPDIR)/usr/local
++TOPDIR= _PKG_
++prefix = $(TOPDIR)/usr
+ exec_prefix = $(prefix)
+ 
+ # Directory where the shared stubs and static library will be installed.
+@@ -79,7 +79,7 @@
+ 
+ # uncomment this if your compiler fails on compiling the assembler in
+ # src/vgaconvplanar.c, gl/inlstring.h, gl/line.c or gl/scale.c
+-# NO_ASM = y
++NO_ASM = y
+ 
+ # uncomment if you want to set attribute controller and dac without delay
+ # This breaks original VGA, but seems to work on new cards.
+@@ -169,7 +169,7 @@
+ INCLUDE_TRIDENT_DRIVER = y
+ INCLUDE_SAVAGE_DRIVER = y
+ INCLUDE_MILLENNIUM_DRIVER = y
+-##INCLUDE_G450C2_DRIVER = y
++INCLUDE_G450C2_DRIVER = y
+ INCLUDE_PM2_DRIVER = y
+ INCLUDE_UNICHROME_DRIVER = y
+ 
+@@ -190,7 +190,7 @@
+ #
+ # Comment out any adapter you don't want to autodetect.
+ #
+-#INCLUDE_ET4000_DRIVER_TEST = y
++INCLUDE_ET4000_DRIVER_TEST = y
+ INCLUDE_CIRRUS_DRIVER_TEST = y
+ INCLUDE_TVGA_DRIVER_TEST = y
+ INCLUDE_OAK_DRIVER_TEST = y
+@@ -224,7 +224,7 @@
+ INCLUDE_PM2_DRIVER_TEST = y
+ INCLUDE_UNICHROME_DRIVER_TEST = y
+ 
+-#INCLUDE_FBDEV_DRIVER_TEST = y
++INCLUDE_FBDEV_DRIVER_TEST = y
+ 
+ #Might be too dangerous:
+ #INCLUDE_VESA_DRIVER_TEST = y

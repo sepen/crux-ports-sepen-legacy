@@ -1,0 +1,46 @@
+--- vrml.conf	2006-08-04 21:51:38.000000000 +0200
++++ vrml.2.conf	2006-10-24 11:46:09.000000000 +0200
+@@ -33,7 +33,7 @@
+ 
+ # Java Runtime. Java, Jikes, etc is ok, so long as it is not ancient.
+ #if you do not have Java, comment this and the JAVA_INST line below out.
+-JAVA => "/usr/bin/java",
++#JAVA => "/usr/bin/java",
+ 
+ # how to copy one file to another:
+ COPIER => "/bin/cp",
+@@ -71,20 +71,20 @@
+ # line, and cross fingers.
+ 
+     FREEWRL_LIBS => '-L/usr/lib -L/usr/X11R6/lib -lGL -lGLU -lXext -lX11 -lfreetype -lpng -lz -ljpeg',
+-    FREEWRL_DEFINE => '-ansi -DHAVE_MOTIF -DXP_UNIX -D_GNU_SOURCE ',
++    FREEWRL_DEFINE => '-ansi -DHAVE_GTK2 -DXP_UNIX -D_GNU_SOURCE ',
+     FREEWRL_INC => '-I/usr/X11R6/include/ -I/usr/include/freetype2 -I/usr/include/freetype2/freetype',
+ 
+ 
+ ############################################################################
+ # Netscape/Mozilla,... installation
+ 
+-    NETSCAPE_INST => '/usr/lib/mozilla/plugins',
+-    NETSCAPE_CLASSES => '/usr/lib/mozilla/plugins',
+-    NETSCAPE_PLUGINS => '/usr/lib/mozilla/plugins',
++    NETSCAPE_INST => '/usr/lib/firefox/plugins',
++    NETSCAPE_CLASSES => '/usr/lib/firefox/plugins',
++    NETSCAPE_PLUGINS => '/usr/lib/firefox/plugins',
+ 
+ ############################################################################
+ # Java dest. if no Java, comment out the JAVA line above, and the JAVA_INST line below.
+-    JAVA_INST => '/usr/java/j2sdk1.4.0',
++#    JAVA_INST => '/usr/lib/java',
+ 
+ ############################################################################
+ # some Java compilers need a extra extension to the classpath
+@@ -96,7 +96,7 @@
+ ############################################################################
+ # LDFLAGS.  Set linker flags here.
+ 
+-    LDFLAGS => '-shared -L/usr/local/lib -lperl `perl -MExtUtils::Embed -e ldopts`',
++    LDFLAGS => '-shared -L/usr/lib -lperl `perl -MExtUtils::Embed -e ldopts`',
+ 
+ 
+ ############################################################################

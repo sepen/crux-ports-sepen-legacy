@@ -1,0 +1,16 @@
+# $Id: $
+# Description:  Fast SCM System, tracks and manages source code and digital assets
+# URL:          http://www.perforce.com/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   
+
+name=perforce
+version=
+release=
+source=(http://www.perforce.com/perforce/loadprog.html)
+
+build() {
+ls
+read
+}

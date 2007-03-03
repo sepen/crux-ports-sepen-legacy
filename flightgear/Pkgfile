@@ -1,0 +1,18 @@
+# $Id: $
+# Description:  FlightGear is an open-source, multi-platform flight simulator.
+# URL:          http://www.flightgear.org/
+# Maintainer:   Jose V Beneyto, <joberui@eui.upv.es>
+# Packager:     Jose V Beneyto, <joberui@eui.upv.es>
+# Depends on:   x11,openal,plib,simgear
+
+name=flightgear
+version=0.9.10
+release=1
+source=(ftp://ftp.flightgear.org/pub/fgfs/Source/FlightGear-$version.tar.gz)
+
+build() {
+	cd FlightGear-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG
+}

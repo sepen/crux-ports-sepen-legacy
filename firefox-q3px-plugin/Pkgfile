@@ -1,0 +1,16 @@
+# $Id: $
+# Description:  Q3 Plugin eXtension for network games such as Quake III Arena
+# URL:          http://q3px.selfware.net/
+# Maintainer:   Jose V Beneyto, <joberui@ei.upv.es>
+# Packager:     Jose V Beneyto, <joberui@ei.upv.es>
+# Depends on:   firefox
+
+name=firefox-q3px-plugin
+version=3.1
+release=1
+source=(http://www.filelodge.com/files/room14/331137/q3px_v31.zip)
+
+build() {
+ls -la
+read
+}

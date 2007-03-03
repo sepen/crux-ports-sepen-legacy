@@ -1,0 +1,19 @@
+# $Id: $
+# Description:  Open Source implementation of the Renderman(R) standard.
+# URL:          http://www.aqsis.org/
+# Maintainer:   Jose V Beneyto, <joberui at ei dot upv dot es>
+# Packager:     Jose V Beneyto, <joberui at ei dot upv dot es>
+# Depends on:   libtiff,fltk,bison,flex,boost,libxslt
+# Recommends:	openexr
+
+name=aqsis
+version=1.0.1
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}

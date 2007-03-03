@@ -1,0 +1,21 @@
+# $Id: $
+# Packager:  sepen <sepen_@hotmail.com>
+# Maintainer:
+# Description: An xmms interface in Dockapp. 
+# URL: http://dockapps.org/file.php/id/172
+
+
+name=wmxmms
+version=0.1.4
+release=1
+source=(http://dockapps.org/download.php/id/252/WMxmms-$version0.1.4.tar.gz)
+
+build() {
+    cd WMxmms-$version
+    ./configure --prefix=/usr --disable-debug --disable-nls
+    make
+    make DESTDIR=$PKG install
+    mv -v $PKG/usr/bin/WMxmms $PKG/usr/bin/wmxmms
+    mv -v $PKG/usr/man/man1/WMxmms* $PKG/usr/man/man1/wmxmms.1.gz
+    chown -R root:root $PKG
+}

@@ -1,0 +1,19 @@
+# $Id: $
+# Packager:  sepen <sepen_@hotmail.com>
+# Maintainer:
+# Description: Complete XP desktop environment for Linux
+# URL: http://www.xpde.com
+# Depends on: 
+
+
+name=xpde
+version=0.5.1
+release=1
+source=(http://www.xpde.com/releases/$name-$version.tar.gz)
+
+build() {
+    cd $name
+    mkdir -p $PKG/usr/share/xpde/bin
+    cp -dpR bin/* $PKG/usr/share/xpde/bin 
+    chown -R root:root $PKG
+}

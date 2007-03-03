@@ -1,0 +1,26 @@
+# $Id: $
+# Description:  Soccar is Soccer with Cars. It uses realistic physics and cool 3D graphics.
+# URL:          http://soccar.sourceforge.net/
+# Maintainer:   Jose V Beneyto, <joberui@eui.upv.es>
+# Packager:     Jose V Beneyto, <joberui@eui.upv.es>
+# Depends on:   jam,ogre,ode,enet
+
+name=soccar
+version=0.5.3
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version-src.tar.bz2 \
+	http://dl.sourceforge.net/sourceforge/$name/$name-$version-data.tar.bz2)
+
+build() {
+	cd $name-$version
+	rm -f Jamrules
+	export OGREINC=/usr/include/OGRE
+	sed -i 's|/usr/local/lib/OGRE/|/usr/lib/OGRE|g' src/Jamfile
+	sed -i 's|/Dependencies/linux|/usr|g' src/Jamfile
+	sed -i 's|#$(TOP)||g' src/Jamfile
+	sed -i 's|$(TOP)||g' src/Jamfile
+cat src/Jamfile
+read
+	echo "FileSystem=/usr/share/soccar/data/" > resources.cfg
+	jam
+}

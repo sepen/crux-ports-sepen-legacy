@@ -1,0 +1,21 @@
+# $Id: $
+# Description:  SVGAlib is a low-level graphics library that provides VGA and SVGA modes in a console.
+# URL:          http://www.svgalib.org/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   
+
+name=svgalib
+version=1.9.25
+release=1
+source=(http://www.arava.co.il/matan/$name/$name-$version.tar.gz \
+	config.patch)
+
+build() {
+	cd $name-$version
+	patch Makefile.cfg $SRC/config.patch
+	sed -i "s|_PKG_|$PKG|g" Makefile.cfg
+	cat Makefile.cfg | more
+	install -d $PKG/usr
+	make install
+}
