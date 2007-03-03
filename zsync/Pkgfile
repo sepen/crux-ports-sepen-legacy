@@ -1,0 +1,17 @@
+# Description: Optimized client-side rsync algorithm like rsync -z, that no requires a remote server application
+# URL: http://zsync.moria.org.uk/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+
+name=zsync
+version=0.5
+release=1
+source=(http://zsync.moria.org.uk/download/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/share
+}

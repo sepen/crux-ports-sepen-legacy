@@ -1,0 +1,36 @@
+
+README for ati 8.33.6
+
+
+
+*** NOTE for ati with udev ***
+
+If using udev, add your user to the "video" group to be able to use 3D.
+
+
+POST-INSTALL
+
+Use opt/gl-select from ports to select the correct gl/glx
+libraries and extensions like so:
+
+        # gl-select ati
+
+Also to configure your X server you can execute ati configurator like this:
+
+	# aticonfig --initial --input=/etc/X11/xorg.conf
+
+
+POST-REMOVE
+
+Use opt/gl-select from ports to revert to the x11 gl/glx libraries
+and extensions like so:
+
+        # gl-select x11
+
+
+When UPGRADING/DOWNGRADING the ati-driver port (where the version changes),
+use gl-select to revert to x11 and then re-select ati in order to
+refresh the libGLcore and libGL symlinks, like so:
+
+        # prt-get update ati
+        # gl-select x11; gl-select ati

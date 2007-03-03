@@ -1,0 +1,26 @@
+# $Id: $
+# Description: 	Arcade 2D shoot-em-up game with 41 levels and more than 200 sprites
+# URL: 		http://linux.tlk.fr/games/Powermanga/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 	x11,sdl_mixer
+
+name=powermanga
+version=0.79
+release=2
+source=(http://linux.tlk.fr/games/Powermanga/download/$name-$version.tgz \
+	$name.sh)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		    --with-x
+	make
+	make DESTDIR=$PKG install
+	install -d $PKG/usr/{bin,share/$name}
+	install -m 755 $PKG/usr/games/$name $PKG/usr/share/$name/$name.bin
+	install -m 755 $SRC/$name.sh $PKG/usr/bin/$name
+	mv $PKG/usr/share/games/$name/* $PKG/usr/share/$name
+	rm -rf $PKG/{var,usr/games,usr/share/games}
+}
+

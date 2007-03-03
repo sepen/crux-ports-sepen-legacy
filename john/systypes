@@ -1,0 +1,3 @@
+#linux-x86-sse2           Linux, x86 with SSE2 (best)
+linux-x86-mmx            Linux, x86 with MMX
+#linux-x86-any            Linux, x86

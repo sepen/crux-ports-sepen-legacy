@@ -1,0 +1,23 @@
+# $Id: $
+# Description:  Xlogmaster is a program that lets you monitor everything that's going on on your system in a very quick and comfortable way.
+# URL:          http://www.gnu.org/software/xlogmaster/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   gtk
+
+name=xlogmaster
+version=1.6.1
+release=1
+source=(http://ftp.gnu.org/pub/gnu/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		    --disable-gtktest \
+  		    --disable-gtkrc \
+  		    --with-smallicon=yes \
+  		    --with-soundfiles=no
+	make 
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/info
+}

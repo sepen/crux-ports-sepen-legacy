@@ -1,0 +1,18 @@
+# $Id: $
+# Description:  Provide an easy way to search botijo (mikeux) irc log in firefox
+# URL:          
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   firefox
+
+name=firefox-botijo-searchplugin
+version=1
+release=1
+source=(http://mikeux.dyndns.org/favicon.ico \
+	botijo.src)
+
+build() {
+	install -d $PKG/usr/lib/firefox/searchplugins
+	install -m 644 $SRC/botijo.src $PKG/usr/lib/firefox/searchplugins
+	install -m 644 $SRC/favicon.ico $PKG/usr/lib/firefox/searchplugins/botijo.png
+}

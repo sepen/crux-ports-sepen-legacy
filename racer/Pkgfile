@@ -1,0 +1,47 @@
+# $Id: $
+# Description: 	Racer is a free cross-platform car simulation project
+# URL: 		http://www.racer.nl/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 	x11,fmod
+
+name=racer
+version=0.5.2b
+release=2
+source=(http://www.greg-design.de/zeugz/rr052b89_full.zip \
+	http://racer.gamenavigator.ru/downloads/racer/patch/rr052b89linux.zip \
+	custom.ini.patch \
+	racer.ini.patch \
+	racer.sh \
+	tolowercase.sh)
+
+unpack_source() {
+        mkdir $SRC/racerbin
+        COMMAND="unzip -qq -o -d $SRC/racerbin $PKGMK_SOURCE_DIR/rr052b89linux.zip"
+        echo $COMMAND; $COMMAND
+        COMMAND="unzip -qq -o -d $SRC $PKGMK_SOURCE_DIR/rr052b89_full.zip"
+        echo $COMMAND; $COMMAND
+        COMMAND="cp $PWD/*.sh $SRC"
+        echo $COMMAND; $COMMAND
+        COMMAND="cp $PWD/*.ini $SRC"
+        echo $COMMAND; $COMMAND
+	COMMAND="cp $PWD/*.patch $SRC"
+        echo $COMMAND; $COMMAND
+}
+
+build() {
+	install -d $PKG/usr/{bin,lib,share}
+	rm -f $name/*.exe
+        rm -f $name/*.dll
+	rm -f $name/README.txt
+	mv $name $PKG/usr/share
+	install -m 755 $SRC/racerbin/$name $PKG/usr/share/$name/$name.bin
+	install -m 755 $SRC/$name.sh $PKG/usr/bin/$name
+	patch $PKG/usr/share/$name/$name.ini $SRC/$name.ini.patch
+	patch $PKG/usr/share/$name/data/ctrlsets/custom.ini $SRC/custom.ini.patch
+	sed -i 's/automatic=0/automatic=1/g' $PKG/usr/share/$name/data/cars/s2000_spoon/car.ini
+	# lowercase (create symlinks)
+	sh $SRC/tolowercase.sh $PKG/usr/share/$name/data
+	# this line is needed because binary was compiled with libfmod-3.61.so
+	ln -sf /usr/lib/libfmod.so $PKG/usr/lib/libfmod-3.61.so
+}

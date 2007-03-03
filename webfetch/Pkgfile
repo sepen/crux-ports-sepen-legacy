@@ -1,0 +1,20 @@
+# Description: Command line tool to fetch files from a web site using HTTP.
+# URL: http://tony.aiu.to/sa/webfetch/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: openssl
+
+name=webfetch
+version=5.4.2
+release=1
+source=(http://tony.aiu.to/sa/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	make
+	install -d $PKG/usr/{bin,man/man1}
+	sed -i 's|usage: $COPYSITE|usage: `basename $COPYSITE`|g' copysite.sh
+	install -m 755 copysite.sh $PKG/usr/bin/copysite
+	install -m 755 $name $PKG/usr/bin
+	install -m 644 $name.1 $PKG/usr/man/man1 
+}

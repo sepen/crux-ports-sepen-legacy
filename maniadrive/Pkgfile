@@ -1,0 +1,21 @@
+# $Id: $
+# Description:  Racing game like Trackmania
+# URL:          http://maniadrive.raydium.org/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   mesa3d,openal
+
+name=maniadrive
+version=1.01
+release=2
+source=(http://dl.sourceforge.net/sourceforge/$name/ManiaDrive-$version-linux-i386.static-data.tar.gz \
+	$name.sh $name-editor.sh $name-server.sh)
+
+build() {
+	install -d $PKG/usr/{bin,share/$name}
+	mv ManiaDrive-1.01-linux-i386.static-data/game/* $PKG/usr/share/$name
+	install -m 755 $name.sh $PKG/usr/bin/$name
+	install -m 755 $name-editor.sh $PKG/usr/bin/$name-editor
+	install -m 755 $name-server.sh $PKG/usr/bin/$name-server
+	rm $PKG/usr/share/maniadrive/rayphp/README
+}

@@ -1,0 +1,18 @@
+# $Id: $
+# Description:  Thin, simple and robust network communication layer on top of UDP
+# URL:          http://enet.cubik.org/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   
+
+name=enet
+version=1
+release=1
+source=(http://enet.cubik.org/download/$name.tar.gz)
+
+build() {
+	cd $name
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}

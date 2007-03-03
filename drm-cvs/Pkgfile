@@ -1,0 +1,31 @@
+# $Id:$
+# Description:  DRM modules of freedesktop (cvs version)
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# URL:          http://freedesktop.org/wiki/
+# Depends on:	cvs
+
+name=drm-cvs
+version=$(date '+%Y-%m-%d')
+release=1
+source=()
+
+build(){
+        cd $PKGMK_SOURCE_DIR
+        if cd drm ; then
+                cvs update
+        else
+                cvs -z3 -d:pserver:anonymous@cvs.freedesktop.org:/cvs/dri co drm
+        fi
+        cp -r $PKGMK_SOURCE_DIR/drm $SRC
+
+        cd $SRC/drm
+        ./autogen.sh
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+        cd linux-core
+        make
+        install -d $PKG/lib/modules/$(uname -r)/kernel/drivers/char/drm
+        install -m 755 *.ko $PKG/lib/modules/$(uname -r)/kernel/drivers/char/drm
+}

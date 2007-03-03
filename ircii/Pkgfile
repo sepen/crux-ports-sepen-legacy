@@ -1,0 +1,21 @@
+# $Id: $
+# Description: 	The original IRC client.
+# URL: 		http://www.eterna.com.au/ircii/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:
+
+name=ircii
+version=20040820
+release=1
+source=(ftp://ircii.warped.com/pub/ircII/$name-$version.tar.bz2)
+
+build() {
+  cd $name-$version
+  ./configure --prefix=/usr --disable-nls
+  make
+  make DESTDIR=$PKG install
+  rm -rf $PKG/usr/share/irc/help
+  rm -rf $PKG/usr/share/irc/translation
+
+}

@@ -1,0 +1,13 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/gambas2/
+-rw-r--r--	root/root	usr/lib/gambas2/gb.image.component
+-rwxr-xr-x	root/root	usr/lib/gambas2/gb.image.la
+lrwxrwxrwx	root/root	usr/lib/gambas2/gb.image.so -> gb.image.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/gambas2/gb.image.so.0 -> gb.image.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/gambas2/gb.image.so.0.0.0
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/gambas2/
+drwxr-xr-x	root/root	usr/share/gambas2/info/
+-rw-r--r--	root/root	usr/share/gambas2/info/gb.image.info
+-rw-r--r--	root/root	usr/share/gambas2/info/gb.image.list

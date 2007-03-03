@@ -1,0 +1,16 @@
+# $Id: $
+# Description: 	Bans IP that makes too many password failures
+# URL: 		http://fail2bandl.sourceforge.net/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 	log4py
+
+name=fail2ban
+version=0.6.0
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version.tar.bz2)
+
+build() {
+    cd $name-$version
+    python setup.py install -f --prefix=$PKG/usr --install-lib=$PKG/usr/lib/$name
+}

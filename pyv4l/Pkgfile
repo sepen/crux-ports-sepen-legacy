@@ -1,0 +1,16 @@
+# $Id: $
+# Description: 	Python bindings for video4linux
+# URL: 		http://pyv4ldl.sourceforge.net/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 	python
+
+name=pyv4l
+version=0.0.1
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
+
+build() {
+    cd $name-$version
+    python setup.py install -f --prefix=$PKG/usr --install-lib=$PKG/usr/lib/$name
+}

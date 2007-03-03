@@ -1,0 +1,25 @@
+# $Id: $
+# Description:  IceWM Control Center thats allows you to run various tools for configuring IceWM's options
+# URL:          http://icecc.sourceforge.net/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   icewm,gvim,icebgset,icecurcfg,iceiconcvt,iceked,icemc,icemergeprefs,icesndcfg,icets,icewoed
+
+name=icecc
+version=2.9
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	qmake
+	sed -i 's/\/usr\/local/\/usr/g' icecc.pro
+	sed -i 's/\/usr\/local/\/usr/g' Makefile
+	make QTDIR=/usr/share/qt \
+	     CPLUS_INCLUDE_PATH=/usr/include/qt \
+             LFLAGS=-L/usr/share/qt/lib
+        mkdir -p $PKG/usr/{bin,share/$name/themes}
+        install -m 755 icecc $PKG/usr/bin/icecc
+        strip -s $PKG/usr/bin/icecc
+	cp -dpR themes/Simple $PKG/usr/share/$name/themes
+}

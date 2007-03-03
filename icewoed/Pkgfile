@@ -1,0 +1,23 @@
+# $Id: $
+# Description:  IceWM winoptions editor
+# URL:          http://icecc.sourceforge.net/#icewoed
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   qt3
+
+name=icewoed
+version=1.8
+release=1
+source=(http://switch.dl.sourceforge.net/sourceforge/icecc/icewoed-1.8.tar.bz2)
+
+build() {
+        cd $name-$version
+        qmake
+        sed -i 's/\/usr\/local/\/usr/g' $name.pro
+        make QTDIR=/usr/share/qt \
+             CPLUS_INCLUDE_PATH=/usr/include/qt \
+             LFLAGS=-L/usr/share/qt/lib
+        mkdir -p $PKG/usr/bin
+        install -m 755 $name $PKG/usr/bin/$name
+        strip -s $PKG/usr/bin/$name
+}

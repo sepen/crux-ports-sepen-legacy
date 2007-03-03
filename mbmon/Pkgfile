@@ -1,0 +1,16 @@
+# $Id: $
+# Description:  Hardware monitoring without kernel dependencies
+# URL:          http://www.tomblom.eisfair.net/dev/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   
+
+name=mbmon
+version=0.2.0
+release=1
+source=(http://www.tomblom.eisfair.net/dev/$name.tar.gz)
+
+build() {
+	mkdir -p $PKG/usr/bin
+	install -m 755 $SRC/usr/local/bin/mbmon $PKG/usr/bin/mbmon
+}

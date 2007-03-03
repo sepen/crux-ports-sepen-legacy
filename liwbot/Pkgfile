@@ -1,0 +1,28 @@
+# $Id: $
+# Description:  IRC bot written in C/C++
+# URL:          http://liwbot.sourceforge.net/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   libliwbot
+
+name=liwbot
+version=2.0
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz \
+	$name.sh)
+
+build() {
+        SERVER="irc.freenode.org"
+        CHANNEL="#bots"
+        NICKNAME="$name"
+        USERNAME="$NICKNAME"
+	cd $name-$version/examples
+	sed -i 's|//irc->setDebug(false)|irc->setDebug(true)|g' Bot.cpp
+	sed -i "s|libres.irc-hispano.org|$SERVER|g" Bot.cpp
+        sed -i "s|#liwtest|$CHANNEL|g" Bot.cpp
+	sed -i "s|setUser(\"liwBot\",\"liwBot-2.0\",\"C++ IRC Bot\"|setUser(\"$NICKNAME\",\"$USERNAME\",\"$name $version\"|g" Bot.cpp
+	g++ -Wall -I/usr/include -o $name *.cpp -L/usr/lib/liwbot -lliwbot
+	install -d $PKG/usr/bin
+	install -m 755 $SRC/$name.sh $PKG/usr/bin/$name
+	install -m 755 $name $PKG/usr/bin/$name.bin
+}

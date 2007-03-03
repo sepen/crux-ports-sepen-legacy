@@ -1,0 +1,15 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+lrwxrwxrwx	root/root	usr/bin/de2en -> translate
+lrwxrwxrwx	root/root	usr/bin/de2fr -> translate
+lrwxrwxrwx	root/root	usr/bin/en2de -> translate
+lrwxrwxrwx	root/root	usr/bin/en2es -> translate
+lrwxrwxrwx	root/root	usr/bin/en2fr -> translate
+lrwxrwxrwx	root/root	usr/bin/en2it -> translate
+lrwxrwxrwx	root/root	usr/bin/en2pt -> translate
+lrwxrwxrwx	root/root	usr/bin/es2en -> translate
+lrwxrwxrwx	root/root	usr/bin/fr2de -> translate
+lrwxrwxrwx	root/root	usr/bin/fr2en -> translate
+lrwxrwxrwx	root/root	usr/bin/it2en -> translate
+lrwxrwxrwx	root/root	usr/bin/pt2en -> translate
+-rwxr-xr-x	root/root	usr/bin/translate

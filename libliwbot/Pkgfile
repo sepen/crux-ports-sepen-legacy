@@ -1,0 +1,21 @@
+# $Id: $
+# Description:  IRC bot libs written in C/C++
+# URL:          http://liwbot.sourceforge.net/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   
+
+name=libliwbot
+version=2.0
+release=1
+source=(http://dl.sourceforge.net/sourceforge/liwbot/liwbot-$version.tar.gz \
+	IRC.cpp.patch)
+
+build() {
+	cd liwbot-$version
+	patch src/IRC.cpp $SRC/IRC.cpp.patch
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/share
+}

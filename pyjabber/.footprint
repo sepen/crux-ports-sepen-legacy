@@ -1,0 +1,10 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/pyjabber/
+drwxr-xr-x	root/root	usr/lib/pyjabber/jabber/
+-rw-r--r--	root/root	usr/lib/pyjabber/jabber/debug.py
+-rw-r--r--	root/root	usr/lib/pyjabber/jabber/debug.pyc
+-rw-r--r--	root/root	usr/lib/pyjabber/jabber/jabber.py
+-rw-r--r--	root/root	usr/lib/pyjabber/jabber/jabber.pyc
+-rw-r--r--	root/root	usr/lib/pyjabber/jabber/xmlstream.py
+-rw-r--r--	root/root	usr/lib/pyjabber/jabber/xmlstream.pyc

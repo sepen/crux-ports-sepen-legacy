@@ -1,0 +1,24 @@
+# $Id: $
+# Description:  DGuitar is a Guitar Pro (*.gp4,*.gp3, *.gtp) viewer and player
+# URL:          http://dguitardl.sourceforge.net/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   x11,jdk
+
+name=dguitar
+version=0.5.8
+release=2
+source=(http://dl.sourceforge.net/sourceforge/$name/DGuitar-$version.zip \
+	dguitar.sh)
+
+build() {
+	mkdir -p $PKG/usr/{bin,share/$name}
+	mkdir -p $PKG/usr/share/$name/{lang,files,skins}
+	install -m 755 dguitar.sh $PKG/usr/bin/$name
+	install -m 644 DGuitar-$version/dist/*.jar $PKG/usr/share/$name/
+	install -m 644 DGuitar-$version/lang/lang.properties $PKG/usr/share/$name/lang/
+	mkdir -p $PKG/usr/share/$name/skins/{default,compact}
+	install -m 644 DGuitar-$version/skins/{*.gif,*.png} $PKG/usr/share/$name/skins/
+	install -m 644 DGuitar-$version/skins/default/* $PKG/usr/share/$name/skins/default
+	install -m 644 DGuitar-$version/skins/compact/* $PKG/usr/share/$name/skins/compact
+}

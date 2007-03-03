@@ -1,0 +1,19 @@
+# $Id: $
+# Description: 	MUD client written in Gtk+ and C with SQLLite, Python, MSP, MXP, HTML, and ZMP support.
+# URL: 		http://www.mudmagic.com/mud-client/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 	libgnome
+
+name=mudmagic
+version=1.7
+release=1
+source=(http://dl.sourceforge.net/sourceforge/kyndig/$name-$version.tar.gz)
+
+build() {
+    cd $name-$version
+    ./configure --prefix=/usr --disable-nls
+    make
+    make DESTDIR=$PKG install
+}
+

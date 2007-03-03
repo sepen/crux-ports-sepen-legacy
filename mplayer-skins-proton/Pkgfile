@@ -1,0 +1,17 @@
+# $Id: $
+# Description:  Mplayer proton skin
+# URL:          http://www1.mplayerhq.hu/MPlayer/skins/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   mplayer
+
+name=mplayer-skins-proton
+version=1.2
+release=1
+source=(http://www1.mplayerhq.hu/MPlayer/skins/proton-$version.tar.bz2)
+
+build() {
+	mkdir -p $PKG/usr/share/mplayer/skins
+	rm proton/{README,VERSION}
+	mv proton $PKG/usr/share/mplayer/skins/
+}

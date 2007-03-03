@@ -1,0 +1,22 @@
+# $Id: $
+# Description:  A free and open source Ruby on Rails IDE
+# URL:          http://www.radrails.org/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   rails,gtk,jdk,gdk-pixbuf
+
+
+name=radrails
+version=0.7.1
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version-linux-gtk.tar.gz \
+	$name.sh)
+
+build()  {
+	install -d $PKG/usr/{bin,share/icons}
+	install -m 755 $SRC/$name.sh $PKG/usr/bin/$name
+	rm $name/*.html
+	rm $name/plugins/org.rubypeople.rdt.core_0.8.0.604272100PRD/lib/README.txt
+	mv $name/RadRails.xpm $PKG/usr/share/icons
+	mv $name $PKG/usr/share
+}

@@ -1,0 +1,15 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/rx_auto
+-rwxr-xr-x	root/root	usr/bin/rx_deb
+-rwxr-xr-x	root/root	usr/bin/rx_ftp
+-rwxr-xr-x	root/root	usr/bin/rx_rar
+-rwxr-xr-x	root/root	usr/bin/rx_rpm
+-rwxr-xr-x	root/root	usr/bin/rx_tar
+-rwxr-xr-x	root/root	usr/bin/rx_zip
+-rwxr-xr-x	root/root	usr/bin/vfu
+drwxr-xr-x	root/root	usr/etc/
+-rw-r--r--	root/root	usr/etc/vfu.conf
+drwxr-xr-x	root/root	usr/man/
+drwxr-xr-x	root/root	usr/man/man1/
+-rw-r--r--	root/root	usr/man/man1/vfu.1.gz

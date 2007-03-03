@@ -1,0 +1,17 @@
+# $Id: $
+# Description:  Commandline FTE QuakeC Compiler
+# URL:          http://www.fteqw.com/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   
+
+name=fteqcc
+version=2770
+release=1
+source=(http://dl.sourceforge.net/sourceforge/fteqw/${name}${version}-linux.tar.gz)
+
+build() {
+	ls -al
+	install -d $PKG/usr/bin
+	install -m 755 $SRC/$name.bin $PKG/usr/bin/$name
+}

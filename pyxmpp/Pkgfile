@@ -1,0 +1,17 @@
+# $Id: $
+# Description: 	Python library that is targeted to provide easy scripting with Jabber
+# URL: 		http://xmpppydl.sourceforge.net/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 	python
+
+name=pyxmpp
+version=0.2
+release=1
+source=(http://dl.sourceforge.net/sourceforge/xmpppy/xmpppy-$version-rc3.tar.gz)
+
+build() {
+    cd xmpppy-$version-rc3
+    python setup.py install -f --prefix=$PKG/usr --install-lib=$PKG/usr/lib/$name
+}
+

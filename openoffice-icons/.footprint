@@ -1,0 +1,10 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/icons/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/32x32/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/32x32/apps/
+-rw-r--r--	root/root	usr/share/icons/hicolor/32x32/apps/blanco-32x32.png
+-rw-r--r--	root/root	usr/share/icons/hicolor/32x32/apps/oocalc-32x32.png
+-rw-r--r--	root/root	usr/share/icons/hicolor/32x32/apps/ooimpress-32x32.png
+-rw-r--r--	root/root	usr/share/icons/hicolor/32x32/apps/oowriter-32x32.png

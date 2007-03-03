@@ -1,0 +1,23 @@
+# $Id: $
+# Description:  IceWM theme's switcher
+# URL:          http://icecc.sourceforge.net/#icets
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   qt3
+
+name=icets
+version=1.4
+release=1
+source=(http://switch.dl.sourceforge.net/sourceforge/icecc/icets-1.4.tar.bz2)
+
+build() {
+        cd $name-$version
+        qmake
+        sed -i 's/\/usr\/local/\/usr/g' $name.pro Makefile $name.cpp icets_ua.ts
+        make QTDIR=/usr/share/qt \
+             CPLUS_INCLUDE_PATH=/usr/include/qt \
+             LFLAGS=-L/usr/share/qt/lib
+        mkdir -p $PKG/usr/bin
+        install -m 755 $name $PKG/usr/bin/$name
+        strip -s $PKG/usr/bin/$name	
+}

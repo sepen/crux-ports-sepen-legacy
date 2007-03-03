@@ -1,0 +1,20 @@
+# $Id: $
+# Description:  cross-platform GUI front-end for the Subversion revision system
+# URL:          http://rapidsvn.tigris.org/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   autogen,libtool,subversion,wxwidgets
+
+name=rapidsvn
+version=0.9.3
+release=1
+source=(http://rapidsvn.org/download/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./autogen.sh
+	./configure --prefix=/usr \
+		    --with-manpage=yes
+	make
+	make DESTDIR=$PKG install
+}

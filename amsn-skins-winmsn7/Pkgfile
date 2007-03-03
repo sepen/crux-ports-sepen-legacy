@@ -1,0 +1,16 @@
+# $Id: $
+# Description:  Skin based in official Windows MSN Messenger 7's default theme
+# URL:          http://amsn.sourceforge.net/skins.php
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   amsn
+
+name=amsn-skins-winmsn7
+version=1.0
+release=1
+source=(http://dl.sourceforge.net/sourceforge/amsn/WinMSN7-1.0.zip)
+
+build() {
+	install -d $PKG/usr/share/amsn/skins/winmsn7
+	cp -r WinMSN7/* $PKG/usr/share/amsn/skins/winmsn7
+}

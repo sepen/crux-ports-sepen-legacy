@@ -1,0 +1,54 @@
+20c20
+<   track=carrera
+---
+>   ;track=carrera
+26c26
+<   car=fer312
+---
+>   ;car=fer312
+28,29c28,29
+<   ai_cars=0
+<   ai_car=Alfa147_challenge_01
+---
+>   ai_cars=2
+>   ai_car=s2000_spoon
+32c32
+<   ai_car=fer312_fast
+---
+>   ;ai_car=fer312_fast
+43c43
+<   laps=100
+---
+>   laps=3
+87c87
+<   time=0
+---
+>   time=2
+324c324
+<   active=1
+---
+>   active=0
+327c327
+<   autohide=5000
+---
+>   autohide=500
+547c547
+<   fullscreen=0
+---
+>   fullscreen=1
+605c605
+<   visibility=800
+---
+>   visibility=1092
+672c672
+<   project_shadows=1
+---
+>   project_shadows=0
+736c736
+<   quality=1
+---
+>   quality=2
+833c833
+<   quickstart=1
+---
+>   quickstart=0

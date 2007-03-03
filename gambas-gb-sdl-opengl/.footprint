@@ -1,0 +1,13 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/gambas2/
+-rw-r--r--	root/root	usr/lib/gambas2/gb.sdl.opengl.component
+-rwxr-xr-x	root/root	usr/lib/gambas2/gb.sdl.opengl.la
+lrwxrwxrwx	root/root	usr/lib/gambas2/gb.sdl.opengl.so -> gb.sdl.opengl.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/gambas2/gb.sdl.opengl.so.0 -> gb.sdl.opengl.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/gambas2/gb.sdl.opengl.so.0.0.0
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/gambas2/
+drwxr-xr-x	root/root	usr/share/gambas2/info/
+-rw-r--r--	root/root	usr/share/gambas2/info/gb.sdl.opengl.info
+-rw-r--r--	root/root	usr/share/gambas2/info/gb.sdl.opengl.list

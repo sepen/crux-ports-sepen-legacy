@@ -1,0 +1,20 @@
+# $Id: $
+# Description: 	Space Flight Simulator
+# URL: 		http://www.lazysodz.com/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 	x11,libsdl
+
+name=coldfire
+version=0.3.1
+release=2
+source=(http://www.lazysodz.com/downloads/linux/coldfire/ColdFire.$version.tar.bz2 \
+	$name.sh)
+
+build() {
+	install -d $PKG/usr/{bin,share/$name}
+	mv $SRC/ColdFire/* $PKG/usr/share/$name
+	install -m 755 $SRC/$name.sh $PKG/usr/bin/$name
+	rm $PKG/usr/share/$name/*.txt
+}
+

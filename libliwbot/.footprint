@@ -1,0 +1,19 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/liwbot/
+-rw-r--r--	root/root	usr/include/liwbot/Channel.h
+-rw-r--r--	root/root	usr/include/liwbot/ChannelArray.h
+-rw-r--r--	root/root	usr/include/liwbot/Definitions.h
+-rw-r--r--	root/root	usr/include/liwbot/Function.h
+-rw-r--r--	root/root	usr/include/liwbot/IRC.h
+-rw-r--r--	root/root	usr/include/liwbot/IRCdata.h
+-rw-r--r--	root/root	usr/include/liwbot/Server.h
+-rw-r--r--	root/root	usr/include/liwbot/Socket.h
+-rw-r--r--	root/root	usr/include/liwbot/User.h
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/liwbot/
+-rw-r--r--	root/root	usr/lib/liwbot/libliwbot.a
+-rwxr-xr-x	root/root	usr/lib/liwbot/libliwbot.la
+lrwxrwxrwx	root/root	usr/lib/liwbot/libliwbot.so -> libliwbot.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/liwbot/libliwbot.so.0 -> libliwbot.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/liwbot/libliwbot.so.0.0.0

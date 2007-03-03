@@ -1,0 +1,19 @@
+# $Id: $
+# Description: 	3-Dimensional Chess for X.
+# URL: 		http://www.ibiblio.org/pub/Linux/games/strategy/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:  	Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 	xaw3d
+
+name=3dc
+version=0.8.1
+release=1
+source=(http://www.ibiblio.org/pub/Linux/games/strategy/3Dc-$version.tar.gz)
+
+build() {
+    cd 3Dc/src
+    make
+    mkdir -p $PKG/usr/bin
+    install -m 755 3Dc $PKG/usr/bin/3dc
+}
+

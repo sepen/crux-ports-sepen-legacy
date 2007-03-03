@@ -1,0 +1,39 @@
+# $Id: $
+# Description: 	InetUtils is a collection of common network programs like rsh, rlogin and rcp.
+# URL: 		http://www.gnu.org/software/inetutils/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 	
+
+name=inetutils
+version=1.4.2
+release=1
+
+source=(ftp://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		    --disable-servers \
+		    --enable-encryption \
+		    --enable-authentication \
+		    --disable-ftp \
+		    --disable-ping \
+		    --disable-logger \
+		    --disable-talk \
+		    --disable-telnet \
+		    --disable-tftp \
+		    --disable-whois \
+		    --disable-ifconfig \
+		    --disable-ncurses \
+  		    --with-wrap
+	make
+	mkdir -p $PKG/usr/bin
+	install -m 755 rlogin/rlogin $PKG/usr/bin/rlogin
+	install -m 755 rsh/rsh $PKG/usr/bin/rsh
+	install -m 755 rcp/rcp $PKG/usr/bin/rcp
+	mkdir -p $PKG/usr/man/man1
+	install -m 644 rlogin/rlogin $PKG/usr/man/man1/rlogin
+        install -m 644 rsh/rsh $PKG/usr/man/man1/rsh
+        install -m 644 rcp/rcp $PKG/usr/man/man1/rcp
+}

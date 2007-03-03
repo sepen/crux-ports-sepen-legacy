@@ -1,0 +1,17 @@
+# $Id: $
+# Description:  CD/DVD jewel case inserts and envelopes creator.
+# URL:          http://www.aczoom.com/tools/cdinsert/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   perl
+
+name=cdlabelgen
+version=3.6.0
+release=1
+source=(http://www.aczoom.com/pub/tools/cdlabelgen-3.6.0.tgz)
+
+build() {
+	mkdir -p $PKG/usr/{bin,lib,man/man1}
+	cd $name-$version
+	make BASE_DIR=$PKG/usr install
+}

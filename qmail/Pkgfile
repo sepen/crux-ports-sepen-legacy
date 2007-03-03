@@ -1,0 +1,39 @@
+# $Id$
+# Description: 	MTA replacement for sendmail.
+# URL: 		http://www.qmail.org/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:	ucspi-tcp
+
+name=qmail
+version=1.05
+release=3
+source=(http://qmail.org/netqmail-$version.tar.gz \
+	patch-Makefile \
+	qmaild.sh)
+
+build () {
+	cd net$name-$version
+	./collate.sh
+	cd net$name-$version
+	patch < $SRC/patch-Makefile
+	echo "${CC:=gcc} $CFLAGS" > conf-cc
+	echo "${CC:=gcc -s}" > conf-ld
+	echo "$PKG/var/qmail" > conf-$name
+	make it man
+	install -d $PKG/usr/{sbin,lib}
+	install -d $PKG/var/$name
+	install -d $PKG/var/log/qmail   
+	make setup check
+	# FQDN of system
+	./config-fast localhost.localdomain
+	ln -sf /var/$name/bin/sendmail $PKG/usr/sbin/sendmail
+	ln -sf /var/$name/bin/sendmail $PKG/usr/lib/sendmail
+	strip $PKG/var/$name/bin/* || :
+	echo "exec env - PATH=\$PATH:/var/qmail/bin qmail-start ./Maildir/ splogger qmail" > $PKG/var/$name/rc
+	chmod 755 $PKG/var/$name/rc
+	echo "./Maildir/" > $PKG/var/$name/control/defaultdelivery
+	install -d $PKG/etc/rc.d/
+	install -m 755 $SRC/qmaild.sh $PKG/etc/rc.d/qmaild
+	rm -rf $PKG/var/qmail/doc
+}

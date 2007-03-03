@@ -1,0 +1,20 @@
+# $Id: $
+# Description:  Examples for Bluej
+# URL:          http://www.bluej.org/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   bluej
+
+name=bluej-examples
+version=2.1.2
+release=2
+source=(http://www.bluej.org/download/files/bluej-212.jar)
+
+build() {
+        export PATH=$PATH:/usr/lib/java/bin
+        jar xf bluej-212.jar bluej-dist.jar
+        jar xf bluej-dist.jar
+        install -d $PKG/usr/lib/bluej
+        mv examples $PKG/usr/lib/bluej
+	rm $PKG/usr/lib/bluej/examples/*/README.TXT
+}

@@ -1,0 +1,19 @@
+# $Id: $
+# Description:  Dockapp for linux allowing the user to graphically see (and set) the power management status of his laptop
+# URL:          http://wmpower.sourceforge.net/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   x11
+
+name=wmpower
+version=0.4.2
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version.tar.bz2)
+
+build() {
+    cd $name-$version
+    ./configure --prefix=/usr
+    make
+    make DESTDIR=$PKG install
+    chown -R root:root $PKG
+}

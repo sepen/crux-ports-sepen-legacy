@@ -1,0 +1,23 @@
+# $Id: $
+# Description:  IceWM sound's configurator
+# URL:          http://iceccdl.sourceforge.net/#icesndcfg
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   qt3
+
+name=icesndcfg
+version=1.3
+release=1
+source=(http://dl.sourceforge.net/sourceforge/icecc/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	qmake
+	sed -i 's/\/usr\/local/\/usr/g' $name.pro
+	make QTDIR=/usr/share/qt \
+	     CPLUS_INCLUDE_PATH=/usr/include/qt \
+             LFLAGS=-L/usr/share/qt/lib
+        mkdir -p $PKG/usr/bin
+	install -m 755 $name $PKG/usr/bin/$name
+        strip -s $PKG/usr/bin/$name
+}

@@ -1,0 +1,19 @@
+# $Id: $
+# Description:  Runtime for Gambas. A free development environment based on a Basic interpreter with object extensions like vbasic
+# URL:          http://gambasdl.sourceforge.net/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   
+
+name=gambas-runtime
+version=1.9.28
+release=2
+source=(http://dl.sourceforge.net/sourceforge/gambas/gambas2-$version.tar.bz2)
+
+build() {
+	cd gambas2-$version/main
+	./reconf
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}

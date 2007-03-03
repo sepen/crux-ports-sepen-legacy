@@ -1,0 +1,23 @@
+# Description: Funny football game in 3D-comic-style
+# URL: http://www.bolzplatz2006.de/en/index.php
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: jdk,swig
+
+name=slam-soccer
+version=1.0.3
+release=1
+source=(http://heanet.dl.sourceforge.net/sourceforge/bp2k6/bolzplatz2006-$version-src.zip \
+	$name.sh)
+
+build() {
+read
+	install -d $PKG/usr/{bin,share/$name}
+	tar xzf bp2k6-linux.tar.gz
+	cp -R bolzplatz2006/* $PKG/usr/share/$name
+	rm -rf $PKG/usr/share/$name/doc
+	rm $PKG/usr/share/$name/bolzplatz2006.sh
+	rm $PKG/usr/share/$name/{*.txt,*.html}
+	sed -i 's|>log2.txt 2>&1||g' $PKG/usr/share/$name/settings.sh
+	install -m 755 $name.sh $PKG/usr/bin/$name
+}

@@ -1,0 +1,7 @@
+#
+# README
+#
+
+pre-install:	Make sure, everybody can access your radiodevice (usually /dev/radio)
+
+# End of File

@@ -1,0 +1,7 @@
+pre-install	
+		If you have php port installed on your system, you don't need any extra port 
+		to run sugarcrm. But if you have mod_php port installed you must install mysql 
+		as a dependency.
+
+		In both cases you must run mysql daemon, and then browse your crm url page
+		(http://your.web.server/crm/) for begin the installation.

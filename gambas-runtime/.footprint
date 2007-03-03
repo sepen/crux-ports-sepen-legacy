@@ -1,0 +1,55 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/gba2
+-rwxr-xr-x	root/root	usr/bin/gbc2
+-rwxr-xr-x	root/root	usr/bin/gbi2
+lrwxrwxrwx	root/root	usr/bin/gbr2 -> /usr/bin/gbx2
+-rwxr-xr-x	root/root	usr/bin/gbx2
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/gambas2/
+-rw-r--r--	root/root	usr/lib/gambas2/gb.component
+-rw-r--r--	root/root	usr/lib/gambas2/gb.compress.component
+-rwxr-xr-x	root/root	usr/lib/gambas2/gb.compress.la
+lrwxrwxrwx	root/root	usr/lib/gambas2/gb.compress.so -> gb.compress.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/gambas2/gb.compress.so.0 -> gb.compress.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/gambas2/gb.compress.so.0.0.0
+-rw-r--r--	root/root	usr/lib/gambas2/gb.db.component
+-rwxr-xr-x	root/root	usr/lib/gambas2/gb.db.la
+lrwxrwxrwx	root/root	usr/lib/gambas2/gb.db.so -> gb.db.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/gambas2/gb.db.so.0 -> gb.db.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/gambas2/gb.db.so.0.0.0
+-rw-r--r--	root/root	usr/lib/gambas2/gb.debug.component
+-rwxr-xr-x	root/root	usr/lib/gambas2/gb.debug.la
+lrwxrwxrwx	root/root	usr/lib/gambas2/gb.debug.so -> gb.debug.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/gambas2/gb.debug.so.0 -> gb.debug.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/gambas2/gb.debug.so.0.0.0
+-rw-r--r--	root/root	usr/lib/gambas2/gb.eval.component
+-rwxr-xr-x	root/root	usr/lib/gambas2/gb.eval.la
+lrwxrwxrwx	root/root	usr/lib/gambas2/gb.eval.so -> gb.eval.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/gambas2/gb.eval.so.0 -> gb.eval.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/gambas2/gb.eval.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/gambas2/gb.la
+lrwxrwxrwx	root/root	usr/lib/gambas2/gb.so -> gb.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/gambas2/gb.so.0 -> gb.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/gambas2/gb.so.0.0.0
+-rw-r--r--	root/root	usr/lib/gambas2/gb.vb.component
+-rwxr-xr-x	root/root	usr/lib/gambas2/gb.vb.la
+lrwxrwxrwx	root/root	usr/lib/gambas2/gb.vb.so -> gb.vb.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/gambas2/gb.vb.so.0 -> gb.vb.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/gambas2/gb.vb.so.0.0.0
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/gambas2/
+drwxr-xr-x	root/root	usr/share/gambas2/info/
+-rw-r--r--	root/root	usr/share/gambas2/info/gb.compress.info
+-rw-r--r--	root/root	usr/share/gambas2/info/gb.compress.list
+-rw-r--r--	root/root	usr/share/gambas2/info/gb.db.info
+-rw-r--r--	root/root	usr/share/gambas2/info/gb.db.list
+-rw-r--r--	root/root	usr/share/gambas2/info/gb.debug.info
+-rw-r--r--	root/root	usr/share/gambas2/info/gb.debug.list
+-rw-r--r--	root/root	usr/share/gambas2/info/gb.eval.info
+-rw-r--r--	root/root	usr/share/gambas2/info/gb.eval.list
+-rw-r--r--	root/root	usr/share/gambas2/info/gb.info
+-rw-r--r--	root/root	usr/share/gambas2/info/gb.list
+-rw-r--r--	root/root	usr/share/gambas2/info/gb.vb.info
+-rw-r--r--	root/root	usr/share/gambas2/info/gb.vb.list

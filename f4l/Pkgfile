@@ -1,0 +1,20 @@
+# $Id: $
+# Description:  Flash for Linux.
+# URL: 		http://f4ldl.sourceforge.net/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 	x11,qt3
+
+name=f4l
+version=0.2
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version.tar.bz2)
+
+build() {
+	
+	cd $name-$version
+	[ "$QTDIR" == "" ] && export QTDIR=/usr/share/qt
+	make
+	mkdir -p $PKG/usr/bin
+	install -m 755 bin/f4l $PKG/usr/bin/f4l
+}

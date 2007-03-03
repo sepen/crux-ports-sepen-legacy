@@ -1,0 +1,19 @@
+# $Id: $
+# Description:  Program that scan a configure.in and generate a bootstrap script which will then be used to create a configure script.
+# URL:          http://bootstrapper.sourceforge.net/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   
+
+name=bootstrapper
+version=0.2.1
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/info
+}

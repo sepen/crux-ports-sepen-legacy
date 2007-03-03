@@ -1,0 +1,4 @@
+113c113
+< 	sprintf(msg, "NICK %s\nUSER %s \"IP\" \"Server\" :%s", nick, ident, realname);
+---
+> 	sprintf(msg, "NICK %s\r\nUSER %s 0 * :%s", nick, ident, realname);

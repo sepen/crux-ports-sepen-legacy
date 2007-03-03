@@ -1,0 +1,18 @@
+# $Id: $
+# Description:  A simple pitch control plugin for xmms.
+# URL:          http://www.xmms.org/plugins.php?details=249
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   xmms
+
+name=xmms-plugin-pitch
+version=0.2
+release=1
+source=(http://freequaos.host.sk/xmms-pitch/xmms-pitch-$version.tar.gz)
+
+build() {
+	cd xmms-pitch
+	make
+	install -d $PKG/usr/lib/xmms/Effect
+	make DEST=$PKG/usr/lib/xmms/Effect install
+}

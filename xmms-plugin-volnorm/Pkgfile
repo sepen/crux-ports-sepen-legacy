@@ -1,0 +1,19 @@
+# $Id: $
+# Description:  Normalize volume control plugin for xmms.
+# URL:          http://volnorm.sourceforge.net/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   xmms
+
+name=xmms-plugin-volnorm
+version=0.8.3
+release=1
+source=(http://dl.sourceforge.net/sourceforge/volnorm/volnorm-$version.tar.gz)
+
+build() {
+	cd volnorm-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/bin
+}

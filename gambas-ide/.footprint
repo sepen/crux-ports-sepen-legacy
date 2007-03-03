@@ -1,0 +1,5 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+lrwxrwxrwx	root/root	usr/bin/gambas -> /usr/bin/gambas2.gambas
+-rwxr-xr-x	root/root	usr/bin/gambas-database-manager.gambas
+-rwxr-xr-x	root/root	usr/bin/gambas2.gambas

@@ -1,0 +1,90 @@
+diff -Nru gdk-pixbuf-0.22.0-old/Makefile.in gdk-pixbuf-0.22.0/Makefile.in
+--- gdk-pixbuf-0.22.0-old/Makefile.in	2004-09-16 17:35:32.463470725 +0200
++++ gdk-pixbuf-0.22.0/Makefile.in	2004-09-16 17:35:49.594331995 +0200
+@@ -111,7 +111,7 @@
+ STRIP_END = @STRIP_END@
+ VERSION = @VERSION@
+ 
+-SUBDIRS = gdk-pixbuf demo doc
++SUBDIRS = gdk-pixbuf demo
+ 
+ bin_SCRIPTS = gdk-pixbuf-config
+ 
+diff -Nru gdk-pixbuf-0.22.0-old/gdk-pixbuf/io-bmp.c gdk-pixbuf-0.22.0/gdk-pixbuf/io-bmp.c
+--- gdk-pixbuf-0.22.0-old/gdk-pixbuf/io-bmp.c	2004-09-16 17:35:32.446480780 +0200
++++ gdk-pixbuf-0.22.0/gdk-pixbuf/io-bmp.c	2004-09-16 17:35:39.105539682 +0200
+@@ -870,8 +870,10 @@
+ 	guchar c;
+ 	gint idx;
+ 
+-	if (context->compr.y >= context->Header.height)
++	if (context->compr.y >= context->Header.height) {
++		context->BufferDone = 0;
+ 		return TRUE;
++	}
+ 
+ 	y = context->compr.y;
+ 
+diff -Nru gdk-pixbuf-0.22.0-old/gdk-pixbuf/io-ico.c gdk-pixbuf-0.22.0/gdk-pixbuf/io-ico.c
+--- gdk-pixbuf-0.22.0-old/gdk-pixbuf/io-ico.c	2004-09-16 17:35:32.447480189 +0200
++++ gdk-pixbuf-0.22.0/gdk-pixbuf/io-ico.c	2004-09-16 17:35:39.106539091 +0200
+@@ -330,6 +330,9 @@
+ 
+ 	State->HeaderSize+=I;
+ 
++	if (State->HeaderSize < 0)
++		return FALSE;
++
+  	if (State->HeaderSize>State->BytesInHeaderBuf) {
+ 		guchar *tmp=realloc(State->HeaderBuf,State->HeaderSize);
+ 		if (!tmp)
+diff -Nru gdk-pixbuf-0.22.0-old/gdk-pixbuf/io-xpm.c gdk-pixbuf-0.22.0/gdk-pixbuf/io-xpm.c
+--- gdk-pixbuf-0.22.0-old/gdk-pixbuf/io-xpm.c	2004-09-16 17:35:32.448479597 +0200
++++ gdk-pixbuf-0.22.0/gdk-pixbuf/io-xpm.c	2004-09-16 17:35:39.106539091 +0200
+@@ -243,8 +243,8 @@
+ 			break;
+ 		else {
+ 			if (numnames > 0) {
+-				space -= 1;
+-				strcat (color, " ");
++				strncat (color, " ", space);
++				space -= MIN (space, 1);
+ 			}
+ 
+ 			strncat (color, temp, space);
+@@ -352,16 +352,31 @@
+ 		return NULL;
+ 	}
+ 	sscanf (buffer, "%d %d %d %d", &w, &h, &n_col, &cpp);
+-	if (cpp >= 32) {
+-		g_warning ("XPM has more than 31 chars per pixel.");
++	if (cpp <= 0 || cpp >= 32) {
++		g_warning ("XPM has invalid number of chars per pixel");
++		return NULL;
++	}
++	if (n_col <= 0 || n_col >= G_MAXINT / (cpp + 1)) {
++		g_warning ("XPM file has invalid number of colors");
+ 		return NULL;
+ 	}
+ 
+ 	/* The hash is used for fast lookups of color from chars */
+ 	color_hash = g_hash_table_new (g_str_hash, g_str_equal);
+ 
+-	name_buf = g_new (gchar, n_col * (cpp + 1));
+-	colors = g_new (_XPMColor, n_col);
++	name_buf = g_malloc (n_col * (cpp + 1));
++	if (!name_buf) {
++		g_warning ("Cannot allocate memory for loading XPM image");
++		g_hash_table_destroy (color_hash);
++		return NULL;
++	}
++	colors = (_XPMColor *) g_malloc (sizeof (_XPMColor) * n_col);
++	if (!colors) {
++		g_warning ("Cannot allocate memory for loading XPM image");
++		g_hash_table_destroy (color_hash);
++		g_free (name_buf);
++		return NULL;
++	}
+ 
+ 	for (cnt = 0; cnt < n_col; cnt++) {
+ 		gchar *color_name;

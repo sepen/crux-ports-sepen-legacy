@@ -1,0 +1,24 @@
+# $Id: $
+# Description:  Gambas information component
+# URL:          http://gambasdl.sourceforge.net/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   gambas-runtime
+
+name=gambas-gb-info
+version=1.9.28
+release=2
+source=(http://dl.sourceforge.net/sourceforge/gambas/gambas2-$version.tar.bz2)
+
+build() {
+	install -d $PKG/usr/{bin,share/gambas2/info,lib/gambas2}
+	ln -sf /usr/bin/gb*2 $PKG/usr/bin
+	cd gambas2-$version/comp
+	./reconf
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/bin
+	rm -rf $PKG/usr/lib/gambas2/{gb.form*,gb.db*,gb.settings*}
+	rm -rf $PKG/usr/share/gambas2/info/{gb.form*,gb.db*,gb.settings*}
+}

@@ -1,0 +1,9 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/pongix
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/pongix/
+-rw-r--r--	root/root	usr/share/pongix/fondo_juego.jpg
+-rw-r--r--	root/root	usr/share/pongix/fuente.bmp
+-rw-r--r--	root/root	usr/share/pongix/paleta.bmp
+-rw-r--r--	root/root	usr/share/pongix/pelota.bmp

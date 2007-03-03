@@ -1,0 +1,28 @@
+# $Id: $
+# Description:  Script that uses the service Web of google to translate
+# URL:          http://mikeux.dyndns.org/scripts/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   netcat,coreutils,sed,grep
+
+name=translate
+version=1.2
+release=1
+source=(http://mikeux.dyndns.org/scripts/$name)
+
+build() {
+	mkdir -p $PKG/usr/bin
+	install -m 755 $SRC/$name $PKG/usr/bin/$name
+	ln -sf translate $PKG/usr/bin/en2de
+	ln -sf translate $PKG/usr/bin/en2es
+	ln -sf translate $PKG/usr/bin/en2fr
+	ln -sf translate $PKG/usr/bin/en2it
+	ln -sf translate $PKG/usr/bin/en2pt
+	ln -sf translate $PKG/usr/bin/de2en
+	ln -sf translate $PKG/usr/bin/de2fr
+	ln -sf translate $PKG/usr/bin/es2en
+	ln -sf translate $PKG/usr/bin/fr2en
+	ln -sf translate $PKG/usr/bin/fr2de
+	ln -sf translate $PKG/usr/bin/it2en
+	ln -sf translate $PKG/usr/bin/pt2en
+}

@@ -1,0 +1,17 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/john
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/john/
+-rwxr-xr-x	root/root	usr/share/john/all.chr
+-rwxr-xr-x	root/root	usr/share/john/alnum.chr
+-rwxr-xr-x	root/root	usr/share/john/alpha.chr
+-rwxr-xr-x	root/root	usr/share/john/digits.chr
+-rwxr-xr-x	root/root	usr/share/john/john
+-rwxr-xr-x	root/root	usr/share/john/john.conf
+-rwxr-xr-x	root/root	usr/share/john/lanman.chr
+-rwxr-xr-x	root/root	usr/share/john/mailer
+-rwxr-xr-x	root/root	usr/share/john/password.lst
+-rwxr-xr-x	root/root	usr/share/john/unafs
+-rwxr-xr-x	root/root	usr/share/john/unique
+-rwxr-xr-x	root/root	usr/share/john/unshadow

@@ -1,0 +1,21 @@
+# $Id: $
+# Description: 	Python instantaneous mail videoconference based on Jabber protocol.
+# URL: 		http://www.polinux.upv.es/drupal/pymeet/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 	python-imaging,wxpython,wxwidgets,pyjabber,pyv4l
+
+name=pymeet
+version=1
+release=2
+source=(http://www.polinux.upv.es/drupal/files/tmp/$name.tgz \
+	pymeet.sh)
+
+build() {
+	install -d $PKG/usr/{bin,share/$name}
+    	mv $SRC/$name/* $PKG/usr/share/$name
+    	install -m 755 $SRC/$name.sh $PKG/usr/bin/$name
+	rm -rf $PKG/usr/share/$name/{doc,v4l}
+	rm $PKG/usr/share/$name/ChangeLog
+	ln -sf /usr/lib/pyv4l $PKG/usr/share/$name/v4l
+}

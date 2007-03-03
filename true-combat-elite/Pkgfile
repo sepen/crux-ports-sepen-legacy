@@ -1,0 +1,20 @@
+# Description: TrueCombat:Elite is a team-based realism modification based on Enemy Territory.
+# URL: http://www.truecombatelite.net/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: enemy-territory
+
+name=true-combat-elite
+version=0.49b
+release=1
+source=(http://ftp.freenet.de/pub/4players/hosted/wolfenstein/et_mods/tcetest049.zip \
+	tce.sh)
+
+build() {
+	install -d $PKG/usr/share/{icons,enemy-territory/tcetest}
+	install -d $PKG/usr/bin
+	install -m 644 tcetest/*.{so,pk3,dat} $PKG/usr/share/enemy-territory/tcetest
+	install -m 644 tcetest/*.ico $PKG/usr/share/icons
+	install -m 755 $SRC/tce.sh $PKG/usr/bin/tce
+	ln -sf /usr/bin/tce $PKG/usr/bin/$name
+}

@@ -1,0 +1,19 @@
+# $Id: $
+# Description:  Metakit is an efficient embedded database library with a small footprint.
+# URL:          http://www.equi4.com/metakit.html
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   
+
+name=metakit
+version=2.4.9.5
+release=1
+source=(http://www.equi4.com/pub/mk/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	cd builds
+        ../unix/configure --prefix=/usr
+        make
+	make DESTDIR=$PKG install
+}

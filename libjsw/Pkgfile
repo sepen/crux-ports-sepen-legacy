@@ -1,0 +1,19 @@
+# $Id: $
+# Description: 	The Joystick Wrapper library, uniform API and user configuration for game controllers on all platforms.
+# URL: 		http://wolfpack.twu.net/libjsw/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:
+
+name=libjsw
+version=1.5.5
+release=1
+source=(http://wolfpack.twu.net/users/wolfpack/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version/$name
+	cp Makefile.Linux Makefile
+	make
+	make install PREFIX=$PKG/usr
+}
+

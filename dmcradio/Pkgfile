@@ -1,0 +1,24 @@
+# $Id: $
+# Description:  ncurses-based console program for radio tuner cards supported by the Video4Linux system.
+# URL:          http://dmcradio.sourceforge.net/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   ncurses
+
+name=dmcradio
+version=1.1.4
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/DMCRadio-$version.tar.bz2)
+
+build() {
+	cd DMCRadio-$version
+	./configure --prefix=/usr
+	make
+	gzip -v9 DMCRadio.1
+	install -d $PKG/usr/bin
+	install -m 755 DMCRadio $PKG/usr/bin/$name
+	install -d $PKG/usr/man/man1
+	install -m 644 DMCRadio.1.gz $PKG/usr/man/man1/$name.1.gz
+	install -d $PKG/usr/share/$name
+	install -m 755 fonts/*.raf $PKG/usr/share/$name
+}

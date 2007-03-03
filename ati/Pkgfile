@@ -1,0 +1,33 @@
+# Description: ATI Proprietary Linux Display Driver
+# URL: http://www.ati.com/support/drivers/linux/radeon-linux.html
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: mesa3d, gl-select
+
+name=ati
+version=8.33.6
+release=2
+source=(http://www2.ati.com/drivers/linux/$name-driver-installer-$version-x86.x86_64.run \
+	atieventsd.sh)
+
+build() {
+	march=x86
+	xversion=x690
+        sh $name-driver-installer-$version-x86.x86_64.run --extract $SRC/tmp
+	cd $SRC/tmp/common/lib/modules/fglrx/build_mod
+	ln -s $SRC/tmp/arch/$march/lib/modules/fglrx/build_mod/libfglrx_ip.a.GCC* .
+	sh make.sh
+        install -d $PKG/lib/modules/`uname -r`/kernel/drivers/char/drm
+	install -m 644 $SRC/tmp/common/lib/modules/fglrx/build_mod/2.6.x/fglrx.ko \
+		$PKG/lib/modules/`uname -r`/kernel/drivers/char/drm
+	install -d $PKG/usr/{X11R6,include,share}
+	cp -r $SRC/tmp/arch/$march/usr $PKG
+	cp -r $SRC/tmp/common/usr/{X11R6,include,share/man} $PKG/usr
+	cp -r $SRC/tmp/$xversion/usr/X11R6 $PKG/usr
+	install -d $PKG/etc/{ati,rc.d}
+	cp -r $SRC/tmp/common/etc/ati/* $PKG/etc/ati
+	rm -f $PKG/etc/ati/logo*
+	install -m 755 $SRC/atieventsd.sh $PKG/etc/rc.d/atieventsd
+	# required for use opt/gl-select
+	mv $PKG/usr/X11R6/lib/libGL.so.1.2 $PKG/usr/X11R6/lib/libGL_so_1_2_ati
+}

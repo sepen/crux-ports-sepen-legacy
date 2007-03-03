@@ -1,0 +1,19 @@
+# $Id: $
+# Description: Dockapp mixer for OSS or ALSA.
+# URL: http://dockapps.org/file.php/id/58
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   x11
+
+name=wmix
+version=3.1
+release=1
+source=(http://www.ne.jp/asahi/linux/timecop/software/$name-$version.tar.gz)
+
+build() {
+    cd $name-$version
+    make
+    mkdir -p $PKG/usr/bin
+    install -m 755 $name $PKG/usr/bin/$name   
+}
+

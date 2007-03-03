@@ -1,0 +1,16 @@
+# $Id: $
+# Description:  Download all port sources from given repository
+# URL:          http://mikeux.dyndns.org/scripts/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   pkgutils,ports
+
+name=pkgmkdo
+version=0.3
+release=1
+source=(http://mikeux.dyndns.org/scripts/$name)
+
+build() {
+        mkdir -p $PKG/usr/bin
+        install -m 755 $SRC/$name $PKG/usr/bin/$name
+}

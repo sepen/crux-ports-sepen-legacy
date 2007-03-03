@@ -1,0 +1,16 @@
+# $Id: $
+# Description:  Python tool for automatic branch management. 'svn merge' alternative.
+# URL:          http://www.orcaware.com/svn/wiki/Svnmerge.py
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   python
+
+name=svnmerge
+version=1
+release=1
+source=(http://svn.collab.net/repos/svn/trunk/contrib/client-side/$name.py)
+
+build() {
+	install -d $PKG/usr/bin
+	install -m 755 $SRC/$name.py $PKG/usr/bin/$name
+}

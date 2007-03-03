@@ -1,0 +1,27 @@
+# $Id: $
+# Description:  Gambas graphical SDL sound toolkit component
+# URL:          http://gambasdl.sourceforge.net/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   sdl_sound,gambas-gb-sdl
+
+name=gambas-gb-sdl-sound
+version=1.9.28
+release=1
+source=(http://dl.sourceforge.net/sourceforge/gambas/gambas2-$version.tar.bz2)
+
+build() {
+	mkdir -p $PKG/usr/bin
+	ln -sf /usr/bin/gb*2 $PKG/usr/bin
+	cd gambas2-$version/gb.sdl
+	./reconf
+	./configure --prefix=/usr \
+	  	    --enable-sdl_sound \
+		    --disable-sdl_image \
+		    --disable-sdl_opengl
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/bin
+	rm $PKG/usr/lib/gambas2/{gb.sdl.component*,gb.sdl.la,gb.sdl.so,gb.sdl.so.*}
+        rm $PKG/usr/share/gambas2/info/{gb.sdl.info,gb.sdl.list}
+}

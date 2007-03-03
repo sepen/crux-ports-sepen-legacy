@@ -1,0 +1,150 @@
+<h2>Acer TravelMate 529 ATX</h2>
+Info and configuration about Acer TravelMate 529ATX laptop by Victor Martinez (gandhul at ono dot com).
+<hr>
+<h3>
+-HARDWARE INFORMATION-
+</h3>
+<pre>
+# cat /proc/cpuinfo
+processor       : 0
+vendor_id       : GenuineIntel
+cpu family      : 6
+model           : 8
+model name      : Pentium III (Coppermine)
+stepping        : 10
+cpu MHz         : 895.435
+cache size      : 256 KB
+fdiv_bug        : no
+hlt_bug         : no
+f00f_bug        : no
+coma_bug        : no
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 2
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 sep mtrr pge mca cmov pat pse36 mmx fxsr sse up
+bogomips        : 1793.38
+
+# lspci
+00:00.0 Host bridge: ALi Corporation M1621 (rev 05)
+00:01.0 PCI bridge: ALi Corporation PCI to AGP Controller (rev 01)
+00:06.0 Multimedia audio controller: ALi Corporation M5451 PCI AC-Link Controller Audio Device (rev 01)
+00:07.0 ISA bridge: ALi Corporation M1533/M1535 PCI to ISA Bridge [Aladdin IV/V/V+]
+00:0a.0 Ethernet controller: Intel Corporation 82557/8/9 [Ethernet Pro 100] (rev 08)
+00:10.0 IDE interface: ALi Corporation M5229 IDE (rev c3)
+00:11.0 Bridge: ALi Corporation M7101 Power Management Controller [PMU]
+00:13.0 CardBus bridge: O2 Micro, Inc. OZ6933/711E1 CardBus/SmartCardBus Controller (rev 01)
+00:13.1 CardBus bridge: O2 Micro, Inc. OZ6933/711E1 CardBus/SmartCardBus Controller (rev 01)
+00:14.0 USB Controller: ALi Corporation USB 1.1 Controller (rev 03)
+01:00.0 VGA compatible controller: ATI Technologies Inc Rage Mobility P/M AGP 2x (rev 64)
+
+# free -o
+             total       used       free     shared    buffers     cached
+Mem:        256860      41460     215400          0       3336      29584
+Swap:       248968          0     248968
+</pre>
+<hr>
+INSTALLATION TIP
+Need to start CRUX installation with option noacpi
+<hr>
+The most importat Kernel configurations options:
+<h3>
+-KERNEL CONFIGURATION-  Linux Kernel v2.6.17.8
+</h3>
+<pre>
+General setup  --->
+	[*] Support for paging of anonymous memory (swap)
+	[*] Prompt for development and/or incomplete code/drivers
+
+Processor type and features  --->
+	Processor family (Pentium-III/Celeron(Coppermine)/Pentium-III Xeon)
+	[*] MTRR (Memory Type Range Register) support
+
+<b><I>Detected problems trying to run with acpi=on, disabled at custom kernel.</I></b>
+Power management options (ACPI, APM)  --->
+	[*] Power Management support
+	APM (Advanced Power Management) BIOS Support  --->
+		<*> APM (Advanced Power Management) BIOS support 
+
+Bus options (PCI, PCMCIA, EISA, MCA, ISA)
+	PCCARD (PCMCIA/CardBus) support  --->	
+		<*> PCCard (PCMCIA/CardBus) support
+			<*>   CardBus yenta-compatible bridge support
+Device Drivers  --->
+	Parallel port support --->
+		<*> Parallel port support
+		<*>   PC-style hardware
+		[*] IEEE 1284 transfer modes
+	Block devices  --->
+		<*> Normal floppy disk support
+		<*> Loopback device support
+
+ATA/ATAPI/MFM/RLL support --->
+	<*> ATA/ATAPI/MFM/RLL support
+	<*>   Enhanced IDE/MFM/RLL disk/cdrom/tape/floppy support
+	<*>     Include IDE/ATA-2 DISK support
+	<*>     Include IDE/ATAPI CDROM support
+	[*]     PCI IDE chipset support
+	[*]       Generic PCI bus-master DMA support
+	[*]         Use PCI DMA by default when available
+	<*>         ALI M15x3 chipset support
+	<*>         Intel PIIXn chipsets support
+
+SCSI device support --->
+	<*>   SCSI disk support
+
+Network device support  --->
+	[*] Network device support
+	Ethernet (10 or 100Mbit)  --->
+		[*] Ethernet (10 or 100Mbit)
+		[*] EISA, VLB, PCI and on board controllers
+		<*>   Intel(R) PRO/100+ support
+		
+Input device support  --->
+	[*]     Provide legacy /dev/psaux device
+	(1280)  Horizontal screen resolution
+	(1024)  Vertical screen resolution
+	<*>   Touchscreen interface
+	(240)   Horizontal screen resolution
+	(320)   Vertical screen resolution
+	<*>   Event interface
+	[*]   Mouse  --->
+		<*>   PS/2 mouse
+	[*]   Touchscreens  --->
+		<*>   MicroTouch serial touchscreens
+
+Character devices  --->
+	<*> Parallel printer support
+	[M] /dev/agpgart (AGP Support)
+	[M]   ALI chipset support
+
+Sound  --->
+	<*> Sound card support
+		Advanced Linux Sound Architecture  --->
+			[M] Advanced Linux Sound Architecture
+			PCI devices  ---> 			
+				[M] ALi M5451 PCI Audio Controller
+
+USB support  --->
+	<*> Support for Host-side USB
+	[*]   USB device filesystem
+	<*>   OHCI HCD support
+	<*>   UHCI HCD (most Intel and VIA) support
+	<*> USB Mass Storage support
+		[*]   Microtech/ZiO! CompactFlash/SmartMedia support
+	<*> USB Human Interface Device (full HID) support
+		[*]   HID input layer support
+</pre>
+
+<font size='2'><I>
+        
+<br>
+</I></font>
+<hr>
+<h3> Dri port to get mach64 module from freedesktop.org</h3>
+Also, you can find the dri port <a href='http://mikeux.dyndns.org/crux/drm/Pkgfile'>here</a>, 
+and the latest dri CVS port release <a href='http://mikeux.dyndns.org/crux/drm-cvs/Pkgfile'>here</a>.
+<h3> Configuration files: </h3>
+Kernel configuration <a href='http://mikeux.dyndns.org/crux/docs/tm529atx_config.html'> .config </a><br>
+Xorg R7 configuration file <a href='http://mikeux.dyndns.org/crux/docs/tm529atx_xorg.conf.html'> xorg.conf </a><br>
+<br><br><br>

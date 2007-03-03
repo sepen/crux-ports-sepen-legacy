@@ -1,0 +1,22 @@
+# $Id: $
+# Description:  Yahoo! Messenger for Unix
+# URL:          http://messenger.yahoo.com/messenger/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   gdk-pixbuf
+
+name=ymessenger
+version=1.0.4
+release=1
+source=(http://download.yahoo.com/dl/unix/rh9.$name-$version-$release.i386.rpm)
+
+build() {
+	rpm2targz rh9.$name-$version-$release.i386.rpm
+	tar xvfz rh9.$name-$version-$release.i386.tar.gz
+	mkdir -p $PKG/usr/{bin,share/$name/{bin,lib}}
+	install -m 755 opt/$name/bin/$name $PKG/usr/bin/$name
+	sed -i 's|/opt/ymessenger/lib|/usr/share/ymessenger|g' $PKG/usr/bin/$name
+	sed -i 's|/opt/ymessenger/bin|/usr/share/ymessenger|g' $PKG/usr/bin/$name
+	install -m 755 opt/$name/bin/$name.bin $PKG/usr/share/$name/$name.bin
+	install -m 755 opt/$name/lib/libgtkhtml.so.6 $PKG/usr/share/$name/libgtkhtml.so.6
+}

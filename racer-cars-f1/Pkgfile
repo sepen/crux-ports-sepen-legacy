@@ -1,0 +1,27 @@
+# $Id: $
+# Description: 	F1 extra cars for Racer
+# URL: 		http://www.racer-xtreme.com/cars.php?bk=82
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 	racer
+
+name=racer-cars-f1
+version=1
+release=2
+source=(ftp://ftp2.racer-xtreme.com/racerxtr/car/100/Fw24r.zip \
+	http://www.megavis.com/MEGAVIS/exportzip/p34_1.zip \
+	tolowercase.sh)
+
+build() {
+	install -d $PKG/usr/share/racer/data/cars/{fw24r,p34}
+	mv $SRC/Fw24r/* $PKG/usr/share/racer/data/cars/fw24r
+	mv $SRC/data/cars/P34/* $PKG/usr/share/racer/data/cars/p34
+	# tolowercase
+	sh $SRC/tolowercase.sh $PKG/usr/share/racer/data/cars
+	# performance
+        sed -i 's/automatic=0/automatic=1/g' $PKG/usr/share/racer/data/cars/fw24r/car.ini
+        sed -i 's/automatic=0/automatic=1/g' $PKG/usr/share/racer/data/cars/p34/car.ini
+	chmod 644 $PKG/usr/share/racer/data/cars/p34/*
+	chmod 755 $PKG/usr/share/racer/data/cars/p34/{car_ini_50_fimal,car_ini_b3}
+	chmod 644 $PKG/usr/share/racer/data/cars/p34/*/car.ini
+}

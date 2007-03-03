@@ -1,0 +1,8 @@
+PRE-INSTALL:
+
+  	- add the necessary user with the eggdrop-user.sh script
+
+
+POST-INSTALL:
+
+	- you must edit eggdrop config file in orden to run the bot	

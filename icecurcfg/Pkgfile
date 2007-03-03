@@ -1,0 +1,16 @@
+# $Id: $
+# Description:  IceWM cursors configurator
+# URL:          http://icecc.sourceforge.net/#icecursor
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   pyqt
+
+name=icecurcfg
+version=0.6
+release=2
+source=(http://dl.sourceforge.net/sourceforge/icecc/icecursorscfg-$version.tar.bz2)
+
+build() {
+	install -d $PKG/usr/bin
+	install -m 755 icecursorscfg-$version/$name.py $PKG/usr/bin/$name.py
+}

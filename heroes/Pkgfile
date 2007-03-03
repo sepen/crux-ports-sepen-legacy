@@ -1,0 +1,47 @@
+# $Id: $
+# Description:  Heroes is similar to the "Tron" and "Nibbles" games of yore, but includes many graphical improvements and new game feature
+# URL:          http://heroesdl.sourceforge.net/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   
+
+name=heroes
+version=0.21
+release=1
+
+source=(http://dldl.sourceforge.net/sourceforge/$name/$name-$version.tar.bz2 \
+	http://dldl.sourceforge.net/sourceforge/$name/$name-data-1.5.tar.bz2 \
+	http://dldl.sourceforge.net/sourceforge/$name/$name-sound-tracks-1.0.tar.bz2 \
+	http://dldl.sourceforge.net/sourceforge/$name/$name-sound-effects-1.0.tar.bz2 \
+	http://dldl.sourceforge.net/sourceforge/$name/$name-hq-sound-tracks-1.0.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		    --disable-nls \
+		    --with-sdl \
+		    --with-sdl-mixer \
+		    --disable-html-doc \
+		    --without-ggi \
+		    --without-gii \
+		    --without-mikmod
+	make
+	make DESTDIR=$PKG install
+	cd ../$name-data-1.5
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+	cd ../$name-sound-tracks-1.0
+	./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+	cd ../$name-sound-effects-1.0
+	./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+	cd ../$name-hq-sound-tracks-1.0
+	./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+	rm -rf $PKG/usr/info
+}

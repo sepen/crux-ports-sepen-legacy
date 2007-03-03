@@ -1,0 +1,22 @@
+# $Id: $
+# Description:  Free library for graphics APIs / engines where such functionality is not natively available, or severly lacking.
+# URL:          http://www.cegui.org.uk/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   freeglut,xerces-c
+
+name=cegui
+version=0.4.1
+release=1
+source=(http://dl.sourceforge.net/sourceforge/crayzedsgui/${name}_mk2-source-${version}.tar.bz2)
+
+build() {
+	cd cegui_mk2
+	./configure --prefix=/usr \
+		    --disable-irrlicht-renderer \
+  		    --disable-samples \
+		    --without-ogre-renderer \
+		    --with-x
+	make
+	make DESTDIR=$PKG install
+}

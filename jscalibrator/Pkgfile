@@ -1,0 +1,20 @@
+# $Id: $
+# Description: 	jscalibrator provides a one time calibration for any program that uses libjsw.
+# URL: 		http://wolfpack.twu.net/libjsw/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:	x11,libjsw
+
+name=jscalibrator
+version=1.5.5
+release=1
+source=(http://wolfpack.twu.net/users/wolfpack/libjsw-$version.tar.bz2)
+
+build() {
+	cd libjsw-$version/$name
+	cp Makefile.Linux Makefile
+	make
+	make install PREFIX=$PKG/usr
+	rm -rf $PKG/usr/share/libjsw
+}
+

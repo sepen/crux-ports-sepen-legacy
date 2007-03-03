@@ -1,0 +1,19 @@
+# $Id: $
+# Description:  Action game similar to Super Pang
+# URL:          http://www.losersjuegos.com.ar/juegos/ceferino/ceferino.php
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   sdl_mixer,sdl_image
+
+name=ceferino
+version=0.97.5
+release=1
+source=(http://www.losersjuegos.com.ar/juegos/$name/descargas/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		    --disable-nls
+	make
+	make DESTDIR=$PKG install
+}

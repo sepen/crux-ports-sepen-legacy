@@ -1,0 +1,57 @@
+# $Id: $
+# Description:  Qt4 Free Edition
+# URL:          http://www.trolltech.com/products/qt
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:	x11, libmng
+
+name=qt4
+version=4.2.1
+release=2
+source=(ftp://ftp.trolltech.com/qt/source/qt-x11-opensource-src-$version.tar.gz)
+
+build() {
+        cd qt-x11-opensource-src-$version
+
+        local SQL
+        if [ "`pkginfo -i | grep mysql`" ];then
+                SQL="-qt-sql-mysql -I/usr/include/mysql -L/usr/lib/mysql"
+        fi
+
+        if [ -d /usr/include/nvidia ]; then
+                export CFLAGS="$CFLAGS -I/usr/include/nvidia"
+                export CXXFLAGS="$CXXFLAGS -I/usr/include/nvidia"
+        fi
+
+        sed -i "s|-O2|$CXXFLAGS|" mkspecs/linux-g++/qmake.conf
+        sed -i "s|-I. |$CXXFLAGS -I. |" qmake/Makefile.unix
+
+        echo "yes" | \
+        ./configure -prefix /usr/share/qt \
+                    -bindir /usr/bin \
+                    -headerdir /usr/include/qt \
+                    -libdir /usr/lib \
+                    -plugindir /usr/lib/qt \
+                    -platform linux-g++ \
+                    -release -shared -sm \
+                    -tablet -nis -verbose -qt-gif \
+                    -system-zlib -system-lib{png,jpeg,mng} \
+                    -no-{cups,fast,exceptions,nas-sound} \
+                    -x{cursor,inerama,kb,randr,render} \
+                    $SQL
+        make
+        make INSTALL_ROOT=$PKG install
+
+        rm -rf $PKG/usr/share/qt/{demos,doc,examples,phrasebooks,templates,translations}
+        rm -rf `find $PKG/usr/share/qt/mkspecs/* | grep -v linux-g++`
+        rm -rf `find $PKG/usr | grep 'debug$'`
+
+        ln -s /usr/bin        $PKG/usr/share/qt/bin
+        ln -s /usr/include/qt $PKG/usr/share/qt/include
+        ln -s /usr/lib        $PKG/usr/share/qt/lib
+        ln -s /usr/lib/qt     $PKG/usr/share/qt/plugins
+        ln -s linux-g++       $PKG/usr/share/qt/mkspecs/default
+
+        chmod -R u+w,g-sw  $PKG
+        chown -R root:root $PKG
+}

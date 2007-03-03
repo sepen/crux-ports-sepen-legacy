@@ -1,0 +1,30 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/rapidsvn
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/svncpp/
+-rw-r--r--	root/root	usr/include/svncpp/annotate_line.hpp
+-rw-r--r--	root/root	usr/include/svncpp/apr.hpp
+-rw-r--r--	root/root	usr/include/svncpp/check.hpp
+-rw-r--r--	root/root	usr/include/svncpp/client.hpp
+-rw-r--r--	root/root	usr/include/svncpp/context.hpp
+-rw-r--r--	root/root	usr/include/svncpp/context_listener.hpp
+-rw-r--r--	root/root	usr/include/svncpp/datetime.hpp
+-rw-r--r--	root/root	usr/include/svncpp/dirent.hpp
+-rw-r--r--	root/root	usr/include/svncpp/entry.hpp
+-rw-r--r--	root/root	usr/include/svncpp/exception.hpp
+-rw-r--r--	root/root	usr/include/svncpp/log_entry.hpp
+-rw-r--r--	root/root	usr/include/svncpp/path.hpp
+-rw-r--r--	root/root	usr/include/svncpp/pool.hpp
+-rw-r--r--	root/root	usr/include/svncpp/property.hpp
+-rw-r--r--	root/root	usr/include/svncpp/revision.hpp
+-rw-r--r--	root/root	usr/include/svncpp/status.hpp
+-rw-r--r--	root/root	usr/include/svncpp/targets.hpp
+-rw-r--r--	root/root	usr/include/svncpp/url.hpp
+-rw-r--r--	root/root	usr/include/svncpp/wc.hpp
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libsvncpp.a
+-rwxr-xr-x	root/root	usr/lib/libsvncpp.la
+lrwxrwxrwx	root/root	usr/lib/libsvncpp.so -> libsvncpp.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libsvncpp.so.0 -> libsvncpp.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/libsvncpp.so.0.0.0

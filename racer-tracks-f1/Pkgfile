@@ -1,0 +1,21 @@
+# $Id: $
+# Description: 	F1 extra tracks for Racer
+# URL: 		http://www.racer-xtreme.com/track.php?tc=7
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 	racer
+
+name=racer-tracks-f1
+version=1
+release=2
+source=(ftp://ftp2.racer-xtreme.com/racerxtr/trk/38/monaco.zip \
+	ftp://ftp2.racer-xtreme.com/racerxtr/trk/48/Laguna%20Seca.zip \
+	tolowercase.sh)
+
+build() {
+	install -d $PKG/usr/share/racer/data/tracks/{monaco/ai,lagunaseca/ai}
+	mv $SRC/Monaco/* $PKG/usr/share/racer/data/tracks/monaco
+	mv $SRC/Laguna\ Seca/* $PKG/usr/share/racer/data/tracks/lagunaseca
+	# tolowercase (create symlinks)
+	sh $SRC/tolowercase.sh $PKG/usr/share/racer/data/tracks
+}

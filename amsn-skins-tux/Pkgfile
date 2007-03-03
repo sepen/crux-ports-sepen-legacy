@@ -1,0 +1,17 @@
+# $Id: $
+# Description:  The original Tux Skin with a lot of tiny penguins. Updated for aMSN 0.95
+# URL:          http://amsn.sourceforge.net/skins.php
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   amsn
+
+name=amsn-skins-tux
+version=1.0
+release=2
+source=(http://dl.sourceforge.net/sourceforge/amsn/Tux-0.95.zip)
+
+build() {
+	install -d $PKG/usr/share/amsn/skins/tux
+	mv Tux/* $PKG/usr/share/amsn/skins/tux
+	rm $PKG/usr/share/amsn/skins/tux/README
+}

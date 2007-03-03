@@ -1,0 +1,30 @@
+# $Id: $
+# Description:  Gambas QT editor with syntax highlighting component
+# URL:          http://gambasdl.sourceforge.net/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   gambas-gb-qt
+
+name=gambas-gb-qt-editor
+version=1.9.28
+release=1
+source=(http://dl.sourceforge.net/sourceforge/gambas/gambas2-$version.tar.bz2)
+
+build() {
+	mkdir -p $PKG/usr/bin
+	ln -sf /usr/bin/gb*2 $PKG/usr/bin
+	cd gambas2-$version/gb.qt
+	./reconf
+	export QTDIR=/usr/lib/qt
+	./configure --prefix=/usr \
+                    --enable-qt \
+                    --enable-qteditor \
+                    --disable-qtext \
+                    --disable-qtopengl
+
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/bin
+        rm $PKG/usr/lib/gambas2/{gb.qt.gambas,gb.qt.component*,gb.qt.la,gb.qt.so*,gb.qt.ext*}
+        rm $PKG/usr/share/gambas2/info/{gb.qt.info,gb.qt.list,gb.qt.ext*}
+}

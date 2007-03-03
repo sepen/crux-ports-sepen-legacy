@@ -1,0 +1,16 @@
+# $Id: $
+# Description:  OpenOffice Icons
+# URL:          http://ooextras.sourceforge.net/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   
+
+name=openoffice-icons
+version=1
+release=1
+source=(http://ooextras.sourceforge.net/downloads/artwork/OpenOffice-icons.tar.gz)
+
+build() {
+	install -d $PKG/usr/share/icons/hicolor/32x32/apps
+	install -m 644 OpenOffice-icons/*.png $PKG/usr/share/icons/hicolor/32x32/apps
+}

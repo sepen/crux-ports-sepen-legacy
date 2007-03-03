@@ -1,0 +1,13 @@
+PRE-INSTALL:
+
+  - add the necessary users with the qmail-users.sh script or the
+    qmail-users-uid.sh script, if you don't have already users/groups with the given UID/GIDs.
+
+  - reemplace 'localhost.localdomain' in Pkgfile to your FQDN: 
+    $ sed -i 's/localhost.localdomain/full.qualified.domain.name/g' Pkgfile
+
+CONFIGURING:
+
+  - for use man: $ echo "MANPATH /var/qmail/man" >> /etc/man.config
+  
+  - remove the smtp line from /etc/inetd.conf 

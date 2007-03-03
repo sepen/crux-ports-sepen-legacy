@@ -1,0 +1,16 @@
+# $Id: $
+# Description:  DGuitar french translation
+# URL:          http://dguitardl.sourceforge.net/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   dguitar
+
+name=dguitar-fr
+version=0.5.8
+release=1
+source=(http://dl.sourceforge.net/sourceforge/dguitar/DGuitar-$version.zip)
+
+build() {
+	mkdir -p $PKG/usr/{bin,share/dguitar/lang}
+	install -m 644 DGuitar-$version/lang/lang_fr.properties $PKG/usr/share/dguitar/lang/
+}

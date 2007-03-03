@@ -1,0 +1,148 @@
+7c7
+<   count=3
+---
+>   count=2
+38,42c38,42
+<     controller=2
+<     axis=x
+<     min=-1000
+<     max=0
+<     linearity=0.400000
+---
+>     controller=0
+>     axis=
+>     min=0
+>     max=1000
+>     linearity=1.000000
+45,49c45,49
+<     negate=1
+<     make_analog=0
+<     sensitivity_rise=5.000000
+<     sensitivity_fall=50.000000
+<     key=
+---
+>     negate=0
+>     make_analog=1
+>     sensitivity_rise=5000.000000
+>     sensitivity_fall=10000.000000
+>     key=left
+53,54c53,54
+<     controller=2
+<     axis=x
+---
+>     controller=0
+>     axis=
+57c57
+<     linearity=0.400000
+---
+>     linearity=1.000000
+61,64c61,64
+<     make_analog=0
+<     sensitivity_rise=5.000000
+<     sensitivity_fall=50.000000
+<     key=
+---
+>     make_analog=1
+>     sensitivity_rise=5000.000000
+>     sensitivity_fall=10000.000000
+>     key=right
+68,71c68,71
+<     controller=2
+<     axis=y
+<     min=-1000
+<     max=0
+---
+>     controller=0
+>     axis=
+>     min=0
+>     max=1000
+74,75c74,75
+<     negate=1
+<     make_analog=0
+---
+>     negate=0
+>     make_analog=1
+77,79c77,79
+<     sensitivity_rise=5.000000
+<     sensitivity_fall=50.000000
+<     key=
+---
+>     sensitivity_rise=5000.000000
+>     sensitivity_fall=10000.000000
+>     key=up
+83,84c83,84
+<     controller=2
+<     axis=y
+---
+>     controller=0
+>     axis=
+90c90
+<     make_analog=0
+---
+>     make_analog=1
+92,94c92,94
+<     sensitivity_rise=5.000000
+<     sensitivity_fall=50.000000
+<     key=
+---
+>     sensitivity_rise=5000.000000
+>     sensitivity_fall=10000.000000
+>     key=down
+98,99c98,99
+<     controller=2
+<     button=0
+---
+>     controller=0
+>     button=-1
+109c109
+<     key=
+---
+>     key=a
+113,114c113,114
+<     controller=2
+<     button=2
+---
+>     controller=0
+>     button=-1
+124c124
+<     key=
+---
+>     key=z
+128,129c128,129
+<     controller=2
+<     button=2
+---
+>     controller=0
+>     button=-1
+135c135
+<     make_analog=0
+---
+>     make_analog=1
+137,139c137,139
+<     sensitivity_rise=5.000000
+<     sensitivity_fall=50.000000
+<     key=
+---
+>     sensitivity_rise=5000.000000
+>     sensitivity_fall=10000.000000
+>     key=q
+143c143
+<     controller=1
+---
+>     controller=0
+180c180
+<     make_analog=0
+---
+>     make_analog=1
+182,184c182,184
+<     sensitivity_rise=5.000000
+<     sensitivity_fall=50.000000
+<     key=
+---
+>     sensitivity_rise=5000.000000
+>     sensitivity_fall=10000.000000
+>     key=space
+409c409
+<     key=
+---
+>     key=x

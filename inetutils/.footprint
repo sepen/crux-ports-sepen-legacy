@@ -1,0 +1,10 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/rcp
+-rwxr-xr-x	root/root	usr/bin/rlogin
+-rwxr-xr-x	root/root	usr/bin/rsh
+drwxr-xr-x	root/root	usr/man/
+drwxr-xr-x	root/root	usr/man/man1/
+-rw-r--r--	root/root	usr/man/man1/rcp.gz
+-rw-r--r--	root/root	usr/man/man1/rlogin.gz
+-rw-r--r--	root/root	usr/man/man1/rsh.gz

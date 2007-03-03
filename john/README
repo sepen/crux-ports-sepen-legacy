@@ -1,0 +1,8 @@
+#
+# README 
+#
+
+pre-install:	To build John the Ripper edit the file 'systypes' and  
+		uncomment your system and type for best performance.
+
+# End of File

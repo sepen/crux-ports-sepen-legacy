@@ -1,0 +1,24 @@
+# $Id: $
+# Description:  Open source Customer Relationship Management (CRM) software for companies of all sizes.
+# URL:          http://www.sugarcrm.com/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   apache, php
+
+
+name=sugarcrm
+version=4.5.0
+release=1
+source=(http://dl.sugarforge.org/$name/SugarOS${version}Latest/SugarOS${version}/SugarOS-${version}f.zip)
+
+build() {
+	install -d $PKG/var/www/htdocs/$name
+	rm SugarOS-Full-4.5.0f/{INSTALLATION,PATCH,README}.txt
+	rm SugarOS-Full-4.5.0f/UPGRADE.TXT
+	rm SugarOS-Full-4.5.0f/XTemplate/README
+	rm SugarOS-Full-4.5.0f/include/HTTP_WebDAV_Server/README
+	rm SugarOS-Full-4.5.0f/include/Smarty/COPYING.lib
+	rm SugarOS-Full-4.5.0f/include/Smarty/README
+	mv SugarOS-Full-4.5.0f/* $PKG/var/www/htdocs/$name
+	chown -R nobody:nobody $PKG/var/www/htdocs/$name
+}

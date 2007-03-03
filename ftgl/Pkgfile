@@ -1,0 +1,24 @@
+# $Id: $
+# Description:  Font rendering library for OpenGL
+# URL:          http://homepages.paradise.net.nz/henryj/code/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   mesa3d,doxygen
+
+name=ftgl
+version=2.1.2
+release=1
+source=(http://opengl.geek.nz/ftgl/$name-$version.tar.gz)
+
+build() {
+	cd FTGL/unix
+        ./configure \
+        --prefix=$PKG/usr \
+        --with-x \
+        --disable-nls \
+        --disable-docs \
+        --disable-static
+        make
+        make install
+        rm -dr $PKG/usr/share
+}

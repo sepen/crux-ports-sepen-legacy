@@ -1,0 +1,40 @@
+# $Id: $
+# Description: 	IRC Services is a system of services to be used with Internet Relay Chat networks.
+# URL: 		http://www.ircservices.esper.net/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 	
+
+name=ircservices
+version=5.0.59
+release=1
+source=(http://www.ircservices.za.net/download/$name-$version.tar.gz)
+
+
+build() {	
+	cd $name-$version
+	./configure --prefix=/usr
+	sed -i 's|/usr/sbin|/usr/bin|g' Makefile.inc
+	sed -i 's|/usr/lib/services|/usr/lib/ircservices|g' Makefile.inc
+	make
+	install -d $PKG/usr/{bin,lib/$name}
+	install -m 755 {ircservices,tools/ircservices-chk} $PKG/usr/bin
+	install -m 755 tools/convert-db $PKG/usr/lib/$name
+	install -d $PKG/usr/lib/$name/modules/{chanserv,database,encryption,httpd,mail}
+	install -d $PKG/usr/lib/$name/modules/{memoserv,misc,nickserv,operserv,protocol,statserv}
+	install -m 755 modules/chanserv/*.so $PKG/usr/lib/$name/modules/chanserv
+	install -m 755 modules/database/*.so $PKG/usr/lib/$name/modules/database
+	install -m 755 modules/encryption/*.so $PKG/usr/lib/$name/modules/encryption
+	install -m 755 modules/httpd/*.so $PKG/usr/lib/$name/modules/httpd
+	install -m 755 modules/mail/*.so $PKG/usr/lib/$name/modules/mail
+	install -m 755 modules/memoserv/*.so $PKG/usr/lib/$name/modules/memoserv
+	install -m 755 modules/misc/*.so $PKG/usr/lib/$name/modules/misc
+	install -m 755 modules/nickserv/*.so $PKG/usr/lib/$name/modules/nickserv
+	install -m 755 modules/operserv/*.so $PKG/usr/lib/$name/modules/operserv
+	install -m 755 modules/protocol/*.so $PKG/usr/lib/$name/modules/protocol
+	install -m 755 modules/statserv/*.so $PKG/usr/lib/$name/modules/statserv
+	install -d $PKG/usr/lib/$name/languages
+	install -m 644 lang/en_us $PKG/usr/lib/$name/languages
+	install -m 644 data/*.conf $PKG/usr/lib/$name
+}
+

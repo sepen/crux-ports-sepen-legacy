@@ -1,0 +1,25 @@
+# $Id: $
+# Description:  John the Ripper is a fast password cracker, Its primary purpose is to detect weak Unix passwords.
+# URL:          http://www.openwall.com/john/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   
+
+name=john
+version=1.7.2
+release=1
+source=(http://www.openwall.com/$name/f/$name-$version.tar.bz2 \
+	$name.sh systypes)
+
+build() {
+	cd $name-$version/src
+	sed -i 's|/usr/libexec|/usr/share|g' params.h
+	types=`cat $SRC/systypes | grep -v '#' | wc -l`
+	if [ ${types} != 1 ]; then echo "** Error, systypes file must contain only one line uncommented"; exit -1; fi
+ 	system=`cat $SRC/systypes | awk '{print $1}' | grep -v '#'`
+	make clean ${system}
+	install -d $PKG/usr/bin
+	install -d $PKG/usr/share/$name
+	install -m 755 ../run/* $PKG/usr/share/$name
+	install -m 755 $SRC/$name.sh $PKG/usr/bin/$name
+}

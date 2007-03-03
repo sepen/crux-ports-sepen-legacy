@@ -1,0 +1,11 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/X11R6/
+drwxr-xr-x	root/root	usr/X11R6/man/
+drwxr-xr-x	root/root	usr/X11R6/man/man1/
+-rw-r--r--	root/root	usr/X11R6/man/man1/xmbmon.1x.gz
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/mbmon
+-rwxr-xr-x	root/root	usr/bin/xmbmon
+drwxr-xr-x	root/root	usr/man/
+drwxr-xr-x	root/root	usr/man/man1/
+-rw-r--r--	root/root	usr/man/man1/mbmon.1.gz

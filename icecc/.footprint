@@ -1,0 +1,9 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/icecc
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/icecc/
+drwxr-xr-x	root/root	usr/share/icecc/themes/
+drwxr-xr-x	root/root	usr/share/icecc/themes/Simple/
+-rw-r--r--	root/root	usr/share/icecc/themes/Simple/icecc_desk.png
+-rw-r--r--	root/root	usr/share/icecc/themes/Simple/theme

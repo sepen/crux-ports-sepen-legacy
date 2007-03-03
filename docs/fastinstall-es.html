@@ -1,0 +1,82 @@
+  <br>
+  <h2>FastInstall-es (sepen)</h2>
+  <i>Este manual trata de ser una guia rapida para la instalacion de crux.<br>
+  A diferencia del&nbsp;<a href="http://crux.nu/Main/Handbook2-2">handbook</a>&nbsp;de crux, aki se trata
+  de instalar sin tener que compilar el kernel durante la propia instalacion.<br>
+  De esta manera podemos instalar por ejemplo en un ordenador con recursos limitados en el que tardaria horas
+  compilar el primer kernel. Asi pues, tambien agiliza el proceso de instalacion en ordenadores mas potentes,
+  pues tampoco es problema arrancar un kernel precompilado y luego compilarnos nuestro propio kernel, pero ya usando
+  crux. En definitiva, nos ahorramos un tiempo que mas adelante podremos invertir para recompilarnos el kernel.</i><br>
+  <br>
+
+  <h3>Pasos:</h3>
+
+  <ul>
+      <li>Arrancar desde el cdrom de crux</li>
+      Puedes descargar las imagenes iso de la pagina de <a href="http://crux.nu/cgi-bin/trac.cgi/wiki/Download">crux</a><br>
+      <br>
+      
+      <li>Iniciar sesion como root</li>
+      (No requiere contraseña)<br>
+      <br>
+
+      <li>Particionar el disco duro</li>
+      Si es necesario debe reservar espacio para una particion destinada a crux (200MB-500MB, recomendable 1GB)<br>
+      Tambien deberemos crear una particion swap en el caso de que no la tengamos previmente.<br>
+      <b>$ fdisk -l /dev/hda</b> (lista las particiones del disco hda)<br>
+      <b>$ fdisk /dev/hda</b> (para iniciar la particion del disco hda)<br>
+      <br>
+      
+      <li>Formatear las particiones</li>
+      Sera necesario formatear la particion raiz (crux aconseja usar resiserfs)<br>
+      <b>$ mkreiserfs /dev/hda6</b> (formateamos con sistema reiserfs la particion hda6, la destinada a crux)<br>
+      Y por su puesto necesitaremos formatear una swap<br>
+      <b>$ mkswap /dev/hda7</b> (si ya tienes una no te hara falta)<br>
+      <br>
+      
+      <li>Montar el nuevo sistema de archivos</li>
+      Lo montaremos en /mnt ya que los scripts de crux usan este directorio por defecto<br>
+      <b>$ mount -t reiserfs /dev/hda6 /mnt</b><br>
+      <br>
+
+      <li>Ejecutar el script de instalacion</li>
+      <b>$ setup</b> (le diremos que utilice /mnt para la instalacion)<br>
+      <br>
+      
+      <li>Copiar el kernel del cdrom a su nuevo sistema</li>
+      <b>$ cp /boot/{System.map,vmlinuz} /mnt/boot/</b><br>
+      <br>
+
+      <li>Copiar los modulos del kernel al nuevo sistema</li>
+      <b>$ cp -dpR /lib/modules/`uname -r`/kernel /mnt/lib/modules/`uname -r`/</b><br>
+      <br>
+
+      <li>Nos metemos en la particion donde instalamos crux con un entorno chroot</li>
+      <b>$ mount --bind /dev /mnt/dev</b><br>
+      <b>$ mount --bind /tmp /mnt/tmp</b><br>
+      <b>$ mount -t proc proc /mnt/proc</b><br>
+      <b>$ mount -t sysfs none /mnt/sys</b><br>
+      <b>$ chroot /mnt /bin/bash</b><br>
+      <br>
+      
+      <li>Configuramos parte del nuevo sistema</li>
+      <b>$ vi /etc/fstab</b> (particiones)<br>
+      <b>$ vi /etc/rc.conf</b> (fuentes, teclado, zona horaria y servicios que arranca 'init')<br>
+      <b>$ vi /etc/rc.modules</b> (configuracion de los modulos que deseemos cargar en el inicio)<br>
+      <b>$ vi /etc/rc.d/net</b> (configuracion de la red)<br>
+      <b>$ vi /etc/resolv.conf</b> (configuracion de la red)<br>
+      <b>$ vi /etc/hosts</b> (configuracion de la red)<br>
+      <br>
+  
+      <li>Instalar el cargador de arranque</li>
+      En el caso que tengamos otro cargador de arranque en otra particion, le podemos indicar a este 
+      donde reside el kernel de crux. Si no es el caso, deberemos instalar el cargador de arranque.<br>
+      <b>$ vi /etc/lilo.conf</b> (editamos el archivo de configuracion de lilo)<br>
+      <b>$ lilo</b> (instalamos el cargador de arranque)<br>
+      <br>  
+  
+      <li>Finalizar</li>
+      <b>$ exit</b><br>
+      <b>$ reboot</b><br>
+      <br>
+  </ul>

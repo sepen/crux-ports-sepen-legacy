@@ -1,0 +1,29 @@
+# $Id: $
+# Description:  Ardour is a digital audio workstation
+# URL:          http://ardour.org/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   scons,gettext,libtool,raptor,liblrdf,jack,libsamplerate,libgnomecanvas,liblo,boost,ladspa
+
+
+name=ardour
+version=2.0svn
+release=1
+source=($name.sh)
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+	if cd ardour2 ; then
+		svn update
+
+	else
+		svn checkout http://subversion.ardour.org/svn/ardour2/trunk ardour2
+
+	fi
+	cp -r $PKGMK_SOURCE_DIR/ardour2 $SRC
+
+	cd $SRC/ardour2
+	scons PREFIX=/usr VST=no GTK=yes KSI=yes NLS=no
+	scons DESTDIR=$PKG install
+	install -m 755 $SRC/$name.sh $PKG/usr/bin/$name
+}

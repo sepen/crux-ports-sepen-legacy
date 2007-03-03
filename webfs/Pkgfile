@@ -1,0 +1,24 @@
+# $Id: $
+# Description:	Simple HTTP server for static content
+# URL: 		http://linux.bytesex.org/misc/webfs.html
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 	openssl 
+
+name=webfs
+version=1.21
+release=2
+source=(http://dl.bytesex.org/releases/$name/$name-$version.tar.gz \
+	webfsd.sh)
+
+build() {
+	cd $name-$version
+	make prefix=$PKG/usr \
+	     mandir=$PKG/usr/man install
+	install -d $PKG/var/$name/{htdocs,logs,cgi-bin,ssl}
+	touch $PKG/var/$name/logs/access.log
+	install -m 644 ssl/server.pem $PKG/var/$name/ssl
+	chown -R webfs.webfs $PKG/var/$name
+	install -d $PKG/etc/rc.d/
+	install -m 755 $SRC/webfsd.sh $PKG/etc/rc.d/webfsd
+}

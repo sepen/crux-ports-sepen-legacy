@@ -1,0 +1,5 @@
+if you are using 'prt-get depinst gambas-ide' and experience some problem running it like:
+
+ERROR: #2: Cannot load class 'Stock': Unable to load class file
+
+you must remake gambas-gb-qt component and install it

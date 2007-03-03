@@ -1,0 +1,26 @@
+# $Id: $
+# Description: 	Nice amd Versatile text-based filemanager using the ncurses library.
+# URL: 		http://cade.datamax.bg/vfu/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:	ncurses
+
+name=vfu
+version=4.06
+release=1
+source=(http://cade.datamax.bg/vfu/$name-$version.tar.gz)
+
+build() {
+    cd $name-20050815
+    export CCDEF="-D_FILE_OFFSET_BITS=64"
+    make
+    ./build.docs
+    mkdir -p $PKG/usr/bin
+    mkdir -p $PKG/usr/man/man1
+    mkdir -p $PKG/usr/etc
+    cp $name/$name rx/rx_* $PKG/usr/bin
+    cp $name.1 $PKG/usr/man/man1
+    cp ../../../$name.conf $PKG/usr/etc       
+    chmod 755 $PKG/usr/bin/*
+}
+

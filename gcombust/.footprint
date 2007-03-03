@@ -1,0 +1,10 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/gcombust
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/gnome/
+drwxr-xr-x	root/root	usr/share/gnome/apps/
+drwxr-xr-x	root/root	usr/share/gnome/apps/Applications/
+-rw-r--r--	root/root	usr/share/gnome/apps/Applications/gcombust.desktop
+drwxr-xr-x	root/root	usr/share/pixmaps/
+-rw-r--r--	root/root	usr/share/pixmaps/gcombust.xpm

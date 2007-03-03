@@ -1,0 +1,14 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/pymeet
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/pymeet/
+-rw-r--r--	root/root	usr/share/pymeet/chat.py
+-rw-r--r--	root/root	usr/share/pymeet/debug.py
+-rw-r--r--	root/root	usr/share/pymeet/jabber.py
+-rw-r--r--	root/root	usr/share/pymeet/login.py
+-rwxr-xr-x	root/root	usr/share/pymeet/pymeet.py
+-rw-r--r--	root/root	usr/share/pymeet/roster.py
+lrwxrwxrwx	root/root	usr/share/pymeet/v4l -> /usr/lib/pyv4l
+-rwxr-xr-x	root/root	usr/share/pymeet/video.py
+-rw-r--r--	root/root	usr/share/pymeet/xmlstream.py

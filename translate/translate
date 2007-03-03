@@ -1,0 +1,99 @@
+#!/bin/bash
+#
+# Name:         translate
+# Description:  Script that uses the service Web of google to translate
+# Version:      1.2
+# Author:       Jose V Beneyto, <joberui at ei dot upv dot es>
+# License:      GNU/GPL (http://www.gnu.org/copyleft/gpl.html)
+# Depends on:   netcat,sed,grep,tr
+
+# showhelp
+showhelp () {
+  echo "translate 1.1"
+  echo "usage: translate [options] text"
+  echo "options:"
+        echo "  --en-de  English to German"
+  echo "  --en-es  English to Spanish"
+  echo "  --en-fr  English to French"
+  echo "  --en-it  English to Italian"
+  echo "  --en-pt  English to Portuguese"
+  echo "  --de-en  German to English"
+  echo "  --de-fr  German to French"
+  echo "  --es-en  Spanish to English"
+  echo "  --fr-en  French to English"
+  echo "  --fr-de  French to German"
+  echo "  --it-en  Italian to English"
+  echo "  --pt-en  Portuguese to English"
+  echo ""
+  echo "also you can use *2* style abreviations"
+  echo "example usage: en2es text "
+  exit 1
+}
+# checkoption: check if option exits
+checkoption() {
+  ch_option=$1
+  ok="no"
+  for op in --en-de --en-es --en-fr --en-it --en-pt --de-en --de-fr --es-en --fr-en --fr-de --it-en --pt-en
+  do
+        [ "$op" == "$ch_option" ] && ok="yes"
+  done
+  [ "$ok" == "no" ] && showhelp
+}
+# gethtml: get html result page
+gethtml() {
+  g_option=$1
+  shift 1
+  g_text=$@
+  t_text=""
+  for g_word in $g_text
+  do
+        if [ "$t_text" == "" ]
+        then
+                t_text="$g_word"
+        else
+                t_text="$t_text+$g_word"
+        fi
+  done
+  t_option=`echo "$g_option" | sed 's|--||' | sed 's|-|%7C|'`
+  echo -ne "GET /translate_t?text=${t_text}&langpair=${t_option}&hl=en&ie=ASCII HTTP/1.0\n\n" | \
+        netcat translate.google.com 80
+}
+# filter: filter html contents
+filter() {
+  # previus version
+  #sed "s|<textarea|\n\n|g" | sed "s|</textarea>|\n\n|g" | grep 'name=q' | tr '>' '\n' | grep -v 'name=q'
+  tr '<' '\n' | grep 'id=result_box' | tr '>' '\n' | grep -v 'id=result_box'
+}
+
+#
+# main
+#
+
+COLOR="\033[1;33m"
+NOCOLOR="\033[0m"
+
+[ $# -lt 1 ] && showhelp
+case $0 in
+  *translate)   # normal invocation
+        [ $# -lt 2 ] && showhelp
+        checkoption $1
+        echo -ne $COLOR
+        gethtml $@ | filter
+        echo -ne $NOCOLOR
+        ;;
+  *2*)          # symlink invocation
+        all=$0
+        pre=${all%%2*}
+        pre=${pre##*/}
+        post=${all##*2}
+        trans="--$pre-$post"
+        checkoption $trans
+        echo -ne $COLOR
+        gethtml $trans $@ | filter
+        echo -ne $NOCOLOR
+        ;;
+esac
+
+exit 0
+
+# Enf of File

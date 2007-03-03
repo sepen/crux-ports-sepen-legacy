@@ -1,0 +1,26 @@
+# Description: (FPS) computer game, and a standalone sequel to Return to Castle Wolfenstein.
+# URL: http://www.enemy-territory.com/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: x11
+
+name=enemy-territory
+version=2.60b
+release=1
+source=(http://www.sh.nu/download/games/et-linux-2.60.x86.run \
+	et.sh)
+
+build() {
+	chmod +x et-linux-2.60.x86.run
+	./et-linux-2.60.x86.run --noexec --target tmp
+	install -d $PKG/usr/share/$name/{etmain/video,pb/htm}
+	install -d $PKG/usr/{bin,share/pixmaps}
+	install -m 755 tmp/bin/Linux/x86/{et.x86,etded.x86} $PKG/usr/share/$name
+	install -m 644 tmp/etmain/*.{pk3,so,cfg,dat} $PKG/usr/share/$name/etmain
+	install -m 644 tmp/etmain/video/* $PKG/usr/share/$name/etmain/video
+	install -m 644 tmp/pb/*.{so,x86,db} $PKG/usr/share/$name/pb
+	install -m 644 tmp/pb/htm/* $PKG/usr/share/$name/pb/htm
+	install -m 644 tmp/ET.xpm $PKG/usr/share/pixmaps
+	install -m 755 et.sh $PKG/usr/bin/et
+	ln -sf /usr/bin/et $PKG/usr/bin/$name
+}

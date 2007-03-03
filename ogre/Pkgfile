@@ -1,0 +1,19 @@
+# $Id: $
+# Description:  Object-Oriented Graphics Rendering Engine
+# URL:          http://www.ogre3d.org/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   libsdl,freetype,devil,zziplib
+
+name=ogre
+version=1.2
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-linux_osx-v1-2-1.tar.bz2)
+
+build() {
+  	cd ogrenew
+	./configure --prefix=/usr \
+		    --disable-cg
+	make
+	make DESTDIR=$PKG install
+}

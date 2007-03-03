@@ -1,0 +1,22 @@
+# $Id: $
+# Description: 	Dockapp for playing 4-in-a-row  against a machine or friend via a tcp-ip interface, with many pluggins.
+# URL: 		http://asforza4dl.sourceforge.net/
+# Maintainer:	Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:  	Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 	x11,fpc,guile 
+
+
+name=asforza4
+version=2.10
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
+
+build() {
+    cd $name-$version/$name
+    echo "INSTDIR   = $PKG/usr/share" > Installation-dirs
+    echo "ASBINDIR  = $PKG/usr/bin" >> Installation-dirs
+    echo "ASLIBDIR  = $PKG/usr/lib/asforza4" >> Installation-dirs
+    make
+    make install
+}
+

@@ -1,0 +1,22 @@
+# $Id: $
+# Description:  window manager for the X11 Window System. JWM is written in C and uses only Xlib at a minimum.
+# URL:          http://joewing.net/programs/jwm/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   libpng,libxft,libxpm
+
+name=jwm
+version=1.8rc3
+release=1
+source=(http://24.254.249.181:443/$name/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		    --disable-confirm \
+		    --disable-fribidi \
+		    --with-x
+	make
+	sed -i "s|/usr/bin|$PKG/usr/bin|g" src/Makefile
+	make SYSCONF=$PKG/usr/etc MANDIR=$PKG/usr/man install
+}

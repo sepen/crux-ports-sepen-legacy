@@ -1,0 +1,20 @@
+# $Id: $
+# Description:  Editor for manipulating PDF documents. GUI version + commandline interface.
+# URL:          http://pdfedit.petricek.net/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   qt3
+
+name=pdfedit
+version=0.2.3
+release=1
+source=(http://dl.sourceforge.net/sourceforge/pdfedit/pdfedit-0.2.3.tar.bz2)
+
+build() {
+	cd $name-$version
+	export QTDIR=/usr/share/qt
+	./configure --prefix=/usr
+	make
+	export INSTALL_ROOT=$PKG
+	make install
+}

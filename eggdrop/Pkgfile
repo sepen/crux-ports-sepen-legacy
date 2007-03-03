@@ -1,0 +1,23 @@
+# $Id: $
+# Description:  Eggdrop is the world's most popular Open Source IRC bot
+# URL:          http://www.eggheads.org/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   tcl
+
+name=eggdrop
+version=1.6.18
+release=1
+source=(ftp://ftp.eggheads.org/pub/${name}/source/1.6/${name}${version}.tar.bz2)
+
+build() {
+	cd ${name}${version}
+	./configure --prefix=/usr \
+		    --enable-strip
+	make config
+	make
+	make install DEST=$PKG/usr/share/$name
+	rm $PKG/usr/share/$name/README
+	rm -rf $PKG/usr/share/$name/{doc,language}
+	sed -i 's|^die "|^#die "|g' $PKG/usr/share/$name/$name.conf
+}

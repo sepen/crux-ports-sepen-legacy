@@ -1,0 +1,20 @@
+# $Id: $
+# Description:  e-mail client for GNOME, highly configurable and incorporating all the features you would expect in a robust mail client.
+# URL:          http://balsa.gnome.org/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   gtk,aspell,libpcre,libesmtp
+name=balsa
+version=2.3.13
+release=1
+source=(http://balsa.gnome.org/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr
+	make CPPFLAGS="$CPPFLAGS -I/usr/include/libesmtp"
+	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/share/locale
+}

@@ -1,0 +1,3 @@
+PRE-INSTALL:
+
+  	- add the necessary user with the webfs-user.sh script

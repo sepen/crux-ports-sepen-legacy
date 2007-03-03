@@ -1,0 +1,19 @@
+# $Id: $
+# Description: 	Simple image viewer similar to popular image viewer ACDSee
+# URL: 		http://gtksee.berlios.de/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 	gtk
+
+name=gtksee
+version=0.6.0b
+release=1
+source=(http://download.berlios.de/$name/$name-$version-$release.tar.gz)
+
+build() {
+    cd $name-$version-$release
+    ./configure --prefix=/usr --disable-nls
+    make
+    make DESTDIR=$PKG install
+}
+

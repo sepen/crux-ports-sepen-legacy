@@ -1,0 +1,19 @@
+# $Id: $
+# Description: 	fcrackzip is a zip password cracker, similar to fzc, zipcrack and others.
+# URL: 		http://www.goof.com/pcg/marc/fcrackzip.html
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:
+
+name=fcrackzip
+version=0.3
+release=1
+source=(http://www.goof.com/pcg/marc/data/$name-$version.tar.gz)
+
+build() {
+    cd $name-$version
+    ./configure --prefix=/usr --enable-everything --disable-debug --disable-nls
+    make
+    make DESTDIR=$PKG install
+}
+

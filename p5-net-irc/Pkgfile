@@ -1,0 +1,20 @@
+# $Id: $
+# Description: 	Perl interface to the Internet Relay Chat protocol 
+# URL: 		http://search.cpan.org/~jmuhlich/Net-IRC-0.75/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   p5-net
+
+name=p5-net-irc
+version=0.75
+release=2
+source=(http://search.cpan.org/CPAN/authors/id/J/JM/JMUHLICH/Net-IRC-$version.tar.gz)
+
+build () {
+	cd Net-IRC-$version
+	perl Makefile.PL
+	make OPTIMIZE="${CFLAGS}"
+	make DESTDIR=$PKG install
+	find ${PKG} -name perllocal.pod -exec rm {} \;
+	rm $PKG/usr/lib/perl5/site_perl/5.8.8/linux/auto/Net/IRC/.packlist
+}

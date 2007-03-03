@@ -1,0 +1,5 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/log4py/
+-rw-r--r--	root/root	usr/lib/log4py/log4py.py
+-rw-r--r--	root/root	usr/lib/log4py/log4py.pyc

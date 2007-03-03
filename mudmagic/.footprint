@@ -1,0 +1,74 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/mudmagic
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/mudmagic/
+lrwxrwxrwx	root/root	usr/lib/mudmagic/libautomapper -> libautomapper.0.0.0
+lrwxrwxrwx	root/root	usr/lib/mudmagic/libautomapper.0 -> libautomapper.0.0.0
+-rwxr-xr-x	root/root	usr/lib/mudmagic/libautomapper.0.0.0
+-rw-r--r--	root/root	usr/lib/mudmagic/libautomapper.a
+-rwxr-xr-x	root/root	usr/lib/mudmagic/libautomapper.la
+lrwxrwxrwx	root/root	usr/lib/mudmagic/libdatabase -> libdatabase.0.0.0
+lrwxrwxrwx	root/root	usr/lib/mudmagic/libdatabase.0 -> libdatabase.0.0.0
+-rwxr-xr-x	root/root	usr/lib/mudmagic/libdatabase.0.0.0
+-rw-r--r--	root/root	usr/lib/mudmagic/libdatabase.a
+-rwxr-xr-x	root/root	usr/lib/mudmagic/libdatabase.la
+lrwxrwxrwx	root/root	usr/lib/mudmagic/libmudmagic -> libmudmagic.0.0.0
+lrwxrwxrwx	root/root	usr/lib/mudmagic/libmudmagic.0 -> libmudmagic.0.0.0
+-rwxr-xr-x	root/root	usr/lib/mudmagic/libmudmagic.0.0.0
+-rw-r--r--	root/root	usr/lib/mudmagic/libmudmagic.a
+-rwxr-xr-x	root/root	usr/lib/mudmagic/libmudmagic.la
+lrwxrwxrwx	root/root	usr/lib/mudmagic/libmxp -> libmxp.0.0.0
+lrwxrwxrwx	root/root	usr/lib/mudmagic/libmxp.0 -> libmxp.0.0.0
+-rwxr-xr-x	root/root	usr/lib/mudmagic/libmxp.0.0.0
+-rw-r--r--	root/root	usr/lib/mudmagic/libmxp.a
+-rwxr-xr-x	root/root	usr/lib/mudmagic/libmxp.la
+lrwxrwxrwx	root/root	usr/lib/mudmagic/libnotes -> libnotes.0.0.0
+lrwxrwxrwx	root/root	usr/lib/mudmagic/libnotes.0 -> libnotes.0.0.0
+-rwxr-xr-x	root/root	usr/lib/mudmagic/libnotes.0.0.0
+-rw-r--r--	root/root	usr/lib/mudmagic/libnotes.a
+-rwxr-xr-x	root/root	usr/lib/mudmagic/libnotes.la
+lrwxrwxrwx	root/root	usr/lib/mudmagic/libpcre -> libpcre.0.0.0
+lrwxrwxrwx	root/root	usr/lib/mudmagic/libpcre.0 -> libpcre.0.0.0
+-rwxr-xr-x	root/root	usr/lib/mudmagic/libpcre.0.0.0
+-rw-r--r--	root/root	usr/lib/mudmagic/libpcre.a
+-rwxr-xr-x	root/root	usr/lib/mudmagic/libpcre.la
+lrwxrwxrwx	root/root	usr/lib/mudmagic/libsqlite -> libsqlite.0.0.0
+lrwxrwxrwx	root/root	usr/lib/mudmagic/libsqlite.0 -> libsqlite.0.0.0
+-rwxr-xr-x	root/root	usr/lib/mudmagic/libsqlite.0.0.0
+-rw-r--r--	root/root	usr/lib/mudmagic/libsqlite.a
+-rwxr-xr-x	root/root	usr/lib/mudmagic/libsqlite.la
+lrwxrwxrwx	root/root	usr/lib/mudmagic/libzlib -> libzlib.0.0.0
+lrwxrwxrwx	root/root	usr/lib/mudmagic/libzlib.0 -> libzlib.0.0.0
+-rwxr-xr-x	root/root	usr/lib/mudmagic/libzlib.0.0.0
+-rw-r--r--	root/root	usr/lib/mudmagic/libzlib.a
+-rwxr-xr-x	root/root	usr/lib/mudmagic/libzlib.la
+drwxr-xr-x	root/root	usr/man/
+drwxr-xr-x	root/root	usr/man/man1/
+-rw-r--r--	root/root	usr/man/man1/mudmagic.1.gz
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/applications/
+-rw-r--r--	root/root	usr/share/applications/mudmagic.desktop
+drwxr-xr-x	root/root	usr/share/mudmagic/
+drwxr-xr-x	root/root	usr/share/mudmagic/doc/
+-rw-r--r--	root/root	usr/share/mudmagic/doc/documentation.txt
+-rw-r--r--	root/root	usr/share/mudmagic/doc/plugins.txt
+-rw-r--r--	root/root	usr/share/mudmagic/doc/scripts.txt
+drwxr-xr-x	root/root	usr/share/mudmagic/interface/
+-rw-r--r--	root/root	usr/share/mudmagic/interface/apple-red.png
+-rw-r--r--	root/root	usr/share/mudmagic/interface/background.xpm
+-rw-r--r--	root/root	usr/share/mudmagic/interface/gnome-foot.png
+-rw-r--r--	root/root	usr/share/mudmagic/interface/gnome-gmush.png
+-rw-r--r--	root/root	usr/share/mudmagic/interface/gnome-gsame.png
+-rw-r--r--	root/root	usr/share/mudmagic/interface/gnu-keys.png
+-rw-r--r--	root/root	usr/share/mudmagic/interface/interface.glade
+-rw-r--r--	root/root	usr/share/mudmagic/interface/mudmagic.png
+-rw-r--r--	root/root	usr/share/mudmagic/interface/mudmagic.xpm
+-rw-r--r--	root/root	usr/share/mudmagic/interface/mudmagic2.xpm
+-rw-r--r--	root/root	usr/share/mudmagic/interface/nymph.png
+-rw-r--r--	root/root	usr/share/mudmagic/interface/s_wizard.xpm
+-rw-r--r--	root/root	usr/share/mudmagic/interface/version.png
+-rw-r--r--	root/root	usr/share/mudmagic/interface/wizard.xpm
+-rw-r--r--	root/root	usr/share/mudmagic/interface/xs_wizard.xpm
+drwxr-xr-x	root/root	usr/share/pixmaps/
+-rw-r--r--	root/root	usr/share/pixmaps/mudmagic.png

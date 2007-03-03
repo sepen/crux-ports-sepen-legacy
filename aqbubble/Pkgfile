@@ -1,0 +1,20 @@
+# $Id: $
+# Description:  A game similar to bubble bubble
+# URL:          http://www.losersjuegos.com.ar/juegos/volleyball/volleyball.php
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   sdl_mixer,sdl_image
+
+name=aqbubble
+version=0.3
+release=1
+source=(http://www.losersjuegos.com.ar/juegos/$name/descargas/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		    --disable-nls
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/share/doc/
+}

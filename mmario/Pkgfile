@@ -1,0 +1,25 @@
+# $Id: $
+# Description:  Super Mario Bros I clone
+# URL:          http://mmario.sourceforge.net/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   sdl_image,sdl_mixer,sdl_ttf
+
+name=mmario
+version=1.5
+release=1
+source=(http://ovh.dl.sourceforge.net/sourceforge/$name/MegaMario_v1.5_w32_linux.zip)
+
+build() {
+	chmod 755 data/gfx/tiles/pipes/left
+	make PREFIX=/usr TARGET=mmario
+        install -d $PKG/usr/bin
+        install -d $PKG/usr/share/$name
+        install -m 755 $name $PKG/usr/bin
+        cp -r data/* $PKG/usr/share/$name
+        chmod 755 $PKG/usr/share/$name/gfx/tiles/pipes/left
+	png=`find $PKG/usr/share/$name -name "*.PNG"`
+	jpg=`find $PKG/usr/share/$name -name "*.JPG"`
+        for i in $png; do mv $i `echo $i | sed s/PNG/png/g`; done
+        for i in $jpg; do mv $i `echo $i | sed s/JPG/jpg/g`; done
+}

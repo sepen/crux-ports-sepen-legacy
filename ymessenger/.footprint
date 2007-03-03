@@ -1,0 +1,9 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/ymessenger
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/ymessenger/
+drwxr-xr-x	root/root	usr/share/ymessenger/bin/
+drwxr-xr-x	root/root	usr/share/ymessenger/lib/
+-rwxr-xr-x	root/root	usr/share/ymessenger/libgtkhtml.so.6
+-rwxr-xr-x	root/root	usr/share/ymessenger/ymessenger.bin

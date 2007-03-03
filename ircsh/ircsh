@@ -1,0 +1,113 @@
+#!/bin/bash
+#
+# Name:         ircsh
+# Description:  Shell script irc client
+# Version:      1.2
+# URL:          http://mikeux.dyndns.org/scripts/
+# Author:       Jose V Beneyto, <joberui at ei dot upv dot es>
+# License:      GNU/GPL (http://www.gnu.org/copyleft/gpl.html)
+# Depends on:   netcat
+
+# checkdepends: check dependecies
+checkdepends() {
+	dep=netcat
+	which $dep >& /dev/null
+	if [ $? == 1 ]
+	then
+		echo "$dep dependencie missing, please install it!"
+		exit 1
+	fi
+}
+	
+NETCAT="nc"
+
+tty2server() {
+	echo "USER $NICK 0 * :$NICK"
+	echo "NICK $NICK"
+	echo "JOIN #$CHANNEL"
+	while [ 1 ] 
+	do
+		read iniline finline
+		case "$iniline" in
+			/*)     # TO-DO
+				# es comando enviado traducido al servidor
+				# -> se debe quitar la / y traducir segun RFC
+				# ej: /msg nick hola! => PRIVMSG nick :hola!
+				comando=${iniline#/*}
+				echo $comando
+				;;
+			
+			@*)	# es comando enviado sin traducir al servidor
+				# -> se debe quitar la @ y enviar como esta
+				# ej: //msg nick hola! => msg nick hola!
+				comando=${iniline#@*}
+				echo $comando
+				;;
+				
+			*)      # no es comando (texto al canal)
+				echo "PRIVMSG #$CHANNEL :$iniline $finline"
+				;;
+	esac
+done
+}
+
+
+server2tty() {
+while read x y z t 
+do
+	case "$x" in
+		NOTICE)
+			echo -ne "\033[1;30m$t\033[0m\n"
+			;;
+		*)	
+			case "$y" in 
+				0*) 	
+					echo -ne "\033[1;30m$t\033[0m\n"
+					;;
+				2*)
+					echo -ne "\033[0;37m$t\033[0m\n"
+					;;
+				3*)
+					echo -ne "\033[1;30m$t\033[0m\n"
+					;;									
+				*)
+					remote_nick=${x#:}
+					remote_nick=${remote_nick%%!*}
+					text=${t#:}
+					echo -ne "\033[1;31m<\033[1;34m$remote_nick\033[0;31m> \033[0;37m$text\033[0m\n"
+					;;
+			esac
+			;;
+	esac
+done
+}
+
+
+# Main
+
+if [ $# -lt 3 ];
+then
+        SERVER="mikeux.dyndns.org"
+	PORT=6667
+	CHANNEL="tce"
+	NICK="spn|sh"
+else
+	SERVER=$1
+	PORT=6667
+	CHANNEL=$2
+	NICK=$3
+fi
+
+echo -ne "\n\033[0;34m"
+echo -ne "+--------------------------------------------+\n"
+echo -ne "|[ \033[1;34mircsh\033[0;34m ]| http://mikeux.dyndns.org/ircsh   |\n"
+echo -ne "+--------------------------------------------+\n"
+echo -ne "\n\033[0m"								
+
+echo -ne "\033[1;33m"
+
+tty2server | $NETCAT $SERVER $PORT | server2tty
+
+echo -ne "\033[0m"
+
+exit 0

@@ -1,0 +1,17 @@
+# $Id: $
+# Description: 	Text mode irc client written in shell scripting
+# URL: 		http://mikeux.dyndns.org/ircsh
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 	netcat
+
+
+name=ircsh
+version=1.0
+release=2
+source=(http://mikeux.dyndns.org/scripts/$name)
+
+build() {
+    install -d $PKG/usr/bin
+    install -m 755 $name $PKG/usr/bin
+}

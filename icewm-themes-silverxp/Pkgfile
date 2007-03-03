@@ -1,0 +1,28 @@
+# $Id: $
+# Description:  A theme for IceWM window manager inspired by the Silver theme of WindowsXP.
+# URL:          http://sourceforge.net/projects/icewmsilverxp/
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:   
+
+name=icewm-themes-silverxp
+version=1.2.17-single
+release=1
+source=(http://dl.sourceforge.net/sourceforge/icewmsilverxp/SilverXP-${version}-${release}.tar.bz2 \
+	http://linux.cergynux.net/tux_vs_ms_butterfly_big.jpg)
+
+build() {
+	install -d $PKG/usr/share/icewm/themes/silverxp
+	mv icewm/themes/SilverXP-1.2.17-single-1/* $PKG/usr/share/icewm/themes/silverxp
+	install -m 644 $SRC/tux_vs_ms_butterfly_big.jpg $PKG/usr/share/icewm/themes/silverxp/wallpaper.jpg
+	rm -rf $PKG/usr/share/icewm/themes/silverxp/{Linux,FreeBSD}
+	rm -f $PKG/usr/share/icewm/themes/silverxp/README*
+	chmod 644 $PKG/usr/share/icewm/themes/silverxp/*.*
+	chmod 755 $PKG/usr/share/icewm/themes/silverxp/{icons,taskbar}
+	chmod 644 $PKG/usr/share/icewm/themes/silverxp/icons/*.*
+	chmod 644 $PKG/usr/share/icewm/themes/silverxp/taskbar/*.*
+	echo "DesktopBackgroundImage=\"wallpaper.jpg\"" >> $PKG/usr/share/icewm/themes/silverxp/default.theme
+	echo "DesktopBackgroundCenter=1" >> $PKG/usr/share/icewm/themes/silverxp/default.theme
+	echo "SupportSemitransparency=1" >> $PKG/usr/share/icewm/themes/silverxp/default.theme
+	echo "DesktopBackgroundScaled=1" >> $PKG/usr/share/icewm/themes/silverxp/default.theme
+}

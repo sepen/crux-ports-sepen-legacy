@@ -1,0 +1,30 @@
+# $Id: $
+# Description:  Cube is an open source multiplayer and singleplayer first person 3d shooter game
+# URL: 		http://www.cubeengine.com
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 	mesa3d,sdl_mixer,sdl_image
+
+name=cube
+version=2
+release=2
+source=(http://dl.sourceforge.net/sourceforge/sauerbraten/sauerbraten_2006_12_04_gui_edition_linux.tar.gz \
+	cube.sh \
+	cubeded.sh)
+
+build() {
+	# remove all CVS directories
+	for i in `find test -print | grep '/CVS$'`; do echo "rm -rf $i"; done
+	cd sauerbraten/src
+	make
+	install -d $PKG/usr/{bin,share/$name}
+	mv ../data $PKG/usr/share/$name
+	mv ../packages $PKG/usr/share/$name
+	install -m 755 sauer_client $PKG/usr/share/$name/cube-client.bin
+        install -m 755 sauer_server $PKG/usr/share/$name/cube-server.bin
+	strip $PKG/usr/share/$name/cube-client.bin
+        strip $PKG/usr/share/$name/cube-server.bin
+	install -m 755 $SRC/cube.sh $PKG/usr/bin/cube
+	install -m 755 $SRC/cubeded.sh $PKG/usr/bin/cubeded
+}
+
