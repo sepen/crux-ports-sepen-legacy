@@ -1,6 +1,7 @@
 drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/ati/
 -r-xr-xr-x	root/root	etc/ati/authatieventsd.sh
+-rw-r--r--	root/root	etc/ati/control
 -r--r--r--	root/root	etc/ati/fglrxprofiles.csv
 -r--r--r--	root/root	etc/ati/fglrxrc
 drwxr-xr-x	root/root	etc/rc.d/
@@ -38,7 +39,6 @@ drwxr-xr-x	root/root	usr/X11R6/lib/
 -rwxr-xr-x	root/root	usr/X11R6/lib/libfglrx_tvout.so.1.0
 drwxr-xr-x	root/root	usr/X11R6/lib/modules/
 drwxr-xr-x	root/root	usr/X11R6/lib/modules/dri/
--rwxr-xr-x	root/root	usr/X11R6/lib/modules/dri/atiogl_a_dri.so
 -rwxr-xr-x	root/root	usr/X11R6/lib/modules/dri/fglrx_dri.so
 drwxr-xr-x	root/root	usr/X11R6/lib/modules/drivers/
 -rwxr-xr-x	root/root	usr/X11R6/lib/modules/drivers/fglrx_drv.so
