@@ -1,5 +1,5 @@
 
-README for ati 8.33.6
+README for ati 8.34.8
 
 
 
@@ -22,15 +22,15 @@ Also to configure your X server you can execute ati configurator like this:
 
 POST-REMOVE
 
-Use opt/gl-select from ports to revert to the x11 gl/glx libraries
+Use opt/gl-select from ports to revert to the xorg gl/glx libraries
 and extensions like so:
 
-        # gl-select x11
+        # gl-select xorg 
 
 
 When UPGRADING/DOWNGRADING the ati-driver port (where the version changes),
-use gl-select to revert to x11 and then re-select ati in order to
+use gl-select to revert to xorg and then re-select ati in order to
 refresh the libGLcore and libGL symlinks, like so:
 
         # prt-get update ati
-        # gl-select x11; gl-select ati
+        # gl-select xorg; gl-select ati
