@@ -1,4 +1,4 @@
-# Description: ATI Proprietary Linux Display Driver
+# Description: ATI Proprietary Linux Display Driver for Xorg7
 # URL: http://www.ati.com/support/drivers/linux/radeon-linux.html
 # Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
 # Packager: Jose V Beneyto, joberui at ei dot upv dot es
@@ -6,35 +6,53 @@
 
 name=ati
 version=8.34.8
-release=1
+release=2
 source=(http://www2.ati.com/drivers/linux/$name-driver-installer-$version-x86.x86_64.run \
-	kernel-2.6.20.patch \	
-	atieventsd.sh)
+        kernel-2.6.20.patch \
+        atieventsd.sh)
 
 build() {
-	march=x86
-	xversion=x690
-        sh $name-driver-installer-$version-x86.x86_64.run --extract $SRC/tmp
-	
-	cd $SRC/tmp
-	patch -Np0 -i $SRC/kernel-2.6.20.patch
-	
-	cd $SRC/tmp/common/lib/modules/fglrx/build_mod
-	ln -s $SRC/tmp/arch/$march/lib/modules/fglrx/build_mod/libfglrx_ip.a.GCC* .
-	
-	sh make.sh
+        march=x86
+        xversion=x710
+        chmod +x $name-driver-installer-$version-x86.x86_64.run 
+	./$name-driver-installer-$version-x86.x86_64.run --extract $SRC/tmp
+
+	# patch
+        cd $SRC/tmp
+        patch -Np0 -i $SRC/kernel-2.6.20.patch
+
+	# make
+        cd $SRC/tmp/common/lib/modules/fglrx/build_mod
+        ln -s $SRC/tmp/arch/$march/lib/modules/fglrx/build_mod/libfglrx_ip.a.GCC* .
+	chmod +x make.sh
+        ./make.sh
+
+	# install kernel module
         install -d $PKG/lib/modules/`uname -r`/kernel/drivers/char/drm
-	install -m 644 $SRC/tmp/common/lib/modules/fglrx/build_mod/2.6.x/fglrx.ko \
+        install -m 644 $SRC/tmp/common/lib/modules/fglrx/build_mod/2.6.x/fglrx.ko \
 		$PKG/lib/modules/`uname -r`/kernel/drivers/char/drm
-	install -d $PKG/usr/{X11R6,include,share}
-	cp -r $SRC/tmp/arch/$march/usr $PKG
-	cp -r $SRC/tmp/common/usr/{X11R6,include,share/man} $PKG/usr
-	cp -r $SRC/tmp/$xversion/usr/X11R6 $PKG/usr
-	install -d $PKG/etc/{ati,rc.d}
-	cp -r $SRC/tmp/common/etc/ati/* $PKG/etc/ati
+
+	# install xorg
+	install -d $PKG/usr/{bin,sbin}
+	install -m 0755 $SRC/tmp/arch/$march/usr/X11R6/bin/* $PKG/usr/bin
+	install -m 0755 $SRC/tmp/arch/$march/usr/sbin/* $PKG/usr/sbin
+	install -d $PKG/usr/lib/xorg
+	mv $SRC/tmp/arch/$march/usr/X11R6/lib/modules $PKG/usr/lib/xorg/
+	cp -a $SRC/tmp/arch/$march/usr/X11R6/lib/* $PKG/usr/lib
+	install -d $PKG/etc
+	mv $SRC/tmp/common/etc/ati $PKG/etc/
 	rm -f $PKG/etc/ati/logo*
-	install -m 755 $SRC/atieventsd.sh $PKG/etc/rc.d/atieventsd
-	
-	# required for use opt/gl-select
-	mv $PKG/usr/X11R6/lib/libGL.so.1.2 $PKG/usr/X11R6/lib/libGL_so_1_2_ati
+	mv $SRC/tmp/common/usr/X11R6/include $PKG/usr/
+	cp -a $SRC/tmp/common/usr/include/* $PKG/usr/include/
+	install -m 0755 $SRC/tmp/common/usr/sbin/atigetsysteminfo.sh $PKG/usr/sbin
+	mv $SRC/tmp/common/usr/share/man $PKG/usr/
+	mv $SRC/tmp/$xversion/usr/X11R6/lib/modules/* $PKG/usr/lib/xorg/modules/
+	# tune installation
+	ln -sf /usr/lib/libfglrx_pp.so.1.0 $PKG/usr/lib/libfglrx_pp.so.1
+	ln -sf /usr/lib/libfglrx_gamma.so.1.0 $PKG/usr/lib/libfglrx_gamma.so.1
+	install -D -m 0755 $SRC/atieventsd.sh $PKG/etc/rc.d/atieventsd
+	install -D -m 0644 $SRC/tmp/common/usr/share/icons/ati.xpm \
+		$PKG/usr/share/icons/ati.xpm
+        # required for use xorg-gl-select
+        mv -v $PKG/usr/lib/libGL.so.1.2 $PKG/usr/lib/libGL_so_1_2_ati
 }
