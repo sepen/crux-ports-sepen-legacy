@@ -14,6 +14,5 @@ build() {
 	./configure
 	make clean
 	make
-	install -d $PKG/usr/bin
-	install -m 755 $name $PKG/usr/bin/$name
+	install -D -m 0755 $name $PKG/usr/bin/$name 
 }
