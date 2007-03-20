@@ -1,34 +1,26 @@
-# $Id: $
-# Description: 	An interface to access satellite images & maps of the Earth
-# URL:         	http://earth.google.com
-# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
-# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on:  	glibc,x11
+# Description: An interface to access satellite images & maps of the Earth
+# URL: http://earth.google.com
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: mesa3d, qt3, openssl, libcurl, libpng, expat 
 
 name=google-earth
-version=4.0.2091beta
-release=2
-source=(http://dl.google.com/earth/GE4/GoogleEarthLinux.bin \
+version=4.0.2735.0
+release=1 
+source=(http://dl.google.com/earth/client/current/GoogleEarthLinux.bin \
 	$name.sh)
 
 build(){
 	chmod +x GoogleEarthLinux.bin
         ./GoogleEarthLinux.bin --noexec --target $SRC
-	
 	install -d $PKG/usr/share/$name
         tar -C $PKG/usr/share/$name -xvf $SRC/googleearth-linux-x86.tar
         tar -C $PKG/usr/share/$name -xvf $SRC/googleearth-data.tar
-	install -d $PKG/usr/bin
-	install -m 755 $name.sh $PKG/usr/bin/$name
-	install -m 644 $SRC/README.linux $PKG/usr/share/$name/README
-	install -d $PKG/usr/share/icons
-	install -m 644 $SRC/googleearth.xpm $PKG/usr/share/icons/$name.xpm
-	chmod -R 644 $PKG/usr/share/$name/resources/*
-	chmod -R 644 $PKG/usr/share/$name/res/*
-	chmod -R 644 $PKG/usr/share/$name/xml/*
-	chmod -R 644 $PKG/usr/share/$name/kvw/*
-        
-	rm -rf $PKG/usr/share/$name/{lang,linux}
-        rm -rf $PKG/usr/share/$name/resources/*locale
-	rm $PKG/usr/share/google-earth/README
+	install -D -m 0755 $name.sh $PKG/usr/bin/$name
+	install -D -m 0644 $SRC/googleearth.xpm $PKG/usr/share/pixmaps/$name.xpm
+	install -D -m 0644 $SRC/googleearth-icon.png $PKG/usr/share/icons/$name.png
+	find $PKG/usr/share/$name -type f -name '*.png' -exec chmod 0644 {} \;
+	find $PKG/usr/share/$name -type f -name '*.xml' -exec chmod 0644 {} \;
+	find $PKG/usr/share/$name -type f -name '*.ini' -exec chmod 0644 {} \;
+	rm -rf $PKG/usr/share/$name/{lang,linux,resources/*locale}
 }
