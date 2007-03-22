@@ -6,7 +6,7 @@
 
 name=enemy-territory
 version=2.60b
-release=1
+release=3
 source=(ftp://ftp.ntua.gr/pub/vendors/idgames/idstuff/et/linux/et-linux-2.60.x86.run \
 	ftp://ftp.ntua.gr/pub/vendors/idgames/idstuff/et/ET-2.60b.zip \
 	et.sh)
