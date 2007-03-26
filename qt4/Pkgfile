@@ -6,8 +6,8 @@
 # Depends on:	x11, libmng
 
 name=qt4
-version=4.2.1
-release=2
+version=4.2.3
+release=1
 source=(ftp://ftp.trolltech.com/qt/source/qt-x11-opensource-src-$version.tar.gz)
 
 build() {

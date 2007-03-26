@@ -1,0 +1,4 @@
+POST-INSTALL:
+	
+	Add one line to your prt-get aliases like this:
+	# echo "qt4: qt3" >> /var/lib/pkg/prt-get.aliases	
