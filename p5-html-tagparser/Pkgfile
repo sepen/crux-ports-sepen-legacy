@@ -1,0 +1,19 @@
+# Description: Yet another HTML tag parser by pure Perl implementation
+# URL: http://search.cpan.org/~kawasaki/HTML-TagParser-0.14/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: p5-uri-fetch
+
+name=p5-html-tagparser
+version=0.14
+release=1
+source=(http://search.cpan.org/CPAN/authors/id/K/KA/KAWASAKI/HTML-TagParser-0.14.tar.gz)
+
+build() {
+	cd HTML-TagParser-$version
+	perl Makefile.PL
+	make OPTIMIZE="${CFLAGS}"
+	make DESTDIR=$PKG install
+	find $PKG -type f -name perllocal.pod -exec rm '{}' \;
+	find $PKG -type f -name .packlist -exec rm '{}' \;	
+}
