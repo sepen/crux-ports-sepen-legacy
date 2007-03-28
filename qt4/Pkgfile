@@ -44,7 +44,7 @@ build() {
         make INSTALL_ROOT=$PKG install
 
         rm -rf $PKG/usr/share/qt/{demos,doc,examples,phrasebooks,templates,translations}
-        rm -rf `find $PKG/usr/share/qt/mkspecs/* | grep -v linux-g++`
+        #rm -rf `find $PKG/usr/share/qt/mkspecs/* | grep -v linux-g++`
         rm -rf `find $PKG/usr | grep 'debug$'`
 
         ln -s /usr/bin        $PKG/usr/share/qt/bin
