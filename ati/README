@@ -2,6 +2,28 @@
 README for ati 8.34.8
 
 
+*** NOTE for kernel ***
+
+Check you have the next config:
+
+Loadable Module Support --->
+ [*] Enable loadable module support
+ [*]   Module unloading 
+
+Processor type and features  --->
+ [*] MTRR (Memory Type Range Register) support
+
+Device Drivers --->
+ Character Devices ---> 
+  <M> /dev/agpgart (AGP Support)  
+  <M>   Your_AGP_Chipset_Here
+  < > Direct Rendering Manager (XFree86 4.1.0 and higher DRI support)
+ Graphics support --->
+  < >  Support for framebuffer devices
+
+Kernel Hacking --->
+  [ ] Kernel debugging
+
 
 *** NOTE for ati with udev ***
 

@@ -16,6 +16,7 @@ drwxr-xr-x	root/root	lib/modules/<kernel-version>/kernel/drivers/char/drm/
 -rw-r--r--	root/root	lib/modules/<kernel-version>/kernel/drivers/char/drm/fglrx.ko
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/amdcccle
 -rwxr-xr-x	root/root	usr/bin/aticonfig
 -rwxr-xr-x	root/root	usr/bin/fgl_glxgears
 -rwxr-xr-x	root/root	usr/bin/fglrx_xgamma
@@ -31,7 +32,6 @@ drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/dri/
 -rwxr-xr-x	root/root	usr/lib/dri/fglrx_dri.so
 -rwxrwxr-x	root/root	usr/lib/libGL_so_1_2_ati
--rwxrwxr-x	root/root	usr/lib/libatixutil.a
 -rwxrwxr-x	root/root	usr/lib/libfglrx_dm.a
 -rwxrwxr-x	root/root	usr/lib/libfglrx_dm.so.1.0
 -rwxrwxr-x	root/root	usr/lib/libfglrx_gamma.a
@@ -54,6 +54,3 @@ drwxr-xr-x	root/root	usr/man/man8/
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/atieventsd
 -rwxr-xr-x	root/root	usr/sbin/atigetsysteminfo.sh
-drwxr-xr-x	root/root	usr/share/
-drwxr-xr-x	root/root	usr/share/icons/
--rw-r--r--	root/root	usr/share/icons/ati.xpm

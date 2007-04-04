@@ -5,26 +5,36 @@
 # Depends on: mesa3d, gl-select
 
 name=ati
-version=8.34.8
+version=8.35.5
 release=1
 source=(http://www2.ati.com/drivers/linux/$name-driver-installer-$version-x86.x86_64.run \
-        kernel-2.6.20.patch \
+        ati-2.6.20.patch \
+	ati-$version-2.6.20.patch \
         atieventsd.sh)
 
 build() {
         march=x86
-        xversion=x710
-        chmod +x $name-driver-installer-$version-x86.x86_64.run 
+	# xorg-server 1.1 and its prereleases correspond to xorg 7.1
+	if [ `pkg-config --modversion xorg-server | cut -d'.' -f2` -gt 0 ]; then
+		xversion=x710
+	else
+		xversion=x690
+	fi
+        
+	chmod +x $name-driver-installer-$version-x86.x86_64.run 
         ./$name-driver-installer-$version-x86.x86_64.run --extract $SRC/tmp
 
         # patch
-        cd $SRC/tmp
-        patch -Np0 -i $SRC/kernel-2.6.20.patch
+        if [ "`uname -r | cut -d'.' -f1,2,3`" == "2.6.20" ]; then
+		cd $SRC/tmp
+		patch -Np0 -i $SRC/ati-2.6.20.patch
+		patch `find $SRC -type f -name 'firegl_public.c'` \
+			$SRC/ati-$version-2.6.20.patch
+	fi	
 
         # make
         cd $SRC/tmp/common/lib/modules/fglrx/build_mod
-        ln -s $SRC/tmp/arch/$march/lib/modules/fglrx/build_mod/libfglrx_ip.a.GCC* .
-        sed -i 's|/usr/X11R6|/usr|g' make.sh
+        ln -s $SRC/tmp/arch/$march/lib/modules/fglrx/build_mod/libfglrx_ip.a.GCC4 .
         chmod +x make.sh
         ./make.sh
 
@@ -54,8 +64,8 @@ build() {
         ln -sf /usr/lib/libfglrx_pp.so.1.0 $PKG/usr/lib/libfglrx_pp.so.1
         ln -sf /usr/lib/libfglrx_gamma.so.1.0 $PKG/usr/lib/libfglrx_gamma.so.1
         install -D -m 0755 $SRC/atieventsd.sh $PKG/etc/rc.d/atieventsd
-        install -D -m 0644 $SRC/tmp/common/usr/share/icons/ati.xpm \
-                $PKG/usr/share/icons/ati.xpm
+        #install -D -m 0644 $SRC/tmp/common/usr/share/icons/ati.xpm \
+        #        $PKG/usr/share/icons/ati.xpm
         # required for use xorg-gl-select
         mv -v $PKG/usr/lib/libGL.so.1.2 $PKG/usr/lib/libGL_so_1_2_ati
 }

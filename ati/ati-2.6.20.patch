@@ -71,15 +71,3 @@
  // int mlock(const void *addr, size_t len);
  _syscall2(int, mlock, const void *, addr, size_t, len )
  // int munlock(const void *addr, size_t len);
-
---- common/lib/modules/fglrx/build_mod/firegl_public.c-orig	2007-01-21 23:09:10.027497362 -0600
-+++ common/lib/modules/fglrx/build_mod/firegl_public.c	2007-01-21 23:09:25.219179776 -0600
-@@ -5256,7 +5256,7 @@
-     kasThread_t* thread_obj = (kasThread_t*)hThread;
-     init_MUTEX(&(thread_obj->sleep_finished));
-     init_waitqueue_head(&(thread_obj->wq_head));
--    INIT_WORK(&(thread_obj->work), routine, pcontext);
-+    INIT_WORK(&(thread_obj->work), routine);
-     schedule_work(&(thread_obj->work));
-     return 1;
- }
