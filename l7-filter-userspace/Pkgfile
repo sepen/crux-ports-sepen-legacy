@@ -7,10 +7,12 @@
 name=l7-filter-userspace
 version=0.4
 release=1
-source=(http://dl.sourceforge.net/sourceforge/l7-filter/$name-v$version.tar.gz)
+source=(http://mesh.dl.sourceforge.net/sourceforge/l7-filter/$name-v$version.tar.gz)
 
 build() {
 	cd $name-v$version
+	sed -i 's|/usr/local/lib|/usr/lib|' configure
+	sed -i 's|/share/man/man1/|/man/man1|' Makefile
 	./configure
 	make PREFIX=/usr
 	make PREFIX=$PKG/usr install
