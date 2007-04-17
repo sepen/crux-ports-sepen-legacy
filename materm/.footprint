@@ -1,0 +1,18 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+lrwxrwxrwx	root/root	usr/bin/materm -> /usr/bin/mrxvt
+-rwxr-xr-x	root/root	usr/bin/mrxvt
+drwxr-xr-x	root/root	usr/etc/
+drwxr-xr-x	root/root	usr/etc/mrxvt/
+-rw-r--r--	root/root	usr/etc/mrxvt/default.menu.sample
+-rw-r--r--	root/root	usr/etc/mrxvt/mrxvtrc.sample
+-rw-r--r--	root/root	usr/etc/mrxvt/submenus.menu.sample
+-rw-r--r--	root/root	usr/etc/mrxvtrc
+drwxr-xr-x	root/root	usr/man/
+drwxr-xr-x	root/root	usr/man/man1/
+-rw-r--r--	root/root	usr/man/man1/mrxvt.1.gz
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/pixmaps/
+-rw-r--r--	root/root	usr/share/pixmaps/mrxvt-csh.xpm
+-rw-r--r--	root/root	usr/share/pixmaps/mrxvt-root.xpm
+-rw-r--r--	root/root	usr/share/pixmaps/mrxvt.xpm

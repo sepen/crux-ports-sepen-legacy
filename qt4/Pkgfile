@@ -44,14 +44,17 @@ build() {
         make INSTALL_ROOT=$PKG install
 
         rm -rf $PKG/usr/share/qt/{demos,doc,examples,phrasebooks,templates,translations}
-        #rm -rf `find $PKG/usr/share/qt/mkspecs/* | grep -v linux-g++`
-        rm -rf `find $PKG/usr | grep 'debug$'`
+        rm -rf `find $PKG/usr/share/qt/mkspecs/* | grep -v linux-g++ | grep -v features`
+	rm -rf `find $PKG/usr | grep 'debug$'`
 
         ln -s /usr/bin        $PKG/usr/share/qt/bin
         ln -s /usr/include/qt $PKG/usr/share/qt/include
         ln -s /usr/lib        $PKG/usr/share/qt/lib
         ln -s /usr/lib/qt     $PKG/usr/share/qt/plugins
         ln -s linux-g++       $PKG/usr/share/qt/mkspecs/default
+
+	find $PKG/usr/share/qt -type f -exec sed 's/moc_location=.*/moc_location=\/usr\/bin\/moc/' {} \;
+        find $PKG/usr/share/qt -type f -exec sed 's/uic_location=.*/uic_location=\/usr\/bin\/uic/' {} \;
 
         chmod -R u+w,g-sw  $PKG
         chown -R root:root $PKG
