@@ -1,0 +1,25 @@
+# Description: WINGs Display Manager; an xdm replacement
+# URL: http://voins.program.ru/wdm/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: xorg, windowmaker
+
+name=wdm
+version=1.28
+release=1
+source=(http://voins.program.ru/$name/$name-$version.tar.gz \
+        wdm wdm-config Xclients)
+
+build() {
+  cd $name-$version
+  ./configure --prefix=/usr \
+              --disable-debug \
+              --with-x 
+  make
+  make DESTDIR=$PKG install
+  rm -rf $PKG/usr/{lib,share/pixmaps}
+  rm -rf $PKG/usr/etc/$name/{*.*,wdmReconfig}
+  install -D -m 0755 $SRC/$name $PKG/etc/rc.d/$name
+# install -m 0755 $SRC/Xclients $PKG/usr/etc/$name/Xclients
+# install -m 0644 $SRC/wdm-config $PKG/usr/etc/$name/wdm-config
+}

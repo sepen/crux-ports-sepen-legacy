@@ -1,0 +1,55 @@
+#!/bin/bash -login
+#
+# /usr/etc/wdm/Xclients: hacked version for use with wdm
+#
+# Author: Jose V Beneyto, joberui at ei dot upv dot es>
+# License: GNU/GPL (http://www.gnu.org/copyleft/gpl.html)
+
+WM_LIST=(
+  kde
+  gnome
+  e17
+  xfce4
+  windowmaker
+  icewm
+  fluxbox
+  blackbox
+)
+
+# found available window managers installed
+WM_AVAILABLES=
+for wm in ${WM_LIST[@]}; do
+  if [ ! -z "`pkginfo -i | awk '{print $1}' | grep -e ^${wm}$`" ]; then
+    WM_AVAILABLES="${WM_AVAILABLES} ${wm}"
+  fi
+done
+echo "wdm: available window managers: ${WM_AVAILABLES}"
+
+# remove some stuff files
+[ -f ${HOME}/Xrootenv.0 ]  && rm -f ${HOME}/Xrootenv.0
+[ -f ${HOME}/.Xresources ] && /usr/bin/xrdb -merge ${HOME}/.Xresources
+[ -f ${HOME}/.Xdefaults ]  && /usr/bin/xrdb -merge ${HOME}/.Xdefaults
+
+WM_SELECTED=default
+[ -f ${HOME}/.wdmwm ] && WM_SELECTED=`cat ${HOME}/.wdmwm`
+echo "wdm: selected window manager: ${WM_SELECTED}"
+
+WM_CMD=
+case ${WM_SELECTED} in
+  kde) WM_CMD="" ;;
+  gnome) WM_CMD="" ;;
+  e17) WM_CMD="" ;;
+  xfce4) WM_CMD="/usr/bin/startxfce4" ;;
+  windowmaker) WM_CMD="/usr/bin/wmaker" ;;
+  icewm) WM_CMD="" ;;
+  fluxbox) WM_CMD="" ;;
+  blackbox) WM_CMD="/usr/bin/blackbox" ;;
+  *) WM_CMD="/usr/bin/xterm" ;; # otherwise start xterminal as manager
+esac
+
+echo "#env > ${HOME}/Xrootenv.0"
+echo "#echo ${WM_SELECTED} > ${HOME}/.wdmwm"
+echo "#echo Starting ${WM_SELECTED} > ${HOME}/.wdmmsgs"
+echo "#exec ${WM_CMD} >> ${HOME}/.wdmmsgs 2>&1"
+
+# End of File
