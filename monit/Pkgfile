@@ -1,0 +1,17 @@
+# Description: Utility for monitoring daemons running on a Unix system
+# URL: http://www.tildeslash.com/monit/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: openssl 
+
+name=monit
+version=4.9
+release=1
+source=(http://www.tildeslash.com/${name}/dist/${name}-${version}.tar.gz)
+
+build() {
+  cd ${name}-${version}
+  ./configure --prefix=/usr
+  make
+  make DESTDIR=${PKG} install
+}
