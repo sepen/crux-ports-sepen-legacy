@@ -1,0 +1,19 @@
+# Description: cross development C compiler environment for the production of 8086 executables.
+# URL: http://homepage.ntlworld.com/robert.debath/dev86/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 
+
+name=dev86
+version=0.16.17
+release=1
+source=(http://homepage.ntlworld.com/robert.debath/${name}/Dev86src-${version}.tar.gz)
+
+build() {
+  cd ${name}-${version}
+  install -d ${PKG}/usr
+  echo "quit" | make PREFIX=${PKG}/usr
+  make install
+  rm -f ${PKG}/usr/bin/{as,ld,nm,objdump,size}86
+  rm -f ${PKG}/usr/man/man1/{as,ld}86.1
+}
