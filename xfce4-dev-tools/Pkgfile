@@ -1,18 +1,17 @@
-# $Id: $
-# Description: 	Xfce development files need for xfce core desktop components.
-# URL:          http://www.foo-projects.org/~benny/projects/xfce4-dev-tools/index.html
-# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
-# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on:   
+# Description: Xfce development files need for xfce core desktop components.
+# URL: http://www.foo-projects.org/~benny/projects/xfce4-dev-tools/index.html
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:
 
 name=xfce4-dev-tools
-version=4.3.99.2
+version=4.4.0
 release=1
-source=(http://foo-projects.org/~benny/files/$name/4.3/$name-$version.tar.bz2)
+source=(http://foo-projects.org/~benny/files/${name}/4.4/${name}-${version}.tar.bz2)
 
 build() {
-	cd $name-$version
+	cd ${name}-${version}
 	./configure --prefix=/usr
 	make
-	make DESTDIR=$PKG install
+	make DESTDIR=${PKG} install
 }
