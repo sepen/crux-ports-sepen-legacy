@@ -1,4 +1,3 @@
-# $Id: $
 # Description:  Program that scan a configure.in and generate a bootstrap script which will then be used to create a configure script.
 # URL:          http://bootstrapper.sourceforge.net/
 # Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es

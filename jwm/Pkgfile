@@ -1,4 +1,3 @@
-# $Id: $
 # Description:  window manager for the X11 Window System. JWM is written in C and uses only Xlib at a minimum.
 # URL:          http://joewing.net/programs/jwm/
 # Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
