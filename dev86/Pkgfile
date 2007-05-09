@@ -6,7 +6,7 @@
 
 name=dev86
 version=0.16.17
-release=1
+release=2
 source=(http://homepage.ntlworld.com/robert.debath/${name}/Dev86src-${version}.tar.gz)
 
 build() {
@@ -14,6 +14,7 @@ build() {
   install -d ${PKG}/usr
   echo "quit" | make PREFIX=${PKG}/usr
   make install
+  mv ${PKG}/usr/lib/bcc/bcc-* ${PKG}/usr/bin/
   rm -f ${PKG}/usr/bin/{as,ld,nm,objdump,size}86
   rm -f ${PKG}/usr/man/man1/{as,ld}86.1
 }

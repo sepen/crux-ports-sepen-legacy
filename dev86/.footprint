@@ -2,12 +2,12 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/ar86
 -rwxr-xr-x	root/root	usr/bin/bcc
+-rwxr-xr-x	root/root	usr/bin/bcc-cc1
+-rwxr-xr-x	root/root	usr/bin/bcc-cpp
 -rwxr-xr-x	root/root	usr/bin/elksemu
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/bcc/
 -rwxr-xr-x	root/root	usr/lib/bcc/as86_encap
--rwxr-xr-x	root/root	usr/lib/bcc/bcc-cc1
--rwxr-xr-x	root/root	usr/lib/bcc/bcc-cpp
 -rwxr-xr-x	root/root	usr/lib/bcc/copt
 -rw-r--r--	root/root	usr/lib/bcc/crt0.o
 drwxr-xr-x	root/root	usr/lib/bcc/i386/
