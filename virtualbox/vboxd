@@ -1,0 +1,26 @@
+#!/bin/sh
+#
+# /etc/rc.d/vboxd: start/stop VirtualBox daemon
+#
+
+VBOX_PATH=/usr/share/virtualbox/bin
+
+case $1 in
+	start)
+    export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${VBOX_PATH} 
+    ${VBOX_PATH}/VBoxSVC &>/dev/null &
+		;;
+	stop)
+		kill -TERM `pidof VBoxSVC` &>/dev/null
+		;;
+	restart)
+		$0 stop
+		sleep 2
+		$0 start
+		;;
+	*)
+		echo "Usage: $0 [start|stop|restart]"
+		;;
+esac
+
+# End of file

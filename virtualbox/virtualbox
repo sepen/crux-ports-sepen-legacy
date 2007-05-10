@@ -1,0 +1,9 @@
+#!/bin/sh
+
+VBOX_PATH=/usr/share/virtualbox/bin
+LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${VBOX_PATH}
+
+cd ${VBOX_PATH}
+su -c "export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}; ./VirtualBox &>/dev/null"
+
+# End of File
