@@ -20,7 +20,6 @@ POST-INSTALL
 
   Also is a good idea to fine tune and check your udev rules.
   For getting some info from your system run udevinfo:
-
   # udevinfo -a -p /sys/class/misc/vboxdrv
 
   Udevinfo starts with the device specified by the devpath and then

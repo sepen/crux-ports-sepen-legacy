@@ -8,7 +8,7 @@ VBOX_PATH=/usr/share/virtualbox/bin
 case $1 in
   start)
     export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${VBOX_PATH}
-    if [ -z "`pidof VBoxSVC`" ]; then
+    if [ -z "`pidof VBoxSVC`" -a "`lsmod | grep vboxdrv`" != "" ]; then
       ${VBOX_PATH}/VBoxSVC &>/dev/null &
     fi
     ;;

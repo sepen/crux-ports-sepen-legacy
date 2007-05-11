@@ -30,4 +30,6 @@ build() {
   install -d ${PKG}/usr/{bin,share/${name}}
   install -m 0755 ${SRC}/${name} ${PKG}/usr/bin/${name}
   mv ${SRC}/vbox-ose-${version}/out/linux.x86/release/{bin,lib} ${PKG}/usr/share/${name}
+  find ${PKG}/usr/share/${name} -type d -exec chmod 0755 {} \;
+  find ${PKG}/usr/share/${name} -type d -exec chmod 0644 {} \;
 }
