@@ -1,0 +1,3 @@
+# VirtualBox udev rules
+
+KERNEL=="vboxdrv", NAME="vboxdrv", OWNER="root", GROUP="vboxusers", MODE="0660"
