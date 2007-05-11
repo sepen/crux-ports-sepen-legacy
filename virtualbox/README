@@ -32,3 +32,5 @@ POST-INSTALL
     KERNEL=="vboxdrv"
     SUBSYSTEM=="misc"
     SYSFS{dev}=="10:62"
+
+PRECAUTIONS

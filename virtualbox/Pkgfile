@@ -12,6 +12,7 @@ source=(http://www.virtualbox.org/download/${version}/VirtualBox-OSE-${version}.
 
 build() {
   cd vbox-ose-${version}
+  # compile
   ./configure --with-qt-dir=/usr/share/qt
   source ./env.sh
   kmk all

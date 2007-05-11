@@ -4,5 +4,3 @@ VBOX_PATH=/usr/share/virtualbox/bin
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${VBOX_PATH}
 
 ${VBOX_PATH}/VirtualBox &>/dev/null
-
-# End of File
