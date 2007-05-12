@@ -7,7 +7,7 @@ REQUIREMENTS
 PRE-INSTALL
 
   Add a new group wich can use VirtualBox
-  # groupadd vboxusers (or run pre-install script)
+  # groupadd vboxusers (or run 'postinstall' script)
 
 POST-INSTALL
 
