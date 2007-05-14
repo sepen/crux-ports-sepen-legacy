@@ -1,6 +1,4 @@
 drwxr-xr-x	root/root	etc/
-drwxr-xr-x	root/root	etc/rc.d/
--rwxr-xr-x	root/root	etc/rc.d/vboxd
 drwxr-xr-x	root/root	etc/udev/
 drwxr-xr-x	root/root	etc/udev/rules.d/
 -rw-r--r--	root/root	etc/udev/rules.d/60-vboxdrv.rules

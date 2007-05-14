@@ -6,19 +6,18 @@ REQUIREMENTS
 
 PRE-INSTALL
 
-  Add a new group wich can use VirtualBox
-  # groupadd vboxusers (or run 'postinstall' script)
-
 POST-INSTALL
 
-  Add your user to the vboxusers group
+  Run the post-install script in order to add a vboxusers group to your system.
+  After that, add your user to the vboxusers group:
   # usermod -G vboxusers <your_user> 
   
   During installation 'vboxdrv.ko' has been installed to your modules directory
   and you can load it using modprobe vboxdrv (needed before run VirtualBox).
   Also make sure you give yourself read and write access to /dev/vboxdrv.
+  For this, virtualbox port has their own udev rules.
 
-  Also is a good idea to fine tune and check your udev rules.
+  Also is a good idea to fine tune your udev rules as you want.
   For getting some info from your system run udevinfo:
   # udevinfo -a -p /sys/class/misc/vboxdrv
 
