@@ -4,28 +4,21 @@
 #
 
 MLDONKEY_USER="mldonkey"
-MLDONKEY_HOME="/var/mlnet"
 
 case $1 in
-  start)
-	  STORE=`ls -al ${MLDONKEY_HOME}/.mldonkey/shared_store* | wc -l`
-	  TMP=`ls -al ${MLDONKEY_HOME}/.mldonkey/*.tmp | wc -l`
-	  PID=`ls -al ${MLDONKEY_HOME}/.mldonkey/*.pid | wc -l`
-	  [ 0 -ne ${STORE} ] && rm -f ${MLDONKEY_HOME}/.mldonkey/shared_store* &>/dev/null
-    [ 0 -ne ${TMP} ] && rm -f ${MLDONKEY_HOME}/.mldonkey/*.tmp &>/dev/null
-	  [ 0 -ne ${PID} ] && rm -f ${MLDONKEY_HOME}/.mldonkey/*.pid &>/dev/null
-	  su ${MLDONKEY_USER} -c "/usr/bin/mlnet &>/dev/null &"
-    ;;
-  stop)
-    killall -q /usr/bin/mlnet
-    ;;
-  restart)
-    $0 stop
-    $0 start
-    ;;
+	start)
+		su ${MLDONKEY_USER} -c "/usr/bin/mlnet &>/dev/null &"
+		;;
+	stop)
+    		killall -q /usr/bin/mlnet
+	    	;;
+	restart)
+    		$0 stop
+	    	$0 start
+	    	;;
 	*)
-    echo "Usage: $0 [start|stop|restart]"
-	  ;;
+    		echo "Usage: $0 [start|stop|restart]"
+      		;;
 esac
 
 # End of file
