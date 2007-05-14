@@ -1,0 +1,18 @@
+# Description: QCA aims to provide a straightforward and cross-platform crypto API, using Qt.
+# URL: http://delta.affinix.com/qca/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: qt3
+
+name=qca
+version=1.0
+release=1
+source=(http://delta.affinix.com/download/${name}/${name}-${version}.tar.bz2)
+
+build() {
+  cd ${name}-${version}
+  ./configure --prefix=/usr \
+              --qtdir=/usr/share/qt
+  make
+  make INSTALL_ROOT=${PKG} install
+}

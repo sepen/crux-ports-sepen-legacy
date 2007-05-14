@@ -1,0 +1,8 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/qca.h
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libqca.so -> libqca.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libqca.so.1 -> libqca.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libqca.so.1.0 -> libqca.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libqca.so.1.0.0
