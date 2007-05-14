@@ -1,0 +1,13 @@
+README for virtualbox 2.8.5
+
+REQUIREMENTS
+
+PRE-INSTALL
+
+POST-INSTALL
+
+  Run the post-install script in order to add a mlusers group to your system.
+  After that, add your user to the mlusers group:
+  # usermod -G mlusers <your_user> 
+  
+PRECAUTIONS

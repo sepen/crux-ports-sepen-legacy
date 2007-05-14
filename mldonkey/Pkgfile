@@ -5,16 +5,17 @@
 # Depends on: ocaml
 
 name=mldonkey
-version=2.8.3
+version=2.8.5
 release=1
-source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version.tar.bz2)
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version.tar.bz2 \
+        mlnetd)
 
 build() {
-        cd $name-$version
-        ./configure --prefix=/usr \
-                    --enable-minimum
-        make
-        install -d $PKG/usr/bin
-        install -m 755 mlnet $PKG/usr/bin
-	ln -sd /usr/bin/mlnet $PKG/usr/bin/$name
+  cd $name-$version
+  ./configure --prefix=/usr \
+              --enable-minimum
+  make
+  install -D -m 0755 ${SRC}/mlnetd ${PKG}/etc/rc.d/mlnetd
+  install -D -m 0755 mlnet ${PKG}/usr/bin/mlnet
+  ln -sf /usr/bin/mlnet ${PKG}/usr/bin/${name}
 }

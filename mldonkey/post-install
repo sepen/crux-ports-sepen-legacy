@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# check for mlusers group or add one if not exists
+/usr/bin/getent group mlusers || /usr/sbin/groupadd mlusers
+
+# check for mldonkey user or add one
+/usr/bin/getent passwd mldonkey || \
+  /usr/sbin/useradd -g mlusers -m -d /var/mlnet mldonkey
+
+# lock the account
+/usr/bin/passwd -l mldonkey
+
+# End of File
