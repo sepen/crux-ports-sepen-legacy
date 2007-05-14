@@ -25,12 +25,11 @@ build() {
   rm -rf ${SRC}/vbox-ose-${version}/out/linux.x86/release/bin/{src,sdk/samples,vboxdrv.ko}
   rm -rf ${SRC}/vbox-ose-${version}/out/linux.x86/release/bin/{testcase,additions/src}
   find ${SRC}/vbox-ose-${version}/out/linux.x86/release/bin -type f -name 'tst*' -exec rm -rf {} \;
-  # install the rest 
+  # do the rest 
   install -D -m 0644 ${SRC}/60-vboxdrv.rules ${PKG}/etc/udev/rules.d/60-vboxdrv.rules
   install -D -m 0755 ${SRC}/vboxd ${PKG}/etc/rc.d/vboxd
   install -d ${PKG}/usr/{bin,share/${name}}
   install -m 0755 ${SRC}/${name} ${PKG}/usr/bin/${name}
   mv ${SRC}/vbox-ose-${version}/out/linux.x86/release/{bin,lib} ${PKG}/usr/share/${name}
   find ${PKG}/usr/share/${name} -type d -exec chmod 0755 {} \;
-  find ${PKG}/usr/share/${name} -type d -exec chmod 0644 {} \;
 }

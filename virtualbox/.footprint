@@ -15,8 +15,8 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/virtualbox
 drwxr-xr-x	root/root	usr/share/
-drw-r--r--	root/root	usr/share/virtualbox/
-drw-r--r--	root/root	usr/share/virtualbox/bin/
+drwxr-xr-x	root/root	usr/share/virtualbox/
+drwxr-xr-x	root/root	usr/share/virtualbox/bin/
 -rwxr-xr-x	root/root	usr/share/virtualbox/bin/SUPInstall
 -rwxr-xr-x	root/root	usr/share/virtualbox/bin/SUPUninstall
 -rwxr-xr-x	root/root	usr/share/virtualbox/bin/VBoxBFE
@@ -43,7 +43,7 @@ drw-r--r--	root/root	usr/share/virtualbox/bin/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VMMR0.r0
 -rwxr-xr-x	root/root	usr/share/virtualbox/bin/VirtualBox
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VirtualBox_XPCOM.xpt
-drw-r--r--	root/root	usr/share/virtualbox/bin/additions/
+drwxr-xr-x	root/root	usr/share/virtualbox/bin/additions/
 -rwxr-xr-x	root/root	usr/share/virtualbox/bin/additions/vboxadd-timesync
 -rw-r--r--	root/root	usr/share/virtualbox/bin/additions/vboxmouse_drv.o
 -rw-r--r--	root/root	usr/share/virtualbox/bin/additions/vboxmouse_drv_70.so
@@ -51,15 +51,15 @@ drw-r--r--	root/root	usr/share/virtualbox/bin/additions/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/additions/vboxvideo_drv.o
 -rw-r--r--	root/root	usr/share/virtualbox/bin/additions/vboxvideo_drv_70.so
 -rw-r--r--	root/root	usr/share/virtualbox/bin/additions/vboxvideo_drv_71.so
-drw-r--r--	root/root	usr/share/virtualbox/bin/components/
+drwxr-xr-x	root/root	usr/share/virtualbox/bin/components/
 lrwxrwxrwx	root/root	usr/share/virtualbox/bin/components/VBoxC.so -> ../VBoxC.so
 lrwxrwxrwx	root/root	usr/share/virtualbox/bin/components/VBoxXPCOMBase.xpt -> ../VBoxXPCOMBase.xpt
 lrwxrwxrwx	root/root	usr/share/virtualbox/bin/components/VBoxXPCOMIPCC.so -> ../VBoxXPCOMIPCC.so
 lrwxrwxrwx	root/root	usr/share/virtualbox/bin/components/VirtualBox_XPCOM.xpt -> ../VirtualBox_XPCOM.xpt
-drw-r--r--	root/root	usr/share/virtualbox/bin/sdk/
-drw-r--r--	root/root	usr/share/virtualbox/bin/sdk/bin/
+drwxr-xr-x	root/root	usr/share/virtualbox/bin/sdk/
+drwxr-xr-x	root/root	usr/share/virtualbox/bin/sdk/bin/
 -rwxr-xr-x	root/root	usr/share/virtualbox/bin/sdk/bin/xpidl
-drw-r--r--	root/root	usr/share/virtualbox/bin/sdk/idl/
+drwxr-xr-x	root/root	usr/share/virtualbox/bin/sdk/idl/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/idl/VirtualBox_XPCOM.idl
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/idl/ipcIClientObserver.idl
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/idl/ipcIDConnectService.idl
@@ -152,7 +152,7 @@ drw-r--r--	root/root	usr/share/virtualbox/bin/sdk/idl/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/idl/nsIWeakReference.idl
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/idl/nsIXPTLoader.idl
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/idl/nsrootidl.idl
-drw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/
+drwxr-xr-x	root/root	usr/share/virtualbox/bin/sdk/include/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/VirtualBox_XPCOM.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/ipcIClientObserver.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/ipcIDConnectService.h
@@ -245,8 +245,8 @@ drw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/nsIWeakReference.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/nsIXPTLoader.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/nsrootidl.h
-drw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/
-drw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/ipcd/
+drwxr-xr-x	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/
+drwxr-xr-x	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/ipcd/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/ipcd/ipcCID.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/ipcd/ipcLockCID.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/ipcd/ipcMessageReader.h
@@ -254,8 +254,8 @@ drw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/ipcd/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/ipcd/ipcModule.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/ipcd/ipcModuleUtil.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/ipcd/ipcdclient.h
-drw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/
-drw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/md/
+drwxr-xr-x	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/
+drwxr-xr-x	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/md/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/md/_darwin.cfg
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/md/_darwin.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/md/_freebsd.cfg
@@ -279,7 +279,7 @@ drw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/md/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/md/_unixos.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/md/prosdep.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/nspr.h
-drw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/obsolete/
+drwxr-xr-x	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/obsolete/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/obsolete/pralarm.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/obsolete/probslet.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/obsolete/protypes.h
@@ -308,7 +308,7 @@ drw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/obsolete
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/prinrval.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/prio.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/pripcsem.h
-drw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/private/
+drwxr-xr-x	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/private/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/private/pprio.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/private/pprthred.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/private/prpriv.h
@@ -336,7 +336,7 @@ drw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/private/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/prtypes.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/prvrsion.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/prwin16.h
-drw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/string/
+drwxr-xr-x	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/string/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/string/nsAString.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/string/nsAlgorithm.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/string/nsCharTraits.h
@@ -367,7 +367,7 @@ drw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/string/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/string/string-template-def-char.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/string/string-template-def-unichar.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/string/string-template-undef.h
-drw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/xpcom/
+drwxr-xr-x	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/xpcom/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/xpcom/nsAgg.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/xpcom/nsAppDirectoryServiceDefs.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/xpcom/nsArray.h
@@ -479,11 +479,11 @@ drw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/xpcom/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/xpcom/xptcstubsdecl.inc
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/xpcom/xptcstubsdef.inc
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/xpcom/xptinfo.h
-drw-r--r--	root/root	usr/share/virtualbox/bin/sdk/lib/
+drwxr-xr-x	root/root	usr/share/virtualbox/bin/sdk/lib/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/lib/VBoxXPCOMGlue.a
 -rwxr-xr-x	root/root	usr/share/virtualbox/bin/vditool
 -rwxr-xr-x	root/root	usr/share/virtualbox/bin/xpidl
-drw-r--r--	root/root	usr/share/virtualbox/lib/
+drwxr-xr-x	root/root	usr/share/virtualbox/lib/
 -rw-r--r--	root/root	usr/share/virtualbox/lib/Debugger.a
 -rw-r--r--	root/root	usr/share/virtualbox/lib/DevicesR3.a
 -rw-r--r--	root/root	usr/share/virtualbox/lib/DisasmCoreR3.a
