@@ -6,7 +6,7 @@
 
 name=qca
 version=1.0
-release=1
+release=2
 source=(http://delta.affinix.com/download/${name}/${name}-${version}.tar.bz2)
 
 build() {
@@ -14,5 +14,7 @@ build() {
   ./configure --prefix=/usr \
               --qtdir=/usr/share/qt
   make
-  make INSTALL_ROOT=${PKG} install
+  install -d ${PKG}/usr/{include,lib}
+  cp -d libqca.so* ${PKG}/usr/lib
+  cp src/*.h ${PKG}/usr/include
 }
