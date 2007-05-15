@@ -15,4 +15,6 @@ build() {
               --qtdir=/usr/share/qt
   make
   make INSTALL_ROOT=${PKG} install
+  rm -f ${PKG}/usr/share/psi/COPYING
+  find ${PKG} -type f -name 'README' -exec rm -f {} \;
 }

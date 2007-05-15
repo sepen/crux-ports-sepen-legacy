@@ -16,14 +16,10 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/48x48/apps/psi.png
 drwxr-xr-x	root/root	usr/share/psi/
--rw-r--r--	root/root	usr/share/psi/COPYING
--rw-r--r--	root/root	usr/share/psi/README
 drwxr-xr-x	root/root	usr/share/psi/certs/
--rw-r--r--	root/root	usr/share/psi/certs/README
 -rw-r--r--	root/root	usr/share/psi/certs/rootcert.xml
 drwxr-xr-x	root/root	usr/share/psi/iconsets/
 drwxr-xr-x	root/root	usr/share/psi/iconsets/emoticons/
--rw-r--r--	root/root	usr/share/psi/iconsets/emoticons/README
 drwxr-xr-x	root/root	usr/share/psi/iconsets/emoticons/default/
 -rw-r--r--	root/root	usr/share/psi/iconsets/emoticons/default/angry.png
 -rw-r--r--	root/root	usr/share/psi/iconsets/emoticons/default/bat.png
@@ -64,7 +60,6 @@ drwxr-xr-x	root/root	usr/share/psi/iconsets/emoticons/default/
 -rw-r--r--	root/root	usr/share/psi/iconsets/emoticons/default/wink.png
 -rw-r--r--	root/root	usr/share/psi/iconsets/emoticons/default/yes.png
 drwxr-xr-x	root/root	usr/share/psi/iconsets/roster/
--rw-r--r--	root/root	usr/share/psi/iconsets/roster/README
 -rw-r--r--	root/root	usr/share/psi/iconsets/roster/crystal-aim.jisp
 -rw-r--r--	root/root	usr/share/psi/iconsets/roster/crystal-gadu.jisp
 -rw-r--r--	root/root	usr/share/psi/iconsets/roster/crystal-icq.jisp
@@ -95,7 +90,6 @@ drwxr-xr-x	root/root	usr/share/psi/iconsets/roster/default/
 -rw-r--r--	root/root	usr/share/psi/iconsets/roster/default/system.png
 -rw-r--r--	root/root	usr/share/psi/iconsets/roster/default/xa.png
 drwxr-xr-x	root/root	usr/share/psi/iconsets/system/
--rw-r--r--	root/root	usr/share/psi/iconsets/system/README
 drwxr-xr-x	root/root	usr/share/psi/iconsets/system/default/
 -rw-r--r--	root/root	usr/share/psi/iconsets/system/default/account.png
 -rw-r--r--	root/root	usr/share/psi/iconsets/system/default/add.png
