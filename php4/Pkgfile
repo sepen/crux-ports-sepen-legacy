@@ -7,7 +7,7 @@
 name=php4
 version=4.4.7
 release=1
-source=(http://es.php.net/distributions/php-4.4.7.tar.bz2)
+source=(http://php.net/distributions/php-${version}.tar.bz2)
 
 build() {
   cd php-$version
