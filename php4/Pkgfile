@@ -1,0 +1,35 @@
+# Description: PHP Version 4.
+# URL: http://www.php.net
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: bzip2,libpcre,libpng,libxml2,openssl 
+
+name=php4
+version=4.4.7
+release=1
+source=(http://es.php.net/distributions/php-4.4.7.tar.bz2)
+
+build() {
+  cd php-$version
+  ./configure --prefix=/usr \
+              --with-bz2 \
+              --with-pic \
+              --with-openssl \
+              --with-png \
+              --with-iconv \
+              --with-pcre-regex=/usr \
+              --with-config-file-path=/etc \
+              --with-zlib-dir=/usr/lib \
+              --enable-shared=yes \
+              --enable-sockets \
+              --enable-shmop \
+              --enable-sysvsem \
+              --enable-sysvshm \
+              --enable-regex=pcre \
+              --enable-sigchild \
+              --disable-static \
+              --disable-pdo
+    make
+    install -D -m 0755 sapi/cgi/php $PKG/usr/bin/php
+    install -D -m 0644 php.ini-dist $PKG/etc/php.ini
+}
