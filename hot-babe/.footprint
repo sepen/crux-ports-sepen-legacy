@@ -1,0 +1,17 @@
+drwxr-xr-x	root/root	share/
+drwxr-xr-x	root/root	share/hot-babe/
+drwxr-xr-x	root/root	share/hot-babe/hb01/
+-rw-r--r--	root/root	share/hot-babe/hb01/descr
+-rw-r--r--	root/root	share/hot-babe/hb01/hb01_0.png
+-rw-r--r--	root/root	share/hot-babe/hb01/hb01_1.png
+-rw-r--r--	root/root	share/hot-babe/hb01/hb01_2.png
+-rw-r--r--	root/root	share/hot-babe/hb01/hb01_3.png
+-rw-r--r--	root/root	share/hot-babe/hb01/hb01_4.png
+drwxr-xr-x	root/root	share/man/
+drwxr-xr-x	root/root	share/man/man1/
+-rw-r--r--	root/root	share/man/man1/hot-babe.1.gz
+drwxr-xr-x	root/root	share/pixmaps/
+-rw-r--r--	root/root	share/pixmaps/hot-babe.xpm
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/hot-babe
