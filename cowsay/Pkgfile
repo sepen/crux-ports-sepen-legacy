@@ -1,0 +1,19 @@
+# Description: Send some text into it, and you get a cow saying your text.
+# URL: http://www.nog.net/~tony/warez/cowsay.shtml
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: perl
+
+name=cowsay
+version=3.03
+release=1
+source=(ftp://ftp.nog.net/pub/tony/${name}/${name}-${version}.tar.gz)
+
+build() {
+  cd ${name}-${version}
+  sh install.sh ${PKG}/usr
+  mv ${PKG}/usr/share/{cows,cowsay}
+  sed -i "s|${PKG}/usr/share/cows|/usr/share/cowsay|" ${PKG}/usr/bin/${name}
+  sed -i "s|${PKG}/usr/share/cows|/usr/share/cowsay|" ${PKG}/usr/man/man1/${name}.1
+  sed -i 's|/usr/local/share/cows|/usr/share/cowsay|' ${PKG}/usr/man/man1/${name}.1
+}
