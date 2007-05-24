@@ -5,22 +5,20 @@
 # Depends on: mesa3d, qt3, openssl, libcurl, libpng, expat 
 
 name=google-earth
-version=4.0.2735.0
+version=4.1.7076.4458
 release=1 
 source=(http://dl.google.com/earth/client/current/GoogleEarthLinux.bin \
-	$name.sh)
+        $name)
 
 build(){
-	chmod +x GoogleEarthLinux.bin
-        ./GoogleEarthLinux.bin --noexec --target $SRC
-	install -d $PKG/usr/share/$name
-        tar -C $PKG/usr/share/$name -xvf $SRC/googleearth-linux-x86.tar
-        tar -C $PKG/usr/share/$name -xvf $SRC/googleearth-data.tar
-	install -D -m 0755 $name.sh $PKG/usr/bin/$name
-	install -D -m 0644 $SRC/googleearth.xpm $PKG/usr/share/pixmaps/$name.xpm
-	install -D -m 0644 $SRC/googleearth-icon.png $PKG/usr/share/icons/$name.png
-	find $PKG/usr/share/$name -type f -name '*.png' -exec chmod 0644 {} \;
-	find $PKG/usr/share/$name -type f -name '*.xml' -exec chmod 0644 {} \;
-	find $PKG/usr/share/$name -type f -name '*.ini' -exec chmod 0644 {} \;
-	rm -rf $PKG/usr/share/$name/{lang,linux,resources/*locale}
+  sh GoogleEarthLinux.bin --noexec --target ${SRC}
+  install -d ${PKG}/usr/share/${name}
+  tar -C ${PKG}/usr/share/${name} -xvf ${SRC}/googleearth-linux-x86.tar
+  tar -C ${PKG}/usr/share/${name} -xvf ${SRC}/googleearth-data.tar
+  install -D -m 0755 ${name} $PKG/usr/bin/${name}
+	install -D -m 0644 ${SRC}/googleearth.xpm ${PKG}/usr/share/pixmaps/${name}.xpm
+	find ${PKG}/usr/share/${name} -type f -name '*.png' -exec chmod 0644 {} \;
+	find ${PKG}/usr/share/${name} -type f -name '*.xml' -exec chmod 0644 {} \;
+	find ${PKG}/usr/share/${name} -type f -name '*.ini' -exec chmod 0644 {} \;
+	rm -rf ${PKG}/usr/share/${name}/{lang,linux,resources/*locale}
 }
