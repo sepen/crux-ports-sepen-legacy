@@ -2,7 +2,7 @@
 # URL: http://www.xfce.org/projects/xfburn/
 # Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
 # Packager: Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on: subversion,intltool,libxfcegui4,xfce4-dev-tools,cdrtools,cdrdao
+# Depends on: subversion,intltool,libxfcegui4,xfce4-dev-tools,cdrtools,cdrdao,exo
 
 name=xfburn
 version=0.2.0
