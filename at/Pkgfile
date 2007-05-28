@@ -1,0 +1,19 @@
+# Description: at, batch - queue, examine or delete jobs for later execution
+# URL: http://ftp.debian.org/debian/pool/main/a/at/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 
+
+name=at
+version=3.1.8
+release=1
+source=(ftp://ftp.debian.org/debian/pool/main/a/${name}/${name}_${version}-11.tar.gz)
+
+build() {
+  export PATH=${PATH}:/usr/sbin
+  cd ${name}-${version}
+  autoconf
+  ./configure --prefix=/usr
+  make IROOT=${PKG} install
+  rm -rf ${PKG}/usr/doc
+}
