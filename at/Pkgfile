@@ -6,8 +6,9 @@
 
 name=at
 version=3.1.8
-release=1
-source=(ftp://ftp.debian.org/debian/pool/main/a/${name}/${name}_${version}-11.tar.gz)
+release=2
+source=(ftp://ftp.debian.org/debian/pool/main/a/${name}/${name}_${version}-11.tar.gz \
+        atd)
 
 build() {
   export PATH=${PATH}:/usr/sbin
@@ -16,4 +17,5 @@ build() {
   ./configure --prefix=/usr
   make IROOT=${PKG} install
   rm -rf ${PKG}/usr/doc
+  install -D -m 0755 ${SRC}/atd ${PKG}/etc/rc.d/atd
 }
