@@ -1,0 +1,18 @@
+# Description: eAccelerator is a free open-source PHP accelerator, optimizer, and dynamic content cache.
+# URL: http://www.eaccelerator.net/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: php4
+
+name=php4-eaccelerator
+version=0.9.5.1
+release=1
+source=(http://bart.eaccelerator.net/source/0.9.5.1/eaccelerator-0.9.5.1.tar.bz2)
+
+build() {
+  cd eaccelerator-${version}
+  phpize
+  ./configure --prefix=/usr
+  make
+  install -D -m 0755 modules/eaccelerator.so ${PKG}/usr/lib/php/extensions/eaccelerator.so
+}
