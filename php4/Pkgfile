@@ -6,11 +6,11 @@
 
 name=php4
 version=4.4.7
-release=1
+release=2
 source=(http://php.net/distributions/php-${version}.tar.bz2)
 
 build() {
-  cd php-$version
+  cd php-${version}
   ./configure --prefix=/usr \
               --with-bz2 \
               --with-pic \
@@ -30,6 +30,7 @@ build() {
               --disable-static \
               --disable-pdo
     make
-    install -D -m 0755 sapi/cgi/php $PKG/usr/bin/php
-    install -D -m 0644 php.ini-dist $PKG/etc/php.ini
+    make INSTALL_ROOT=${PKG} install
+    install -D -m 0644 php.ini-dist ${PKG}/etc/php.ini
+    rm -rf ${PKG}/usr/lib/php/{test,doc}
 }
