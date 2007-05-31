@@ -2,13 +2,13 @@
 # URL: http://earth.google.com
 # Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
 # Packager: Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on: mesa3d, qt3, openssl, libcurl, libpng, expat 
+# Depends on: mesa3d,qt3,openssl,curl,libpng,expat 
 
 name=google-earth
 version=4.1.7076.4458
-release=1 
+release=2
 source=(http://dl.google.com/earth/client/current/GoogleEarthLinux.bin \
-        $name)
+        ${name})
 
 build(){
   sh GoogleEarthLinux.bin --noexec --target ${SRC}
