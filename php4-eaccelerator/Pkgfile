@@ -6,7 +6,7 @@
 
 name=php4-eaccelerator
 version=0.9.5.1
-release=1
+release=2
 source=(http://bart.eaccelerator.net/source/0.9.5.1/eaccelerator-0.9.5.1.tar.bz2)
 
 build() {
@@ -16,7 +16,5 @@ build() {
               --with-eaccelerator-shared-memory \
               --with-eaccelerator-encoder
   make
-  ls modules
-  read
   install -D -m 0755 modules/eaccelerator.so ${PKG}/usr/lib/php/extensions/eaccelerator.so
 }
