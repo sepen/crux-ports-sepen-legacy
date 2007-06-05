@@ -12,7 +12,11 @@ source=(http://bart.eaccelerator.net/source/0.9.5.1/eaccelerator-0.9.5.1.tar.bz2
 build() {
   cd eaccelerator-${version}
   phpize
-  ./configure --prefix=/usr
+  ./configure --prefix=/usr \
+              --with-eaccelerator-shared-memory \
+              --with-eaccelerator-encoder
   make
+  ls modules
+  read
   install -D -m 0755 modules/eaccelerator.so ${PKG}/usr/lib/php/extensions/eaccelerator.so
 }

@@ -1,0 +1,28 @@
+# Description: Logwatch is a customizable log analysis system.
+# URL: http://www.logwatch.org
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: perl 
+
+name=logwatch
+version=7.3.6
+release=1
+source=(ftp://ftp.kaybee.org/pub/linux/${name}-${version}.tar.gz)
+
+build() {
+  cd ${name}-${version}
+  install -d ${PKG}/etc/${name}/{scripts,conf}
+  install -d ${PKG}/etc/${name}/conf/{logfiles,services}
+  touch ${PKG}/etc/${name}/conf/${name}.conf
+  touch ${PKG}/etc/${name}/conf/ignore.conf
+  touch ${PKG}/etc/${name}/conf/override.conf
+  install -d ${PKG}/usr/share/${name}/default.conf/{logfiles,services}
+  mv conf/ ${PKG}/usr/share/logwatch/default.conf
+  mv scripts/ ${PKG}/usr/share/logwatch/scripts
+  mv lib ${PKG}/usr/share/logwatch/lib
+  install -d ${PKG}/etc/cron/daily
+  install -d ${PKG}/usr/sbin
+  ln -sf /usr/share/${name}/scripts/${name}.pl ${PKG}/etc/cron/daily/${name}
+  ln -sf /usr/share/${name}/scripts/${name}.pl ${PKG}/usr/sbin/${name}
+  install -d ${PKG}/var/cache/${name}
+}
