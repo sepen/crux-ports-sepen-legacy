@@ -2,7 +2,7 @@
 # URL: http://www.xfce.org/projects/xfburn/
 # Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
 # Packager: Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on: subversion,intltool,libxfcegui4,xfce4-dev-tools,cdrtools,cdrdao,exo
+# Depends on: subversion,intltool,xfce4-dev-tools,cdrtools,cdrdao,exo
 
 name=xfburn
 version=0.2.0
@@ -10,7 +10,7 @@ release=2
 source=()
 
 build() {
-  svn co http://svn.xfce.org/svn/xfce/xfburn/tags/xfburn-0.2.0beta ${name}-${version}
+  svn co http://svn.xfce.org/svn/xfce/${name}/tags/${name}-${version}beta ${name}-${version}
   cd ${name}-${version}
   ./autogen.sh
   ./configure --prefix=/usr

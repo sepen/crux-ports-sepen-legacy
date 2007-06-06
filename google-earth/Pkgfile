@@ -2,7 +2,7 @@
 # URL: http://earth.google.com
 # Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
 # Packager: Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on: mesa3d,qt3,openssl,curl,libpng,expat 
+# Depends on: qt3,curl 
 
 name=google-earth
 version=4.1.7076.4458
