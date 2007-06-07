@@ -8,46 +8,47 @@ name=ati
 version=8.37.6
 release=1
 source=(http://www2.ati.com/drivers/linux/$name-driver-installer-$version-x86.x86_64.run \
-        atieventsd.sh)
+        atieventsd)
 
 build() {
-	chmod +x $name-driver-installer-$version-x86.x86_64.run 
-	./$name-driver-installer-$version-x86.x86_64.run --extract ${SRC}/tmp
-
-	# make
-	cd ${SRC}/tmp/common/lib/modules/fglrx/build_mod
-	ln -s ${SRC}/tmp/arch/x86/lib/modules/fglrx/build_mod/libfglrx_ip.a.GCC4 .
-	chmod +x make.sh
-	./make.sh
-
-	# install kernel module
-	install -D -m 0644 ${SRC}/tmp/common/lib/modules/fglrx/build_mod/2.6.x/fglrx.ko \
+  chmod +x $name-driver-installer-$version-x86.x86_64.run
+  ./$name-driver-installer-${version}-x86.x86_64.run --extract ${SRC}/tmp
+  
+  # make
+  cd ${SRC}/tmp/common/lib/modules/fglrx/build_mod
+  ln -s ${SRC}/tmp/arch/x86/lib/modules/fglrx/build_mod/libfglrx_ip.a.GCC4 .
+  chmod +x make.sh
+  ./make.sh
+  
+  # install kernel module
+  install -D -m 0644 ${SRC}/tmp/common/lib/modules/fglrx/build_mod/2.6.x/fglrx.ko \
     ${PKG}/lib/modules/`uname -r`/kernel/drivers/char/drm/fglrx.ko
-
-	# install xorg
-	install -d ${PKG}/usr/{bin,sbin}
-	install -m 0755 ${SRC}/tmp/arch/x86/usr/X11R6/bin/* ${PKG}/usr/bin
-	install -m 0755 ${SRC}/tmp/arch/x86/usr/sbin/* ${PKG}/usr/sbin
-	install -d ${PKG}/usr/lib/{dri,xorg/modules}
+  
+  # install xorg
+  install -d ${PKG}/usr/{bin,sbin}
+  install -m 0755 ${SRC}/tmp/arch/x86/usr/X11R6/bin/* ${PKG}/usr/bin
+  install -m 0755 ${SRC}/tmp/arch/x86/usr/sbin/* ${PKG}/usr/sbin
+  install -d ${PKG}/usr/lib/{dri,xorg/modules}
 	install -m 0755 ${SRC}/tmp/arch/x86/usr/X11R6/lib/modules/dri/* \
-	${PKG}/usr/lib/dri
-	rm -rf ${SRC}/tmp/arch/x86/usr/X11R6/lib/modules
-	install -m 0775 ${SRC}/tmp/arch/x86/usr/X11R6/lib/* ${PKG}/usr/lib
-	install -d ${PKG}/etc
-	mv ${SRC}/tmp/common/etc/ati ${PKG}/etc/
-	rm -f ${PKG}/etc/ati/logo*
-	mv ${SRC}/tmp/common/usr/X11R6/include ${PKG}/usr/
-	cp -a ${SRC}/tmp/common/usr/include/* ${PKG}/usr/include/
-	install -m 0755 ${SRC}/tmp/common/usr/sbin/atigetsysteminfo.sh ${PKG}/usr/sbin
-	mv ${SRC}/tmp/common/usr/share/man ${PKG}/usr/
-	mv ${SRC}/tmp/x710/usr/X11R6/lib/modules/* ${PKG}/usr/lib/xorg/modules/
-	
+	  ${PKG}/usr/lib/dri
+  rm -rf ${SRC}/tmp/arch/x86/usr/X11R6/lib/modules
+  install -m 0775 ${SRC}/tmp/arch/x86/usr/X11R6/lib/* ${PKG}/usr/lib
+  install -d ${PKG}/etc
+  mv ${SRC}/tmp/common/etc/ati ${PKG}/etc/
+  rm -f ${PKG}/etc/ati/logo*
+  mv ${SRC}/tmp/common/usr/X11R6/include ${PKG}/usr/
+  cp -a ${SRC}/tmp/common/usr/include/* ${PKG}/usr/include/
+  install -m 0755 ${SRC}/tmp/common/usr/sbin/atigetsysteminfo.sh ${PKG}/usr/sbin
+  mv ${SRC}/tmp/common/usr/share/man ${PKG}/usr/
+  mv ${SRC}/tmp/x710/usr/X11R6/lib/modules/* ${PKG}/usr/lib/xorg/modules/
+  
   # finetune the installation
-	ln -sf /usr/lib/libfglrx_pp.so.1.0 ${PKG}/usr/lib/libfglrx_pp.so.1
-	ln -sf /usr/lib/libfglrx_gamma.so.1.0 ${PKG}/usr/lib/libfglrx_gamma.so.1
-	install -D -m 0755 ${SRC}/atieventsd.sh ${PKG}/etc/rc.d/atieventsd
-	# required for use xorg-gl-select
-	mv -v ${PKG}/usr/lib/libGL.so.1.2 ${PKG}/usr/lib/libGL_so_1_2_ati
+  ln -sf /usr/lib/libfglrx_pp.so.1.0 ${PKG}/usr/lib/libfglrx_pp.so.1
+  ln -sf /usr/lib/libfglrx_gamma.so.1.0 ${PKG}/usr/lib/libfglrx_gamma.so.1
+  install -D -m 0755 ${SRC}/atieventsd ${PKG}/etc/rc.d/atieventsd
+  
+  # required for use xorg-gl-select
+  mv -v ${PKG}/usr/lib/libGL.so.1.2 ${PKG}/usr/lib/libGL_so_1_2_ati
   # patching file to avoid X11R6 paths
   perl -pi -e "s/\0\/usr\/X11R6\/lib\/modules\/dri\0/\0\/usr\/lib\/dri\0padpadpadpadpa/" \
     ${PKG}/usr/lib/libGL_so_1_2_ati
