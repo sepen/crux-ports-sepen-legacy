@@ -10,7 +10,7 @@ release=1
 source=(http://www2.ati.com/drivers/linux/$name-driver-installer-$version-x86.x86_64.run \
         atieventsd)
 
-build() {
+        build() {
   chmod +x $name-driver-installer-$version-x86.x86_64.run
   ./$name-driver-installer-${version}-x86.x86_64.run --extract ${SRC}/tmp
   
