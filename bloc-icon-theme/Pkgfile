@@ -1,0 +1,16 @@
+# Description: Bloc Icons is a set of simple, white, and square icons.
+# URL: http://themes.freshmeat.net/projects/bloc/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 
+
+name=bloc-icon-theme
+version=2
+release=1
+source=(http://themes.freshmeat.net/redir/bloc/58427/url_tgz/bloc-default-.2.tar.gz)
+
+build() {
+  install -d ${PKG}/usr/share/icons/bloc
+  mv ${SRC}/* ${PKG}/usr/share/icons/bloc/
+  rm -f ${PKG}/usr/share/icons/bloc/index.theme
+}
