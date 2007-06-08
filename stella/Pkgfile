@@ -7,7 +7,8 @@
 name=stella
 version=2.3.5
 release=1
-source=(http://dl.sourceforge.net/sourceforge/${name}/${name}-${version}-src.tar.gz)
+source=(http://dl.sourceforge.net/sourceforge/${name}/${name}-${version}-src.tar.gz \
+        atari2600-roms)
 
 build() {
   cd ${name}-${version}
@@ -19,4 +20,13 @@ build() {
   install -D -m 0644 ${PKG}/usr/share/icons/${name}.xpm \
     ${PKG}/usr/share/pixmaps/${name}.xpm
   rm -rf ${PKG}/usr/share/{doc,icons}
+  while read line; do
+    # htmlencode
+    rom=`echo ${line} | sed -e 's|"||g' -e "s|'|%27|g" -e 's| |%20|g'`
+    source="http://www.theoldcomputer.com/Libarary's/Emulation/Atari2600/Roms/${rom}"
+    # download and install
+    wget -c --directory-prefix=${PKG}/usr/share/${name}/roms ${source}
+  done < ${SRC}/atari2600-roms
 }
+
+# End of File

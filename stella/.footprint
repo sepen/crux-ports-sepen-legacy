@@ -6,3 +6,846 @@ drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/stella.desktop
 drwxr-xr-x	root/root	usr/share/pixmaps/
 -rw-r--r--	root/root	usr/share/pixmaps/stella.xpm
+drwxr-xr-x	root/root	usr/share/stella/
+drwxr-xr-x	root/root	usr/share/stella/roms/
+-rw-r--r--	root/root	usr/share/stella/roms/2Pak Black - Challenge - Surfing.bin
+-rw-r--r--	root/root	usr/share/stella/roms/2Pak Green - Hoppy - Alien Force.bin
+-rw-r--r--	root/root	usr/share/stella/roms/2Pak Yellow - Star Warrior - Frogger.bin
+-rw-r--r--	root/root	usr/share/stella/roms/32-in-1 (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/3D Tic-Tac-Toe (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/3D Tic-Tac-Toe (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/3D Tic-Tac-Toe (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/A Misterious Thief (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/A-Team.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Acid Drop.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Action Man.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Adventure.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Adventures of Tron.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Air Raid.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Air Raiders.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Air-Sea Battle (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Air-Sea Battle (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Air-Sea Battle (3).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Air-Sea Battle (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Airlock.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Alien (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Alien's Return.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Alien.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Alpha Beam with Ernie.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Amidar.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Angling.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Apples and Dolls (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Aquaventure (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Aquaventure.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Armor Ambush.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Artillery Duel (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Artillery Duel (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Assault.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Asterix.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Asteroids (pirate).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Asteroids.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Astro War.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Astroblast.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Atari 2600 Invaders (hack).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Atari Video Cube.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Atlantis (Activision) (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Atlantis (Activision) (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Atlantis (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Atlantis (Imagic).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Autorennen (Grand Prix).bin
+-rw-r--r--	root/root	usr/share/stella/roms/BMX Airmaster.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Bachellorette Party.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Bachelor Party.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Backgammon.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Bank Heist.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Barnstorming (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Barnstorming.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Base Attack (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Basic Programming.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Basketball (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Basketball (4k version).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Basketball.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Battlezone.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Beamrider (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Beamrider (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Beany Bopper (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Beany Bopper.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Beat 'Em and Eat 'Em.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Berenstain Bears.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Bermuda (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Bermuda Triangle.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Berzerk (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Berzerk.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Bi! Bi! (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Big Bird's Egg Catch.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Bionic Breakthrough.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Blackjack (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Blackjack (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Blackjack (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Blueprint.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Bobby is Going Home (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Bobby is Going Home (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Bogey Blaster.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Boing! (PD).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Boing! (alt 1) (PD).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Boing! (alt 2) (PD).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Boom Bang.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Bowling (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Bowling (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Bowling (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Bowling (4k version).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Bowling (Taiwan).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Boxing (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Boxing (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Boxing (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Brain Games (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Brain Games (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Breakdown.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Breakout - Breakaway IV (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Breakout - Breakaway IV (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Breakout - Breakaway IV (trained).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Brick Kick.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Bridge.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Buck Rogers - Planet of Zoom.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Bugs Bunny.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Bugs.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Bump n Jump.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Burgertime.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Burning Desire.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Cakewalk.bin
+-rw-r--r--	root/root	usr/share/stella/roms/California Games.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Canyon Bomber (4k version).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Canyon Bomber.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Carnival (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Carnival.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Casino.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Cat Trax.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Cathouse Blues.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Centipede.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Challenge (Alt).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Challenge (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Challenge of...NEXAR.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Chase the Chuckwagon.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Checkers (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Checkers (Activision).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Chess (1) (Taiwan Othello clone).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Chess (2) (Taiwan Othello clone).bin
+-rw-r--r--	root/root	usr/share/stella/roms/China Syndrome.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Chopper Command (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Chopper Command.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Chuck Norris Superkicks.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Circus Atari.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Circus.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Clown Downtown (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Coconuts.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Code Breaker (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Code Breaker (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Coke Wins.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Col 'N.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Color Bar Generator.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Colors Demo.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Combat (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Combat - Tank Plus (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Combat - Tank Plus (4k Version).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Combat.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Commando Raid.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Commando.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Condor Attack.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Congo Bongo.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Cookie Monster Munch.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Corrida da Matematica (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Cosmic Ark (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Cosmic Ark.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Cosmic Commuter (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Cosmic Commuter.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Cosmic Corridor.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Cosmic Creeps.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Cosmic Swarm (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Cosmic Swarm (4k Version).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Cosmic Swarm.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Crackpots (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Crackpots.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Crash Dive.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Crazy Climber.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Criminal Pursuit.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Cross Force.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Crossbow.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Cruise Missile.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Crypts of Chaos.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Crystal Castles (pirate).BIN
+-rw-r--r--	root/root	usr/share/stella/roms/Crystal Castles.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Cubicolor.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Cubo Magico (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Custer's Revenge.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Dancing Plate (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Dare Diver.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Dark Cavern.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Dark Chambers.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Dark Mage.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Deadly Duck.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Death Trap.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Decathlon.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Defender (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Defender 2 (16K version).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Defender 2.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Defender.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Demolition Herby.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Demon Attack (Activision).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Demon Attack (Imagic).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Demon Attack (trained).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Demons to Diamonds (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Demons to Diamonds.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Demons!.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Desert Falcon.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Diagnostic Cartridge.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Dice Puzzle.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Dig Dug.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Dishaster.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Dodge Em.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Dolphin (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Dolphin.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Donald Duck's Speedboat.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Donkey Kong Jr. (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Donkey Kong Jr. (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Donkey Kong Jr. (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Donkey Kong.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Double Dragon (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Double Dragon.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Double Dunk.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Dragon Defender.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Dragonfire (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Dragonfire.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Dragster (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Dragster (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Dschungle Boy (Pitfall).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Duck Shoot (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Dukes of Hazzard.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Dumbo's Flying Circus.bin
+-rw-r--r--	root/root	usr/share/stella/roms/E.T. (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/E.T..bin
+-rw-r--r--	root/root	usr/share/stella/roms/Earth Dies Screaming.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Eggomania.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Eli's Ladder.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Elk Attack.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Encounter at L5.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Enduro (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Enduro (Taiwan).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Enduro.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Entombed.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Espial (Non Functional).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Espial.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Exocet.bin
+-rw-r--r--	root/root	usr/share/stella/roms/F-14 Tomcat Flight Simulator.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Fantastic Voyage.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Farmyard Fun.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Fast Eddie (Activision 83).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Fast Eddie (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Fast Eddie (PAL) (bad dump).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Fast Eddie.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Fast Food.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Fatal Run.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Fathom (Non Functional).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Fathom.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Final Approach.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Fire Birds.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Fire Fighter.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Fire Fly.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Fire Spinner.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Fishing Derby (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Fishing Derby (16k Version).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Fishing Derby (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Fishing Derby (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Fishing Derby (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Fishing Derby (pirate) (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Flag Capture (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Flag Capture.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Flash Gordon.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Football (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Football (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Football (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Football (Soccer).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Forest (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Frankenstein's Monster.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Freeway (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Freeway (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Freeway (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Freeway (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Freeway (pirate) (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Frog Pond.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Frogger II - Threedeep!.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Frogger.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Frogs and Flies.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Frontline.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Frostbite (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Frostbite.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Fun With Numbers.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Fun with Numbers (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/G.I. Joe - Cobra Strike.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Galaga (River Raid clone).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Galaxian (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Galaxian.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Game of Concentration.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Gangster Alley.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Garfield (Prototype).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Gas Hog.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Gauntlet.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Ghost Manor (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Ghost Manor (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Ghostbusters II.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Ghostbusters.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Gigolo.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Glacier Patrol.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Glib.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Golf (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Golf (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Golf (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Gopher.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Gorf.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Grand Prix (16k Version).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Grand Prix (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Grand Prix.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Gravitar (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Gravitar.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Great Escape.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Gremlins.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Grover's Music Maker.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Guardian.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Gyruss.bin
+-rw-r--r--	root/root	usr/share/stella/roms/H.E.R.O. (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/H.E.R.O..bin
+-rw-r--r--	root/root	usr/share/stella/roms/Halloween.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Hangman.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Harbor Escape.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Haunted House.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Hole Hunter.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Holey Moley.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Home Run Baseball (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Home Run Baseball (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Homerun (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Human Cannonball (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Human Cannonball - Cannon Man (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Human Cannonball - Cannon Man (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/I Want My Mommy.bin
+-rw-r--r--	root/root	usr/share/stella/roms/I.Q. 180.bin
+-rw-r--r--	root/root	usr/share/stella/roms/INV.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Ice Hockey (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Ice Hockey.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Ikari Warriors.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Imagic Selector.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Immies and Aggies.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Indy 500 (4k Version).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Indy 500.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Infiltrate.bin
+-rw-r--r--	root/root	usr/share/stella/roms/International Soccer.bin
+-rw-r--r--	root/root	usr/share/stella/roms/James Bond 007 (bad dump).bin
+-rw-r--r--	root/root	usr/share/stella/roms/James Bond 007.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Jawbreaker.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Journey Escape.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Joust.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Jr. Pac-Man.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Jungle Fever.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Jungle Hunt (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Jungle Hunt.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Kaboom! (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Kaboom! (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Kaboom! (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Kangaroo.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Karate.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Keystone Kapers (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Keystone Kapers.bin
+-rw-r--r--	root/root	usr/share/stella/roms/King Kong.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Klax (NTSC).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Klax.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Knight on the Town.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Kool Aid Man.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Krieg Der Stern (Atlantis).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Krull (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Krull.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Kung Fu Master (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Kung Fu Master.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Kung Fu.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Lady in Wading.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Laser Blast (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Laser Blast (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Laser Blast (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Laser Blast (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Laser Gates.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Laser Volley.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Lock n Chase.bin
+-rw-r--r--	root/root	usr/share/stella/roms/London Blitz.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Lost Luggage.bin (EMPTY)
+-rw-r--r--	root/root	usr/share/stella/roms/M.A.D..bin
+-rw-r--r--	root/root	usr/share/stella/roms/M.A.S.H. (CCE).bin (EMPTY)
+-rw-r--r--	root/root	usr/share/stella/roms/M.A.S.H..bin
+-rw-r--r--	root/root	usr/share/stella/roms/Malagai.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Mangia.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Marauder.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Marine Wars.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Marineflieger (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Mario Bros. (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Mario Bros..bin
+-rw-r--r--	root/root	usr/share/stella/roms/Master Builder.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Masters of the Universe - The Power of He-Man.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Math Gran Prix.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Maze Craze.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Mega Force.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Megamania (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Megamania.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Meteor Defence.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Midnight Magic.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Millipede.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Miner 2049er (2) (Non Functional).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Miner 2049er (Non Functional).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Miner 2049er Vol. 2.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Miner 2049er.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Mines of Minos.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Minesweeper.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Miniature Golf (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Miniature Golf - Arcade Golf (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Miniature Golf - Arcade Golf (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Missile Command.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Missile Control.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Mission 3000 A.D..bin
+-rw-r--r--	root/root	usr/share/stella/roms/Mogul Maniac.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Mondo Pong.bin (EMPTY)
+-rw-r--r--	root/root	usr/share/stella/roms/Monstercise.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Montezuma's Revenge.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Moon Patrol (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Moon Patrol.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Moonsweeper (Non Functional).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Moonsweeper.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Moto Laser (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Motocross (Non Functional).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Motocross Racer - Joystik.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Motocross Racer.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Motocross.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Motorodeo.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Mountain King.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Mouse Trap.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Mr. Do!'s Castle.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Mr. Do!.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Mr. Postman (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Mr. Postman.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Ms. Pac-Man (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Ms. Pac-Man.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Multi-Sprite Demo.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Music Machine.bin
+-rw-r--r--	root/root	usr/share/stella/roms/My Golf (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/My Golf.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Night Driver (4k Version).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Night Driver.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Night Stalker.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Nightmare (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Nightmare.bin
+-rw-r--r--	root/root	usr/share/stella/roms/No Escape! (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/No Escape! (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Nuts.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Obelix.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Ocean City Defender.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Octopus.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Off The Wall (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Off Your Rocker.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Off the Wall (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Oink! (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Oink!.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Okie Dokie (Older).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Okie Dokie.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Omega Race.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Open Sesame.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Oscar's Trash Race.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Othello (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Outlaw (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Outlaw - GunSlinger (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Outlaw - GunSlinger (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Oystron.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pac Kong.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pac-Man (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pac-Man (hack).BIN
+-rw-r--r--	root/root	usr/share/stella/roms/Pac-Man.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pac-Space.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Panda Chase.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Parachute.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Peek-A-Boo.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pele's Championship Soccer (pirate).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pele's Championship Soccer.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pele's Soccer (Taiwan).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pengo.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pete Rose Baseball.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Phantom Tank (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Phantom Tank (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pharoah's Curse.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Philly Flasher.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Phoenix (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Phoenix.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pick 'n Pile.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Picnic.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Piece o' Cake.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pigs in Space.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pitfall II - Lost Caverns (10K version).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pitfall II - Lost Caverns.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pitfall! (Beta).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pitfall! (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pitfall! (says 1985).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pitfall! No Walls Hack.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pitfall!.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Planet Patrol (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Planet Patrol.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Plaque Attack (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Plaque Attack.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Polaris (Non Functional).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Polaris.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pole Position (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pole Position (known glitchy version).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pole Position.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Polo.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pooyan.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Popeye.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Porky's.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pressure Cooker (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pressure Cooker.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Private Eye (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Private Eye (known glitchy version).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Private Eye.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Puzzle (Taiwan).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Pyramid War.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Q-bert's Qubes (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Q-bert's Qubes (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Q-bert.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Quadrun.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Quest for Quintana Roo.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Quick Step!.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Racquetball.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Radar Lock.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Raft Rider.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Raiders of the Lost Ark.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Ram It.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Rampage (bad dump).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Rampage!.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Reactor.bin
+-rw-r--r--	root/root	usr/share/stella/roms/RealSports Baseball.bin
+-rw-r--r--	root/root	usr/share/stella/roms/RealSports Boxing.bin
+-rw-r--r--	root/root	usr/share/stella/roms/RealSports Football.bin
+-rw-r--r--	root/root	usr/share/stella/roms/RealSports Soccer.bin
+-rw-r--r--	root/root	usr/share/stella/roms/RealSports Tennis (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/RealSports Tennis (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/RealSports Tennis (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/RealSports Volleyball.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Rescue Bira Bira.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Rescue Terra I.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Resgate Espacial (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Revenge of the Beefsteak Tomatoes.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Riddle of the Sphinx.bin
+-rw-r--r--	root/root	usr/share/stella/roms/River Patrol.bin
+-rw-r--r--	root/root	usr/share/stella/roms/River Raid (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/River Raid (16k Version).bin
+-rw-r--r--	root/root	usr/share/stella/roms/River Raid (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/River Raid (Brazil).bin
+-rw-r--r--	root/root	usr/share/stella/roms/River Raid (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/River Raid (Polyvox).bin
+-rw-r--r--	root/root	usr/share/stella/roms/River Raid (SpkSoft 98).bin
+-rw-r--r--	root/root	usr/share/stella/roms/River Raid (SpkSoft).bin
+-rw-r--r--	root/root	usr/share/stella/roms/River Raid (Trained).bin
+-rw-r--r--	root/root	usr/share/stella/roms/River Raid 2.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Road Runner (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Road Runner.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Robin Hood.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Robot Fight.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Robot Tank.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Roc n' Rope.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Room of Doom.bin
+-rw-r--r--	root/root	usr/share/stella/roms/SALT Diagnostics.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Saboteur.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Save Our Ship.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Scuba Diver.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Sea Hawk (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Sea Hawk (Froggo).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Sea Hawk (Panda).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Sea Hunt (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Sea Hunt.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Sea Monster (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Sea Monster (bad dump).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Seaquest (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Seaquest.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Secret Quest.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Seesaw (Taiwan).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Sentinel.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Shark Attack.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Shootin' Gallery.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Shooting Arcade.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Shuttle Orbiter.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Sinistar.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Sir Lancelot.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Skateboardin'.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Skeet Shoot (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Skeet Shoot (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Ski Hunt.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Ski Run.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Skiing (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Skiing (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Skiing (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Sky Diver (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Sky Diver.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Sky Jinks (4k version).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Sky Jinks (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Sky Jinks (Non Functional).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Sky Jinks.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Sky Patrol (Prototype).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Sky Skipper.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Slot Machine (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Slot Machine.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Slot Racers (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Slot Racers - Maze (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Slot Racers - Maze (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Smurfs - Rescue in Gargamel's Castle (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Smurfs - Rescue in Gargamel's Castle.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Smurfs Save the Day.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Snail Against Squirrel (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Snail Against Squirrel (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Sneek n Peek.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Snoopy and the Red Baron (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Snoopy and the Red Baron.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Soccer (Unlicensed).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Solar Fox.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Solar Storm.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Solaris.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Sorcerer's Apprentice.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Sorcerer.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Space Attack.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Space Canyon.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Space Cavern.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Space Invaders (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Space Invaders (hack).BIN
+-rw-r--r--	root/root	usr/share/stella/roms/Space Invaders (trained).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Space Invaders.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Space Jockey (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Space Jockey (4K version).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Space Jockey.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Space Raid.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Space Robot.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Space Shuttle.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Space Tunnel (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Space Tunnel (Taiwan).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Space War (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Space War (4k Version).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Space War.bin
+-rw-r--r--	root/root	usr/share/stella/roms/SpaceMaster X-7.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Spacechase.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Spider Fighter (16k Version).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Spider Fighter.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Spider-Man.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Spiderdroid.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Spike's Peak.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Spitfire Attack.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Springer.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Sprintmaster.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Spy Hunter.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Squeeze Box.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Sssnake.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Stampede (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Stampede (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Stampede (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Star Fox.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Star Gunner.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Star Raiders.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Star Ship - Outer Space (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Star Ship - Outer Space (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Star Strike.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Star Trek - Strategic Operations Simulator.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Star Voyager (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Star Voyager.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Star Wars - Death Star Battle.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Star Wars - Empire Strikes Back.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Star Wars - Jedi Arena.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Star Wars - The Arcade Game.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Stargate (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Stargate (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starmaster.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath (partial dump).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Communist Mutants From Space (Preview).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Communist Mutants From Space (alt).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Communist Mutants From Space.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Dragonstomper (Preview) (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Dragonstomper (Preview).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Dragonstomper (alt).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Dragonstomper (split version part 1 of 3).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Dragonstomper (split version part 2 of 3).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Dragonstomper (split version part 3 of 3).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Dragonstomper.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Escape from the Mindmaster (Preview).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Escape from the Mindmaster (alt).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Escape from the Mindmaster (split version part 1 of 4).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Escape from the Mindmaster (split version part 2 of 4).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Escape from the Mindmaster (split version part 3 of 4).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Escape from the Mindmaster (split version part 4 of 4).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Escape from the Mindmaster.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Fireball (Preview).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Fireball (alt).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Fireball.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Frogger (Official version by Sega) (alt).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Frogger (Official version by Sega).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Frogger (Preview) (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Frogger (Preview).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Killer Satellites (Preview).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Killer Satellites.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Party Mix (Preview).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Party Mix (split version part 1 of 3).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Party Mix (split version part 2 of 3).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Party Mix (split version part 3 of 3).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Party Mix.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Phaser Patrol (alt).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Phaser Patrol.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Rabbit Transit (Preview).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Rabbit Transit (alt).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Rabbit Transit.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Suicide Mission (Preview).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Suicide Mission (alt).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Suicide Mission (no title screen).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Suicide Mission.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Survival Island (alt).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Survival Island (split version part 1 of 3).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Survival Island (split version part 2 of 3).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Survival Island (split version part 3 of 3).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Survival Island.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Sweat! - The Decathalon Game (split version part 1 of 2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Sweat! - The Decathalon Game (split version part 2 of 2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Sweat! - The Decathalon Game.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Sword Of Saros (alt).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Starpath - Sword Of Saros.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Steeplechase (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Steeplechase (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Stell-A-Sketch.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Stellar Track.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Strategy X.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Strawberry Shortcake Musical Match-Ups.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Street Racer - Speedway II (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Street Racer - Speedway II (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Stronghold.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Sub Scan.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Submarine Commander.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Subterrenea.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Summer Games.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Super Baseball (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Super Baseball.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Super Box (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Super Breakout.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Super Challenge Baseball.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Super Challenge Football.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Super Cobra.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Super Ferrari (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Super Ferrari.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Super Football.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Super Futebol (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Super Futebol.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Super VoleyBall (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Superman (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Superman (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Superman (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Surf's Up.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Surfer's Paradise - But Danger Below!.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Surround (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Surround (4k version).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Surround.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Survival Run.bin
+-rw-r--r--	root/root	usr/share/stella/roms/SwordQuest - Earthworld.bin
+-rw-r--r--	root/root	usr/share/stella/roms/SwordQuest - Fireworld.bin
+-rw-r--r--	root/root	usr/share/stella/roms/SwordQuest - Waterworld.bin
+-rw-r--r--	root/root	usr/share/stella/roms/T.F. Space Invaders.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Tac Scan.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Tanks But No Tanks.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Tapeworm.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Tapper.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Task Force.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Tax Avoiders.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Taz.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Teddy Apple.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Tennis (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Tennis (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Tennis (32 in 1) (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Test Cartridge.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Test Tape - Standalone.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Tetris 2600.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Texas Chainsaw Massacre.bin
+-rw-r--r--	root/root	usr/share/stella/roms/This Planet Sucks.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Threshhold.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Thunderground.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Time Machine.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Time Pilot (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Time Pilot (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Time Race 2.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Time Race.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Time Warp.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Title Match Pro Wrestling (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Title Match Pro Wrestling (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Title Match Pro Wrestling (3).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Tom Boy.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Tooth Protectors.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Towering Inferno.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Track and Field.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Traffic.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Trick Shot.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Tron - Deadly Discs.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Tuby Bird.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Tunnel Runner (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Tunnel Runner (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Turmoil (Activision).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Turmoil.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Tutankham.bin
+-rw-r--r--	root/root	usr/share/stella/roms/UFO Patrol.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Universal Chaos (PAL).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Up n Down.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Vanguard (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Vanguard.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Venture.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Video Checkers.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Video Chess.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Video Cube (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Video Jogger.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Video Olympics - Pong Sports (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Video Olympics - Pong Sports (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Video Pinball.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Video Reflex.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Video Time Machine.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Wabbit.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Wachroboter Jagt Jupy (Keystone Kapers).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Walker.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Wall Ball.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Wall Defender.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Warlords.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Warplock.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Weltraum Tunnel.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Wing War.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Winter Games.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Wizard of Wor.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Wizard.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Word Zapper.bin
+-rw-r--r--	root/root	usr/share/stella/roms/World End.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Worm War (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Worm War I.bin
+-rw-r--r--	root/root	usr/share/stella/roms/X-Doom.bin
+-rw-r--r--	root/root	usr/share/stella/roms/X-Man (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/X-Man (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Xenophobe.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Xevious (CCE).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Xevious.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Yar's Revenge (1).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Yar's Revenge (2).bin
+-rw-r--r--	root/root	usr/share/stella/roms/Z-Tack.bin
+-rw-r--r--	root/root	usr/share/stella/roms/ZZZ_UNK_24.BIN
+-rw-r--r--	root/root	usr/share/stella/roms/ZZZ_UNK_34 (Othello pirate).BIN
+-rw-r--r--	root/root	usr/share/stella/roms/ZZZ_UNK_BNJ.bin
+-rw-r--r--	root/root	usr/share/stella/roms/ZZZ_UNK_CHECKERS.BIN
+-rw-r--r--	root/root	usr/share/stella/roms/ZZZ_UNK_CX2637.BIN
+-rw-r--r--	root/root	usr/share/stella/roms/ZZZ_UNK_CX2639.BIN
+-rw-r--r--	root/root	usr/share/stella/roms/ZZZ_UNK_HERO.BIN
+-rw-r--r--	root/root	usr/share/stella/roms/ZZZ_UNK_Halloween.bin
+-rw-r--r--	root/root	usr/share/stella/roms/ZZZ_UNK_LADYWDNG.BIN
+-rw-r--r--	root/root	usr/share/stella/roms/ZZZ_UNK_MARAUD.BIN
+-rw-r--r--	root/root	usr/share/stella/roms/ZZZ_UNK_MISSILEW.bin
+-rw-r--r--	root/root	usr/share/stella/roms/ZZZ_UNK_MNRVOL2.bin
+-rw-r--r--	root/root	usr/share/stella/roms/ZZZ_UNK_SPACEWAR.BIN
+-rw-r--r--	root/root	usr/share/stella/roms/ZZZ_UNK_SUPRCBRA.bin
+-rw-r--r--	root/root	usr/share/stella/roms/ZZZ_UNK_TEMP.BIN
+-rw-r--r--	root/root	usr/share/stella/roms/ZZZ_UNK_mmr027.bin
+-rw-r--r--	root/root	usr/share/stella/roms/ZZZ_UNK_say_.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Zaxxon.bin
+-rw-r--r--	root/root	usr/share/stella/roms/Zoo Fun.bin
