@@ -1,0 +1,22 @@
+# Description: Stella is a multi-platform Atari 2600 VCS emulator
+# URL: http://stella.sourceforge.net/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: xorg
+
+name=stella
+version=2.3.5
+release=1
+source=(http://dl.sourceforge.net/sourceforge/${name}/${name}-${version}-src.tar.gz)
+
+build() {
+  cd ${name}-${version}
+  ./configure --prefix=/usr \
+              --disable-debugger \
+              --x-libraries=/usr/lib
+  make
+  make DESTDIR=${PKG} install
+  install -D -m 0644 ${PKG}/usr/share/icons/${name}.xpm \
+    ${PKG}/usr/share/pixmaps/${name}.xpm
+  rm -rf ${PKG}/usr/share/{doc,icons}
+}
