@@ -2,7 +2,7 @@
 # URL: http://terminal.os-cillation.com/
 # Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
 # Packager: Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on: dbus,vte,xfce4-dev-tools,gtk,exo
+# Depends on: dbus,vte,xfce4-dev-tools,exo
 
 name=xfce-terminal
 version=0.2.5.8rc2

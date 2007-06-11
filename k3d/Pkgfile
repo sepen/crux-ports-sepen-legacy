@@ -1,9 +1,9 @@
-# Description:  3D modeling and animation system
-# URL:          http://www.k-3d.org/
-# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
-# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on:   mesa3d,gtkmm,gtkglext,librsvg
-# # Recommends:	plib,openexr,imagemagick,graphviz,gts
+# Description: 3D modeling and animation system
+# URL: http://www.k-3d.org/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: xorg,gtkmm,gtkglext,librsvg
+# Recommends:	plib,openexr,imagemagick,graphviz,gts
 
 name=k3d
 version=0.5.0.39

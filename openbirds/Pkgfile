@@ -2,7 +2,7 @@
 # URL:          http://openbirds.sourceforge.net/
 # Maintainer:   Jose V Beneyto, <joberui@ei.upv.es>
 # Packager:     Jose V Beneyto, <joberui@ei.upv.es>
-# Depends on:   rpm2targz
+# Depends on:   rpm2targz, freealut
 
 name=openbirds
 version=0.6-1
@@ -14,6 +14,10 @@ build() {
   install -d ${SRC}/tmp
   export TMPDIR=${SRC}/tmp
 	rpm2targz *
-ls -la
-read
+  tar xfz ${name}-${version}.i386.tar.gz
+  tar xfz ${name}-data-${version}.i386.tar.gz
+  mv usr ${PKG}
+  mv etc/* ${PKG}/usr/share/${name}/data
+  rm -rf ${PKG}/usr/share/${name}/data/{*.txt,CVS}
+  find ${PKG}/usr/share/${name}/data -type d -name 'CVS' -exec rm -rf {} \;
 }
