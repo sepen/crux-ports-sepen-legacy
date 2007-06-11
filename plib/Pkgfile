@@ -6,15 +6,20 @@
 
 name=plib
 version=1.8.4
-release=1
-source=(http://plib.sourceforge.net/dist/${name}-${version}.tar.gz)
+release=2
+source=(http://plib.sourceforge.net/dist/${name}-${version}.tar.gz \
+        ${name}-${version}-gcc41.patch \
+        ${name}-${version}-too-many-axes.patch)
 
 build() {
   cd ${name}-${version}
+  patch -p0 < ${SRC}/${name}-${version}-gcc41.patch
+  patch -p0 < ${SRC}/${name}-${version}-too-many-axes.patch
   ./configure --prefix=/usr \
-              --disable-ssgaux \
               --with-GL=/usr/lib \
+              --x-includes=/usr/include/X11 \
+              --x-libraries=/usr/lib/X11 \
               --with-x 
-  make -I/usr/include 
+  make  
   make DESTDIR=${PKG} install
 }

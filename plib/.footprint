@@ -26,8 +26,18 @@ drwxr-xr-x	root/root	usr/include/plib/
 -rw-r--r--	root/root	usr/include/plib/slPortability.h
 -rw-r--r--	root/root	usr/include/plib/sm.h
 -rw-r--r--	root/root	usr/include/plib/ssg.h
+-rw-r--r--	root/root	usr/include/plib/ssgAux.h
 -rw-r--r--	root/root	usr/include/plib/ssgKeyFlier.h
 -rw-r--r--	root/root	usr/include/plib/ssgMSFSPalette.h
+-rw-r--r--	root/root	usr/include/plib/ssgaBillboards.h
+-rw-r--r--	root/root	usr/include/plib/ssgaFire.h
+-rw-r--r--	root/root	usr/include/plib/ssgaLensFlare.h
+-rw-r--r--	root/root	usr/include/plib/ssgaParticleSystem.h
+-rw-r--r--	root/root	usr/include/plib/ssgaScreenDump.h
+-rw-r--r--	root/root	usr/include/plib/ssgaShapes.h
+-rw-r--r--	root/root	usr/include/plib/ssgaSky.h
+-rw-r--r--	root/root	usr/include/plib/ssgaSphere.h
+-rw-r--r--	root/root	usr/include/plib/ssgaWaveSystem.h
 -rw-r--r--	root/root	usr/include/plib/ssgconf.h
 -rw-r--r--	root/root	usr/include/plib/ul.h
 -rw-r--r--	root/root	usr/include/plib/ulRTTI.h
@@ -43,4 +53,5 @@ drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libplibsl.a
 -rw-r--r--	root/root	usr/lib/libplibsm.a
 -rw-r--r--	root/root	usr/lib/libplibssg.a
+-rw-r--r--	root/root	usr/lib/libplibssgaux.a
 -rw-r--r--	root/root	usr/lib/libplibul.a
