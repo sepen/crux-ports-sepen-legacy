@@ -1,0 +1,12 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/nexuiz
+-rwxr-xr-x	root/root	usr/bin/nexuizded
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/nexuiz/
+drwxr-xr-x	root/root	usr/share/nexuiz/data/
+-rw-r--r--	root/root	usr/share/nexuiz/data/common-spog.pk3
+-rw-r--r--	root/root	usr/share/nexuiz/data/data20070531.pk3
+-rwxr-xr-x	root/root	usr/share/nexuiz/nexuiz
+-rwxr-xr-x	root/root	usr/share/nexuiz/nexuiz-dedicated
+-rw-r--r--	root/root	usr/share/nexuiz/nexuiz.rc
