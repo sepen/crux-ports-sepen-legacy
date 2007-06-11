@@ -1,0 +1,14 @@
+# Description: tkdiff is a graphical front end to the diff program.
+# URL: http://sourceforge.net/projects/tkdiff/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: tk
+
+name=tkdiff
+version=4.1.3
+release=1
+source=(http://dl.sourceforge.net/sourceforge/${name}/${name}-${version}-unix.tar.gz)
+
+build() {
+  install -D -m 0755 ${name}-${version}-unix/${name} ${PKG}/usr/bin/${name}
+}
