@@ -6,10 +6,23 @@
 
 name=php4
 version=4.4.7
-release=2
+release=3
 source=(http://php.net/distributions/php-${version}.tar.bz2)
 
 build() {
+  local SQL
+  local CFLAGS
+  if [ "`pkginfo -i | grep postgresql`" ];then
+    SQL="${SQL} --with-pgsql=/usr"
+    LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:/usr/lib/postgresql"
+    CFLAGS="${CFLAGS} -I/usr/include/postgresql"
+  fi
+  if [ "`pkginfo -i | grep mysql`" ];then
+    SQL="${SQL} --with-mysql=/usr"
+    LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:/usr/lib/mysql"
+    CFLAGS="${CFLAGS} -I/usr/include/mysql"
+  fi
+  export LD_LIBRARY_PATH
   cd php-${version}
   ./configure --prefix=/usr \
               --with-bz2 \
@@ -28,9 +41,11 @@ build() {
               --enable-regex=pcre \
               --enable-sigchild \
               --disable-static \
-              --disable-pdo
-    make
+              --disable-pdo \
+              ${SQL}
+    make ${CFLAGS}
     make INSTALL_ROOT=${PKG} install
-    install -D -m 0644 php.ini-dist ${PKG}/etc/php.ini
     rm -rf ${PKG}/usr/lib/php/{test,doc}
+    sed -i "/^extension_dir/s|\./|/usr/lib/php/extensions|" php.ini-dist
+    install -D -m 0644 php.ini-dist ${PKG}/etc/php.ini
 }
