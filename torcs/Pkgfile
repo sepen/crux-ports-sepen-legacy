@@ -1,0 +1,45 @@
+# Description: TORCS is a 3D racing cars simulator using OpenGL.
+# URL: http://torcs.sourceforge.net
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: xorg,freealut,freeglut,libvobis,smpeg,plib
+
+name=torcs
+version=1.3.0
+release=1
+source=(http://dl.sourceforge.net/sourceforge/${name}/TORCS-${version}-src.tgz \
+        http://dl.sourceforge.net/sourceforge/${name}/TORCS-${version}-src-robots-base.tgz \
+        http://dl.sourceforge.net/sourceforge/${name}/TORCS-${version}-src-robots-berniw.tgz \
+        http://dl.sourceforge.net/sourceforge/${name}/TORCS-${version}-src-robots-bt.tgz \
+        http://dl.sourceforge.net/sourceforge/${name}/TORCS-${version}-src-robots-olethros.tgz \
+        http://dl.sourceforge.net/sourceforge/${name}/TORCS-${version}-data.tgz \
+        http://dl.sourceforge.net/sourceforge/${name}/TORCS-${version}-data-tracks-road.tgz \
+        http://dl.sourceforge.net/sourceforge/${name}/TORCS-${version}-data-tracks-oval.tgz \
+        http://dl.sourceforge.net/sourceforge/${name}/TORCS-${version}-data-tracks-dirt.tgz \
+        http://dl.sourceforge.net/sourceforge/${name}/TORCS-${version}-data-cars-extra.tgz \
+        http://dl.sourceforge.net/sourceforge/${name}/TORCS-${version}-data-cars-nascar.tgz \
+        http://dl.sourceforge.net/sourceforge/${name}/TORCS-${version}-data-cars-Patwo-Design.tgz \
+        http://dl.sourceforge.net/sourceforge/${name}/TORCS-${version}-data-cars-kcendra-gt.tgz \
+        http://dl.sourceforge.net/sourceforge/${name}/TORCS-${version}-data-cars-kcendra-roadsters.tgz \
+        http://dl.sourceforge.net/sourceforge/${name}/TORCS-${version}-data-cars-kcendra-sport.tgz \
+        http://dl.sourceforge.net/sourceforge/${name}/TORCS-${version}-data-cars-VM.tgz \
+        http://www.berniw.org/trb/download/TORCS-${version}-data-cars-trb1.tgz)
+
+build() {
+  cd ${name}-${version}
+  autoconf
+  ./configure --prefix=/usr \
+              --x-includes=/usr/include/X11 \
+              --x-libraries=/usr/lib/X11 \
+              --with-x
+  for i in `grep -r '/games/' * | grep -v 'specfiles' | cut -d':' -f1`; do
+    sed -i 's|/games||' $i
+  done
+  sed -i 's|/usr/X11R6/lib|/usr/lib/X11|g' Make-config
+  make 
+  make DESTDIR=${PKG} install
+  mv ${SRC}/{cars,categories,data,menu,tracks} ${PKG}/usr/share/${name}
+  rm -f ${PKG}/usr/lib/torcs/setup_linux.sh
+  find ${PKG}/usr/share -name 'readme.txt' -exec rm -f {} \;
+  find ${PKG}/usr/share -name 'Makefile' -exec rm -f {} \;
+}
