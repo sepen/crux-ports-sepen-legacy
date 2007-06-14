@@ -1,0 +1,20 @@
+# Description: Meld is a visual diff and merge tool.
+# URL: http://meld.sourceforge.net/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: gnome-python,pygtk,pyorbit,intltool
+
+name=meld
+version=1.1.5
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/${name}/1.1/${name}-${version}.tar.bz2 \
+        ${name})
+
+build() {
+  rm -rf ${SRC}/${name}-${version}/{AUTHORS,COPYING,GNUmakefile,INSTALL,README.CVS,changelog} \
+         ${SRC}/${name}-${version}/{*.in,*.install,help,po,tools,vc/{README,COPYING}}
+  rm -rf ${SRC}/${name}-${version}/{vc/.svn,glade2/{.svn,pixmaps/.svn}}
+  install -d ${PKG}/usr/share/${name}
+  mv ${SRC}/${name}-${version}/* ${PKG}/usr/share/${name}
+  install -D -m 0755 ${SRC}/${name} ${PKG}/usr/bin/${name}
+}
