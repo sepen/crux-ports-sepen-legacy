@@ -2,7 +2,7 @@
 # URL: http://meld.sourceforge.net/
 # Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
 # Packager: Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on: gnome-python,pygtk,pyorbit,intltool
+# Depends on: gnome-python,pygtk,intltool
 
 name=meld
 version=1.1.5
