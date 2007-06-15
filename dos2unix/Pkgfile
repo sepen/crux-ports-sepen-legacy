@@ -1,0 +1,24 @@
+# Description: Dos2unix converts DOS or MAC text files to UNIX format.
+# URL: 
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: rpm2targz
+
+name=dos2unix
+version=3.1
+release=1
+source=(ftp://rpmfind.net/linux/redhat/enterprise/2.1AS/en/os/i386/SRPMS/${name}-${version}-7.src.rpm)
+
+build() {
+  rpm2targz ${name}-${version}-7.src.rpm
+  tar xfz ${name}-${version}-7.src.tar.gz
+  tar xfj ${name}-${version}.tar.bz2
+  cd ${name}-${version}
+  sed -i 's|mktemp|mkstemp|g' dos2unix.c
+  make clean
+  make
+  install -D -m 0755 ${name} ${PKG}/usr/bin/${name}
+  install -D -m 0755 ${name}.1 ${PKG}/usr/man/man1/${name}.1
+  install -D -m 0755 mac2unix ${PKG}/usr/bin/mac2unix
+  install -D -m 0755 mac2unix.1 ${PKG}/usr/man/man1/mac2unix.1
+}
