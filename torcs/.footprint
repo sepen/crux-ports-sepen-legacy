@@ -59,6 +59,7 @@ drwxrwxrwx	root/root	usr/lib/torcs/modules/track/
 -rw-r--r--	root/root	usr/lib/torcs/modules/track/track.so
 -rwxr-xr-x	root/root	usr/lib/torcs/nfs2ac-bin
 -rwxr-xr-x	root/root	usr/lib/torcs/nfsperf-bin
+-rwxr-xr-x	root/root	usr/lib/torcs/setup_linux.sh
 -rwxr-xr-x	root/root	usr/lib/torcs/texmapper-bin
 -rwxr-xr-x	root/root	usr/lib/torcs/torcs-bin
 -rwxr-xr-x	root/root	usr/lib/torcs/trackgen-bin

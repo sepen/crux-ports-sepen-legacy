@@ -39,7 +39,6 @@ build() {
   make 
   make DESTDIR=${PKG} install
   mv ${SRC}/{cars,categories,data,menu,tracks} ${PKG}/usr/share/${name}
-  rm -f ${PKG}/usr/lib/torcs/setup_linux.sh
   find ${PKG}/usr/share -name 'readme.txt' -exec rm -f {} \;
   find ${PKG}/usr/share -name 'Makefile' -exec rm -f {} \;
 }
