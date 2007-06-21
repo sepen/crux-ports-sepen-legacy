@@ -7,8 +7,15 @@
 name=minivmac
 version=3.0.0
 release=1
-source=(http://dl.sourceforge.net/sourceforge/${name}/${name}-${version}.bin.bgclx86s.tgz)
+source=(http://dl.sourceforge.net/sourceforge/${name}/${name}-${version}.bin.bgclx86s.tgz
+        http://www.geocities.com/SiliconValley/Bit/6458/vmac-rom.zip \
+        http://www.geocities.com/SiliconValley/Bit/6458/vMac.icon.tar.gz)
 
 build() {
-  install -D -m 0755 ${SRC}/${name} ${PKG}/usr/bin/${name}
+  install -D -m 0755 ${SRC}/${name} ${PKG}/usr/share/${name}/${name}
+  install -D -m 0644 ${SRC}/vMac.ROM ${PKG}/usr/share/vMac.ROM
+  install -D -m 0644 ${SRC}/vMacguy.xpm ${PKG}/usr/share/pixmaps/${name}.xpm
+  install -d ${PKG}/usr/bin
+  echo -n "#!/bin/sh\n\ncd /usr/share/${name}\nexec ${name}\n" > ${PKG}/usr/bin/${name}
+  chmod 077 ${PKG}/usr/bin/${name}
 }
