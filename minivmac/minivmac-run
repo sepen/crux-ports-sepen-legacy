@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cd /usr/share/minivmac
+./minivmac -r ./vMac.ROM ./Disk608.dsk  ./MacPaint.dsk ./MacDraw.dsk
+
+# End of File
