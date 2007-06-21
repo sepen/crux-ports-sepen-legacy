@@ -13,7 +13,7 @@ source=(http://dl.sourceforge.net/sourceforge/${name}/${name}-${version}.bin.bgc
 
 build() {
   install -D -m 0755 ${SRC}/${name} ${PKG}/usr/share/${name}/${name}
-  install -D -m 0644 ${SRC}/vMac.ROM ${PKG}/usr/share/vMac.ROM
+  install -D -m 0644 ${SRC}/vMac.ROM ${PKG}/usr/share/${name}/vMac.ROM
   install -D -m 0644 ${SRC}/vMacguy.xpm ${PKG}/usr/share/pixmaps/${name}.xpm
   install -d ${PKG}/usr/bin
   echo -n "#!/bin/sh\n\ncd /usr/share/${name}\nexec ${name}\n" > ${PKG}/usr/bin/${name}
