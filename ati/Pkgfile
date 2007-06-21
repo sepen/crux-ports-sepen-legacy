@@ -10,7 +10,7 @@ release=1
 source=(http://www2.ati.com/drivers/linux/$name-driver-installer-$version-x86.x86_64.run \
         atieventsd)
 
-        build() {
+build() {
   chmod +x $name-driver-installer-$version-x86.x86_64.run
   ./$name-driver-installer-${version}-x86.x86_64.run --extract ${SRC}/tmp
   
@@ -22,15 +22,15 @@ source=(http://www2.ati.com/drivers/linux/$name-driver-installer-$version-x86.x8
   
   # install kernel module
   install -D -m 0644 ${SRC}/tmp/common/lib/modules/fglrx/build_mod/2.6.x/fglrx.ko \
-    ${PKG}/lib/modules/`uname -r`/kernel/drivers/char/drm/fglrx.ko
+  ${PKG}/lib/modules/`uname -r`/kernel/drivers/char/drm/fglrx.ko
   
   # install xorg
   install -d ${PKG}/usr/{bin,sbin}
   install -m 0755 ${SRC}/tmp/arch/x86/usr/X11R6/bin/* ${PKG}/usr/bin
   install -m 0755 ${SRC}/tmp/arch/x86/usr/sbin/* ${PKG}/usr/sbin
   install -d ${PKG}/usr/lib/{dri,xorg/modules}
-	install -m 0755 ${SRC}/tmp/arch/x86/usr/X11R6/lib/modules/dri/* \
-	  ${PKG}/usr/lib/dri
+  install -m 0755 ${SRC}/tmp/arch/x86/usr/X11R6/lib/modules/dri/* \
+    ${PKG}/usr/lib/dri
   rm -rf ${SRC}/tmp/arch/x86/usr/X11R6/lib/modules
   install -m 0775 ${SRC}/tmp/arch/x86/usr/X11R6/lib/* ${PKG}/usr/lib
   install -d ${PKG}/etc
