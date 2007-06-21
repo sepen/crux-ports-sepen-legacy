@@ -1,0 +1,14 @@
+# Description: a miniature Macintosh emulator
+# URL: http://minivmac.sourceforge.net/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 
+
+name=minivmac
+version=3.0.0
+release=1
+source=(http://dl.sourceforge.net/sourceforge/${name}/${name}-${version}.bin.bgclx86s.tgz)
+
+build() {
+  install -D -m 0755 ${SRC}/${name} ${PKG}/usr/bin/${name}
+}
