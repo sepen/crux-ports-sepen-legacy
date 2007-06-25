@@ -1,0 +1,21 @@
+# Description: Display the current CPU load, the memory in use, the swap space and the system uptime in the Xfce4 panel.
+# URL: http://goodies.xfce.org/projects/panel-plugins/xfce4-systemload-plugin
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: xfce4-panel
+
+name=xfce4-systemload-plugin
+version=0.4.2
+release=1
+source=(http://goodies.xfce.org/releases/${name}/${name}-${version}.tar.bz2)
+
+build() {
+  cd ${name}-${version}
+  autoconf
+  ./configure --prefix=/usr \
+              --libexecdir=/usr/lib \
+              --disable-debug
+  make
+  make DESTDIR=${PKG} install
+  rm -rf ${PKG}/usr/share/locale
+}
