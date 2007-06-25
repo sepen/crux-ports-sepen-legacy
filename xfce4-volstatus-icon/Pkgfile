@@ -1,0 +1,21 @@
+# Description: system tray icon that allows you to easily eject removable devices from your system.
+# URL: http://goodies.xfce.org/projects/applications/xfce4-volstatus-icon
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: gtk,libxfce4util,libxfcegui4,dbus,hal,exo,xfce4-panel
+
+name=xfce4-volstatus-icon
+version=0.1.0
+release=1
+source=(http://goodies.xfce.org/releases/${name}/${name}-${version}.tar.bz2)
+
+build() {
+  cd ${name}-${version}
+  autoconf
+  ./configure --prefix=/usr \
+              --with-x \
+              --disable-debug
+  make 
+  make DESTDIR=${PKG} install
+  rm -rf ${PKG}/usr/share/locale
+}
