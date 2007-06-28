@@ -6,7 +6,7 @@
 
 name=protux
 version=0.50.100
-release=1
+release=2
 source=(http://protux.sourceforge.net/releases/${name}-${version}.tar.gz)
 
 build() {
@@ -14,5 +14,6 @@ build() {
   rm -f ${SRC}/${name}/plugins/README
   mv ${SRC}/${name}/{bin,plugins,resources,src} ${PKG}/usr/share/${name}
   sed -i 's|$(pwd)|/usr/share/protux|' ${SRC}/${name}/${name}
+  sed -i 's/\r//' ${SRC}/${name}/${name}
   install -D -m 0755 ${SRC}/${name}/${name} ${PKG}/usr/bin/${name}
 }
