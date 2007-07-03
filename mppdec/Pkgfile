@@ -1,0 +1,14 @@
+# Description: Musepack decoder tool.
+# URL: http://www.musepack.net
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: libmpcdec
+
+name=mppdec
+version=1.95e
+release=1
+source=(http://files.musepack.net/linux/decoder/${name}-linux-libc6-${version}.zip)
+
+build() {
+  install -D -m 0755 ${name} ${PKG}/usr/bin/${name}
+}
