@@ -1,0 +1,17 @@
+# Description: Musepack encoder tool.
+# URL: http://www.musepack.net
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: cmake 
+
+name=mppenc
+version=1.16
+release=1
+source=(http://files.musepack.net/source/${name}-${version}.tar.bz2)
+
+build() {
+  cd ${name}-${version}
+  cmake -DCMAKE_INSTALL_PREFIX:=/usr
+  make
+  make DESTDIR=${PKG} install
+}
