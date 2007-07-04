@@ -1,0 +1,27 @@
+# Description: ReZound aims to be a stable, open source, and graphical audio file editor.
+# URL: http://rezound.sourceforge.net/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: jack-audio-connection-kit,flac,libvorbis,fox
+
+name=rezound
+version=0.12.3beta
+release=1
+source=(http://dl.sourceforge.net/sourceforge/${name}/${name}-${version}.tar.gz)
+
+build() {
+  cd ${name}-${version}
+  ./configure --prefix=/usr \
+              --disable-oss \
+              --disable-alsatest \
+              --disable-portaudio \
+              --enable-jack \
+              --disable-audiofiletest \
+              --disable-ladspa \
+              --disable-soundtouch-check \
+              --disable-rpath \
+              --disable-nls
+  make
+  make DESTDIR=${PKG} install
+  rm -rf ${PKG}/usr/doc
+}
