@@ -5,13 +5,13 @@
 # Depends on: bin86,dev86,xorg-libxcursor,libsdl,libidl,qt3,xalan-c,iasl
 
 name=virtualbox
-version=1.3.8
-release=2
+version=1.4.0
+release=1
 source=(http://www.virtualbox.org/download/${version}/VirtualBox-OSE-${version}.tar.bz2 \
         ${name} 60-vboxdrv.rules)
 
 build() {
-  cd vbox-ose-${version}
+  cd VirtualBox-OSE-${version}
   # compile
   ./configure --with-qt-dir=/usr/share/qt
   source ./env.sh
@@ -21,13 +21,13 @@ build() {
   make
   # install kernel module
   install -D -m 0644 vboxdrv.ko ${PKG}/lib/modules/`uname -r`/kernel/drivers/misc/vboxdrv.ko
-  # remove garbage
-  rm -rf ${SRC}/vbox-ose-${version}/out/linux.x86/release/bin/{src,sdk/samples,vboxdrv.ko}
-  rm -rf ${SRC}/vbox-ose-${version}/out/linux.x86/release/bin/{testcase,additions/src}
-  find ${SRC}/vbox-ose-${version}/out/linux.x86/release/bin -type f -name 'tst*' -exec rm -rf {} \;
-  # do the rest 
+  # remove superfluous files
+  rm -rf ${SRC}/VirtualBox-OSE-${version}/out/linux.x86/release/bin/{src,sdk/samples,testcase} \
+    ${SRC}/VirtualBox-OSE-${version}/out/linux.x86/release/bin/{vboxdrv.ko,additions/src,nls}
+  find ${SRC}/VirtualBox-OSE-${version}/out/linux.x86/release/bin -type f -name 'tst*' -exec rm -rf {} \;
+  # do the rest
   install -D -m 0644 ${SRC}/60-vboxdrv.rules ${PKG}/etc/udev/rules.d/60-vboxdrv.rules
   install -d ${PKG}/usr/{bin,share/${name}}
   install -m 0755 ${SRC}/${name} ${PKG}/usr/bin/${name}
-  mv ${SRC}/vbox-ose-${version}/out/linux.x86/release/{bin,lib} ${PKG}/usr/share/${name}
+  mv ${SRC}/VirtualBox-OSE-${version}/out/linux.x86/release/{bin,lib} ${PKG}/usr/share/${name}
 }

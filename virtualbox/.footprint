@@ -25,12 +25,14 @@ drwxr-xr-x	root/root	usr/share/virtualbox/bin/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxDD2R0.r0
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxDDGC.gc
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxDDR0.r0
+-rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxDDU.so
 -rwxr-xr-x	root/root	usr/share/virtualbox/bin/VBoxManage
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxREM.so
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxREMImp.so
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxRT.so
 -rwxr-xr-x	root/root	usr/share/virtualbox/bin/VBoxSDL
 -rwxr-xr-x	root/root	usr/share/virtualbox/bin/VBoxSVC
+-rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxSVCM.so
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxVMM.so
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxXML.so
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxXPCOM.so
@@ -42,7 +44,9 @@ drwxr-xr-x	root/root	usr/share/virtualbox/bin/
 -rwxr-xr-x	root/root	usr/share/virtualbox/bin/VirtualBox
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VirtualBox_XPCOM.xpt
 drwxr-xr-x	root/root	usr/share/virtualbox/bin/additions/
+-rwxr-xr-x	root/root	usr/share/virtualbox/bin/additions/mountvboxsf
 -rwxr-xr-x	root/root	usr/share/virtualbox/bin/additions/vboxadd-timesync
+-rwxr-xr-x	root/root	usr/share/virtualbox/bin/additions/vboxadd-xclient
 -rw-r--r--	root/root	usr/share/virtualbox/bin/additions/vboxmouse_drv.o
 -rw-r--r--	root/root	usr/share/virtualbox/bin/additions/vboxmouse_drv_70.so
 -rw-r--r--	root/root	usr/share/virtualbox/bin/additions/vboxmouse_drv_71.so
@@ -51,6 +55,7 @@ drwxr-xr-x	root/root	usr/share/virtualbox/bin/additions/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/additions/vboxvideo_drv_71.so
 drwxr-xr-x	root/root	usr/share/virtualbox/bin/components/
 lrwxrwxrwx	root/root	usr/share/virtualbox/bin/components/VBoxC.so -> ../VBoxC.so
+lrwxrwxrwx	root/root	usr/share/virtualbox/bin/components/VBoxSVCM.so -> ../VBoxSVCM.so
 lrwxrwxrwx	root/root	usr/share/virtualbox/bin/components/VBoxXPCOMBase.xpt -> ../VBoxXPCOMBase.xpt
 lrwxrwxrwx	root/root	usr/share/virtualbox/bin/components/VBoxXPCOMIPCC.so -> ../VBoxXPCOMIPCC.so
 lrwxrwxrwx	root/root	usr/share/virtualbox/bin/components/VirtualBox_XPCOM.xpt -> ../VirtualBox_XPCOM.xpt
@@ -480,7 +485,6 @@ drwxr-xr-x	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/xpcom/
 drwxr-xr-x	root/root	usr/share/virtualbox/bin/sdk/lib/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/lib/VBoxXPCOMGlue.a
 -rwxr-xr-x	root/root	usr/share/virtualbox/bin/vditool
--rwxr-xr-x	root/root	usr/share/virtualbox/bin/xpidl
 drwxr-xr-x	root/root	usr/share/virtualbox/lib/
 -rw-r--r--	root/root	usr/share/virtualbox/lib/Debugger.a
 -rw-r--r--	root/root	usr/share/virtualbox/lib/DevicesR3.a
