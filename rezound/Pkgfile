@@ -2,12 +2,13 @@
 # URL: http://rezound.sourceforge.net/
 # Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
 # Packager: Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on: jack-audio-connection-kit,flac,libvorbis,fox
+# Depends on: jack-audio-connection-kit,flac,libvorbis,fox,ladspa
 
 name=rezound
 version=0.12.3beta
-release=1
-source=(http://dl.sourceforge.net/sourceforge/${name}/${name}-${version}.tar.gz)
+release=2
+source=(http://dl.sourceforge.net/sourceforge/${name}/${name}-${version}.tar.gz \
+        ${name}.desktop)
 
 build() {
   cd ${name}-${version}
@@ -17,11 +18,14 @@ build() {
               --disable-portaudio \
               --enable-jack \
               --disable-audiofiletest \
-              --disable-ladspa \
               --disable-soundtouch-check \
               --disable-rpath \
               --disable-nls
   make
   make DESTDIR=${PKG} install
+  install -d ${PKG}/usr/share/pixmaps
+  mv -f ${PKG}/usr/share/rezound/icon_logo_32.gif ${PKG}/usr/share/pixmaps/${name}.gif 
+  rm -f ${PKG}/usr/share/rezound/impulse_hall1.wav
+  install -D -m 0644 ${SRC}/${name}.desktop ${PKG}/usr/share/applications/${name}.desktop
   rm -rf ${PKG}/usr/doc
 }
