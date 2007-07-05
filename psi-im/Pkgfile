@@ -6,15 +6,18 @@
 
 name=psi-im
 version=0.10
-release=1
+release=2
 source=(http://dl.sourceforge.net/sourceforge/psi/psi-${version}.tar.bz2)
 
 build() {
   cd psi-${version}
   ./configure --prefix=/usr \
               --qtdir=/usr/share/qt
+  sed -e 's|/usr/X11R6/include|/usr/include/X11|g' -i Makefile
   make
   make INSTALL_ROOT=${PKG} install
-  rm -f ${PKG}/usr/share/psi/COPYING
-  find ${PKG} -type f -name 'README' -exec rm -f {} \;
+  install -D -m 0644 ${PKG}/usr/share/icons/hicolor/48x48/apps/psi.png \
+    ${PKG}/usr/share/pixmaps/psi.png
+  rm -rf ${PKG}/usr/share/{icons,psi/COPYING}
+  find ${PKG}/usr/share/psi/ -type f -name 'README' -exec rm -f {} \;
 }
