@@ -2,11 +2,11 @@
 # URL: http://www.virtualbox.org/
 # Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
 # Packager: Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on: bin86,dev86,xorg-libxcursor,libsdl,libidl,qt3,xalan-c,iasl
+# Depends on: bin86,dev86,xorg-libxcursor,hal,libsdl,libidl,qt3,xalan-c,iasl
 
 name=virtualbox
 version=1.4.0
-release=1
+release=2
 source=(http://www.virtualbox.org/download/${version}/VirtualBox-OSE-${version}.tar.bz2 \
         ${name} 60-vboxdrv.rules)
 
