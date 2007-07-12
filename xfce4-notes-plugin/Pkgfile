@@ -2,7 +2,7 @@
 # URL: http://goodies.xfce.org/projects/panel-plugins/xfce4-notes-plugin
 # Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
 # Packager: Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on: xfce4-panel,libxml2
+# Depends on: xfce4-panel
 
 name=xfce4-notes-plugin
 version=1.4.1
