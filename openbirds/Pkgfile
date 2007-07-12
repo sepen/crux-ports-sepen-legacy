@@ -1,7 +1,7 @@
 # Description:  OpenBirds is a massive multiplayer war simulation situated in second world war
 # URL:          http://openbirds.sourceforge.net/
-# Maintainer:   Jose V Beneyto, <joberui@ei.upv.es>
-# Packager:     Jose V Beneyto, <joberui@ei.upv.es>
+# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
+# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
 # Depends on:   rpm2targz,xorg,freealut,sdl_net
 
 name=openbirds
