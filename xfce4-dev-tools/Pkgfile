@@ -2,15 +2,16 @@
 # URL: http://www.foo-projects.org/~benny/projects/xfce4-dev-tools/index.html
 # Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
 # Packager: Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on:
+# Depends on: gettext,libtool
 
 name=xfce4-dev-tools
 version=4.4.0
-release=1
+release=2
 source=(http://foo-projects.org/~benny/files/${name}/4.4/${name}-${version}.tar.bz2)
 
 build() {
 	cd ${name}-${version}
+  autoconf
 	./configure --prefix=/usr
 	make
 	make DESTDIR=${PKG} install
