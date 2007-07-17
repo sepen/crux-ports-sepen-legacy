@@ -1,19 +1,18 @@
 # Description: Collection of boot loaders for the Linux operating system
-# URL:         http://syslinux.zytor.com/
-# Maintainer:  James Mills, prologic at shortcircuit dot net dot au
-# Packager:    Jose V Beneyto, joberui at ei dot upv dot es
-#
-# Depends on:  mtools
+# URL: http://syslinux.zytor.com/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: mtools
 
 name=syslinux
-version=3.31
+version=3.51
 release=1
-source=(http://www.kernel.org/pub/linux/utils/boot/$name/$name-$version.zip)
+source=(http://www.kernel.org/pub/linux/utils/boot/${name}/${name}-${version}.tar.bz2)
 
 build() {
+  cd ${name}-${version}
 	make
-	sed -i "s|/usr/|$PKG/usr/|g" Makefile
-	sed -i "s|/sbin|$PKG/usr/bin|g" Makefile
-	make install
-	chown -R root:root $PKG
+  sed -e 's|/sbin|/usr/bin|' -i Makefile
+	make INSTALLROOT=${PKG} install
+
 }
