@@ -1,0 +1,37 @@
+# Description: Universally Unique Identifier
+# URL: http://www.ossp.org/pkg/lib/uuid/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on:
+
+name=uuid
+version=1.6.0
+release=1
+source=(ftp://ftp.ossp.org/pkg/lib/${name}/${name}-${version}.tar.gz)
+
+build () {
+  # configure
+  CONFIG_OPTIONS=""
+  if [ "$(pkginfo -i | grep ^postgresql)" ];then
+    CONFIG_OPTIONS="${CONFIG_OPTIONS} --with-pgsql"
+  fi
+  if [ "$(pkginfo -i | grep ^perl)" ];then
+    CONFIG_OPTIONS="${CONFIG_OPTIONS} --with-perl --with-perl-compat"
+  fi
+  if [ "$(pkginfo -i | grep ^php)" ];then
+    CONFIG_OPTIONS="${CONFIG_OPTIONS} --with-php"
+  fi
+
+	cd ${name}-${version}
+	./configure --prefix=/usr \
+              --mandir=${PKG}/usr/man \
+              --with-cxx \
+              ${CONFIG_OPTIONS}
+	make
+	make prefix=${PKG}/usr install
+
+  # remove file-conflicts with e2fsprogs
+  rm -rf ${PKG}/usr/lib/libuuid.{a,so}
+  rm -rf ${PKG}/usr/lib/pkgconfig/uuid.pc
+  rm -rf ${PKG}/usr/man/man3/uuid.3*
+}
