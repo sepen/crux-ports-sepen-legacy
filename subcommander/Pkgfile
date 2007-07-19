@@ -1,0 +1,21 @@
+# Description: qt based multiplatform subversion client, diff & merge tool.
+# URL: http://subcommander.tigris.org/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: qt3,subversion,boost
+
+name=subcommander
+version=1.2.2
+release=1
+source=(http://${name}.tigris.org/files/documents/1759/35437/Subcommander-${version}.tar.gz)
+
+build() {
+  cd ${name}-${version}
+  autoconf
+  ./configure --prefix=/usr \
+              --with-qt=/usr/share/qt \
+              --with-x \
+              --disable-nls
+  make
+  make DESTDIR=${PKG} install
+}
