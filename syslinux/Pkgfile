@@ -11,8 +11,7 @@ source=(http://www.kernel.org/pub/linux/utils/boot/${name}/${name}-${version}.ta
 
 build() {
   cd ${name}-${version}
-	make
+  make
   sed -e 's|/sbin|/usr/bin|' -i Makefile
-	make INSTALLROOT=${PKG} install
-
+  make INSTALLROOT=${PKG} install
 }
