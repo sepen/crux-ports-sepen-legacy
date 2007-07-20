@@ -30,7 +30,6 @@ drwxr-xr-x	root/root	usr/share/subcommander/icons/default/
 -rw-r--r--	root/root	usr/share/subcommander/icons/default/PrevDiff-Active.png
 -rw-r--r--	root/root	usr/share/subcommander/icons/default/PrevDiff-Disabled.png
 -rw-r--r--	root/root	usr/share/subcommander/icons/default/PrevDiff-Normal.png
--rw-r--r--	root/root	usr/share/subcommander/icons/default/README
 -rw-r--r--	root/root	usr/share/subcommander/icons/default/Recursive-NormalOff.png
 -rw-r--r--	root/root	usr/share/subcommander/icons/default/Recursive-NormalOn.png
 -rw-r--r--	root/root	usr/share/subcommander/icons/default/Reload-Active.png

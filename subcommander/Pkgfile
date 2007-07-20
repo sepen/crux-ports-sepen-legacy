@@ -6,7 +6,7 @@
 
 name=subcommander
 version=1.2.2
-release=1
+release=2
 source=(http://${name}.tigris.org/files/documents/1759/35437/Subcommander-${version}.tar.gz)
 
 build() {
@@ -18,4 +18,5 @@ build() {
               --disable-nls
   make
   make DESTDIR=${PKG} install
+  rm -f ${PKG}/usr/share/${name}/icons/default/README
 }
