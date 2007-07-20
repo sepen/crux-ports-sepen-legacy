@@ -1,0 +1,12 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/phpbeautify
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/phpbeautify/
+drwxr-xr-x	root/root	usr/lib/phpbeautify/Console/
+-rw-r--r--	root/root	usr/lib/phpbeautify/Console/Getopt.php
+-rw-r--r--	root/root	usr/lib/phpbeautify/PEAR.php
+-rw-r--r--	root/root	usr/lib/phpbeautify/System.php
+-rw-r--r--	root/root	usr/lib/phpbeautify/beautify_php
+-rw-r--r--	root/root	usr/lib/phpbeautify/beautify_php.class.inc
+-rw-r--r--	root/root	usr/lib/phpbeautify/beautify_php.php

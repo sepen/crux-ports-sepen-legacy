@@ -1,0 +1,18 @@
+#!/bin/sh
+
+PHP=$(which php)
+
+if [[ -z ${PHP} ]]; then
+  echo "Error, cannot find 'php' binary in your path" 2>&1
+  exit 1
+fi
+
+cd /usr/lib/phpbeautify
+
+if [[ $# -lt 1 ]]; then
+  ${PHP} beautify_php -?
+else
+  ${PHP} beautify_php $@
+fi
+
+# End of file

@@ -1,0 +1,17 @@
+# Description: This program tries to reformat and beautify PHP source code files automatically.
+# URL: http://beautifyphp.sourceforge.net/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: php4 
+
+name=phpbeautify
+version=0.5.0
+release=1
+source=(http://dl.sourceforge.net/sourceforge/${name}/beautify_php_${version}.tar.gz \
+        ${name})
+
+build() {
+  install -D -m 0755 ${SRC}/${name} ${PKG}/usr/bin/${name}
+  install -d ${PKG}/usr/lib/${name}
+  mv ${SRC}/beautifyphp/{*php,*inc,Console} ${PKG}/usr/lib/${name}
+}
