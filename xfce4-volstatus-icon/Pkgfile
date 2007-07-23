@@ -3,10 +3,11 @@
 # Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
 # Packager: Jose V Beneyto, joberui at ei dot upv dot es
 # Depends on: hal,exo,xfce4-panel
+# Group: xfce4
 
 name=xfce4-volstatus-icon
 version=0.1.0
-release=1
+release=2
 source=(http://goodies.xfce.org/releases/${name}/${name}-${version}.tar.bz2)
 
 build() {
@@ -15,7 +16,6 @@ build() {
   ./configure --prefix=/usr \
               --with-x \
               --disable-debug
-  make 
-  make DESTDIR=${PKG} install
-  rm -rf ${PKG}/usr/share/locale
+  make
+  install -D ${name}/${name} ${PKG}/usr/bin/${name}
 }
