@@ -1,0 +1,23 @@
+# Description: Ristretto is a fast and lightweight picture-viewer for the Xfce desktop environment.
+# URL: http://goodies.xfce.org/projects/applications/ristretto
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: subversion,xfce4-dev-tools,thunar
+# Group: xfce4
+
+name=ristretto
+version=2921-svn
+release=1
+source=()
+
+build() {
+  svn co -r 2921 http://svn.xfce.org/svn/goodies/${name}/trunk ${name}
+  cd ${name}
+  sh autogen.sh
+  autoconf
+  ./configure --prefix=/usr \
+              --disable-debug
+  make
+  make DESTDIR=${PKG} install
+  rm -rf ${PKG}/usr/share/locale
+}
