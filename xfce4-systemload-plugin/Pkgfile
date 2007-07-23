@@ -3,6 +3,7 @@
 # Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
 # Packager: Jose V Beneyto, joberui at ei dot upv dot es
 # Depends on: xfce4-panel
+# Group: xfce4
 
 name=xfce4-systemload-plugin
 version=0.4.2

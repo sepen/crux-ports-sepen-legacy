@@ -3,6 +3,7 @@
 # Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
 # Packager: Jose V Beneyto, joberui at ei dot upv dot es
 # Depends on: subversion,intltool,xfce4-dev-tools,cdrtools,cdrdao,exo
+# Group:_xfce4
 
 name=xfburn
 version=0.2.0

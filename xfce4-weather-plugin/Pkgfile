@@ -3,6 +3,7 @@
 # Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
 # Packager: Jose V Beneyto, joberui at ei dot upv dot es
 # Depends on: xfce4-panel
+# Group:_xfce4
 
 name=xfce4-weather-plugin
 version=0.6.0
