@@ -1,0 +1,16 @@
+# Description: Tools and script for crux tasks.
+# URL: http://mikeux.dyndns.org/crux/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: prt-utils
+
+name=crux-scripts-sepen
+version=2.3.322-svn
+release=1
+source=()
+
+build() {
+  svn co svn://mikeux.dyndns.org/crux/branches/2.3/tools ${name}
+  install -d ${PKG}/usr/bin
+  install -m 0755 ${SRC}/${name}/* ${PKG}/usr/bin
+}
