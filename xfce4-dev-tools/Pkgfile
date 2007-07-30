@@ -2,12 +2,12 @@
 # URL: http://www.foo-projects.org/~benny/projects/xfce4-dev-tools/index.html
 # Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
 # Packager: Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on: gettext,libtool
+# Depends on: gettext,libtool,intltool
 # Group: xfce4
 
 name=xfce4-dev-tools
 version=4.4.0
-release=2
+release=3
 source=(http://foo-projects.org/~benny/files/${name}/4.4/${name}-${version}.tar.bz2)
 
 build() {

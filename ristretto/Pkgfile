@@ -2,7 +2,7 @@
 # URL: http://goodies.xfce.org/projects/applications/ristretto
 # Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
 # Packager: Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on: subversion,xfce4-dev-tools,thunar,intltool
+# Depends on: subversion,xfce4-dev-tools,thunar
 # Group: xfce4
 
 name=ristretto
