@@ -2,16 +2,16 @@
 # URL: http://goodies.xfce.org/projects/applications/ristretto
 # Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
 # Packager: Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on: subversion,xfce4-dev-tools,thunar
+# Depends on: subversion,xfce4-dev-tools,thunar,intltool
 # Group: xfce4
 
 name=ristretto
-version=2921-svn
+version=2931-svn
 release=1
 source=()
 
 build() {
-  svn co -r 2921 http://svn.xfce.org/svn/goodies/${name}/trunk ${name}
+  svn co -r ${version%%-*} http://svn.xfce.org/svn/goodies/${name}/trunk ${name}
   cd ${name}
   sh autogen.sh
   autoconf
