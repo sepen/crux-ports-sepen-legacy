@@ -2,12 +2,11 @@
 # URL:          http://www.blender.org/
 # Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
 # Packager:     Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on:  	libjpeg,ode,openal,fmod,smpeg,ftgl,scons,openexr
-
+# Depends on:  	libjpeg,ode,openal,fmod,smpeg,ftgl,scons,openexr,freealut
 
 name=blender
 version=2.42a
-release=1
+release=2
 source=(http://download.blender.org/source/$name-$version.tar.gz)
 
 build() {
