@@ -1,0 +1,19 @@
+# Description: Library for handling paper characteristics.
+# URL: http://packages.qa.debian.org/libp/libpaper.html
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 
+
+name=libpaper
+version=1.1.21
+release=1
+source=(http://ftp.debian.org/debian/pool/main/libp/${name}/${name}_${version}.tar.gz)
+
+build() {
+  cd ${name}-${version}
+  autoconf
+  ./configure --prefix=/usr \
+              --mandir=/usr/man
+  make
+  make DESTDIR=${PKG} install
+}
