@@ -1,0 +1,23 @@
+55,62c55,56
+< # First, check /usr/local/etc/
+< x=`grep -m 1 "^savedir=" /usr/local/etc/tuxpaint/tuxpaint.conf`
+< if test $? = 0 ; then
+<   SAVEDIR=`echo $x | cut -d = -f 2-99`
+< fi
+< 
+< # First, check /etc/
+< x=`grep -m 1 "^savedir=" /etc/tuxpaint/tuxpaint.conf`
+---
+> # First, check /usr/etc/
+> x=`grep -m 1 "^savedir=" /usr/etc/tuxpaint/tuxpaint.conf`
+104,111c98
+< x=`grep -m 1 "^windowsize=" /usr/local/etc/tuxpaint/tuxpaint.conf`
+< if test $? = 0 ; then
+<   window_width=`echo $x | cut -d = -f 2 | cut -d x -f 1`
+<   window_height=`echo $x | cut -d = -f 2 | cut -d x -f 2`
+< fi
+< 
+< # First, check /etc/
+< x=`grep -m 1 "^windowsize=" /etc/tuxpaint/tuxpaint.conf`
+---
+> x=`grep -m 1 "^windowsize=" /usr/etc/tuxpaint/tuxpaint.conf`
