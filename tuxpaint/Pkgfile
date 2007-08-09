@@ -1,0 +1,20 @@
+# Description: Open Source Drawing Software for Children.
+# URL: http://www.tuxpaint.org/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: sdl_image,sdl_ttf,sdl_mixer
+
+name=tuxpaint
+version=0.9.17
+release=1
+source=(http://dl.sourceforge.net/sourceforge/${name}/${name}-${version}.tar.gz)
+
+build() {
+  cd ${name}-${version}
+  make PREFIX=${PKG}/usr
+  make PREFIX=${PKG}/usr install
+  rm -rf ${PKG}/usr/X11R6
+  rm -rf ${PKG}/usr/share/{locale,doc,${name}/im,man/pl}
+  rm -rf ${PKG}/usr/share/${name}/fonts/locale
+  mv ${PKG}/usr/share/man ${PKG}/usr
+}
