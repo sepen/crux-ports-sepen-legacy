@@ -11,7 +11,7 @@ source=(http://dl.sourceforge.net/sourceforge/${name}/${name}-${version}.tar.gz)
 
 build() {
   cd ${name}-${version}
-  make PREFIX=${PKG}/usr
+  make PREFIX=/usr
   make PREFIX=${PKG}/usr install
   rm -rf ${PKG}/usr/X11R6
   rm -rf ${PKG}/usr/share/{locale,doc,${name}/im,man/pl}
