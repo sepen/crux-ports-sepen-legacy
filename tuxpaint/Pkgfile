@@ -2,7 +2,7 @@
 # URL: http://www.tuxpaint.org/
 # Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
 # Packager: Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on: sdl_image,sdl_ttf,sdl_mixer
+# Depends on: sdl_image,sdl_ttf,sdl_mixer,libpaper
 
 name=tuxpaint
 version=0.9.17
