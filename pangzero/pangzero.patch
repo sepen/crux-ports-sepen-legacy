@@ -1,0 +1,17 @@
+2793c2793
+<   $backgroundImage->blit($srcrect, $Background, $dstrect);
+---
+>   #$backgroundImage->blit($srcrect, $Background, $dstrect);
+4956,4957c4956
+<       "kdialog --msgbox \"$message\"",
+<       "gmessage -center \"$message\"",
+---
+>       "echo \"$message\"",
+4978,4982c4977
+<       "gnome-open $url",
+<       "mozilla-firefox $url",
+<       "firefox $url",
+<       "mozilla $url",
+<       "konqueror $url",
+---
+>       "echo \"Please, visit $url for more info.\"",
