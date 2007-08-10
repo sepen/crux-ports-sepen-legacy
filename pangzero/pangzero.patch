@@ -7,7 +7,7 @@
 <       "gmessage -center \"$message\"",
 ---
 >       "echo \"$message\"",
-4978,4982c4977
+4978,4982c4977,4978
 <       "gnome-open $url",
 <       "mozilla-firefox $url",
 <       "firefox $url",
@@ -15,3 +15,4 @@
 <       "konqueror $url",
 ---
 >       "echo \"Please, visit $url for more info.\"",
+>       "lynx $url",
