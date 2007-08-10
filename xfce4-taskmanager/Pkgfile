@@ -1,0 +1,21 @@
+# Description: Simple taskmanager for the Xfce Desktop Environment.
+# URL: http://goodies.xfce.org/projects/applications/xfce4-taskmanager
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: xfce4
+# Group: xfce4
+
+name=xfce4-taskmanager
+version=0.3.2
+release=1
+source=(http://goodies.xfce.org/releases/${name}/${name}-${version}.tar.bz2)
+
+build() {
+  cd ${name}-${version}
+  ./configure --prefix=/usr \
+              --disable-estatic \
+              --disable-debug
+  make 
+  make DESTDIR=${PKG} install
+  rm -rf ${PKG}/usr/share
+}
