@@ -1,13 +1,13 @@
-# Description:  window manager for the X11 Window System. JWM is written in C and uses only Xlib at a minimum.
-# URL:          http://joewing.net/programs/jwm/
-# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
-# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on:   libpng,libxft,libxpm
+# Description: Joe's window manager which uses only Xlib at a minimum.
+# URL: http://joewing.net/programs/jwm/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: xorg,xorg-libxext,xorg-libxpm,xorg-libxinerama,libpng,libxft
 
 name=jwm
-version=1.8rc3
+version=2.0.1
 release=1
-source=(http://24.254.249.181:443/$name/$name-$version.tar.bz2)
+source=(http://joewing.net/programs/${name}/releases/${name}-${version}.tar.bz2)
 
 build() {
 	cd $name-$version
