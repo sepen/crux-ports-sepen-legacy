@@ -2,7 +2,7 @@
 # URL: http://joewing.net/programs/jwm/
 # Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
 # Packager: Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on: xorg,xorg-libxext,xorg-libxpm,xorg-libxinerama,libpng,libxft
+# Depends on: xorg,libpng,libjpeg
 
 name=jwm
 version=2.0.1
