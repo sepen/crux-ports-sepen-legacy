@@ -1,19 +1,20 @@
-# Description: 	Textbased MSN client written in C that can be run in a console.
-# URL: 		http://tmsncdl.sourceforge.net/
-# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
-# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on: 	openssl,ncurses
+# Description: Textbased MSN client written in C that can be run in a console.
+# URL: http://tmsncdl.sourceforge.net/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: openssl,ncurses
 
 name=tmsnc
-version=0.3.1
+version=0.3.2
 release=1
 source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
-	./configure --prefix=/usr
-  	make
-	make check
-  	make DESTDIR=$PKG install
-  	rm -rf $PKG/usr/info
+  ./configure --prefix=/usr \
+              --mandir=/usr/man
+  make
+  make check
+  make DESTDIR=$PKG install
+  rm -rf $PKG/usr/info
 }
