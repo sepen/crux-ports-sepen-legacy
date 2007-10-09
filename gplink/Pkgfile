@@ -1,0 +1,16 @@
+# Description: GP32 usb linker tool.
+# URL: http://gp2x.org/gp32/gplink/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: libusb 
+
+name=gplink
+version=1.5
+release=1
+source=(http://gp2x.org/gp32/${name}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}/src
+  make
+  install -D -m 0755 ${name} ${PKG}/usr/bin/${name}
+}
