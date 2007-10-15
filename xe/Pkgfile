@@ -7,7 +7,8 @@
 name=xe
 version=2.13.1
 release=1
-source=(http://www.xe-emulator.com/files/xe-x86-32-bin.${version}.tar.bz2)
+source=(http://www.xe-emulator.com/files/xe-x86-32-bin.${version}.tar.bz2 \
+        http://www.xe-emulator.com/files/bios.zip)
 
 build() {
   cd ${name}-x86
@@ -15,5 +16,6 @@ build() {
   make
   install -d ${PKG}/usr/{bin,lib/xe}
   mv xe rc modules ${PKG}/usr/lib/xe
+  mv ${SRC}/bios ${PKG}/usr/lib/xe
   ln -sf /usr/lib/xe/xe ${PKG}/usr/bin/xe
 }

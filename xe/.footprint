@@ -3,6 +3,12 @@ drwxr-xr-x	root/root	usr/bin/
 lrwxrwxrwx	root/root	usr/bin/xe -> /usr/lib/xe/xe
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/xe/
+drwxr-xr-x	root/root	usr/lib/xe/bios/
+-rw-r--r--	root/root	usr/lib/xe/bios/gameboy.rom
+-rw-r--r--	root/root	usr/lib/xe/bios/gbcolor.rom
+-rw-r--r--	root/root	usr/lib/xe/bios/mastersystem.rom
+-rw-r--r--	root/root	usr/lib/xe/bios/wonderswan.rom
+-rw-r--r--	root/root	usr/lib/xe/bios/wscolor.rom
 drwxr-xr-x	root/root	usr/lib/xe/modules/
 -rwxr-xr-x	root/root	usr/lib/xe/modules/cpschanger
 -rwxr-xr-x	root/root	usr/lib/xe/modules/famicom
