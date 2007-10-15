@@ -1,0 +1,22 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+lrwxrwxrwx	root/root	usr/bin/xe -> /usr/lib/xe/xe
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/xe/
+drwxr-xr-x	root/root	usr/lib/xe/modules/
+-rwxr-xr-x	root/root	usr/lib/xe/modules/cpschanger
+-rwxr-xr-x	root/root	usr/lib/xe/modules/famicom
+-rwxr-xr-x	root/root	usr/lib/xe/modules/gameboy
+-rwxr-xr-x	root/root	usr/lib/xe/modules/gamegear
+-rwxr-xr-x	root/root	usr/lib/xe/modules/mark3
+-rwxr-xr-x	root/root	usr/lib/xe/modules/megadrive
+-rwxr-xr-x	root/root	usr/lib/xe/modules/neocd
+-rwxr-xr-x	root/root	usr/lib/xe/modules/neogeo
+-rwxr-xr-x	root/root	usr/lib/xe/modules/neopocket
+-rwxr-xr-x	root/root	usr/lib/xe/modules/pcengine
+-rwxr-xr-x	root/root	usr/lib/xe/modules/sg1000
+-rwxr-xr-x	root/root	usr/lib/xe/modules/superfamicom
+-rwxr-xr-x	root/root	usr/lib/xe/modules/wonderswan
+drwxr-xr-x	root/root	usr/lib/xe/rc/
+-rw-r--r--	root/root	usr/lib/xe/rc/xerc
+-rwxr-xr-x	root/root	usr/lib/xe/xe

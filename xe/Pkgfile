@@ -1,0 +1,19 @@
+# Description: Multi System Emulator that emulates many console and handheld video game systems of the past.
+# URL: http://www.xe-emulator.com/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: gtk
+
+name=xe
+version=2.13.1
+release=1
+source=(http://www.xe-emulator.com/files/xe-x86-32-bin.${version}.tar.bz2)
+
+build() {
+  cd ${name}-x86
+  sed -e 's|/usr/X11R6/lib|/usr/lib/X11|' -i Makefile
+  make
+  install -d ${PKG}/usr/{bin,lib/xe}
+  mv xe rc modules ${PKG}/usr/lib/xe
+  ln -sf /usr/lib/xe/xe ${PKG}/usr/bin/xe
+}
