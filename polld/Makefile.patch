@@ -1,0 +1,22 @@
+5c5
+< CONFIGFILE=/etc/polld
+---
+> CONFIGFILE=/usr/etc/polld
+21c21
+< 	install -m 755 -d $(DESTDIR)/etc
+---
+> 	install -m 755 -d $(DESTDIR)/usr/etc
+23,25c23,25
+< 	install -m 755 -d $(DESTDIR)/usr/share/man/man1
+< 	install -m 755 -d $(DESTDIR)/usr/share/man/man5
+< 	install -m 644 config $(DESTDIR)/etc/polld
+---
+> 	install -m 755 -d $(DESTDIR)/usr/man/man1
+> 	install -m 755 -d $(DESTDIR)/usr/man/man5
+> 	install -m 644 config $(DESTDIR)/usr/etc/polld
+27,28c27,28
+< 	install -m 644 polld.1 $(DESTDIR)/usr/share/man/man1
+< 	install -m 644 polld.5 $(DESTDIR)/usr/share/man/man5
+---
+> 	install -m 644 polld.1 $(DESTDIR)/usr/man/man1
+> 	install -m 644 polld.5 $(DESTDIR)/usr/man/man5
