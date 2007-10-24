@@ -5,7 +5,7 @@
 # Depends on: prt-utils
 
 name=crux-scripts-sepen
-version=2.3.322-svn
+version=2.3-svn
 release=1
 source=()
 

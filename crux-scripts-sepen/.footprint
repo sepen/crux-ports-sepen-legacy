@@ -3,6 +3,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/mycontrib
 -rwxr-xr-x	root/root	usr/bin/newport
 -rwxr-xr-x	root/root	usr/bin/portsearch
+-rwxr-xr-x	root/root	usr/bin/prtmissed
 -rwxr-xr-x	root/root	usr/bin/prtree
 -rwxr-xr-x	root/root	usr/bin/repo2indexphp
 -rwxr-xr-x	root/root	usr/bin/repodiff
