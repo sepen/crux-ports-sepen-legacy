@@ -1,0 +1,18 @@
+# Description: Lightweight, free and opensource dynamic dns client.
+# URL: http://inadyn.ina-tech.net/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: 
+
+name=inadyn
+version=1.96.2
+release=1
+source=(http://inadyn.ina-tech.net/${name}.v${version}.zip)
+
+build() {
+  cd ${name}
+  make
+  install -D -m 0755 bin/linux/${name} ${PKG}/usr/bin/${name}
+  install -D -m 0644 man/${name}.8 ${PKG}/usr/man/man8/${name}.8
+  install -D -m 0644 man/${name}.conf.5 ${PKG}/usr/man/man5/${name}.conf.5
+}
