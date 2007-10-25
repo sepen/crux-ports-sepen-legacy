@@ -1,0 +1,17 @@
+# Description: System to make remote backups. Host-side application.
+# URL: http://mikeux.dyndns.org/trac/mybackup/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: rsync
+
+name=mybackup-host
+version=0.1svn
+release=1
+source=()
+
+build() {
+  svn co svn://mikeux.dyndns.org/mybackup/trunk ${name}
+  cd ${name}
+  make packages PREFIX=/usr
+  tar -C ${PKG} -xzf ${name}*.tar.gz
+}
