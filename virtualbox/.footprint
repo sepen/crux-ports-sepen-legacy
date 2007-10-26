@@ -13,10 +13,16 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/virtualbox
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/applications/
+-rw-r--r--	root/root	usr/share/applications/virtualbox.desktop
+drwxr-xr-x	root/root	usr/share/pixmaps/
+lrwxrwxrwx	root/root	usr/share/pixmaps/virtualbox.png -> /usr/share/virtualbox/bin/Vbox.png
 drwxr-xr-x	root/root	usr/share/virtualbox/
 drwxr-xr-x	root/root	usr/share/virtualbox/bin/
 -rwxr-xr-x	root/root	usr/share/virtualbox/bin/SUPInstall
 -rwxr-xr-x	root/root	usr/share/virtualbox/bin/SUPUninstall
+-rw-r--r--	root/root	usr/share/virtualbox/bin/VBox.png
+-rwxr-xr-x	root/root	usr/share/virtualbox/bin/VBox.sh
 -rwxr-xr-x	root/root	usr/share/virtualbox/bin/VBoxBFE
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxC.so
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxDD.so
@@ -26,6 +32,7 @@ drwxr-xr-x	root/root	usr/share/virtualbox/bin/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxDDGC.gc
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxDDR0.r0
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxDDU.so
+-rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxKeyboard.so
 -rwxr-xr-x	root/root	usr/share/virtualbox/bin/VBoxManage
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxREM.so
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxREMImp.so
@@ -33,6 +40,10 @@ drwxr-xr-x	root/root	usr/share/virtualbox/bin/
 -rwxr-xr-x	root/root	usr/share/virtualbox/bin/VBoxSDL
 -rwxr-xr-x	root/root	usr/share/virtualbox/bin/VBoxSVC
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxSVCM.so
+-rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxSharedClipboard.so
+-rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxSharedFolders.so
+-rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxSharedOpenGL.so
+-rwxr-xr-x	root/root	usr/share/virtualbox/bin/VBoxTunctl
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxVMM.so
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxXML.so
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxXPCOM.so
@@ -48,9 +59,12 @@ drwxr-xr-x	root/root	usr/share/virtualbox/bin/additions/
 -rwxr-xr-x	root/root	usr/share/virtualbox/bin/additions/vboxadd-timesync
 -rwxr-xr-x	root/root	usr/share/virtualbox/bin/additions/vboxadd-xclient
 -rw-r--r--	root/root	usr/share/virtualbox/bin/additions/vboxmouse_drv.o
+-rw-r--r--	root/root	usr/share/virtualbox/bin/additions/vboxmouse_drv_14.so
 -rw-r--r--	root/root	usr/share/virtualbox/bin/additions/vboxmouse_drv_70.so
 -rw-r--r--	root/root	usr/share/virtualbox/bin/additions/vboxmouse_drv_71.so
 -rw-r--r--	root/root	usr/share/virtualbox/bin/additions/vboxvideo_drv.o
+-rw-r--r--	root/root	usr/share/virtualbox/bin/additions/vboxvideo_drv_13.so
+-rw-r--r--	root/root	usr/share/virtualbox/bin/additions/vboxvideo_drv_14.so
 -rw-r--r--	root/root	usr/share/virtualbox/bin/additions/vboxvideo_drv_70.so
 -rw-r--r--	root/root	usr/share/virtualbox/bin/additions/vboxvideo_drv_71.so
 drwxr-xr-x	root/root	usr/share/virtualbox/bin/components/
@@ -274,6 +288,8 @@ drwxr-xr-x	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/md/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/md/_openbsd.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/md/_os2.cfg
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/md/_os2.h
+-rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/md/_os2_errors.h
+-rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/md/_pcos.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/md/_pth.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/md/_solaris.h
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/nsprpub/md/_solaris32.cfg
@@ -508,9 +524,9 @@ drwxr-xr-x	root/root	usr/share/virtualbox/lib/
 -rw-r--r--	root/root	usr/share/virtualbox/lib/SUPR3.a
 -rw-r--r--	root/root	usr/share/virtualbox/lib/ServicesR0.a
 -rw-r--r--	root/root	usr/share/virtualbox/lib/VBox-liblzf.a
+-rw-r--r--	root/root	usr/share/virtualbox/lib/VBoxCOM.a
 -rw-r--r--	root/root	usr/share/virtualbox/lib/VBoxGuestLibBaseLinux.a
 -rw-r--r--	root/root	usr/share/virtualbox/lib/VBoxGuestLibLinux.a
--rw-r--r--	root/root	usr/share/virtualbox/lib/VBoxXPCOM.a
 -rw-r--r--	root/root	usr/share/virtualbox/lib/VBoxXPCOMGlue.a
 -rw-r--r--	root/root	usr/share/virtualbox/lib/VMMGCBuiltin.a
 -rw-r--r--	root/root	usr/share/virtualbox/lib/VMMGCImp.a

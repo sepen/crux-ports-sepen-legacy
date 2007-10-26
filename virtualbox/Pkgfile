@@ -5,13 +5,13 @@
 # Depends on: bin86,dev86,xorg-libxcursor,hal,libsdl,libidl,qt3,xalan-c,iasl
 
 name=virtualbox
-version=1.4.0
-release=2
-source=(http://www.virtualbox.org/download/${version}/VirtualBox-OSE-${version}.tar.bz2 \
-        ${name} 60-vboxdrv.rules)
+version=1.5.2
+release=1
+source=(http://www.virtualbox.org/download/${version}/VirtualBox-${version}_OSE.tar.bz2 \
+        ${name} 60-vboxdrv.rules ${name}.desktop)
 
 build() {
-  cd VirtualBox-OSE-${version}
+  cd VirtualBox-${version}_OSE
   # compile
   ./configure --with-qt-dir=/usr/share/qt
   source ./env.sh
@@ -22,12 +22,14 @@ build() {
   # install kernel module
   install -D -m 0644 vboxdrv.ko ${PKG}/lib/modules/`uname -r`/kernel/drivers/misc/vboxdrv.ko
   # remove superfluous files
-  rm -rf ${SRC}/VirtualBox-OSE-${version}/out/linux.x86/release/bin/{src,sdk/samples,testcase} \
-    ${SRC}/VirtualBox-OSE-${version}/out/linux.x86/release/bin/{vboxdrv.ko,additions/src,nls}
-  find ${SRC}/VirtualBox-OSE-${version}/out/linux.x86/release/bin -type f -name 'tst*' -exec rm -rf {} \;
+  rm -rf ${SRC}/VirtualBox-${version}_OSE/out/linux.x86/release/bin/{src,sdk/samples,testcase} \
+    ${SRC}/VirtualBox-${version}_OSE/out/linux.x86/release/bin/{vboxdrv.ko,additions/src,nls}
+  find ${SRC}/VirtualBox-${version}_OSE/out/linux.x86/release/bin -type f -name 'tst*' -exec rm -rf {} \;
   # do the rest
   install -D -m 0644 ${SRC}/60-vboxdrv.rules ${PKG}/etc/udev/rules.d/60-vboxdrv.rules
-  install -d ${PKG}/usr/{bin,share/${name}}
+  install -d ${PKG}/usr/{bin,share/${name},share/pixmaps}
   install -m 0755 ${SRC}/${name} ${PKG}/usr/bin/${name}
-  mv ${SRC}/VirtualBox-OSE-${version}/out/linux.x86/release/{bin,lib} ${PKG}/usr/share/${name}
+  mv ${SRC}/VirtualBox-${version}_OSE/out/linux.x86/release/{bin,lib} ${PKG}/usr/share/${name}
+  install -D -m 0644 ${SRC}/${name}.desktop ${PKG}/usr/share/applications/${name}.desktop
+  ln -sf /usr/share/virtualbox/bin/Vbox.png ${PKG}/usr/share/pixmaps/${name}.png
 }
