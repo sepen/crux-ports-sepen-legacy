@@ -5,8 +5,8 @@
 # Depends on: qt3,curl 
 
 name=google-earth
-version=4.1.7076.4458
-release=2
+version=4.2.198.2451
+release=1
 source=(http://dl.google.com/earth/client/current/GoogleEarthLinux.bin \
         ${name})
 
