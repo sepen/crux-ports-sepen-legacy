@@ -16,13 +16,9 @@ drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/virtualbox.desktop
 drwxr-xr-x	root/root	usr/share/pixmaps/
-lrwxrwxrwx	root/root	usr/share/pixmaps/virtualbox.png -> /usr/share/virtualbox/bin/Vbox.png
+-rw-r--r--	root/root	usr/share/pixmaps/virtualbox.png
 drwxr-xr-x	root/root	usr/share/virtualbox/
 drwxr-xr-x	root/root	usr/share/virtualbox/bin/
--rwxr-xr-x	root/root	usr/share/virtualbox/bin/SUPInstall
--rwxr-xr-x	root/root	usr/share/virtualbox/bin/SUPUninstall
--rw-r--r--	root/root	usr/share/virtualbox/bin/VBox.png
--rwxr-xr-x	root/root	usr/share/virtualbox/bin/VBox.sh
 -rwxr-xr-x	root/root	usr/share/virtualbox/bin/VBoxBFE
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxC.so
 -rw-r--r--	root/root	usr/share/virtualbox/bin/VBoxDD.so
