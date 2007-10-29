@@ -1,25 +1,25 @@
-# Description:  BlueJ is an integrated Java environment specifically designed for introductory teaching
-# URL:          http://www.bluej.org/
-# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
-# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on:   x11,jdk
+# Description: BlueJ is an integrated Java environment specifically designed for introductory teaching
+# URL: http://www.bluej.org/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: xorg,jdk
 
 name=bluej
-version=2.1.2
-release=2
-source=(http://www.bluej.org/download/files/$name-212.jar \
+version=2.2.0
+release=1
+source=(http://www.bluej.org/download/files/$name-220.jar \
         $name.sh)
 
 build() {
-        export PATH=$PATH:/usr/lib/java/bin
-        jar xf $name-212.jar $name-dist.jar
-        jar xf $name-dist.jar
-	install -d $PKG/usr/lib/$name/lib
-        mv lib/*.* $PKG/usr/lib/$name/lib
-        mv lib/{english,extensions,images,userlib} $PKG/usr/lib/$name/lib
-        install -d $PKG/usr/bin
-        install -m 755 bluej.sh $PKG/usr/bin/$name
-	rm $PKG/usr/lib/$name/lib/english/templates/README
-	rm $PKG/usr/lib/bluej/lib/english/templates/newclass/README
-	rm $PKG/usr/lib/bluej/lib/userlib/README.TXT
+  export PATH=$PATH:/usr/lib/java/bin
+  jar xf $name-220.jar $name-dist.jar
+  jar xf $name-dist.jar
+  install -d $PKG/usr/lib/$name/lib
+  mv lib/*.* $PKG/usr/lib/$name/lib
+  mv lib/{english,extensions,images,userlib} $PKG/usr/lib/$name/lib
+  install -d $PKG/usr/bin
+  install -m 755 bluej.sh $PKG/usr/bin/$name
+  rm $PKG/usr/lib/$name/lib/english/templates/README
+  rm $PKG/usr/lib/bluej/lib/english/templates/newclass/README
+  rm $PKG/usr/lib/bluej/lib/userlib/README.TXT
 }

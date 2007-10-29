@@ -76,6 +76,9 @@ drwxr-xr-x	root/root	usr/lib/bluej/lib/images/
 -rw-r--r--	root/root	usr/lib/bluej/lib/images/working-idle.gif
 -rw-r--r--	root/root	usr/lib/bluej/lib/images/working-stopped.gif
 -rw-r--r--	root/root	usr/lib/bluej/lib/images/working.gif
+-rw-r--r--	root/root	usr/lib/bluej/lib/jsch.jar
 -rw-r--r--	root/root	usr/lib/bluej/lib/junit.jar
 -rw-r--r--	root/root	usr/lib/bluej/lib/moe.defs
+-rw-r--r--	root/root	usr/lib/bluej/lib/org-netbeans-lib-cvsclient.jar
+-rw-r--r--	root/root	usr/lib/bluej/lib/sshconnection.jar
 drwxr-xr-x	root/root	usr/lib/bluej/lib/userlib/

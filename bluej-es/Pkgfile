@@ -1,20 +1,20 @@
-# Description:  Bluej spanish translation
-# URL:          http://www.bluej.org/
-# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
-# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on:   bluej
+# Description: Bluej spanish translation
+# URL: http://www.bluej.org/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: bluej
 
 name=bluej-es
-version=2.1.2
-release=2
-source=(http://www.bluej.org/download/files/bluej-212.jar)
+version=2.2.0
+release=1
+source=(http://www.bluej.org/download/files/bluej-220.jar)
 
 build() {
-        export PATH=$PATH:/usr/lib/java/bin
-        jar xf bluej-212.jar bluej-dist.jar
-        jar xf bluej-dist.jar
-        install -d $PKG/usr/lib/bluej/lib/spanish
-	mv lib/spanish $PKG/usr/lib/bluej/lib
-	rm $PKG/usr/lib/bluej/lib/spanish/templates/README
-	rm $PKG/usr/lib/bluej/lib/spanish/templates/newclass/README
+  export PATH=$PATH:/usr/lib/java/bin
+  jar xf bluej-220.jar bluej-dist.jar
+  jar xf bluej-dist.jar
+  install -d $PKG/usr/lib/bluej/lib/spanish
+  mv lib/spanish $PKG/usr/lib/bluej/lib
+  rm $PKG/usr/lib/bluej/lib/spanish/templates/README
+  rm $PKG/usr/lib/bluej/lib/spanish/templates/newclass/README
 }
