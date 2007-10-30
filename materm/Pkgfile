@@ -5,14 +5,14 @@
 # Depends on: xorg
 
 name=materm
-version=0.5.2
+version=0.5.3
 release=1
-source=(http://dl.sourceforge.net/sourceforge/$name/mrxvt-$version.tar.gz \
-        http://dl.sourceforge.net/sourceforge/$name/no_debug_x.patch)
+source=(http://dl.sourceforge.net/sourceforge/${name}/mrxvt-${version}.tar.gz \
+        http://dl.sourceforge.net/sourceforge/${name}/no-scroll-with-buffer-mrxvt-${version}.patch)
 
 build() {
- cd mrxvt-$version
- patch -p0 < ../no_debug_x.patch
+ cd mrxvt-${version}
+ patch -p0 < ../no-scroll-with-buffer-mrxvt-${version}.patch
  ./configure --prefix=/usr \
              --disable-debug \
              --enable-menubar \
@@ -20,11 +20,11 @@ build() {
              --with-save-lines=200 \
              --with-x
  make
- make DESTDIR=$PKG install
- rm -rf $PKG/usr/share/doc
- mv $PKG/usr/etc/{mrxvt/mrxvtrc,mrxvtrc}
- mv $PKG/usr/etc/mrxvt/default.{menu,menu.sample}
- mv $PKG/usr/etc/mrxvt/submenus.{menu,menu.sample}
- rm -f $PKG/usr/share/pixmaps/*.png
- ln -sf /usr/bin/mrxvt $PKG/usr/bin/$name
+ make DESTDIR=${PKG} install
+ rm -rf ${PKG}/usr/share/doc
+ mv ${PKG}/usr/etc/{mrxvt/mrxvtrc,mrxvtrc}
+ mv ${PKG}/usr/etc/mrxvt/default.{menu,menu.sample}
+ mv ${PKG}/usr/etc/mrxvt/submenus.{menu,menu.sample}
+ rm -f ${PKG}/usr/share/pixmaps/*.png
+ ln -sf /usr/bin/mrxvt ${PKG}/usr/bin/${name}
 }
