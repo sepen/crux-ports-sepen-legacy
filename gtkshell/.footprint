@@ -2,7 +2,8 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/gtkshell
 drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/libgtkshell.a
+drwxr-xr-x	root/root	usr/lib/antiright/
+-rw-r--r--	root/root	usr/lib/antiright/libgtkshell.a
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
 -rw-r--r--	root/root	usr/man/man1/gtkshell.1.gz

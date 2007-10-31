@@ -5,21 +5,19 @@
 # Depends on: libantiright
 
 name=gtkshell
-version=3.5
+version=3.6
 release=1
-source=(http://download.savannah.nongnu.org/releases/antiright/antiright-${version}.tar.bz2 \
-        Makefile.patch)
+source=(config.mk Makefile.patch)
 
 build() {
-  cd antiright-${version}
-  ./configure
-  sed -i config.mk \
-      -e 's|/usr/local|/usr|' \
-      -e 's|/usr/X11R6/include|/usr/include/X11|g'
-  cd ${name}
+  cvs -d:pserver:anonymous@cvs.sv.gnu.org:/sources/antiright co antiright/libantiright
+  cvs -d:pserver:anonymous@cvs.sv.gnu.org:/sources/antiright co antiright/${name}
+  cvs -d:pserver:anonymous@cvs.sv.gnu.org:/sources/antiright co antiright/doc/${name}.1
+  cp ${SRC}/config.mk ${SRC}/antiright/config.mk
+  cd antiright/${name}
   patch Makefile ${SRC}/Makefile.patch
   make clean
   make
   make PREFIX=${PKG} install
-  install -D -m 0644 ${SRC}/antiright-${version}/doc/${name}.1 ${PKG}/usr/man/man1/${name}.1
+  install -D -m 0644 ${SRC}/antiright/doc/${name}.1 ${PKG}/usr/man/man1/${name}.1
 }
