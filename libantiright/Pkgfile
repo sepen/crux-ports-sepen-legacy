@@ -2,21 +2,18 @@
 # URL: http://www.nongnu.org/antiright/
 # Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
 # Packager: Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on: gtk,vte
+# Depends on: gtk
 
 name=libantiright
-version=3.5
+version=3.6-svn
 release=1
-source=(http://download.savannah.nongnu.org/releases/antiright/antiright-${version}.tar.bz2)
+source=(config.mk)
 
 build() {
-  cd antiright-${version}
-  ./configure
-  sed -i config.mk \
-      -e 's|/usr/local|/usr|' \
-      -e 's|/usr/X11R6/include|/usr/include/X11|g'
-  cd ${name}
+  cvs -d:pserver:anonymous@cvs.sv.gnu.org:/sources/antiright co antiright/libantiright
+  cp ${SRC}/config.mk ${SRC}/antiright/config.mk
+  cd antiright/${name}
   make clean
   make
-  install -D -m 0644 ${name}.a ${PKG}/usr/lib/${name}.a
+  install -D -m 0644 ${name}.a ${PKG}/usr/lib/antiright/${name}.a
 }
