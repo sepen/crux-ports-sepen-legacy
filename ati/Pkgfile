@@ -5,7 +5,7 @@
 # Depends on: mesa3d, gl-select
 
 name=ati
-version=8.37.6
+version=8.41.7
 release=1
 source=(http://www2.ati.com/drivers/linux/$name-driver-installer-$version-x86.x86_64.run \
         atieventsd)

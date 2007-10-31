@@ -1,0 +1,15 @@
+# Description: Transparent vte-based terminal emulator.
+# URL: http://www.nongnu.org/antiright/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: gtkshell
+
+name=gshterm
+version=3.5
+release=1
+source=(http://download.savannah.nongnu.org/releases/antiright/antiright-${version}.tar.bz2)
+
+build() {
+  install -D -m 0755 antiright-${version}/gtkshell/${name} ${PKG}/usr/bin/${name}
+  install -D -m 0644 antiright-${version}/doc/${name}.1 ${PKG}/usr/man/man1/${name}.1
+}
