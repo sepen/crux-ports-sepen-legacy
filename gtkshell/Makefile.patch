@@ -1,0 +1,11 @@
+29c29
+< ARFLAGS=-L. -lgtkshell -L../libantiright -lantiright
+---
+> ARFLAGS=-L. -lgtkshell -L/usr/lib/libantiright -lantiright
+66,68c66,67
+< 	install gtkshell $(PREFIX)/bin
+< 	install gshterm $(PREFIX)/bin
+< 
+---
+> 	install -D -m 0755 gtkshell $(PREFIX)/usr/bin/gtkshell
+> 	install -D -m 0644 libgtkshell.a $(PREFIX)/usr/lib/libgtkshell.a

@@ -1,0 +1,23 @@
+# Description: Invocation configurable GUI shell.
+# URL: http://www.nongnu.org/antiright/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: libantiright
+
+name=gtkshell
+version=3.5
+release=1
+source=(http://download.savannah.nongnu.org/releases/antiright/antiright-${version}.tar.bz2 \
+        Makefile.patch)
+
+build() {
+  cd antiright-${version}
+  ./configure
+  sed -e 's|/usr/local|/usr|' -i config.mk
+  cd ${name}
+  patch Makefile ${SRC}/Makefile.patch
+  make clean
+  make 
+  make PREFIX=${PKG} install
+}
+
