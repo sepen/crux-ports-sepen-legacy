@@ -12,7 +12,9 @@ source=(http://download.savannah.nongnu.org/releases/antiright/antiright-${versi
 build() {
   cd antiright-${version}
   ./configure
-  sed -e 's|/usr/local|/usr|' -i config.mk
+  sed -i config.mk \
+      -e 's|/usr/local|/usr|' \
+      -e 's|/usr/X11R6/include|/usr/include/X11|g'
   cd ${name}
   make clean
   make
