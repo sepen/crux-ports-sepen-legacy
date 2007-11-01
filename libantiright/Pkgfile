@@ -2,7 +2,7 @@
 # URL: http://www.nongnu.org/antiright/
 # Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
 # Packager: Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on: gtk
+# Depends on: gtk,vte
 
 name=libantiright
 version=3.6
