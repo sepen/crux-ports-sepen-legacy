@@ -1,0 +1,19 @@
+# Description: Main library for the antiright project.
+# URL: http://www.nongnu.org/antiright/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: gtk
+
+name=libantiright
+version=3.6
+release=1
+source=(config.mk)
+
+build() {
+  cvs -d:pserver:anonymous@cvs.sv.gnu.org:/sources/antiright co antiright/libantiright
+  cp ${SRC}/config.mk ${SRC}/antiright/config.mk
+  cd antiright/${name}
+  make clean
+  make
+  install -D -m 0644 ${name}.a ${PKG}/usr/lib/antiright/${name}.a
+}
