@@ -1,4 +1,15 @@
 drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/antiright/
+-rw-r--r--	root/root	usr/include/antiright/arguments.h
+-rw-r--r--	root/root	usr/include/antiright/gui.h
+-rw-r--r--	root/root	usr/include/antiright/library.h
+-rw-r--r--	root/root	usr/include/antiright/macros.h
+-rw-r--r--	root/root	usr/include/antiright/pipe.h
+-rw-r--r--	root/root	usr/include/antiright/string.h
+-rw-r--r--	root/root	usr/include/antiright/system.h
+-rw-r--r--	root/root	usr/include/antiright/tuple.h
+-rw-r--r--	root/root	usr/include/antiright/util.h
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/antiright/
 -rw-r--r--	root/root	usr/lib/antiright/libantiright.a

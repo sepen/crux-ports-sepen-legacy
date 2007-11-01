@@ -16,4 +16,6 @@ build() {
   make clean
   make
   install -D -m 0644 ${name}.a ${PKG}/usr/lib/antiright/${name}.a
+  install -d ${PKG}/usr/include/antiright
+  install -m 0644 *.h ${PKG}/usr/include/antiright
 }
