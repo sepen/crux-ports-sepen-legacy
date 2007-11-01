@@ -1,0 +1,4 @@
+38c38
+< #include "../libantiright/library.h"
+---
+> #include <antiright/library.h>

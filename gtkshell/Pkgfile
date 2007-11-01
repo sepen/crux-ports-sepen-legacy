@@ -7,16 +7,17 @@
 name=gtkshell
 version=3.6
 release=1
-source=(config.mk Makefile.patch)
+source=(config.mk Makefile.patch gtkshell.h.patch)
 
 build() {
-  cvs -d:pserver:anonymous@cvs.sv.gnu.org:/sources/antiright co antiright/libantiright
   cvs -d:pserver:anonymous@cvs.sv.gnu.org:/sources/antiright co antiright/${name}
   cvs -d:pserver:anonymous@cvs.sv.gnu.org:/sources/antiright co antiright/doc/${name}.1
   cp ${SRC}/config.mk ${SRC}/antiright/config.mk
   cd antiright/${name}
   patch Makefile ${SRC}/Makefile.patch
-  make clean
+  patch gtkshell.h ${SRC}/gtkshell.h.patch
+  make lex.yy.c
+  sed -i lex.yy.c -e '/string.h/d'
   make
   make PREFIX=${PKG} install
   install -D -m 0644 ${SRC}/antiright/doc/${name}.1 ${PKG}/usr/man/man1/${name}.1
