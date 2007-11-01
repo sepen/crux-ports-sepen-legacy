@@ -7,10 +7,11 @@
 name=antiright
 version=3.5
 release=1
-source=()
+source=(ACE.patch)
 
 build() {
   cvs -d:pserver:anonymous@cvs.sv.gnu.org:/sources/${name} co ${name}/ACE-desktop
+  patch ${name}/ACE-desktop/ACE ${SRC}/ACE.patch
   install -D -m 0755 ${name}/ACE-desktop/ACE ${PKG}/usr/bin/ACE
   install -D -m 0644 ${name}/ACE-desktop/ACE.1 ${PKG}/usr/man/man1/ACE.1
   install -D -m 0644 ${name}/ACE-desktop/system.${name}.5 ${PKG}/usr/man/man5/system.${name}.5
