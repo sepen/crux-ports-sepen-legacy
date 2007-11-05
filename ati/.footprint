@@ -1,4 +1,9 @@
 drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/ati/
+-rwxr--r--	root/root	etc/ati/atiogl.xml
+-rwxr--r--	root/root	etc/ati/authatieventsd.sh
+-rw-r--r--	root/root	etc/ati/control
+-rw-r--r--	root/root	etc/ati/signature
 drwxr-xr-x	root/root	etc/rc.d/
 -rwxr-xr-x	root/root	etc/rc.d/atieventsd
 drwxr-xr-x	root/root	lib/
@@ -13,6 +18,7 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/amdcccle
 -rwxr-xr-x	root/root	usr/bin/aticonfig
+-rwxr-xr-x	root/root	usr/bin/atigetsysteminfo.sh
 -rwxr-xr-x	root/root	usr/bin/fgl_glxgears
 -rwxr-xr-x	root/root	usr/bin/fglrx_xgamma
 -rwxr-xr-x	root/root	usr/bin/fglrxinfo
@@ -50,4 +56,3 @@ drwxr-xr-x	root/root	usr/man/man8/
 -r--r--r--	root/root	usr/man/man8/atieventsd.8.gz
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/atieventsd
--rwxr-xr-x	root/root	usr/sbin/atigetsysteminfo.sh
