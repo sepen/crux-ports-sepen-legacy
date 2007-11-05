@@ -34,8 +34,8 @@ build() {
   mv ${SRC}/tmp/x710/usr/X11R6/lib/modules/* ${PKG}/usr/lib/xorg/modules
   mv ${SRC}/tmp/common/usr/X11R6/include ${PKG}/usr
   mv ${SRC}/tmp/common/usr/include/GL ${PKG}/usr/include
-  install -m 0755 ${SRC}/tmp/common/usr/sbin/atigetsysteminfo.sh ${PKG}/usr/bin
-  sed -e 's|/usr/X11/XF86Config*||' -i ${PKG}/usr/bin/atigetsysteminfo.sh 
+  install -m 0755 ${SRC}/tmp/common/usr/sbin/atigetsysteminfo.sh ${PKG}/usr/sbin
+  sed -e 's|/usr/X11/XF86Config*||' -i ${PKG}/usr/sbin/atigetsysteminfo.sh 
   install -D -m 0444 ${SRC}/tmp/common/usr/share/man/man8/atieventsd.8 \
     ${PKG}/usr/man/man8/atieventsd.8
   mv ${SRC}/tmp/common/etc ${PKG}
