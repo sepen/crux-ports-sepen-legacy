@@ -1,17 +1,16 @@
-# Description:  Provide an easy way to search crux ports in firefox
-# URL:          http://crux.nu/Public/FirefoxPortDBSearch
-# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
-# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on:   firefox
+# Description: Provide an easy way to search crux ports in firefox
+# URL: http://crux.nu/Public/FirefoxPortDBSearch
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Depends on: firefox
 
 name=firefox-portdb-searchplugin
 version=1
 release=1
 source=(http://crux.nu/favicon.ico \
-	crux.src)
+        crux.src)
 
 build() {
-	install -d $PKG/usr/lib/firefox/searchplugins
-	install -m 644 $SRC/crux.src $PKG/usr/lib/firefox/searchplugins
-	install -m 644 $SRC/favicon.ico $PKG/usr/lib/firefox/searchplugins/crux.png
+	install -D -m 0644 ${SRC}/crux.src ${PKG}/usr/lib/firefox/searchplugins/crux.src
+	install -D -m 0644 ${SRC}/favicon.ico ${PKG}/usr/lib/firefox/searchplugins/crux.png
 }
