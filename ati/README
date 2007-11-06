@@ -1,5 +1,5 @@
 
-README for ati 8.34.8
+README for ati 8.42.3
 
 
 *** NOTE for kernel ***
@@ -37,10 +37,14 @@ libraries and extensions like so:
 
         # gl-select ati
 
-Also to configure your X server you can execute ati configurator like this:
+Also to configure your X server you can execute ati configurator like so:
 
 	# aticonfig --initial --input=/etc/X11/xorg.conf
 
+And if you want, you can start the ati external events daemon at
+/etc/rc.d/atieventsd, like so:
+
+  # service atieventsd start
 
 POST-REMOVE
 
