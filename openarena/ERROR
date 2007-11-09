@@ -1,6 +1,0 @@
-In file included from code/cgame/cg_consolecmds.c:27:
-code/cgame/../ui/ui_shared.h:30:30: error: ../../ui/menudef.h: No such file or directory
-make[1]: *** [build/release-linux-i386/baseq3/cgame/cg_consolecmds.o] Error 1
-make[1]: Leaving directory `/devel/crux.sepen/trunk/ports/openarena/work/src'
-make: *** [build_release] Error 2
-=======> ERROR: Building '/devel/crux.sepen/trunk/ports/openarena/openarena#0.7.1-1.pkg.tar.gz' failed.
