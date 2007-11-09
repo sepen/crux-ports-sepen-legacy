@@ -6,4 +6,4 @@ Exec=/usr/bin/true-combat
 Icon=tce.xpm
 Terminal=false
 Type=Application
-Categories=Games;
+Categories=Application;Games;
