@@ -3,6 +3,8 @@ drwxr-xr-x	root/root	usr/bin/
 lrwxrwxrwx	root/root	usr/bin/enemy-territory -> /usr/bin/et
 -rwxr-xr-x	root/root	usr/bin/et
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/applications/
+-rw-r--r--	root/root	usr/share/applications/enemy-territory.desktop
 drwxr-xr-x	root/root	usr/share/enemy-territory/
 -rwxr-xr-x	root/root	usr/share/enemy-territory/et.x86
 -rwxr-xr-x	root/root	usr/share/enemy-territory/etded.x86
@@ -41,4 +43,4 @@ drwxr-xr-x	root/root	usr/share/enemy-territory/pb/htm/
 -rw-r--r--	root/root	usr/share/enemy-territory/pb/pbsv.so
 -rw-r--r--	root/root	usr/share/enemy-territory/pb/pbweb.x86
 drwxr-xr-x	root/root	usr/share/pixmaps/
--rw-r--r--	root/root	usr/share/pixmaps/ET.xpm
+-rw-r--r--	root/root	usr/share/pixmaps/et.xpm
