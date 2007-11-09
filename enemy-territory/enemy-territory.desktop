@@ -6,4 +6,4 @@ Exec=/usr/bin/enemy-territory
 Icon=et.xpm
 Terminal=false
 Type=Application
-Categories=Games;
+Categories=Application;Games;
