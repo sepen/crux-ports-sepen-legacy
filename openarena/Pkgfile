@@ -1,0 +1,15 @@
+# Description: OpenArena is a free and open source 3D computer game that belongs to the "first-person shooter" genre.
+# URL: http://openarena.ws/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: xorg
+
+name=openarena
+version=0.7.1
+release=1
+source=(http://openarena.ws/rel/070/ioq3-src-oa.tar.bz2 \
+        http://darkstar.ist.utl.pt/pub/games/oa071-patch.zip)
+
+build() {
+  make
+}
