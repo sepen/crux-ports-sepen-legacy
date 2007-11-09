@@ -1,19 +1,23 @@
 # Description: TrueCombat:Elite is a team-based realism modification based on Enemy Territory.
 # URL: http://www.truecombatelite.net/
-# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
-# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Depends on: enemy-territory
 
 name=true-combat-elite
 version=0.49b
-release=2
-source=(http://ftp.freenet.de/pub/4players/hosted/wolfenstein/et_mods/tcetest049_all_os_fixed.zip \
-        tce)
+release=3
+source=(http://darkstar.ist.utl.pt/pub/games/true.combat.elite_${version}-english-4.run \
+        tce ${name}.desktop)
 
 build() {
-  install -d ${PKG}/usr/share/{pixmaps,enemy-territory/tcetest}
-  install -m 644 tcetest/*.{so,pk3,dat} ${PKG}/usr/share/enemy-territory/tcetest
-  install -m 644 tcetest/*.ico ${PKG}/usr/share/pixmaps
-  install -D -m 755 ${SRC}/tce ${PKG}/usr/bin/tce
+  chmod +x true.combat.elite_${version}-english-4.run
+  ./true.combat.elite_${version}-english-4.run --noexec --target tmp
+  install -d ${PKG}/usr/share/enemy-territory
+  tar -C ${PKG}/usr/share/enemy-territory -xf tmp/tce_0.49b.tar
+  rm -f ${PKG}/usr/share/enemy-territory/*.{rtf.txt}
+  install -D -m 0755 ${SRC}/tce ${PKG}/usr/bin/tce
   ln -sf /usr/bin/tce ${PKG}/usr/bin/${name}
+  install -D -m 0644 tmp/tce.xpm ${PKG}/usr/share/pixmaps/tce.xpm
+  install -D -m 0644 ${SRC}/${name}.desktop ${PKG}/usr/share/applications/${name}.desktop
 }
