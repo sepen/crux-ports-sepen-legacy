@@ -1,0 +1,24 @@
+# Description: Fast-paced first-person-shooter online multiplayer game, similar to Tribes.
+# URL: http://legendsthegame.net/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: libsdl,openal,libvorbis,libogg
+
+name=legends
+version=0.4.1.43
+release=1
+source=(http://legendsthegame.net/files/${name}_linux-${version}.run \
+        ${name})
+
+build() {
+  chmod +x ${name}_linux-${version}.run
+  echo -ne "${PKG}/usr/share/${name}\ny\n" | \
+    ./${name}_linux-${version}.run --nox11 --target tmp
+  rm -rf ${PKG}/usr/share/${name}/*.{txt,DLL,sh} \
+         ${PKG}/usr/share/${name}/{libogg,libopenal,libvorbis,libSDL-1.2}* \
+         ${PKG}/usr/share/${name}/{update,runlegends}
+  install -d ${PKG}/usr/share/pixmaps
+  mv ${PKG}/usr/share/${name}/${name}_icon32.png ${PKG}/usr/share/pixmaps/${name}_icon32.png
+  install -D -m 0755 ${SRC}/${name} ${PKG}/usr/bin/${name}
+}
+
