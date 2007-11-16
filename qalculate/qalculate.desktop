@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Qalculate
+Comment=Powerful and easy to use calculator
+Exec=qalculate
+Icon=qalculate.png
+Terminal=false
+Type=Application
+Categories=Application;Utility;
