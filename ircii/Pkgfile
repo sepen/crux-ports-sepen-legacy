@@ -1,7 +1,7 @@
 # Description: 	The original IRC client.
 # URL: 		http://www.eterna.com.au/ircii/
-# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
-# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
 # Depends on:
 
 name=ircii

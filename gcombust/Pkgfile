@@ -1,7 +1,7 @@
 # Description:  GTK GUI frontend for mkisofs/mkhybrid/cdda2wav/cdrecord/cdlabelgen.
 # URL:          http://www.abo.fi/~jmunsin/gcombust/
-# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
-# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
 # Depends on:   gtk,cdrtools,cdlabelgen,rpm2targz
 
 name=gcombust

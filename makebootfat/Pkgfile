@@ -1,7 +1,7 @@
 # Description:  Command line utility able to create bootable USB disks using the FAT filesystem and syslinux.
 # URL:          http://advancemamedl.sourceforge.net/boot-readme.html
-# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
-# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
 # Depends on:   syslinux
 
 name=makebootfat

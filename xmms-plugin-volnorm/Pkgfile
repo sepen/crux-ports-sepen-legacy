@@ -1,7 +1,7 @@
 # Description:  Normalize volume control plugin for xmms.
 # URL:          http://volnorm.sourceforge.net/
-# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
-# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
 # Depends on:   xmms
 
 name=xmms-plugin-volnorm

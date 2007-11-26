@@ -1,7 +1,7 @@
 # Description:  A free and open source Ruby on Rails IDE
 # URL:          http://www.radrails.org/
-# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
-# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
 # Depends on:   rails,gtk,jdk,gdk-pixbuf
 
 

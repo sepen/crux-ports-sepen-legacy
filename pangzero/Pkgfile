@@ -1,7 +1,7 @@
 # Description: Pang Zero is a clone and enhancement of Super Pang.
 # URL: http://apocalypse.rulez.org/pangzero/
-# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
-# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Depends on: p5-sdl1-perl
 
 name=pangzero

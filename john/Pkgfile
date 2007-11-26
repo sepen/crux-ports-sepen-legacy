@@ -1,7 +1,7 @@
 # Description:  John the Ripper is a fast password cracker, Its primary purpose is to detect weak Unix passwords.
 # URL:          http://www.openwall.com/john/
-# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
-# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
 # Depends on:   
 
 name=john

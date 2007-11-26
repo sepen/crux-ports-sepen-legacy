@@ -1,7 +1,7 @@
 # Description: 	The Joystick Wrapper library, uniform API and user configuration for game controllers on all platforms.
 # URL: 		http://wolfpack.twu.net/libjsw/
-# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
-# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
 # Depends on:
 
 name=libjsw

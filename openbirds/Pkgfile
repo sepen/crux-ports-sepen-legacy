@@ -1,7 +1,7 @@
 # Description:  OpenBirds is a massive multiplayer war simulation situated in second world war
 # URL:          http://openbirds.sourceforge.net/
-# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
-# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
 # Depends on:   rpm2targz,xorg,freealut,sdl_net
 
 name=openbirds
@@ -13,10 +13,10 @@ source=(http://dl.sourceforge.net/sourceforge/${name}/${name}-${version}.i386.rp
 build() {
   install -d ${SRC}/tmp
   export TMPDIR=${SRC}/tmp
-	rpm2targz *
+	rpm2targz ${name}-${version}.i386.rpm ${name}-data-${version}.i386.rpm
   tar xfz ${name}-${version}.i386.tar.gz
   tar xfz ${name}-data-${version}.i386.tar.gz
+  mv etc usr/share/${name}
   mv usr ${PKG}
-  mv etc/* ${PKG}/usr/share/${name}/data
   rm -rf ${PKG}/usr/share/${name}/data/{*.txt,CVS,textures/CVS,textures/cockpit/CVS}
 }

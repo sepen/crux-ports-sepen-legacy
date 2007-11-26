@@ -1,7 +1,7 @@
 # Description:  Free library for graphics APIs / engines where such functionality is not natively available, or severly lacking.
 # URL:          http://www.cegui.org.uk/
-# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
-# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
 # Depends on:   freeglut,xerces-c
 
 name=cegui

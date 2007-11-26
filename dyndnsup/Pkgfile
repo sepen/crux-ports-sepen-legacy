@@ -1,7 +1,7 @@
 # Description:  Auto-update dynamic dns service
 # URL:          http://mikeux.dyndns.org/scripts/
-# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
-# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
 # Depends on:   wget,lynx,awk
 
 name=dyndnsup

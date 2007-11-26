@@ -1,7 +1,7 @@
 # Description:  Gambas network high-level protocols management component
 # URL:          http://gambasdl.sourceforge.net/
-# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
-# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
 # Depends on:   curl,gambas-gb-net
 
 name=gambas-gb-net-curl

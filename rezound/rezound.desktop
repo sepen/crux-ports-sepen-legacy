@@ -1,10 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=rezound
+Name=Rezound
 Comment=Graphical audio file editor
 Exec=rezound
-Icon=rezound
+Icon=rezound.gif
 Terminal=false
 Type=Application
-MimeType=text/plain
 Categories=Application;AudioVideo;

@@ -1,7 +1,7 @@
 # Description:  Provide an easy way to search botijo (mikeux) irc log in firefox
 # URL:          
-# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
-# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
 # Depends on:   firefox
 
 name=firefox-botijo-searchplugin

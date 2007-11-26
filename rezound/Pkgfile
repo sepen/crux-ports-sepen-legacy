@@ -2,7 +2,7 @@
 # URL: http://rezound.sourceforge.net/
 # Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
 # Packager: Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on: jack-audio-connection-kit,flac,libvorbis,fox,ladspa
+# Depends on: jack-audio-connection-kit,libvorbis,fox,ladspa
 
 name=rezound
 version=0.12.3beta
@@ -23,8 +23,7 @@ build() {
               --disable-nls
   make
   make DESTDIR=${PKG} install
-  install -d ${PKG}/usr/share/pixmaps
-  mv -f ${PKG}/usr/share/rezound/icon_logo_32.gif ${PKG}/usr/share/pixmaps/${name}.gif 
+  install -D -m 0644 ${PKG}/usr/share/rezound/icon_logo_32.gif ${PKG}/usr/share/pixmaps/${name}.gif
   rm -f ${PKG}/usr/share/rezound/impulse_hall1.wav
   install -D -m 0644 ${SRC}/${name}.desktop ${PKG}/usr/share/applications/${name}.desktop
   rm -rf ${PKG}/usr/doc

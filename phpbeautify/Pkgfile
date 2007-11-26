@@ -1,7 +1,7 @@
 # Description: This program tries to reformat and beautify PHP source code files automatically.
 # URL: http://beautifyphp.sourceforge.net/
-# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
-# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Depends on: php4 
 
 name=phpbeautify

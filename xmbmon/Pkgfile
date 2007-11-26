@@ -1,7 +1,7 @@
 # Description: Monitoring program for motherboards. Also includes mbmon command line utility.
 # URL: http://www.nt.phys.kyushu-u.ac.jp/shimizu/download/download.html
-# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
-# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Depends on: x11
 
 name=xmbmon

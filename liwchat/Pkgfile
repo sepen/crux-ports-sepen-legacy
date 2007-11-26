@@ -1,7 +1,7 @@
 # Description:  IRC client written with liwbot C/C++ platform.
 # URL:          http://liwbot.sourceforge.net/
-# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
-# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
 # Depends on:   ncurses,libliwbot
 
 name=liwchat

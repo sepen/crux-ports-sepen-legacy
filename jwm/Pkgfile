@@ -1,7 +1,7 @@
 # Description: Joe's window manager which uses only Xlib at a minimum.
 # URL: http://joewing.net/programs/jwm/
-# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
-# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Depends on: xorg,libpng,libjpeg
 
 name=jwm

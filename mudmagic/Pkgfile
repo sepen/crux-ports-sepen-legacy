@@ -1,7 +1,7 @@
 # Description: 	MUD client written in Gtk+ and C with SQLLite, Python, MSP, MXP, HTML, and ZMP support.
 # URL: 		http://www.mudmagic.com/mud-client/
-# Maintainer:   Jose V Beneyto, joberui at ei dot upv dot es
-# Packager:     Jose V Beneyto, joberui at ei dot upv dot es
+# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
 # Depends on: 	libgnome
 
 name=mudmagic

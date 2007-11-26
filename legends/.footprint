@@ -2,6 +2,8 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/legends
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/applications/
+-rw-r--r--	root/root	usr/share/applications/legends.desktop
 drwxr-xr-x	root/root	usr/share/legends/
 -rwxr-xr-x	root/root	usr/share/legends/LinLegends
 drwxr-xr-x	root/root	usr/share/legends/common/
@@ -31,4 +33,4 @@ drwxr-xr-x	root/root	usr/share/legends/show/
 -rw-r--r--	root/root	usr/share/legends/show/scripts.unf
 -rw-r--r--	root/root	usr/share/legends/show/ui.unf
 drwxr-xr-x	root/root	usr/share/pixmaps/
--rw-r--r--	root/root	usr/share/pixmaps/legends_icon32.png
+-rw-r--r--	root/root	usr/share/pixmaps/legends.png

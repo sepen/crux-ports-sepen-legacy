@@ -1,7 +1,7 @@
 # Description: A packet sniffer that displays TCP connections similarly to 'top'.
 # URL: http://www.rhythm.cx/~steve/devel/tcptrack/
-# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
-# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Depends on: libpcap
 
 name=tcptrack

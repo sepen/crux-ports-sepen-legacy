@@ -1,7 +1,7 @@
 # Description: Dos2unix converts DOS or MAC text files to UNIX format.
 # URL: 
-# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
-# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Depends on: rpm2targz
 
 name=dos2unix

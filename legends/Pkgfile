@@ -8,7 +8,7 @@ name=legends
 version=0.4.1.43
 release=1
 source=(http://legendsthegame.net/files/${name}_linux-${version}.run \
-        ${name})
+        ${name} ${name}.desktop)
 
 build() {
   chmod +x ${name}_linux-${version}.run
@@ -18,7 +18,8 @@ build() {
          ${PKG}/usr/share/${name}/{libogg,libopenal,libvorbis,libSDL-1.2}* \
          ${PKG}/usr/share/${name}/{update,runlegends}
   install -d ${PKG}/usr/share/pixmaps
-  mv ${PKG}/usr/share/${name}/${name}_icon32.png ${PKG}/usr/share/pixmaps/${name}_icon32.png
+  mv ${PKG}/usr/share/${name}/${name}_icon32.png ${PKG}/usr/share/pixmaps/${name}.png
   install -D -m 0755 ${SRC}/${name} ${PKG}/usr/bin/${name}
+  install -D -m 0644 ${SRC}/${name}.desktop ${PKG}/usr/share/applications/${name}.desktop
 }
 
