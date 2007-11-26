@@ -3,11 +3,18 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/lmms
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/lmms/
+drwxr-xr-x	root/root	usr/lib/lmms/ladspa/
+-rw-r--r--	root/root	usr/lib/lmms/ladspa/caps.so
 -rw-r--r--	root/root	usr/lib/lmms/libaudiofileprocessor.a
 -rwxr-xr-x	root/root	usr/lib/lmms/libaudiofileprocessor.la
 lrwxrwxrwx	root/root	usr/lib/lmms/libaudiofileprocessor.so -> libaudiofileprocessor.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/lmms/libaudiofileprocessor.so.0 -> libaudiofileprocessor.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/lmms/libaudiofileprocessor.so.0.0.0
+-rw-r--r--	root/root	usr/lib/lmms/libbassbooster.a
+-rwxr-xr-x	root/root	usr/lib/lmms/libbassbooster.la
+lrwxrwxrwx	root/root	usr/lib/lmms/libbassbooster.so -> libbassbooster.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/lmms/libbassbooster.so.0 -> libbassbooster.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/lmms/libbassbooster.so.0.0.0
 -rw-r--r--	root/root	usr/lib/lmms/libbitinvader.a
 -rwxr-xr-x	root/root	usr/lib/lmms/libbitinvader.la
 lrwxrwxrwx	root/root	usr/lib/lmms/libbitinvader.so -> libbitinvader.so.0.0.0
@@ -18,6 +25,31 @@ lrwxrwxrwx	root/root	usr/lib/lmms/libbitinvader.so.0 -> libbitinvader.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/lmms/libflpimport.so -> libflpimport.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/lmms/libflpimport.so.0 -> libflpimport.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/lmms/libflpimport.so.0.0.0
+-rw-r--r--	root/root	usr/lib/lmms/libkicker.a
+-rwxr-xr-x	root/root	usr/lib/lmms/libkicker.la
+lrwxrwxrwx	root/root	usr/lib/lmms/libkicker.so -> libkicker.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/lmms/libkicker.so.0 -> libkicker.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/lmms/libkicker.so.0.0.0
+-rw-r--r--	root/root	usr/lib/lmms/libladspabase.a
+-rwxr-xr-x	root/root	usr/lib/lmms/libladspabase.la
+lrwxrwxrwx	root/root	usr/lib/lmms/libladspabase.so -> libladspabase.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/lmms/libladspabase.so.0 -> libladspabase.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/lmms/libladspabase.so.0.0.0
+-rw-r--r--	root/root	usr/lib/lmms/libladspaeffect.a
+-rwxr-xr-x	root/root	usr/lib/lmms/libladspaeffect.la
+lrwxrwxrwx	root/root	usr/lib/lmms/libladspaeffect.so -> libladspaeffect.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/lmms/libladspaeffect.so.0 -> libladspaeffect.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/lmms/libladspaeffect.so.0.0.0
+-rw-r--r--	root/root	usr/lib/lmms/liblb302.a
+-rwxr-xr-x	root/root	usr/lib/lmms/liblb302.la
+lrwxrwxrwx	root/root	usr/lib/lmms/liblb302.so -> liblb302.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/lmms/liblb302.so.0 -> liblb302.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/lmms/liblb302.so.0.0.0
+-rw-r--r--	root/root	usr/lib/lmms/liblive_tool.a
+-rwxr-xr-x	root/root	usr/lib/lmms/liblive_tool.la
+lrwxrwxrwx	root/root	usr/lib/lmms/liblive_tool.so -> liblive_tool.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/lmms/liblive_tool.so.0 -> liblive_tool.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/lmms/liblive_tool.so.0.0.0
 -rw-r--r--	root/root	usr/lib/lmms/libmidiimport.a
 -rwxr-xr-x	root/root	usr/lib/lmms/libmidiimport.la
 lrwxrwxrwx	root/root	usr/lib/lmms/libmidiimport.so -> libmidiimport.so.0.0.0
@@ -28,11 +60,11 @@ lrwxrwxrwx	root/root	usr/lib/lmms/libmidiimport.so.0 -> libmidiimport.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/lmms/liborganic.so -> liborganic.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/lmms/liborganic.so.0 -> liborganic.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/lmms/liborganic.so.0.0.0
--rw-r--r--	root/root	usr/lib/lmms/libpluckedstringsynth.a
--rwxr-xr-x	root/root	usr/lib/lmms/libpluckedstringsynth.la
-lrwxrwxrwx	root/root	usr/lib/lmms/libpluckedstringsynth.so -> libpluckedstringsynth.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/lmms/libpluckedstringsynth.so.0 -> libpluckedstringsynth.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/lmms/libpluckedstringsynth.so.0.0.0
+-rw-r--r--	root/root	usr/lib/lmms/libpatman.a
+-rwxr-xr-x	root/root	usr/lib/lmms/libpatman.la
+lrwxrwxrwx	root/root	usr/lib/lmms/libpatman.so -> libpatman.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/lmms/libpatman.so.0 -> libpatman.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/lmms/libpatman.so.0.0.0
 -rw-r--r--	root/root	usr/lib/lmms/libtripleoscillator.a
 -rwxr-xr-x	root/root	usr/lib/lmms/libtripleoscillator.la
 lrwxrwxrwx	root/root	usr/lib/lmms/libtripleoscillator.so -> libtripleoscillator.so.0.0.0
@@ -47,6 +79,8 @@ drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
 -rw-r--r--	root/root	usr/man/man1/lmms.1.gz
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/applications/
+-rw-r--r--	root/root	usr/share/applications/lmms.desktop
 drwxr-xr-x	root/root	usr/share/lmms/
 drwxr-xr-x	root/root	usr/share/lmms/midi-maps/
 -rw-r--r--	root/root	usr/share/lmms/midi-maps/YamahaPSR400.map
@@ -119,6 +153,7 @@ drwxr-xr-x	root/root	usr/share/lmms/presets/TripleOscillator/
 -rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Freaky-Bass.cs.xml
 -rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/FutureBass.cs.xml
 -rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Gong.cs.xml
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/HardClipping.cs.xml
 -rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Harmonium.cs.xml
 -rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Harp-of-a-Fairy.cs.xml
 -rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Harpsichord.cs.xml
@@ -138,6 +173,7 @@ drwxr-xr-x	root/root	usr/share/lmms/presets/TripleOscillator/
 -rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Play-some-rock.cs.xml
 -rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/PluckArpeggio.cs.xml
 -rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Plucked.cs.xml
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/PowerStrings.cs.xml
 -rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/RaveBass.cs.xml
 -rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/RaveBass_2.cs.xml
 -rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Ravemania.cs.xml
@@ -145,6 +181,8 @@ drwxr-xr-x	root/root	usr/share/lmms/presets/TripleOscillator/
 -rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/ResonantPad.cs.xml
 -rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/RockOrgan.cs.xml
 -rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Rough!.cs.xml
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/SawLead.cs.xml
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/SawLead2.cs.xml
 -rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/SawReso.cs.xml
 -rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Short1.cs.xml
 -rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Short2.cs.xml
@@ -158,6 +196,8 @@ drwxr-xr-x	root/root	usr/share/lmms/presets/TripleOscillator/
 -rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/SpaceBass.cs.xml
 -rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Square.cs.xml
 -rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/SquareArp.cs.xml
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/SquareLead.cs.xml
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/SquareLead2.cs.xml
 -rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Steel.cs.xml
 -rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Stranger.cs.xml
 -rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/TB303-Arpeggio.cs.xml
@@ -173,23 +213,36 @@ drwxr-xr-x	root/root	usr/share/lmms/presets/VeSTige/
 -rw-r--r--	root/root	usr/share/lmms/presets/VeSTige/Default.cs.xml
 drwxr-xr-x	root/root	usr/share/lmms/projects/
 drwxr-xr-x	root/root	usr/share/lmms/projects/cool_songs/
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/BlueWolf-DreamTravel.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/Chris-RaveRiff.mmpz
 -rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/Djeezus-BeatRolls.mmp
 -rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/Djeezus-Oscilisous.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/Lokori-Systematic_Chaos.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/Malex-Horizon4.mmp
 -rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/Marfil-MarfilDrum01.mmp
 -rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/Mart-Concave_flow.mmp
 -rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/Mart-Dirt_Track.mmp
 -rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/MaxFellner-Ease.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/MysthR-Living.mmpz
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/OrtalDj-FirstProyect.mmp
 -rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/SharkyX-DeadManDancing.mmp
 -rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/SharkyX-Experiments.mmp
 -rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/Siegel-DreamWave.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/Siegel-SpeedTrack.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/Silva-ElvesCall.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/StrictProduction-DearJonDoe.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/StrictProduction-Lamentelnes.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/StrictProduction-Underline.mmp
 -rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/TobyDox-Confused.mmp
--rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/TobyDox-Crystallo.mmp
 -rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/TobyDox-Psycho.mmp
 -rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/TobyDox-TheFourthDimension.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/j1m-DingDong.mmp
 drwxr-xr-x	root/root	usr/share/lmms/projects/covers/
--rw-r--r--	root/root	usr/share/lmms/projects/covers/J.S.Bach-Preludium_and_Fugue_A-Minor.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/covers/J.S.Bach-Preludium_and_Fugue_A-Minor.mmpz
+-rw-r--r--	root/root	usr/share/lmms/projects/covers/MonkeyIsland1-Intro.mmpz
 drwxr-xr-x	root/root	usr/share/lmms/projects/demos/
--rw-r--r--	root/root	usr/share/lmms/projects/demos/basses-demo.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/demos/TobyDox-Crystallo.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/demos/Zvonsully-RaceTheZBeat.mmp
 -rw-r--r--	root/root	usr/share/lmms/projects/demos/beat_collection.mmp
 -rw-r--r--	root/root	usr/share/lmms/projects/demos/demo1.mmp
 -rw-r--r--	root/root	usr/share/lmms/projects/demos/demo2.mmp
@@ -197,13 +250,14 @@ drwxr-xr-x	root/root	usr/share/lmms/projects/demos/
 -rw-r--r--	root/root	usr/share/lmms/projects/demos/demo4.mmp
 -rw-r--r--	root/root	usr/share/lmms/projects/demos/demo5.mmp
 -rw-r--r--	root/root	usr/share/lmms/projects/demos/demo6.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/demos/lb302quick.mmpz
 -rw-r--r--	root/root	usr/share/lmms/projects/demos/loop_collection.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/demos/newFangled.mmpz
 -rw-r--r--	root/root	usr/share/lmms/projects/demos/some_basslines.mmp
 drwxr-xr-x	root/root	usr/share/lmms/projects/misc/
 -rw-r--r--	root/root	usr/share/lmms/projects/misc/1st.mmp
 -rw-r--r--	root/root	usr/share/lmms/projects/misc/mystic.mmp
 -rw-r--r--	root/root	usr/share/lmms/projects/misc/time_machine.mmp
-drwxr-xr-x	root/root	usr/share/lmms/projects/recorded_loops/
 drwxr-xr-x	root/root	usr/share/lmms/projects/templates/
 -rw-r--r--	root/root	usr/share/lmms/projects/templates/AcousticDrumset.mpt
 -rw-r--r--	root/root	usr/share/lmms/projects/templates/ClubMix.mpt
@@ -274,6 +328,7 @@ drwxr-xr-x	root/root	usr/share/lmms/samples/drums/
 -rw-r--r--	root/root	usr/share/lmms/samples/drums/hihat_foot_pedal01.ogg
 -rw-r--r--	root/root	usr/share/lmms/samples/drums/hihat_opened01.ogg
 -rw-r--r--	root/root	usr/share/lmms/samples/drums/hihat_opened02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/hihat_opened03.ogg
 -rw-r--r--	root/root	usr/share/lmms/samples/drums/kick01.ogg
 -rw-r--r--	root/root	usr/share/lmms/samples/drums/kick02.ogg
 -rw-r--r--	root/root	usr/share/lmms/samples/drums/kick03.ogg
@@ -285,7 +340,12 @@ drwxr-xr-x	root/root	usr/share/lmms/samples/drums/
 -rw-r--r--	root/root	usr/share/lmms/samples/drums/kick_long01.ogg
 -rw-r--r--	root/root	usr/share/lmms/samples/drums/kick_soft01.ogg
 -rw-r--r--	root/root	usr/share/lmms/samples/drums/kick_soft02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/nasty_bass01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/nasty_rim01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/nasty_snare01.ogg
 -rw-r--r--	root/root	usr/share/lmms/samples/drums/ride01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/ride02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/rim01.ogg
 -rw-r--r--	root/root	usr/share/lmms/samples/drums/shaker01.ogg
 -rw-r--r--	root/root	usr/share/lmms/samples/drums/shaker02.ogg
 -rw-r--r--	root/root	usr/share/lmms/samples/drums/shaker03.ogg
@@ -358,6 +418,7 @@ drwxr-xr-x	root/root	usr/share/lmms/samples/latin/
 -rw-r--r--	root/root	usr/share/lmms/samples/latin/latin_guitar02.ogg
 -rw-r--r--	root/root	usr/share/lmms/samples/latin/latin_guitar03.ogg
 drwxr-xr-x	root/root	usr/share/lmms/samples/misc/
+-rw-r--r--	root/root	usr/share/lmms/samples/misc/applause01.ogg
 -rw-r--r--	root/root	usr/share/lmms/samples/misc/bass!.ogg
 -rw-r--r--	root/root	usr/share/lmms/samples/misc/breath01.ogg
 -rw-r--r--	root/root	usr/share/lmms/samples/misc/buzz!.ogg
@@ -385,6 +446,7 @@ drwxr-xr-x	root/root	usr/share/lmms/samples/shapes/
 -rw-r--r--	root/root	usr/share/lmms/samples/shapes/bunglist8.wav
 -rw-r--r--	root/root	usr/share/lmms/samples/shapes/bunglist9.wav
 -rw-r--r--	root/root	usr/share/lmms/samples/shapes/harmonics.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/low_sine.wav
 -rw-r--r--	root/root	usr/share/lmms/samples/shapes/micro.wav
 -rw-r--r--	root/root	usr/share/lmms/samples/shapes/moog.wav
 -rw-r--r--	root/root	usr/share/lmms/samples/shapes/roundbass.wav
@@ -420,8 +482,10 @@ drwxr-xr-x	root/root	usr/share/lmms/samples/stringsnpads/
 -rw-r--r--	root/root	usr/share/lmms/samples/stringsnpads/strings01.ogg
 drwxr-xr-x	root/root	usr/share/lmms/themes/
 drwxr-xr-x	root/root	usr/share/lmms/themes/blue_scene/
+-rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/add.png
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/add_bb_track.png
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/add_sample_track.png
+-rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/analysis.png
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/apply.png
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/arp_down_off.png
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/arp_down_on.png
@@ -449,6 +513,7 @@ drwxr-xr-x	root/root	usr/share/lmms/themes/blue_scene/
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/combobox_arrow.png
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/combobox_bg.png
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/cpuload_bg.png
+-rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/dont_know.png
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/drum.png
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/edit_arrow.png
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/edit_copy.png
@@ -546,6 +611,7 @@ drwxr-xr-x	root/root	usr/share/lmms/themes/blue_scene/plugins/
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/plugins/tripleoscillator_sync_inactive.png
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/plugins/vestige_artwork.png
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/plugins/vestige_logo.png
+-rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/ports.png
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/preset_file.png
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/project_export.png
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/project_file.png
@@ -598,6 +664,8 @@ drwxr-xr-x	root/root	usr/share/lmms/themes/blue_scene/plugins/
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/track_op_menu.png
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/triangle_wave_active.png
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/triangle_wave_inactive.png
+-rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/uhoh.png
+-rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/unavailable_sound.png
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/unfreeze.png
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/unknown_file.png
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/usr_wave_active.png
@@ -613,8 +681,10 @@ drwxr-xr-x	root/root	usr/share/lmms/themes/blue_scene/plugins/
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/wizard_workingdir.png
 -rw-r--r--	root/root	usr/share/lmms/themes/blue_scene/zoom.png
 drwxr-xr-x	root/root	usr/share/lmms/themes/default/
+-rw-r--r--	root/root	usr/share/lmms/themes/default/add.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/add_bb_track.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/add_sample_track.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/analysis.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/apply.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/arp_down_off.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/arp_down_on.png
@@ -644,6 +714,7 @@ drwxr-xr-x	root/root	usr/share/lmms/themes/default/
 -rw-r--r--	root/root	usr/share/lmms/themes/default/combobox_bg.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/cpuload_bg.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/cpuload_leds.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/dont_know.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/drum.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/edit_arrow.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/edit_copy.png
@@ -656,6 +727,7 @@ drwxr-xr-x	root/root	usr/share/lmms/themes/default/
 -rw-r--r--	root/root	usr/share/lmms/themes/default/edit_select.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/edit_undo.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/effect_board.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/effect_plugin.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/envelope_graph.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/error.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/exit.png
@@ -702,7 +774,9 @@ drwxr-xr-x	root/root	usr/share/lmms/themes/default/
 -rw-r--r--	root/root	usr/share/lmms/themes/default/moog_saw_wave_active.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/moog_saw_wave_inactive.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/mute_off.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/mute_off_disabled.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/mute_on.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/mute_on_disabled.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/muted.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/note.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/note_double_whole.png
@@ -719,6 +793,7 @@ drwxr-xr-x	root/root	usr/share/lmms/themes/default/
 -rw-r--r--	root/root	usr/share/lmms/themes/default/play.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/playpos_marker.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/plugins.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/ports.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/pr_black_key.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/pr_white_key_big.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/pr_white_key_small.png
@@ -772,8 +847,11 @@ drwxr-xr-x	root/root	usr/share/lmms/themes/default/
 -rw-r--r--	root/root	usr/share/lmms/themes/default/toolbar_bg.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/track_op_grip.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/track_op_menu.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/track_op_menu_disabled.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/triangle_wave_active.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/triangle_wave_inactive.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/uhoh.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/unavailable_sound.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/unfreeze.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/unknown_file.png
 -rw-r--r--	root/root	usr/share/lmms/themes/default/usr_wave_active.png
@@ -830,3 +908,8 @@ drwxr-xr-x	root/root	usr/share/lmms/track_icons/
 -rw-r--r--	root/root	usr/share/lmms/track_icons/violin01.png
 -rw-r--r--	root/root	usr/share/lmms/track_icons/violin02.png
 -rw-r--r--	root/root	usr/share/lmms/track_icons/xylophone01.png
+drwxr-xr-x	root/root	usr/share/menu/
+-rw-r--r--	root/root	usr/share/menu/lmms
+drwxr-xr-x	root/root	usr/share/mime/
+drwxr-xr-x	root/root	usr/share/mime/packages/
+-rw-r--r--	root/root	usr/share/mime/packages/lmms.xml
