@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Legends
+Comment=Legends
+Exec=/usr/bin/legends
+Icon=legends.png
+Terminal=false
+Type=Application
+Categories=Application;Games;
