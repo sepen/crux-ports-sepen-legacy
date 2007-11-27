@@ -1,0 +1,21 @@
+# Description: Greq is a program that lets you build GTK+-dialogs from within a shell script.
+# URL: http://greq.berlios.de/
+# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Jose V Beneyto, joberui at ei dot upv dot es
+# Depends on: gtk
+
+name=greq
+version=0.9.4
+release=1
+source=(http://download.berlios.de/greq/greq-0.9.4.tar.gz)
+
+build() {
+  cd ${name}-${version}
+  autoconf
+  ./configure --prefix=/usr \
+              --datarootdir=/usr
+  make
+  make DESTDIR=${PKG} install
+  mv ${PKG}/usr/man/man{m,1}
+  mv ${PKG}/usr/man/man1/${name}.{man,1}
+}
