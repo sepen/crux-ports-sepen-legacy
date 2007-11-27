@@ -1,0 +1,30 @@
+#!/bin/sh
+#
+# /etc/rc.d/wmd: store/restore wiimote linux daemon
+#
+
+# location of the wmd executable
+WMD=/usr/bin/wmd
+
+case $1 in
+	start)
+    modprobe wm
+    sleep 1
+		$WMD /dev/wm /var/tmp/wmd.log &
+		;;
+	stop)
+		killall -q $WMD
+    sleep 1
+    rmmod wm
+		;;
+	restart)
+		$0 stop
+		sleep 2
+		$0 start
+		;;
+	*)
+		echo "Usage: $0 [start|stop|restart]"
+		;;
+esac
+
+# End of file
