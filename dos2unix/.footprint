@@ -4,5 +4,5 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/mac2unix
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
--rwxr-xr-x	root/root	usr/man/man1/dos2unix.1.gz
--rwxr-xr-x	root/root	usr/man/man1/mac2unix.1.gz
+-rw-r--r--	root/root	usr/man/man1/dos2unix.1.gz
+-rw-r--r--	root/root	usr/man/man1/mac2unix.1.gz
