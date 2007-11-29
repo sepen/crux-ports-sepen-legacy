@@ -5,13 +5,14 @@
 # Depends on: rsync
 
 name=mybackup-host
-version=0.1svn
-release=1
+version=0.1-svn
+release=2
 source=()
 
 build() {
   svn co svn://mikeux.dyndns.org/mybackup/trunk ${name}
   cd ${name}
-  make packages PREFIX=/usr
-  tar -C ${PKG} -xzf ${name}*.tar.gz
+  ./configure --prefix=/usr
+  make host
+  make DESTDIR=${PKG} install-host
 }

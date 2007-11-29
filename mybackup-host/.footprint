@@ -5,6 +5,6 @@ drwxr-xr-x	root/root	usr/etc/
 -rw-r--r--	root/root	usr/etc/mybackup-host.conf
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
--rw-r--r--	root/root	usr/man/man1/mybackup-host.1.gz
+-rw-rw-rw-	root/root	usr/man/man1/mybackup-host.1.gz
 drwxr-xr-x	root/root	usr/man/man5/
--rw-r--r--	root/root	usr/man/man5/mybackup-host.5.conf.gz
+-rw-rw-rw-	root/root	usr/man/man5/mybackup-host.conf.5.gz
