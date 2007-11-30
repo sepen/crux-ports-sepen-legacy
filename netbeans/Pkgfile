@@ -2,28 +2,27 @@
 # URL: http://www.netbeans.org/
 # Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Depends on: x11,jdk
+# Depends on: xorg,jdk
 
 name=netbeans
-version=5.5
+version=5.5.1
 release=1
 
-source=(http://us2-mirror.netbeans.info/download/5_5/fcs/200610171010/$name-5_5.tar.bz2
-	$name.sh)
+source=(http://download.netbeans.org/${name}/download/5_5_1/fcs/200704122300/${name}-5_5_1.tar.bz2 \
+        ${name}.sh)
 
 build() {
-	rm -rf `find $SRC -name *.exe` \
-       	       `find $SRC -name *.bat` \
-       	       `find $SRC -name *.dll` \
-	       `find $SRC -name *.zip` \
-	       `find $SRC -name *README*` \
-	       $PKG/usr/share/$name/ide7/{sources,docs} \
-	       $PKG/usr/share/$name/nb5.5/docs \
-	       $PKG/usr/share/$name/platform6/docs \
-	       $PKG/usr/share/$name/enterprise3/docs \
-	       $PKG/usr/share/$name/enterprise3/jakarta-tomcat-5.5.17/webapps/tomcat-docs
-
-	install -d $PKG/usr/{bin,share/$name}
-	mv $SRC/$name $PKG/usr/share
-	install -m 755 $name.sh $PKG/usr/bin/$name
+	rm -rf `find ${SRC} -type f -name '*.exe'` \
+         `find ${SRC} -type f -name '*.bat'` \
+         `find ${SRC} -type f -name '*.dll'` \
+	       `find ${SRC} -type f -name '*.zip'` \
+	       `find ${SRC} -type f -name '*README*'` \
+         `find ${SRC} -type f -name '*CREDITS*`' \
+         `find ${SRC} -type f -name '*LICENSE*`' \
+         `find ${SRC} -type d -name 'sources'` \
+         `find ${SRC} -type d -name 'docs'`
+  install -d ${PKG}/usr/share
+	mv ${SRC}/${name} ${PKG}/usr/share
+	install -D -m 0755 ${name}.sh ${PKG}/usr/bin/${name}
+  install -D -m 0644 ${PKG}/usr/share/${name}/nb5.5/${name}.png ${PKG}/usr/share/pixmaps/${name}.png
 }
