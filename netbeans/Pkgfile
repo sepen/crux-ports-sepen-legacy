@@ -15,14 +15,14 @@ build() {
 	rm -rf `find ${SRC} -type f -name '*.exe'` \
          `find ${SRC} -type f -name '*.bat'` \
          `find ${SRC} -type f -name '*.dll'` \
-	       `find ${SRC} -type f -name '*.zip'` \
-	       `find ${SRC} -type f -name '*README*'` \
-         `find ${SRC} -type f -name '*CREDITS*`' \
-         `find ${SRC} -type f -name '*LICENSE*`' \
+         `find ${SRC} -type f -name '*.zip'` \
+         `find ${SRC} -type f -name '*README*'` \
+         `find ${SRC} -type f -name '*CREDITS*`'` \
+         `find ${SRC} -type f -name '*LICENSE*`'` \
          `find ${SRC} -type d -name 'sources'` \
          `find ${SRC} -type d -name 'docs'`
   install -d ${PKG}/usr/share
-	mv ${SRC}/${name} ${PKG}/usr/share
+  mv ${SRC}/${name} ${PKG}/usr/share
 	install -D -m 0755 ${name}.sh ${PKG}/usr/bin/${name}
   install -D -m 0644 ${PKG}/usr/share/${name}/nb5.5/${name}.png ${PKG}/usr/share/pixmaps/${name}.png
 }
