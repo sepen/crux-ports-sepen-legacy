@@ -5,22 +5,28 @@
 # Depends on: xorg,jdk
 
 name=netbeans
-version=5.5.1
+version=6.0
 release=1
 
 source=(http://download.netbeans.org/${name}/download/5_5_1/fcs/200704122300/${name}-5_5_1.tar.bz2 \
         ${name}.sh)
 
 build() {
-	rm -rf `find ${SRC} -type f -name '*.exe'` \
-         `find ${SRC} -type f -name '*.bat'` \
-         `find ${SRC} -type f -name '*.dll'` \
-         `find ${SRC} -type f -name '*.zip'` \
-         `find ${SRC} -type f -name '*README*'` \
-         `find ${SRC} -type f -name '*CREDITS*`'` \
-         `find ${SRC} -type f -name '*LICENSE*`'` \
-         `find ${SRC} -type d -name 'sources'` \
-         `find ${SRC} -type d -name 'docs'`
+  find ${SRC} -type d -name 'sources' -prune -exec rm -rf {} \;
+  find ${SRC} -type d -name 'docs' -prune -exec rm -rf {} \;
+  find ${SRC} -type d -name 'locale' -prune -exec rm -rf {} \;
+  find ${SRC} -type d -name 'docs' -prune -exec rm -rf {} \;
+  find ${SRC} -type f -name '*.exe' -exec rm -rf {} \;
+  find ${SRC} -type f -name '*.bat' -exec rm -rf {} \;
+  find ${SRC} -type f -name '*.dll' -exec rm -rf {} \;
+  find ${SRC} -type f -name '*.txt' ! -name '*.xml.txt' -exec rm -rf {} \;
+  find ${SRC} -type f -name 'README' -exec rm -rf {} \;
+  find ${SRC} -type f -name 'README*' -exec rm -rf {} \;
+  find ${SRC} -type f -name 'LICENSE' -exec rm -rf {} \;
+  find ${SRC} -type f -name 'NOTICE' -exec rm -rf {} \;
+  find ${SRC} -type f -name 'CREDITS' -exec rm -rf {} \;
+  find ${SRC} -type f -name 'CREDITS*' -exec rm -rf {} \;
+  find ${SRC} -type f -name 'RELEASE-NOTES' -exec rm -rf {} \;
   install -d ${PKG}/usr/share
   mv ${SRC}/${name} ${PKG}/usr/share
 	install -D -m 0755 ${name}.sh ${PKG}/usr/bin/${name}
