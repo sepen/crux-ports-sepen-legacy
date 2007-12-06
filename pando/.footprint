@@ -2,6 +2,8 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/pando
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/applications/
+-rw-r--r--	root/root	usr/share/applications/pando.desktop
 drwxr-xr-x	root/root	usr/share/pando/
 drwxr-xr-x	root/root	usr/share/pando/lib/
 -rwxr-xr-x	root/root	usr/share/pando/lib/libfreebl3.so
@@ -24,4 +26,4 @@ drwxr-xr-x	root/root	usr/share/pando/lib/
 -rwxr-xr-x	root/root	usr/share/pando/lib/libwx_gtk2_xrc-2.8.so.0
 -rwxr-xr-x	root/root	usr/share/pando/pandoDownloader
 drwxr-xr-x	root/root	usr/share/pixmaps/
--rwxr-xr-x	root/root	usr/share/pixmaps/pando.png
+-rw-r--r--	root/root	usr/share/pixmaps/pando.png
