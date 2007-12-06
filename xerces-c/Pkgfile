@@ -1,0 +1,27 @@
+# Description: Xerces-C++ validating XML parser
+# URL: http://xml.apache.org/xerces-c/
+# Mantainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Packager: Matt Housh, jaeger at morpheus dot net
+
+name=xerces-c
+version=2.8.0
+release=1
+source=(http://www.apache.org/dist/xerces/c/sources/${name}-src_${version//./_}.tar.gz)
+
+build() {
+  export XERCESCROOT=${SRC}/${name}-src_${version//./_}
+  cd ${XERCESCROOT}/src/xercesc
+  autoconf
+  read
+  ./runConfigure -P/usr \
+                 -plinux \
+                 -cgcc \
+                 -xg++ \
+                 -minmem \
+                 -nsocket \
+                 -tnative \
+                 -rpthread
+  make
+  make DESTDIR=${PKG} install
+  unset XERCESCROOT
+}
