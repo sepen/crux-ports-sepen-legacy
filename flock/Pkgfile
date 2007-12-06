@@ -5,7 +5,7 @@
 # Depends on: gtk
 
 name=flock
-version=0.7.14
+version=0.9.1.5
 release=1
 source=(http://mirror2.flock.com/releases/${version}/${name}-${version}.en-US.linux-i686.tar.gz \
         ${name}.desktop ${name}.png ${name}-browser)
