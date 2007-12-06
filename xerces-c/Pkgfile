@@ -12,7 +12,6 @@ build() {
   export XERCESCROOT=${SRC}/${name}-src_${version//./_}
   cd ${XERCESCROOT}/src/xercesc
   autoconf
-  read
   ./runConfigure -P/usr \
                  -plinux \
                  -cgcc \
@@ -21,7 +20,7 @@ build() {
                  -nsocket \
                  -tnative \
                  -rpthread
-  make
+  make -j1
   make DESTDIR=${PKG} install
   unset XERCESCROOT
 }
