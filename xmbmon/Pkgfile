@@ -2,20 +2,23 @@
 # URL: http://www.nt.phys.kyushu-u.ac.jp/shimizu/download/download.html
 # Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Depends on: x11
+# Depends on: xorg
 
 name=xmbmon
 version=2.0.5
-release=1
-source=(http://www.nt.phys.kyushu-u.ac.jp/shimizu/download/${name}/${name}205.tar.gz)
+release=2
+source=(http://www.nt.phys.kyushu-u.ac.jp/shimizu/download/${name}/${name}205.tar.gz \
+        http://www.nt.phys.kyushu-u.ac.jp/shimizu/download/${name}/${name}205_A7N8X-VM.patch)
 
 build() {
-	cd ${name}205
-	./configure --prefix=/usr \
-		    --with-x
-	make
-	install -d $PKG/usr/{bin,man/man1,X11R6/man/man1}
-       	install -m 755 mbmon $name $PKG/usr/bin
-	install -m 644 mbmon.1 $PKG/usr/man/man1
-	install -m 644 $name.1x $PKG/usr/X11R6/man/man1
+  cd ${name}205
+  patch methods.h ${SRC}/${name}205_A7N8X-VM.patch
+  ./configure --prefix=/usr \
+              --with-x
+  make
+  sed -e 's|xmbmon 1x|xmbmon 1|g' -i ${name}.1x
+  install -D -m 0755 mbmon ${PKG}/usr/bin/mbmon
+  install -D -m 0755 ${name} ${PKG}/usr/bin/${name}
+  install -D -m 0644 mbmon.1 ${PKG}/usr/man/man1/mbmon.1
+  install -D -m 0644 ${name}.1x ${PKG}/usr/man/man1/${name}.1
 }
