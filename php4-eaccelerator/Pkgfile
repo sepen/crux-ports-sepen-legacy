@@ -5,16 +5,18 @@
 # Depends on: php4
 
 name=php4-eaccelerator
-version=0.9.5.1
-release=2
-source=(http://bart.eaccelerator.net/source/0.9.5.1/eaccelerator-0.9.5.1.tar.bz2)
+version=0.9.5.2
+release=1
+source=(http://bart.eaccelerator.net/source/${version}/eaccelerator-${version}.tar.bz2)
 
 build() {
   cd eaccelerator-${version}
   phpize
   ./configure --prefix=/usr \
               --with-eaccelerator-shared-memory \
-              --with-eaccelerator-encoder
-  make
-  install -D -m 0755 modules/eaccelerator.so ${PKG}/usr/lib/php/extensions/eaccelerator.so
+              --with-eaccelerator-sessions \
+              --with-eaccelerator-encoder \
+              --with-eaccelerator-content-caching \
+              --with-eaccelerator-disassembler 
+  make INSTALL_ROOT=${PKG} install
 }
