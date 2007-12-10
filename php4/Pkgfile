@@ -6,7 +6,7 @@
 
 name=php4
 version=4.4.7
-release=3
+release=4
 source=(http://php.net/distributions/php-${version}.tar.bz2)
 
 build() {
@@ -46,6 +46,7 @@ build() {
     make ${CFLAGS}
     make INSTALL_ROOT=${PKG} install
     rm -rf ${PKG}/usr/lib/php/{test,doc}
-    sed -i "/^extension_dir/s|\./|/usr/lib/php/extensions|" php.ini-dist
+    sed -e "s|extension_dir=.*|extension_dir='/usr/lib/php/extensions'|" -i ${PKG}/usr/bin/php-config
+    sed -e "/^extension_dir/s|\./|/usr/lib/php/extensions|" -i php.ini-dist
     install -D -m 0644 php.ini-dist ${PKG}/etc/php.ini
 }
