@@ -2,7 +2,7 @@
 # URL: http://www.blender.org/
 # Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Depends on: libjpeg,ode,fmod,smpeg,ftgl,scons,openexr,freealut
+# Depends on: libjpeg,ode,fmodex,smpeg,ftgl,scons,openexr,freealut
 
 name=blender
 version=2.45
