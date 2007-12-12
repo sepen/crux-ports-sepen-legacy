@@ -1,6 +1,6 @@
 # Description: Xerces-C++ validating XML parser
 # URL: http://xml.apache.org/xerces-c/
-# Mantainer: Jose V Beneyto, joberui at ei dot upv dot es
+# Mantainer: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Packager: Matt Housh, jaeger at morpheus dot net
 
 name=xerces-c
