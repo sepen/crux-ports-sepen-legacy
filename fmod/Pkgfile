@@ -1,18 +1,20 @@
-# Description: 	A music & sound effects system.
-# URL: 		http://www.fmod.org/
-# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
+# Description: A music & sound effects system.
+# URL: http://www.fmod.org/
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Depends on:   
 
 name=fmod
-version=3.75
+version=4.10.01
 release=1
 
-source=(http://www.fmod.org/files/fmodapi375linux.tar.gz)
+source=(http://www.fmod.org/index.php/release/version/fmodapi41001linux.tar.gz)
 
 build() {
-    install -d $PKG/usr/{lib,include/fmod}
-    mv $SRC/fmodapi375linux/api/inc/* $PKG/usr/include/fmod
-    mv $SRC/fmodapi375linux/api/libfmod-3.75.so $PKG/usr/lib
-    ln -sf /usr/lib/libfmod-3.75.so $PKG/usr/lib/libfmod.so
+  install -d ${PKG}/usr/{lib,include/fmodex}
+  cp -f fmodapi41001linux/api/inc/*.h* ${PKG}/usr/include/fmodex
+  cp -f fmodapi41001linux/api/lib/libfmodex.so.${version} ${PKG}/usr/lib
+  cp -f fmodapi41001linux/api/lib/libfmodexp.so.${version} ${PKG}/usr/lib
+  ln -sf libfmodex.so.${version} ${PKG}/usr/lib/libfmodex.so
+  ln -sf libfmodexp.so.${version} ${PKG}/usr/lib/libfmodexp.so
 }
