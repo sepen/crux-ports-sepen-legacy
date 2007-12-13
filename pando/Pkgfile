@@ -2,11 +2,11 @@
 # URL: http://www.pando.com
 # Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Depends on: libstdc++-compat,gst-python,libtiff
+# Depends on: libstdc++-compat,gst-python
 
 name=pando
 version=0.9.2.0
-release=3
+release=4
 source=(http://www.pando.com/dl/download/pandodl-${version}.tar.bz2 \
         ${name} ${name}.desktop)
 
