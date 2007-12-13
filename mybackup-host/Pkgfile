@@ -6,7 +6,7 @@
 
 name=mybackup-host
 version=0.1-svn
-release=3
+release=4
 source=()
 
 build() {
