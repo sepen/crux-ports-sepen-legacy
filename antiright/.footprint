@@ -25,7 +25,9 @@ drwxr-xr-x	root/root	usr/share/antiright/guidl/
 -rw-r--r--	root/root	usr/share/antiright/guidl/Publishing_Panel.gdl
 drwxr-xr-x	root/root	usr/share/antiright/icons/
 -rw-r--r--	root/root	usr/share/antiright/icons/ACE_32.png
+-rw-r--r--	root/root	usr/share/antiright/icons/Calculator_16.png
 -rw-r--r--	root/root	usr/share/antiright/icons/Calculator_32.png
+-rw-r--r--	root/root	usr/share/antiright/icons/Deck_16.png
 -rw-r--r--	root/root	usr/share/antiright/icons/Deck_32.png
 -rw-r--r--	root/root	usr/share/antiright/icons/File_Sharing_32.png
 -rw-r--r--	root/root	usr/share/antiright/icons/Image_Editor_32.png
