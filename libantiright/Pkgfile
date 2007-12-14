@@ -6,16 +6,15 @@
 
 name=libantiright
 version=3.6
-release=1
-source=(config.mk)
+release=2
+source=(http://download.savannah.nongnu.org/releases/antiright/antiright-${version}.tar.bz2 \
+        config.mk)
 
 build() {
-  cvs -d:pserver:anonymous@cvs.sv.gnu.org:/sources/antiright co antiright/libantiright
-  cp ${SRC}/config.mk ${SRC}/antiright/config.mk
-  cd antiright/${name}
-  make clean
-  make
-  install -D -m 0644 ${name}.a ${PKG}/usr/lib/antiright/${name}.a
+  cp ${SRC}/config.mk antiright-${version}
+  make -C antiright-${version}/${name} clean
+  make -C antiright-${version}/${name}
+  install -D -m 0644 antiright-${version}/${name}/${name}.a ${PKG}/usr/lib/antiright/${name}.a
   install -d ${PKG}/usr/include/antiright
-  install -m 0644 *.h ${PKG}/usr/include/antiright
+  install -m 0644 antiright-${version}/${name}/*.h ${PKG}/usr/include/antiright
 }
