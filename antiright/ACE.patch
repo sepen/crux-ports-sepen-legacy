@@ -1,0 +1,16 @@
+39c39
+< 		export XDG_DATA_DIRS="/usr/local/share:/usr/share"
+---
+> 		export XDG_DATA_DIRS="/usr/share"
+41c41
+< 		export XDG_DATA_DIRS="$XDG_DATA_DIRS:/usr/pkg/share"
+---
+> 		
+44c44
+< 		export XDG_CONFIG_DIRS="/etc/xdg:/usr/pkg/etc/xdg"
+---
+> 		export XDG_CONFIG_DIRS="/usr/etc/xdg"
+166c166
+< 	exec $ARSHELL -f $datadir/$1.gdl
+---
+> 	exec $ARSHELL -f $datadir/guidl/$1.gdl

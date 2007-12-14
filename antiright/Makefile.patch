@@ -1,0 +1,79 @@
+26,41c26,27
+< include ../config.mk
+< 
+< all: ACE.install hacks
+< 
+< ACE.install: ACE
+< 	echo '#!/bin/sh' > ACE.install
+< 	grep ^PREFIX ../config.mk >> ACE.install
+< 	cat ACE >> ACE.install
+< 	chmod +x ACE.install
+< 
+< hacks: hacks/*.sh
+< 	chmod +x hacks/*.sh
+< 	
+< clean:
+< 	rm -f ACE.install
+< 
+---
+> DESTDIR=
+> PREFIX=/usr
+42a29
+> INSTALL=/usr/bin/install
+46a34
+> 
+56,72c44
+< install: all
+< 	$(INSTALL_DIR) $(bindir)
+< 	${INSTALL_DIR} $(man1dir)
+< 	$(INSTALL_DIR) $(man5dir)
+< 	${INSTALL_DIR} $(datadir)
+< 	${INSTALL_DIR} $(icondir)
+< 	$(INSTALL_DIR) $(hackdir)
+< 	$(INSTALL_DIR) $(confdir)
+< 	$(INSTALL_SCRIPT) hacks/*.sh $(hackdir)
+< 	$(INSTALL_DATA) system.antiright $(confdir)
+< 	$(INSTALL_DATA) guidl/*.gdl $(datadir)
+< 	$(INSTALL_SCRIPT) ACE.install $(bindir)/ACE
+< 	$(INSTALL_DATA) ACE.1 $(man1dir)
+< 	$(INSTALL_DATA) system.antiright.5 $(man5dir)
+< 	$(INSTALL_DATA) icons/*.png $(icondir)
+< 	$(INSTALL_DATA) icons/gnome_medium/*.png $(icondir)
+< 	$(INSTALL_DATA) icons/gnome_small/*.png $(icondir)
+---
+> all: ACE.install antiright-session.install
+73a46,79
+> ACE.install: ACE
+> 	echo "#!/bin/sh" > ACE.install
+> 	echo >> ACE.install
+> 	echo "PREFIX=/usr/share/antiright" >> ACE.install
+> 	cat ACE >> ACE.install
+> 
+> antiright-session.install: ACE.install
+> 	echo "#!/bin/sh" > antiright-session.install
+> 	echo >> antiright-session.install
+> 	echo "PREFIX=/usr/share/antiright" >> antiright-session.install
+> 	echo "exec $(PREFIX)/bin/ACE -A AR" >> antiright-session.install
+> 	
+> clean:
+> 	rm -f ACE.install
+> 	rm -f antiright-session.install
+> 
+> install: all
+> 	$(INSTALL_DIR) $(DESTDIR)/$(bindir)
+> 	${INSTALL_DIR} $(DESTDIR)/$(man1dir)
+> 	$(INSTALL_DIR) $(DESTDIR)/$(man5dir)
+> 	${INSTALL_DIR} $(DESTDIR)/$(datadir)
+> 	${INSTALL_DIR} $(DESTDIR)/$(icondir)
+> 	$(INSTALL_DIR) $(DESTDIR)/$(hackdir)
+> 	$(INSTALL_DIR) $(DESTDIR)/$(confdir)
+> 	$(INSTALL_SCRIPT) hacks/*.sh $(DESTDIR)/$(hackdir)
+> 	$(INSTALL_DATA) system.antiright $(DESTDIR)/$(confdir)
+> 	$(INSTALL_DATA) guidl/*.gdl $(DESTDIR)/$(datadir)
+> 	$(INSTALL_SCRIPT) ACE.install $(DESTDIR)/$(bindir)/ACE
+> 	$(INSTALL_SCRIPT) antiright-session.install $(DESTDIR)/$(bindir)/antiright-session
+> 	$(INSTALL_DATA) ACE.1 $(DESTDIR)/$(man1dir)
+> 	$(INSTALL_DATA) system.antiright.5 $(DESTDIR)/$(man5dir)
+> 	$(INSTALL_DATA) icons/*.png $(DESTDIR)/$(icondir)
+> 	$(INSTALL_DATA) icons/gnome_medium/*.png $(DESTDIR)/$(icondir)
+> 	$(INSTALL_DATA) icons/gnome_small/*.png $(DESTDIR)/$(icondir)
