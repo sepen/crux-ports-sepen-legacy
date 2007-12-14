@@ -2,21 +2,26 @@
 # URL: http://www.nongnu.org/antiright/
 # Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Depends on: libantiright
+# Depends on: libantiright,vte
 
 name=gtkshell
 version=3.6
-release=2
+release=3
 source=(http://download.savannah.nongnu.org/releases/antiright/antiright-${version}.tar.bz2 \
-        config.mk Makefile.patch gtkshell.h.patch)
+        config.mk Makefile-xshell.patch Makefile-${name}.patch ${name}.h.patch)
 
 build() {
   cp ${SRC}/config.mk ${SRC}/antiright-${version}
   cd antiright-${version}/${name}
-  patch Makefile ${SRC}/Makefile.patch
-  patch gtkshell.h ${SRC}/gtkshell.h.patch
+  patch Makefile ${SRC}/Makefile-${name}.patch
+  patch gtkshell.h ${SRC}/${name}.h.patch
   make clean
   make all
-  make PREFIX=${PKG} install
+  make DESTDIR=${PKG} install
   install -D -m 0644 ${SRC}/antiright-${version}/doc/${name}.1 ${PKG}/usr/man/man1/${name}.1
+  cd ${SRC}/antiright-${version}/xshell
+  patch Makefile ${SRC}/Makefile-xshell.patch
+  make clean
+  make all
+  make DESTDIR=${PKG} install
 }

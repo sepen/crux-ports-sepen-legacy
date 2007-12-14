@@ -1,4 +1,5 @@
-90cb138bd9eaa5b7f568a51670e0e240  Makefile.patch
+779286f05b2ac0ea5f1c51de71c4d2ed  Makefile-gtkshell.patch
+de0e6c87e144c289622949069c923ea9  Makefile-xshell.patch
 485bc536b6d8e2c4432604a3d21207e0  antiright-3.6.tar.bz2
-b14bf2c5642c4c968f6d9dfab41a8581  config.mk
+8cfce9646c85f6c6f21f9d7b75a17584  config.mk
 6a42446fd1022f14b44ff2e9bfcb87c0  gtkshell.h.patch

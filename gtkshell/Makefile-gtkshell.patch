@@ -6,5 +6,5 @@
 < 	install gtkshell $(PREFIX)/bin
 < 	install gshterm $(PREFIX)/bin
 ---
-> 	install -D -m 0755 gtkshell $(PREFIX)/usr/bin/gtkshell
-> 	install -D -m 0644 libgtkshell.a $(PREFIX)/usr/lib/antiright/libgtkshell.a
+> 	install -D -m 0755 gtkshell $(DESTDIR)/usr/bin/gtkshell
+> 	install -D -m 0644 libgtkshell.a $(DESTDIR)/usr/lib/antiright/libgtkshell.a

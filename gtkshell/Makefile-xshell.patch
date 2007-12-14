@@ -1,0 +1,19 @@
+31c31
+< INCLUDES=-I/usr/X11R6/include -I/usr/pkg/include
+---
+> INCLUDES=-I/usr/include/X11 -I/usr/include
+37c37
+< #CFLAGS+=-DXSH_USE_GRADIENT
+---
+> CFLAGS+=-DXSH_USE_GRADIENT
+41,42c41,42
+< #CFLAGS+=-DXSH_USE_INDICATOR
+< LIBS=-L/usr/X11R6/lib -L/usr/pkg/lib -lX11
+---
+> CFLAGS+=-DXSH_USE_INDICATOR
+> LIBS=-L/usr/lib/X11 -L/usr/lib -lX11
+57,58c57
+< 	cp xshell $(PREFIX)/bin
+< 
+---
+> 	install -D -m 0755 xshell $(DESTDIR)/usr/bin/xshell
