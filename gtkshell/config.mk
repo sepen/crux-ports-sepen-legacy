@@ -8,4 +8,4 @@ MAKE=/usr/bin/make
 INSTALL=/usr/bin/install
 CFLAGS= -Wall
 CC=cc
-LDFLAGS= -lantiright -lXft -lgtk-x11-2.0 -lXrender -lfontconfig -lfreetype -lz -lX11 -latk-1.0 -lcairo -lpango-1.0 -lgobject-2.0 -lgmodule-2.0 -ldl -lglib-2.0 
+LDFLAGS=-lantiright -lXft -lgtk-x11-2.0 -lXrender -lfontconfig -lfreetype -lz -lX11 -latk-1.0 -lcairo -lpango-1.0 -lgobject-2.0 -lgmodule-2.0 -ldl -lglib-2.0 $(shell pkg-config --libs vte)
