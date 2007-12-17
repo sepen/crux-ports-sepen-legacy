@@ -5,16 +5,16 @@
 # Depends on:
 
 name=fmodex
-version=4.10.01
+version=4.10.02
 release=1
 
-source=(http://www.fmod.org/index.php/release/version/fmodapi41001linux.tar.gz)
+source=(http://www.fmod.org/index.php/release/version/fmodapi${version[@]//./}linux.tar.gz)
 
 build() {
   install -d ${PKG}/usr/{lib,include/${name}}
-  cp -f fmodapi41001linux/api/inc/*.h* ${PKG}/usr/include/${name}
-  cp -f fmodapi41001linux/api/lib/lib${name}.so.${version} ${PKG}/usr/lib
-  cp -f fmodapi41001linux/api/lib/lib${name}p.so.${version} ${PKG}/usr/lib
+  cp -f fmodapi${version[@]//./}linux/api/inc/*.h* ${PKG}/usr/include/${name}
+  cp -f fmodapi${version[@]//./}linux/api/lib/lib${name}.so.${version} ${PKG}/usr/lib
+  cp -f fmodapi${version[@]//./}linux/api/lib/lib${name}p.so.${version} ${PKG}/usr/lib
   ln -sf lib${name}.so.${version} ${PKG}/usr/lib/lib${name}.so
   ln -sf lib${name}p.so.${version} ${PKG}/usr/lib/lib${name}p.so
 }
