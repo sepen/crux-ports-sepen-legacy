@@ -6,18 +6,18 @@
 
 name=mldonkey
 version=2.9.2
-release=1
+release=2
 source=(http://dl.sourceforge.net/sourceforge/${name}/${name}-${version}.tar.bz2 \
         mlnetd)
 
 build() {
   cd ${name}-${version}
   ./configure --prefix=/usr \
+              --help
               --disable-gui \
               --disable-debug
-  make
-  make utils
+  make mlnet.static
   install -D -m 0755 ${SRC}/mlnetd ${PKG}/etc/rc.d/mlnetd
-  install -D -m 0755 mlnet ${PKG}/usr/bin/mlnet
+  install -D -m 0755 mlnet.static ${PKG}/usr/bin/mlnet
   ln -sf /usr/bin/mlnet ${PKG}/usr/bin/${name}
 }
