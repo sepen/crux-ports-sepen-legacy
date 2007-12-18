@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# test if the jk_chrootsh is already in /etc/shells
+if ! grep /usr/sbin/jk_chrootsh /etc/shells; then
+	echo "/usr/sbin/jk_chrootsh" >> /etc/shells
+fi
+
+# End of file

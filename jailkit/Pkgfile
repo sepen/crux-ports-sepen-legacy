@@ -1,0 +1,21 @@
+# Description: set of utilities to limit user accounts to specific files using chroot() and or specific commands.
+# URL: http://olivier.sessink.nl/jailkit/
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Depends on: python
+
+name=jailkit
+version=2.4
+release=1
+source=(http://olivier.sessink.nl/${name}/${name}-${version}.tar.bz2)
+
+build() {
+cd ${name}-${version}
+cp Makefile.in ../../../
+sed 74,77d -i Makefile.in
+sed -e 's|/share/man/|/man/|g' -i man/Makefile.in
+./configure --prefix=/usr
+make
+install -d ${PKG}/usr/{bin,sbin,etc}
+make prefix=${PKG}/usr install
+}
