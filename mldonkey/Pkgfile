@@ -6,7 +6,7 @@
 
 name=mldonkey
 version=2.9.2
-release=2
+release=4
 source=(http://dl.sourceforge.net/sourceforge/${name}/${name}-${version}.tar.bz2 \
         mlnetd)
 
@@ -15,8 +15,8 @@ build() {
   ./configure --prefix=/usr \
               --disable-gui \
               --disable-debug
-  make mlnet.static
+  make
+  make DESTDIR=${PKG} install
+  install -d ${PKG}/var/mlnet
   install -D -m 0755 ${SRC}/mlnetd ${PKG}/etc/rc.d/mlnetd
-  install -D -m 0755 mlnet.static ${PKG}/usr/bin/mlnet
-  ln -sf /usr/bin/mlnet ${PKG}/usr/bin/${name}
 }

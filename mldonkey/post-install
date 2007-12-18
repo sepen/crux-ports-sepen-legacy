@@ -1,23 +1,17 @@
 #!/bin/sh
 
-MLDONKEY_USER=mldonkey
-MLDONKEY_GROUP=mlusers
-MLDONKEY_PATHT=/var/mlnet
+MLUSER=mldonkey
+MLGROUP=mlusers
+MLPATH=/var/mlnet
 
 
 # check for mlusers group or add one if not exists
-getent group $MLDONKEY_GROUP || groupadd $MLDONKEY_GROUP
+getent group $MLGROUP || groupadd $MLGROUP
 
 # check for mldonkey user or add one
-getent passwd $MLDONKEY_USER || useradd -g $MLDONKEY_USER -m -d $MLDONKEY_PATH $MLDONKEY_USER
+getent passwd $MLUSER || useradd -g $MLGROUP -m -d $MLPATH $MLUSER
 
 # lock the account
-passwd -l $MLDONKEY_USER
-
-# create_jail
-install -d $MLDONKEY_PATH/{dev,etc,log,tmp}
-mknod $MLDONKEY_PATH/dev/null c 1 3
-mknod $MLDONKEY_PATH/dev/urandom c 1 9
-chmod 1775 $MLDONKEY_PATH/tmp
+passwd -l $MLUSER
 
 # End of file

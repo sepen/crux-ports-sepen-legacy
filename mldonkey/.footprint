@@ -3,5 +3,11 @@ drwxr-xr-x	root/root	etc/rc.d/
 -rwxr-xr-x	root/root	etc/rc.d/mlnetd
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
-lrwxrwxrwx	root/root	usr/bin/mldonkey -> /usr/bin/mlnet
+lrwxrwxrwx	root/root	usr/bin/mlbt -> mlnet
+lrwxrwxrwx	root/root	usr/bin/mldc -> mlnet
+lrwxrwxrwx	root/root	usr/bin/mldonkey -> mlnet
+lrwxrwxrwx	root/root	usr/bin/mlgnut -> mlnet
 -rwxr-xr-x	root/root	usr/bin/mlnet
+lrwxrwxrwx	root/root	usr/bin/mlslsk -> mlnet
+drwxr-xr-x	root/root	var/
+drwxr-xr-x	root/root	var/mlnet/
