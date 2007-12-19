@@ -14,4 +14,7 @@ getent passwd $MLUSER || useradd -g $MLGROUP -m -d $MLPATH $MLUSER
 # lock the account
 passwd -l $MLUSER
 
+# setup bitperms
+chmod 0775 $MLPATH
+
 # End of file

@@ -4,11 +4,11 @@
 #
 
 case $1 in
-	start)
+  start)
     export MLDONKEY_DIR=/var/mlnet
-		mlnet -run_as_user mldonkey &
-		;;
-	stop)
+    su mldonkey -c "mlnet -run_as_user mldonkey >/dev/null" &
+    ;;
+  stop)
     pkill mlnet
     ;;
   restart)
