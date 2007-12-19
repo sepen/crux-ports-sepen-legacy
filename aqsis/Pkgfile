@@ -1,0 +1,20 @@
+# Description: Open Source implementation of the Renderman(R) standard
+# URL: http://www.aqsis.org/
+# Maintainer: Jose V Beneyto, sepen at users dot souceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot souceforge dot net
+# Depends on: zlib,libjpeg,libtiff,fltk,bison,flex,boost,libxslt,openexr,scons
+
+name=aqsis
+version=1.2.0
+release=1
+source=(http://dl.sourceforge.net/sourceforge/${name}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+  scons destdir=${PKG} \
+        install_prefix=/usr \
+        sysconfdir=/usr/etc \
+		    fltk_include_path=/usr/include/FL \
+        build
+  scons install
+}
