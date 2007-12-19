@@ -1,0 +1,11 @@
+#!/bin/sh
+
+SANCHO_PATH=/usr/share/sancho
+
+export MOZILLA_FIVE_HOME=/usr/lib/firefox
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$SANCHO_PATH/lib
+
+cd $SANCHO_PATH
+./sancho $@
+
+# End of file

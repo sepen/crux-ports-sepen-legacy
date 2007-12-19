@@ -1,24 +1,23 @@
-# Description:	Fast paced first person shooter game
-# URL:		http://www.warsow.net/
-# Maintainer:	Mark Rosenstand, mark at borkware dot net
-# Depends on:	curl, libjpeg, libsdl, libvorbis, mesa3d
+# Description: Fast paced first person shooter game
+# URL: http://www.warsow.net/
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Depends on: curl,libjpeg,libsdl,libvorbis,mesa3d
 
 name=warsow
-version=0.21
-release=2
-source=(http://ftp.club-internet.fr/pub/games/nofrag/warsow/warsow_${version}_linux.tar.gz
-	http://ftp.club-internet.fr/pub/games/nofrag/warsow/warsow_${version}_sdk.zip)
+version=0.32
+release=1
+source=(http://www.megami.de/${name}/releases/${name}_${version}_linux.tar.gz \
+        http://www.megami.de/${name}/releases/${name}_${version}_sdk.zip \
+        Makefile.patch)
 
 build() {
-	sed -i source/qcommon/files.c \
-		-e '/fs_basepath = Cvar_Get/s,"\.","/usr/games/warsow",' \
-		-e '/fs_usehomedir = Cvar_Get/s,"0","1",'
-	make -C source \
-		BUILD_SERVER=NO \
-		BUILD_SND_OPENAL=NO \
-		CLIENT_EXE=warsow
-	mkdir -p $PKG/usr/{bin,games/warsow}
-	mv source/release/warsow	$PKG/usr/bin
-	cp -r source/release/*		$PKG/usr/games/warsow
-	cp -r warsow/basewsw/*.pk3	$PKG/usr/games/warsow/basewsw
+  cd ${name}_${version}/source
+  patch Makefile ${SRC}/Makefile.patch
+  sed -i qcommon/files.c \
+      -e '/fs_basepath = Cvar_Get/s,"\.","/usr/share/warsow",' \
+      -e '/fs_usehomedir = Cvar_Get/s,"0","1",'
+  make
+  install -d ${PKG}/usr/share/${name}
+	cp -r release/* ${PKG}/usr/share/${name}
+	cp -r ../../warsow/basewsw ${PKG}/usr/share/${name}
 }

@@ -32,4 +32,9 @@ POST-INSTALL
     SUBSYSTEM=="misc"
     SYSFS{dev}=="10:62"
 
-PRECAUTIONS
+PRECAUTION
+
+ If you have problems trying to update virtualbox (xalan-c not found...) use
+ this command to solve it:
+ # prt-get update -fr xerces-c xalan-c
+ and then rebuild virtualbox
