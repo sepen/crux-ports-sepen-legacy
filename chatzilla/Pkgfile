@@ -10,6 +10,6 @@ release=1
 source=(http://chatzilla.hacksrus.com/xpi/chatzilla-0.9.79.xpi)
 
 build() {
-  install -d ${PKG}/usr/lib/firefox
-  unzip ${name}-${version}.xpi chrome/* components/* -d ${PKG}/usr/lib/firefox
+  install -d ${PKG}/usr/lib/firefox/extensions
+  unzip ${name}-${version}.xpi chrome/* components/* -d ${PKG}/usr/lib/firefox/extensions
 }
