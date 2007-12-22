@@ -2,18 +2,16 @@
 # URL: http://goodies.xfce.org/projects/applications/ristretto
 # Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Depends on: subversion,xfce4-dev-tools,thunar
+# Depends on: thunar,libexif
 # Group: xfce4
 
 name=ristretto
-version=2931-svn
+version=0.0.15
 release=1
-source=()
+source=(http://goodies.xfce.org/releases/${name}/${name}-${version}.tar.gz)
 
 build() {
-  svn co -r ${version%%-*} http://svn.xfce.org/svn/goodies/${name}/trunk ${name}
-  cd ${name}
-  sh autogen.sh
+  cd ${name}-${version}
   autoconf
   ./configure --prefix=/usr \
               --disable-debug
