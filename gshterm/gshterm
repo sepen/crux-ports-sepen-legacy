@@ -1,0 +1,81 @@
+#!/bin/sh
+
+gshterm_usage()
+{
+	echo 'gshterm [e command][f font][s size][h]'
+}
+
+FONT=""
+GEOMETRY=""
+COMMAND=""
+DEBUG="FALSE"
+APP_MODE=""
+TRANSPARENT="-ott"
+
+while [ $# -gt 0 ]; do
+	case "$1" in
+	-a)
+		APP_MODE="-oa File::Exit___ 'Help::gtkshell -da & # About'"
+		break
+		;;
+	-e)
+		shift
+		COMMAND="\"$*\""
+		break
+		;;
+	-g)
+		GEOMETRY="$2"
+		shift
+		;;
+	-f)
+		FONT="$2"
+		shift
+		;;
+	-h)
+		gshterm_usage
+		;;
+	-s)
+		FONT="$FONT $2"
+		shift
+		;;
+	-t)
+		#TRANSPARENT="-ott"
+		TRANSPARENT=""
+		break
+		;;
+	esac
+	shift
+done
+
+ARGS=""
+
+
+if [ "$TRANSPARENT" != "" ]; then
+	ARGS="$ARGS $TRANSPARENT"
+fi
+
+if [ "$GEOMETRY" != "" ]; then
+	ARGS="$ARGS -og $GEOMETRY"
+fi
+if [ "$FONT" != "" ]; then
+	ARGS="$ARGS -otf \"$FONT\""
+else
+	ARGS="$ARGS -otf 'Mono 12'"
+fi
+
+#echo $*
+
+if [ "$COMMAND" = "" ]; then
+	COMMAND=$SHELL
+fi
+
+
+COMMAND="gtkshell $APP_MODE -oF $ARGS -oT $COMMAND -as $COMMAND"
+
+if [ "$DEBUG" = "TRUE" ]; then
+	echo $COMMAND
+fi
+
+exec sh -c "$COMMAND"
+
+# End of file
