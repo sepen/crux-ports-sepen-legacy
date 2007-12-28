@@ -22,7 +22,12 @@
 > INSTALL=/usr/bin/install
 46a34
 > 
-56,72c44
+52c40,41
+< hackdir=$(datadir)/hacks
+---
+> hacksdir=$(datadir)/hacks
+> guidldir=$(datadir)/guidl
+56,72c45
 < install: all
 < 	$(INSTALL_DIR) $(bindir)
 < 	${INSTALL_DIR} $(man1dir)
@@ -42,7 +47,7 @@
 < 	$(INSTALL_DATA) icons/gnome_small/*.png $(icondir)
 ---
 > all: ACE.install antiright-session.install
-73a46,79
+73a47,81
 > ACE.install: ACE
 > 	echo "#!/bin/sh" > ACE.install
 > 	echo >> ACE.install
@@ -65,11 +70,12 @@
 > 	$(INSTALL_DIR) $(DESTDIR)/$(man5dir)
 > 	${INSTALL_DIR} $(DESTDIR)/$(datadir)
 > 	${INSTALL_DIR} $(DESTDIR)/$(icondir)
-> 	$(INSTALL_DIR) $(DESTDIR)/$(hackdir)
+> 	$(INSTALL_DIR) $(DESTDIR)/$(hacksdir)
+> 	$(INSTALL_DIR) $(DESTDIR)/$(guidldir)
 > 	$(INSTALL_DIR) $(DESTDIR)/$(confdir)
 > 	$(INSTALL_SCRIPT) hacks/*.sh $(DESTDIR)/$(hackdir)
+> 	$(INSTALL_DATA) guidl/*.gdl $(DESTDIR)/$(guidldir)
 > 	$(INSTALL_DATA) system.antiright $(DESTDIR)/$(confdir)
-> 	$(INSTALL_DATA) guidl/*.gdl $(DESTDIR)/$(datadir)
 > 	$(INSTALL_SCRIPT) ACE.install $(DESTDIR)/$(bindir)/ACE
 > 	$(INSTALL_SCRIPT) antiright-session.install $(DESTDIR)/$(bindir)/antiright-session
 > 	$(INSTALL_DATA) ACE.1 $(DESTDIR)/$(man1dir)

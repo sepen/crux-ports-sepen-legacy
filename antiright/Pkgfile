@@ -6,7 +6,8 @@
 
 name=antiright
 version=3.6
-release=2
+release=3
+
 source=(http://download.savannah.nongnu.org/releases/${name}/${name}-${version}.tar.bz2 \
         Makefile.patch ACE.patch) 
 
