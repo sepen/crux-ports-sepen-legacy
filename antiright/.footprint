@@ -1,9 +1,3 @@
--rwxr-xr-x	root/root	calculator.sh
--rwxr-xr-x	root/root	host_monitor.sh
--rwxr-xr-x	root/root	juke.sh
--rwxr-xr-x	root/root	local_loads.sh
--rwxr-xr-x	root/root	open_file.sh
--rwxr-xr-x	root/root	simple_load_applet.sh
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/ACE
@@ -35,6 +29,13 @@ drwxr-xr-x	root/root	usr/share/antiright/guidl/
 -rw-r--r--	root/root	usr/share/antiright/guidl/Old_Deskbar.gdl
 -rw-r--r--	root/root	usr/share/antiright/guidl/Publishing_Panel.gdl
 drwxr-xr-x	root/root	usr/share/antiright/hacks/
+-rwxr-xr-x	root/root	usr/share/antiright/hacks/calculator.sh
+-rwxr-xr-x	root/root	usr/share/antiright/hacks/host_monitor.sh
+-rwxr-xr-x	root/root	usr/share/antiright/hacks/juke.sh
+-rwxr-xr-x	root/root	usr/share/antiright/hacks/local_loads.sh
+-rwxr-xr-x	root/root	usr/share/antiright/hacks/open_file.sh
+-rwxr-xr-x	root/root	usr/share/antiright/hacks/simple_load_applet.sh
+-rwxr-xr-x	root/root	usr/share/antiright/hacks/xsh_panel.sh
 drwxr-xr-x	root/root	usr/share/antiright/icons/
 -rw-r--r--	root/root	usr/share/antiright/icons/ACE_32.png
 -rw-r--r--	root/root	usr/share/antiright/icons/Calculator_32.png
@@ -193,4 +194,3 @@ drwxr-xr-x	root/root	usr/share/antiright/icons/
 -rw-r--r--	root/root	usr/share/antiright/icons/www_32.png
 -rw-r--r--	root/root	usr/share/antiright/icons/xv_16.png
 -rw-r--r--	root/root	usr/share/antiright/icons/xv_32.png
--rwxr-xr-x	root/root	xsh_panel.sh

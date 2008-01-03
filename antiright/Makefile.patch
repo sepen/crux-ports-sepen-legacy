@@ -25,7 +25,7 @@
 52c40,41
 < hackdir=$(datadir)/hacks
 ---
-> hacksdir=$(datadir)/hacks
+> hackdir=$(datadir)/hacks
 > guidldir=$(datadir)/guidl
 56,72c45
 < install: all
@@ -70,7 +70,7 @@
 > 	$(INSTALL_DIR) $(DESTDIR)/$(man5dir)
 > 	${INSTALL_DIR} $(DESTDIR)/$(datadir)
 > 	${INSTALL_DIR} $(DESTDIR)/$(icondir)
-> 	$(INSTALL_DIR) $(DESTDIR)/$(hacksdir)
+> 	$(INSTALL_DIR) $(DESTDIR)/$(hackdir)
 > 	$(INSTALL_DIR) $(DESTDIR)/$(guidldir)
 > 	$(INSTALL_DIR) $(DESTDIR)/$(confdir)
 > 	$(INSTALL_SCRIPT) hacks/*.sh $(DESTDIR)/$(hackdir)
