@@ -6,13 +6,15 @@
 
 name=qca
 version=2.0.0
-release=2
+release=3
 source=(http://delta.affinix.com/download/${name}/2.0/${name}-${version}.tar.bz2)
 
 build() {
   cd ${name}-${version}
   ./configure --prefix=/usr \
-              --qtdir=/usr/share/qt4
+              --qtdir=/usr/share/qt4 \
+              --includedir=/usr/include/qt4 \
+              --libdir=/usr/lib/qt4
   make
   export INSTALL_ROOT=${PKG}
   make install
