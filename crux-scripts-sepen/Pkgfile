@@ -5,12 +5,12 @@
 # Depends on: prt-utils
 
 name=crux-scripts-sepen
-version=2.3-svn
-release=2
+version=2.4-svn
+release=1
 source=()
 
 build() {
-  svn co svn://mikeux.dyndns.org/crux/branches/2.3/tools ${name}
+  svn co svn://mikeux.dyndns.org/crux/branches/2.4/tools ${name}
   install -d ${PKG}/usr/bin
   rm -f ${SRC}/${name}/portdb-search
   install -m 0755 ${SRC}/${name}/* ${PKG}/usr/bin
