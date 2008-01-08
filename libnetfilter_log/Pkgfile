@@ -1,0 +1,18 @@
+# Description: Userspace library providing interface to packets that have been logged by the kernel packet filter. 
+# URL: http://www.netfilter.org/projects/libnetfilter_queue/index.html
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Depends on: libnfnetlink
+
+name=libnetfilter_log
+version=0.0.13
+release=1
+source=(http://www.netfilter.org/projects/${name}/files/${name}-${version}.tar.bz2)
+
+build () {
+  cd ${name}-${version}
+  ./configure --prefix=/usr \
+              --disable-static
+  make
+  make DESTDIR=${PKG} install
+}
