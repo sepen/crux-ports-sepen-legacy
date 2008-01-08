@@ -1,0 +1,23 @@
+# Description: userspace logging daemon for netfilter/iptables related logging.
+# URL: http://www.netfilter.org/projects/ulogd/
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Depends on: libnetfilter_log,libnetfilter_conntrack
+
+name=ulogd
+version=2.0.0beta1
+release=1
+source=(http://ftp.netfilter.org/pub/ulogd/${name}-${version}.tar.bz2)
+
+build() {
+  if [ "$(pkginfo -i |grep '^mysql ')" ]; then
+    configure_flags="${configure_flags} --with-mysql=/usr/lib/mysql"
+  fi
+  if [ "$(pkginfo -i |grep '^postgresql ')" ]; then
+    configure_flags="${configure_flags} --with-pgsql=/usr/lib/postgresql"
+  fi
+  cd ${name}-${version}
+  ./configure --prefix=/usr ${configure_flags}
+  make
+  make DESTDIR=${PKG} install
+}
