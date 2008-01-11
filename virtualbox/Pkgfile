@@ -5,15 +5,16 @@
 # Depends on: bin86,dev86,xorg-libxcursor,hal,libsdl,libidl,qt3,xalan-c,iasl
 
 name=virtualbox
-version=1.5.2
-release=2
+version=1.5.4
+release=1
 source=(http://www.virtualbox.org/download/${version}/VirtualBox-${version}_OSE.tar.bz2 \
         ${name} 60-vboxdrv.rules ${name}.desktop)
 
 build() {
   cd VirtualBox-${version}_OSE
   # compile
-  ./configure --with-qt-dir=/usr/share/qt
+  ./configure --with-qt-dir=/usr/share/qt \
+              --disable-pulse
   source ./env.sh
   kmk all
   # compile kernel module
