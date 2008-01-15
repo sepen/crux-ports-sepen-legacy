@@ -6,15 +6,16 @@ MLPATH=/var/mlnet
 
 
 # check for mlusers group or add one if not exists
-getent group $MLGROUP || groupadd $MLGROUP
+/usr/bin/getent group $MLGROUP || /usr/sbin/groupadd $MLGROUP
 
 # check for mldonkey user or add one
-getent passwd $MLUSER || useradd -g $MLGROUP -m -d $MLPATH $MLUSER
+/usr/bin/getent passwd $MLUSER || /usr/sbin/useradd -g $MLGROUP -m -d $MLPATH $MLUSER
 
 # lock the account
-passwd -l $MLUSER
+/usr/bin/passwd -l $MLUSER
 
 # setup bitperms
-chmod 0775 $MLPATH
+/bin/chmod 0775 $MLPATH
+/bin/chown root.$MLGROUP $MLPATH
 
 # End of file
