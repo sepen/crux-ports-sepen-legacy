@@ -6,12 +6,12 @@
 
 name=mldonkey
 version=2.9.2
-release=5
+release=6
 source=(http://dl.sourceforge.net/sourceforge/${name}/${name}-${version}.tar.bz2 \
         mlnetd)
 
 build() {
-  OCAML_VER=$(pkginfo -i | grep ocaml | cut -d' ' -f2 | sed 's|-[0-9]*||')
+  local OCAML_VER=$(ocaml -version | awk '{print $6}')
   cd ${name}-${version}
   ./configure --prefix=/usr \
               --disable-gui \
