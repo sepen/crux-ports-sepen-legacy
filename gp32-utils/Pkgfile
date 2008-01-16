@@ -1,0 +1,19 @@
+# Description: Collection of utilities for the GP32 developer
+# URL: http://www.scaramanga.co.uk/gp32/
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Depends on:
+
+name=gp32-utils
+version=0.2
+release=1
+source=()
+
+build() {
+  cd ${SRC}
+  cvs -z3 -d:pserver:anonymous@gp32linux.cvs.sourceforge.net:/cvsroot/gp32linux co -P tools/${name}-${version}
+  cd tools/${name}-${version}
+  ./configure --prefix=/usr
+  make
+  make DESTDIR=${PKG} install
+}
