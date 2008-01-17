@@ -10,6 +10,5 @@ release=1
 source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
 
 build() {
-  cd ${name}-${version}
-  make PREFIX=${PKG}/usr install
+  make -C ${name}-${version} PREFIX=${PKG}/usr install
 }
