@@ -1,0 +1,53 @@
+# Description: GP32 Toolchain tool.
+# URL: http://www.cobbleware.com/gp32/gp32toolchain.html
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Depends on: 
+
+name=gp32-toolchain
+version=3.4.1
+release=1
+source=(ftp://ftp.gnu.org/gnu/binutils/binutils-2.15.tar.bz2 \
+        ftp://ftp.gnu.org/gnu/gcc/gcc-3.4.1/gcc-3.4.1.tar.bz2 \
+        ftp://sources.redhat.com/pub/newlib/newlib-1.12.0.tar.gz \
+        syscalls.c.spivvy)
+
+build() {
+
+  declare -x CFLAGS="-s "
+
+  # binutils
+  cd binutils-2.15
+  ./configure --prefix=/usr/share/${name} \
+              --target=arm-elf
+  make
+  make DESTDIR=${PKG} install
+
+  # gcc and newlib
+  cp ${SRC}/syscalls.c.spivvy ${SRC}/newlib-1.12.0/newlib/libc/sys/arm/syscalls.c 
+  cd ${SRC}/gcc-3.4.1
+  ln -s ../newlib-1.12.0/newlib .
+  mkdir build
+  cd build
+  CFLAGS="-pipe -s "
+  ../configure --prefix=/usr/share/${name} \
+               --target=arm-elf \
+               --with-cpu=arm9 \
+               --disable-threads \
+               --enable-languages=c,c++ \
+               --with-newlib \
+               --disable-multilib \
+               --with-gnu-ld \
+               --with-gnu-as
+  GP32_CFLAGS="-s -march=armv4t -marm -msoft-float -ffast-math -fshort-enums -mstructure-size-boundary=8"
+  make all \
+    CFLAGS_FOR_TARGET="-DTAG_CFLAGS_FOR_TARGET ${GP32_CFLAGS} -02"
+    CXXFLAGS_FOR_TARGET="-DTAG_CXXFLAGS_FOR_TARGET ${GP32_CFLAGS} -0 -fno-implicit-templates"
+    LIBCFLAGS_FOR_TARGET="-DTAG_LIBCFLAGS_FOR_TARGET ${GP32_CFLAGS} -02"
+    LIBGCC2_CFLAGS="-DIN_GCC -DCROSS_COMPILE -DIN_LIBGCC2 -D__GCC_FLOAT_NOT_NEEDED -W -Wall \
+                    -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -isystem ./include \
+                    -Dinhibit_libc -fno-inline -DTAG_LIBGCC_FLAGS ${GP32_CFLAGS} -02"
+  make DESTDIR=${PKG} install
+}
+
+# End of file
