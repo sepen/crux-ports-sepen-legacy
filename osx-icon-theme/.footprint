@@ -1,0 +1,638 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/icons/
+drwxr-xr-x	root/root	usr/share/icons/OSX/
+drwxr-xr-x	root/root	usr/share/icons/OSX/development/
+-rw-------	root/root	usr/share/icons/OSX/development/gimp icon.txt
+drwxr-xr-x	root/root	usr/share/icons/OSX/development/spare icons/
+-rwxr-xr-x	root/root	usr/share/icons/OSX/development/spare icons/Battery.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/development/spare icons/battery_charged.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/development/spare icons/battery_empty.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/development/spare icons/battery_low.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/development/spare icons/battery_plugged.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/development/spare icons/battery_two_thirds.png
+-rw-r--r--	root/root	usr/share/icons/OSX/development/spare icons/ecran.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/development/spare icons/gasbombcrate.png
+-rw-r--r--	root/root	usr/share/icons/OSX/development/spare icons/gnome-dev-battery.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/development/spare icons/temp.png
+-rw-r--r--	root/root	usr/share/icons/OSX/index.theme
+drwxr-xr-x	root/root	usr/share/icons/OSX/scalable/
+drwxr-xr-x	root/root	usr/share/icons/OSX/scalable/actions/
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/actions/document-open.png -> ../places/gnome-fs-directory-accept.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/actions/fileopen.png -> ../places/gnome-fs-directory-accept.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/actions/gtk-open.png -> ../places/gnome-fs-directory-accept.png
+drwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/
+drwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/48/
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/amule.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/48/beast.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/cache.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/default-applications-capplet.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/disks.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/file-manager.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/gnome-color-browser.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/gnome-cromagnon.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/gnome-devel.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/gnome-graphics.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/gnome-info.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/gnome-money.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/gnome-multimedia.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/gnome-note.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/gnome-panel-type-corner.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/gnome-server-config.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/gnome-settings-default-applications.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/gnome-settings-ui-behavior.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/gnome-system-config.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/gnome-system.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/gnome-tourist-info.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/gnome-util.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/gnome-warning.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/gnome-window-manager.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/login-photo.png
+-rw-------	root/root	usr/share/icons/OSX/scalable/apps/48/nvu.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/48/palm-pilot-sync.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/panel-force-quit.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/panel-window-list.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/panel-window-menu.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/password.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/samba.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/system-config-httpd.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/system-config-kickstart.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/system-config-nfs.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/system-config-rootpassword.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/usermount.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/vlc.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/vmware.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/48/win4lin.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/48/xmule.png -> amule.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/48/xsane.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/VBox.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/abiword.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/access.png -> preferences-desktop-accessibility.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/accessibility-directory.png -> preferences-desktop-accessibility.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/accessories-text-editor.png -> text-editor.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/addressbook.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/agave-icon.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/amarok.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/apacheconf.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/applets-screenshooter.png -> ../devices/camera-photo.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/audacity.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/avant-window-navigator.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/avidemux.png -> kino.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/background.png -> preferences-desktop-wallpaper.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/banshee.png -> rhythmbox.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/baobab.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/beagled.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/blender.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/boot.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/bug-buddy.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/clock.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/conduit.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/config-date.png -> clock.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/config-language.png -> system-config-language.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/config-users.png -> system-users.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/contacts.png -> addressbook.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/cowbell.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/dates.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/desktop-effects.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/display-capplet.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/eclipse.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/ekiga-snapshot.png -> ekiga.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/ekiga.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/elisa.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/emacs.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/ethereal.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/evolution.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/f-spot.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/f-spot.png.old
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/file-roller.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/filelight.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/folder-remote.png -> shares.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/gaim.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gajim.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/galeon.png -> web-browser.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gconf-editor.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/gdebi.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/gdm-setup.png -> gdm.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gdm.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gftp.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/ghostview.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gksu-root-terminal.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/glade-2.png -> glade.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/glade-3.png -> glade.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/glade.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/glchess.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/gnome-accessibility-keyboard.png -> gnome-settings-keybindings.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/gnome-applets.png -> panel.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gnome-applications.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/gnome-btdownload.png -> gtk-gnutella.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/gnome-calculator.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/gnome-cd.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gnome-cpu.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/gnome-desktop-config.png -> gnome-settings.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gnome-dictionary.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/gnome-eterm.png -> gnome-terminal.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gnome-fs-network.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/gnome-fs-server.png -> system-config-services.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/gnome-fs-share.png -> system-config-samba.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/gnome-gimp.png -> wilber-icon.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/gnome-globe.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/gnome-grecord.png -> ../devices/audio-input-microphone.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/gnome-joystick.png -> ../devices/input-gaming.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gnome-lockscreen.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gnome-lockscreen.png.OLD
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/gnome-logout.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/gnome-main-menu.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/gnome-mixer.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/gnome-modem.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gnome-nettool.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/gnome-other.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/gnome-palm.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gnome-panel.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/gnome-ppp.png -> gnome-modem.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gnome-remote-desktop.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gnome-run.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gnome-searchtool.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gnome-session-halt.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gnome-session-hibernate.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/gnome-session-logout.png -> system-config-securitylevel.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/gnome-session-reboot.png -> gdm.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gnome-session-suspend.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gnome-session-switch.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/gnome-settings-background.png -> preferences-desktop-wallpaper.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gnome-settings-font.png
+-rwxr--r--	root/root	usr/share/icons/OSX/scalable/apps/gnome-settings-keybindings.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/gnome-settings-sound.png -> preferences-desktop-sound.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/gnome-settings-theme.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/gnome-settings.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/gnome-terminal.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gnome-workspace.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/gnome-xterm.png -> gnome-terminal.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gnomebaker-48.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/gnucash.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gparted.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/graveman.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/grsync.png -> conduit.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/gstreamer-properties.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gthumb.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gtk-gnutella.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/gtkam.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/gucharmap.png -> gnome-settings-keybindings.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/gwget.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/gxine.png -> totem.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/homebank.png -> gnucash.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/hwbrowser.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/ifolder.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/image-viewer.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/inkscape.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/java.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/jokosher.png -> audacity.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/jscalibrator.png -> ../devices/input-gaming.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/kaffeine.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/kino.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/kmail.png -> evolution.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/konqueror.png -> web-browser.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/konsole.png -> gnome-terminal.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/kontact.png -> evolution.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/kopete.png -> gaim.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/kscreensaver.png -> screensaver.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/kuser.png -> system-users.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/labyrinth.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/laptop-battery.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/launcher-program.png -> panel.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/leafpad.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/licq.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/liferea.png -> pan.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/logviewer.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/media-player-48.png -> totem.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/mozilla-firefox.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/mozilla-mail-icon.png -> evolution.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/mozilla-thunderbird.png -> evolution.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/muine.png -> rhythmbox.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/neat-control.png -> neat.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/neat.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/netscape.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/nicotine_clear.png -> gtk-gnutella.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/noatun.png -> rhythmbox.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/ogle.png -> totem.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/ooo-base.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/ooo-calc.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/ooo-draw.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/ooo-gulls.png -> openoffice.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/ooo-impress.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/ooo-math.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/ooo-writer.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/openoffice.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/opera.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/orca.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/palm-pilot.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/pan.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/panel-drawer.png -> panel.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/panel-searchtool.png -> gnome-searchtool.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/panel.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/pitivi.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/poedit.png -> system-config-language.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/preferences-desktop-accessibility.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/preferences-desktop-screensaver.png -> screensaver.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/preferences-desktop-sound.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/preferences-desktop-wallpaper.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/preferences-system-session.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/print-manager.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/printer.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/purrr.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/pybackpack.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/realplayer.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/redhat-email.png -> evolution.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/redhat-extras.png -> web-browser.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/redhat-internet.png -> web-browser.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/redhat-office.png -> openoffice.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/redhat-preferences.png -> gnome-settings.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/redhat-system_settings.png -> gnome-settings.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/redhat-web-browser.png -> web-browser.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/redhat-word-processor.png -> ooo-writer.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/revelation.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/rhythmbox.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/scim-setup.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/screenlets.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/screensaver.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/scribus.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/seahorse-preferences.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/seahorse.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/session-properties.png -> preferences-system-session.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/shares.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/skype.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/sodipodi.png -> inkscape.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/software-properties.png -> update-manager.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/spe.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/specto.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/stock_keyring.png -> seahorse-preferences.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/stock_proxy.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/synaptic.png -> up2date.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/system-config-bind.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/system-config-language.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/system-config-samba.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/system-config-securitylevel.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/system-config-services.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/system-search.png -> beagled.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/system-users.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/text-editor.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/time.png -> clock.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/tomboy.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/totem.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/tsclient.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/apps/up2date.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/update-manager.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/user-info.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/users.png -> config-users.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/utilities-system-monitor.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/utilities-system-monitor.png.old
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/utilities-terminal.png -> gnome-terminal.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/volume-knob.png -> gnome-mixer.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/web-browser.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/wilber-icon.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/xchat-gnome.png -> xchat.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/xchat.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/xine.png -> totem.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/apps/xkill.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/xmms.png -> rhythmbox.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/apps/xqf.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/apps/xscreensaver.png -> screensaver.png
+drwxr-xr-x	root/root	usr/share/icons/OSX/scalable/devices/
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/devices/audio-input-microphone.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/devices/battery.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/devices/camera-photo.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/devices/camera-video.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/camera.png -> camera-photo.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/camera_mount.png -> camera-photo.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/camera_unmount.png -> camera-photo.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/devices/cd-audio.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/devices/cd-r.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/devices/cd-rw.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/devices/cdrecord.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/devices/cdrom.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/cdrom_mount.png -> cdrom.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/cdrom_unmount.png -> cdrom.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/cdwriter_mount.png -> cd-r.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/cdwriter_unmount.png -> cd-r.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/devices/dvd-r.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/dvd-r_mount.png -> dvd-r.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/dvd-r_unmount.png -> dvd-r.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/devices/dvd-ram.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/dvd-ram_mount.png -> dvd-ram.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/dvd-ram_unmount.png -> dvd-ram.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/devices/dvd-rw.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/dvd-rw_mount.png -> dvd-rw.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/dvd-rw_unmount.png -> dvd-rw.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/devices/dvd.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/dvd_mount.png -> dvd.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/dvd_unmount.png -> dvd.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-battery.png -> battery.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-camera.png -> camera-photo.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-cdrom-audio.png -> cd-audio.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-cdrom.png -> cdrom.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-cdwriter.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-disc-cdr.png -> cd-r.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-disc-cdrw.png -> cd-rw.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-disc-dvdr-plus.png -> dvd-r.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-disc-dvdr.png -> dvd-r.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-disc-dvdram.png -> dvd-ram.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-disc-dvdrom.png -> dvd.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-disc-dvdrw.png -> dvd-rw.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-dvd.png -> dvd.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-floppy.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-harddisk-1394.png -> gnome-dev-removable-1394.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-harddisk-usb.png -> gnome-dev-removable-usb.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-harddisk.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-ipod.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-jazdisk.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-keyboard.png -> input-keyboard.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-media-cf.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-media-ms.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-media-sm.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-memory.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-mouse-ball.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-mouse-optical.png -> input-mouse.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-network.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-pcmcia.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-printer.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-removable-1394.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-removable-usb.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-removable.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/devices/gnome-dev-zipdisk.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/devices/input-gaming.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/devices/input-keyboard.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/devices/input-mouse.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/devices/input-tablet.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/joystick.png -> input-gaming.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/kxkb.png -> input-keyboard.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/devices/multimedia-player.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/devices/nfs_mount.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/devices/nfs_unmount.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/devices/scanner.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/devices/video-display.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/devices/yast-joystick.png -> input-gaming.png
+drwxr-xr-x	root/root	usr/share/icons/OSX/scalable/emblems/
+drwxr-xr-x	root/root	usr/share/icons/OSX/scalable/emblems/48/
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/emblems/48/emblem-OK.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/emblems/48/emblem-certified.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/48/emblem-cvs-added.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/48/emblem-cvs-conflict.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/48/emblem-cvs-controlled.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/48/emblem-cvs-modified.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/48/emblem-cvs-new-file.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/48/emblem-cvs-removed.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/48/emblem-cvs-sticky-tag.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/48/emblem-desktop.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/emblems/48/emblem-distinguished.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/emblems/48/emblem-generic.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/emblems/48/emblem-new.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/emblems/48/emblem-noread.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/emblems/48/emblem-personal.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/emblems/48/emblem-plan.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/emblems/48/emblem-presentation.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/emblems/48/emblem-sales.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/emblems/48/emblem-symbolic-link.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/emblem-art.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/emblem-bin.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/emblem-camera.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/emblem-cool.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/emblem-danger.png
+-rwxr--r--	root/root	usr/share/icons/OSX/scalable/emblems/emblem-documents.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/emblem-draft.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/emblems/emblem-favorite.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/emblem-handshake.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/emblem-important.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/emblem-keys.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/emblem-multimedia.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/emblem-note.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/emblems/emblem-nowrite.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/emblems/emblem-ohno.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/emblem-package.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/emblem-people.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/emblems/emblem-pictures.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/emblem-question.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/emblem-shared.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/emblem-sound.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/emblems/emblem-special.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/emblem-urgent.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/emblems/emblem-web.png
+drwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-docboox+xml.png -> application-vnd.oasis.opendocument.text-master.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-illustrator.png -> image-x-svg+xml.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/application-msword.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-octet-stream.png -> multipart-encrypted.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-ogg.png -> audio-x-vorbis+ogg.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/application-pdf.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/application-pgp-keys.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/application-pgp.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/application-postscript.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-rtf.png -> text-richtext.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-vnd.ms-access.png -> application-vnd.oasis.opendocument.database.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/application-vnd.ms-excel.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-vnd.ms-powerpoint.png -> application-vnd.oasis.opendocument.presentation.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/application-vnd.oasis.opendocument.chart.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/application-vnd.oasis.opendocument.database.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/application-vnd.oasis.opendocument.graphics.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/application-vnd.oasis.opendocument.presentation.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/application-vnd.oasis.opendocument.spreadsheet.png
+-rwxr--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/application-vnd.oasis.opendocument.text-master.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-vnd.oasis.opendocument.text-template.png -> application-vnd.oasis.opendocument.text-master.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/application-vnd.oasis.opendocument.text-web.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/application-vnd.oasis.opendocument.text.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-vnd.rn-realmedia.png -> video-x-generic.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-vnd.sun.xml.calc.png -> application-vnd.oasis.opendocument.spreadsheet.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-vnd.sun.xml.draw.png -> application-vnd.oasis.opendocument.graphics.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-vnd.sun.xml.impress.png -> application-vnd.oasis.opendocument.presentation.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-vnd.sun.xml.writer.png -> application-vnd.oasis.opendocument.text.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-vnd.wordperfect.png -> application-msword.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-7z-compressed.png -> application-x-compress.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-abiword.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-bittorrent.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-blender.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-bzip-compressed-tar.png -> application-x-compress.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-cd-image.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-compress.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-compressed-tar.png -> application-x-compress.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-deb.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-executable.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-flash-video.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-glade.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-gnumeric.png -> text-spreadsheet.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-jar.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-java.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-javascript.png -> application-x-java.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-jokosher.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-m4.png -> text-x-generic.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-matroska.png -> video-x-generic.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-ms-dos-executable.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-object.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-ole-storage.png -> multipart-encrypted.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-perl.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-php.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-pitivi.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-planner.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-python-bytecode.png -> text-x-python.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-rar.png -> application-x-compress.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-reject.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-rpm.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-sharedlib.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-shellscript.png -> text-x-script.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-shockwave-flash.png -> application-x-flash-video.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-sqlite2.png -> text-x-sql.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-sqlite3.png -> text-x-sql.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-ssh-key.png -> application-pgp-keys.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-tar.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-theme.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/application-x-trash.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/application-xml.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/application-zip.png -> application-x-compress.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/audio-mpeg.png -> audio-x-mpeg.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/audio-x-adpcm.png -> audio-x-wav.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/audio-x-flac+ogg.png -> audio-x-vorbis+ogg.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/audio-x-generic.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/audio-x-mp3-playlist.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/audio-x-mpeg.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/audio-x-mpegurl.png -> audio-x-mp3-playlist.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/audio-x-ms-wma.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/audio-x-scpls.png -> audio-x-mp3-playlist.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/audio-x-speex+ogg.png -> audio-x-vorbis+ogg.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/audio-x-vorbis+ogg.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/audio-x-wav.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/font-x-generic.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/gnome-mime-video.png -> ../devices/camera-video.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/image-bmp.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/image-gif.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/image-jpeg.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/image-jpeg2000.png -> image-jpeg.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/image-png.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/image-tiff.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/image-x-3ds.png -> application-x-blender.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/image-x-compressed-xcf.png -> image-x-xcf.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/image-x-generic.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/image-x-ico.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/image-x-portable-bitmap.png -> image-bmp.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/image-x-psd.png -> image-x-xcf.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/image-x-svg+xml.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/image-x-tga.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/image-x-win-bitmap.png -> image-bmp.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/image-x-xcf.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/message-x-gnu-rmail.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/multipart-encrypted.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/package-x-generic.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/packages-gdebi.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/text-css.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/text-enriched.png -> text-richtext.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/text-html.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/text-htmlh.png -> text-html.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/text-plain.png -> text-x-generic.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/text-richtext.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/text-spreadsheet.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/text-x-authors.png -> text-x-credits.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/text-x-c++.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/text-x-c++src.png -> text-x-c++.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/text-x-c.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/text-x-chdr.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/text-x-copying.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/text-x-credits.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/mimetypes/text-x-csrc.png -> text-x-c.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/text-x-fortran.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/text-x-generic.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/text-x-gtkrc.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/text-x-install.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/text-x-java.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/text-x-log.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/text-x-makefile.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/text-x-nemerle.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/text-x-patch.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/text-x-python.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/text-x-readme.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/text-x-script.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/text-x-sql.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/mimetypes/unknown.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/video-x-generic.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/vnd.oasis.opendocument.drawing.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/mimetypes/x-office-address-book.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/mimetypes/x-office-calendar.png
+drwxr-xr-x	root/root	usr/share/icons/OSX/scalable/places/
+drwxr-xr-x	root/root	usr/share/icons/OSX/scalable/places/alternate folder - blue/
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/places/alternate folder - blue/gnome-fs-directory-accept.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/places/alternate folder - blue/gnome-fs-directory-visiting.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/places/alternate folder - blue/gnome-fs-directory.png
+drwxr-xr-x	root/root	usr/share/icons/OSX/scalable/places/alternate folder - normal/
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/places/alternate folder - normal/gnome-fs-directory-accept.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/places/alternate folder - normal/gnome-fs-directory-visiting.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/places/alternate folder - normal/gnome-fs-directory.png
+drwxr-xr-x	root/root	usr/share/icons/OSX/scalable/places/alternate folders 2/
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/places/alternate folders 2/gnome-fs-directory-accept.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/places/alternate folders 2/gnome-fs-directory-visiting.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/places/alternate folders 2/gnome-fs-directory.png
+drwxr-xr-x	root/root	usr/share/icons/OSX/scalable/places/alternate folders 3/
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/places/alternate folders 3/gnome-fs-directory-accept.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/places/alternate folders 3/gnome-fs-directory-visiting.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/places/alternate folders 3/gnome-fs-directory.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/places/folder_home.png -> user-home.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/places/gnome-dev-harddisk.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/places/gnome-fs-blockdev.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/places/gnome-fs-client.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/places/gnome-fs-desktop.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/places/gnome-fs-directory-accept.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/places/gnome-fs-directory-visiting.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/places/gnome-fs-directory.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/places/gnome-fs-executable.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/places/gnome-fs-ftp.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/places/gnome-fs-home.png -> user-home.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/places/gnome-fs-loading-icon.png -> image-loading.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/places/gnome-fs-network.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/places/gnome-fs-nfs.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/places/gnome-fs-regular.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/places/gnome-fs-server.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/places/gnome-fs-share.png -> gnome-fs-nfs.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/places/gnome-fs-smb.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/places/gnome-fs-ssh.png -> gnome-fs-nfs.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/places/gnome-fs-trash-empty.png -> user-trash-empty.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/places/gnome-fs-trash-full.png -> user-trash-full.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/places/gnome-main-menu.png -> start-here.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/places/gnome-mime-x-directory-nfs-server.png -> network-server.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/places/gnome-mime-x-directory-smb-server.png -> network-server.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/places/image-loading.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/places/network-server.png
+drwxr-xr-x	root/root	usr/share/icons/OSX/scalable/places/original folders/
+-rwx------	root/root	usr/share/icons/OSX/scalable/places/original folders/gnome-fs-directory-visiting.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/places/original folders/gnome-fs-directory.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/places/server.png -> network-server.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/places/start-here.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/places/stock_folder.png -> gnome-fs-directory.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/places/user-home.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/places/user-trash-empty.png
+-rwx------	root/root	usr/share/icons/OSX/scalable/places/user-trash-full.png
+lrwxrwxrwx	root/root	usr/share/icons/OSX/scalable/places/user-trash.png -> user-trash-empty.png
+drwxr-xr-x	root/root	usr/share/icons/OSX/scalable/spinner/
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/spinner/gnome-spinner-rest.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/spinner/gnome-spinner.png
+drwxr-xr-x	root/root	usr/share/icons/OSX/scalable/stock/
+drwxr-xr-x	root/root	usr/share/icons/OSX/scalable/stock/48/
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/stock/48/stock_attach.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/stock/48/stock_print.png
+drwxr-xr-x	root/root	usr/share/icons/OSX/scalable/stock/64/
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/stock/64/gtk-dialog-error.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/stock/64/gtk-dialog-info.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/stock/64/gtk-dialog-question.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/stock/64/gtk-dialog-warning.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/stock/epiphany-bookmark-page.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/stock/epiphany-bookmarks.png
+-rwxr--r--	root/root	usr/share/icons/OSX/scalable/stock/epiphany-download.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/stock/gtk-apply.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/stock/gtk-cancel.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/stock/gtk-close.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/stock/gtk-find.png
+-rwxr--r--	root/root	usr/share/icons/OSX/scalable/stock/gtk-home.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/stock/gtk-no.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/stock/gtk-refresh.png
+-rw-r--r--	root/root	usr/share/icons/OSX/scalable/stock/gtk-stop.png
+-rwxr--r--	root/root	usr/share/icons/OSX/scalable/stock/gtk-zoom-100.png
+-rwxr--r--	root/root	usr/share/icons/OSX/scalable/stock/gtk-zoom-fit.png
+-rwxr--r--	root/root	usr/share/icons/OSX/scalable/stock/gtk-zoom-in.png
+-rwxr--r--	root/root	usr/share/icons/OSX/scalable/stock/gtk-zoom-out.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/stock/stock_delete.png
+-rwxr--r--	root/root	usr/share/icons/OSX/scalable/stock/stock_gohome.png
+-rwxr-xr-x	root/root	usr/share/icons/OSX/scalable/stock/stock_notebook.png
+-rwxr--r--	root/root	usr/share/icons/OSX/scalable/stock/stock_refresh.png
