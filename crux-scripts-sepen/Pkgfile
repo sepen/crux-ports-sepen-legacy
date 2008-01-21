@@ -6,7 +6,7 @@
 
 name=crux-scripts-sepen
 version=2.4-svn
-release=2
+release=3
 source=()
 
 build() {
