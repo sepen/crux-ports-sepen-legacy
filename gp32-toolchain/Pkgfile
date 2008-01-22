@@ -32,14 +32,15 @@ build() {
   CFLAGS="-pipe -s "
   ../configure --prefix=/usr/share/${name} \
                --target=arm-elf \
-               --with-cpu=arm9 \
+               --build=arm-elf-linux \
+               --host=arm-elf-linux \
                --disable-threads \
                --enable-languages=c,c++ \
                --with-newlib \
                --disable-multilib \
                --with-gnu-ld \
                --with-gnu-as
-  GP32_CFLAGS="-s -march=armv4t -marm -msoft-float -ffast-math -fshort-enums -mstructure-size-boundary=8"
+  GP32_CFLAGS="-s -marm -msoft-float -ffast-math -fshort-enums -mstructure-size-boundary=8"
   make all \
     CFLAGS_FOR_TARGET="-DTAG_CFLAGS_FOR_TARGET ${GP32_CFLAGS} -02"
     CXXFLAGS_FOR_TARGET="-DTAG_CXXFLAGS_FOR_TARGET ${GP32_CFLAGS} -0 -fno-implicit-templates"
