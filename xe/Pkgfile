@@ -5,7 +5,7 @@
 # Depends on: gtk
 
 name=xe
-version=2.13.1
+version=2.13.2
 release=1
 source=(http://www.xe-emulator.com/files/xe-x86-32-bin.${version}.tar.bz2 \
         http://www.xe-emulator.com/files/bios.zip)
@@ -14,8 +14,8 @@ build() {
   cd ${name}-x86
   sed -e 's|/usr/X11R6/lib|/usr/lib/X11|' -i Makefile
   make
-  install -d ${PKG}/usr/{bin,lib/xe}
-  mv xe rc modules ${PKG}/usr/lib/xe
-  mv ${SRC}/bios ${PKG}/usr/lib/xe
-  ln -sf /usr/lib/xe/xe ${PKG}/usr/bin/xe
+  install -d ${PKG}/usr/{bin,share/${name}}
+  mv ${name} rc modules ${PKG}/usr/share/${name}
+  mv ${SRC}/bios ${PKG}/usr/share/${name}
+  ln -sf /usr/share/${name}/${name} ${PKG}/usr/bin/${name}
 }
