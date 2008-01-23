@@ -15,6 +15,7 @@ MLPATH=/var/mlnet
 /usr/bin/passwd -l $MLUSER
 
 # setup bitperms
+[ ! -d $MLPATH ] && mkdir -p $MLPATH
 /bin/chmod 0775 $MLPATH
 /bin/chown root.$MLGROUP $MLPATH
 

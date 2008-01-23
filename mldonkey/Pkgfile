@@ -5,8 +5,8 @@
 # Depends on: ocaml,libgd,bzip2
 
 name=mldonkey
-version=2.9.2
-release=6
+version=2.9.3
+release=1
 source=(http://dl.sourceforge.net/sourceforge/${name}/${name}-${version}.tar.bz2 \
         mlnetd)
 

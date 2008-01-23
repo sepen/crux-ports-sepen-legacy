@@ -3,10 +3,13 @@
 # /etc/rc.d/mlnetd: start/stop mldonkey daemon
 #
 
+LOG_FILE=/var/log/mlnetd
+
 case $1 in
   start)
     export MLDONKEY_DIR=/var/mlnet
-    su mldonkey -c "mlnet -run_as_user mldonkey >/dev/null" &
+    su mldonkey -c \
+      "mlnet -run_as_user mldonkey 2>&1 >/dev/null" 2>&1 >$LOG_FILE &
     ;;
   stop)
     pkill mlnet
