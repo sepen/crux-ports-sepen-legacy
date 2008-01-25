@@ -5,8 +5,8 @@
 # Depends on: bzip2,libpcre,libpng,libxml2,openssl 
 
 name=php4
-version=4.4.7
-release=4
+version=4.4.8
+release=1
 source=(http://php.net/distributions/php-${version}.tar.bz2)
 
 build() {
