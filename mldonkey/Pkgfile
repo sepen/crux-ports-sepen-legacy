@@ -2,11 +2,12 @@
 # URL: http://mldonkey.sourceforge.net/
 # Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Depends on: ocaml,libgd,bzip2
+# Depends on: ocaml,bzip2
+# Optional: libgd
 
 name=mldonkey
 version=2.9.3
-release=1
+release=2
 source=(http://dl.sourceforge.net/sourceforge/${name}/${name}-${version}.tar.bz2 \
         mlnetd)
 
