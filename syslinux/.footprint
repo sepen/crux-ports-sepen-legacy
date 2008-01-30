@@ -75,6 +75,8 @@ drwxr-xr-x	root/root	usr/lib/syslinux/com32/include/sys/
 -rw-r--r--	root/root	usr/lib/syslinux/com32/include/sys/times.h
 -rw-r--r--	root/root	usr/lib/syslinux/com32/include/sys/types.h
 drwxr-xr-x	root/root	usr/lib/syslinux/com32/include/syslinux/
+-rw-r--r--	root/root	usr/lib/syslinux/com32/include/syslinux/adv.h
+-rw-r--r--	root/root	usr/lib/syslinux/com32/include/syslinux/advconst.h
 -rw-r--r--	root/root	usr/lib/syslinux/com32/include/syslinux/boot.h
 -rw-r--r--	root/root	usr/lib/syslinux/com32/include/syslinux/bootpm.h
 -rw-r--r--	root/root	usr/lib/syslinux/com32/include/syslinux/bootrm.h
@@ -111,7 +113,15 @@ drwxr-xr-x	root/root	usr/lib/syslinux/com32/include/syslinux/
 -rw-r--r--	root/root	usr/lib/syslinux/memdisk
 -rw-r--r--	root/root	usr/lib/syslinux/menu.c32
 -rw-r--r--	root/root	usr/lib/syslinux/pcitest.c32
+-rw-r--r--	root/root	usr/lib/syslinux/pmload.c32
 -rw-r--r--	root/root	usr/lib/syslinux/pxelinux.0
 -rw-r--r--	root/root	usr/lib/syslinux/reboot.c32
 -rw-r--r--	root/root	usr/lib/syslinux/syslinux.com
 -rw-r--r--	root/root	usr/lib/syslinux/vesamenu.c32
+drwxr-xr-x	root/root	usr/man/
+drwxr-xr-x	root/root	usr/man/man1/
+-rw-r--r--	root/root	usr/man/man1/gethostip.1.gz
+-rw-r--r--	root/root	usr/man/man1/lss16toppm.1.gz
+-rw-r--r--	root/root	usr/man/man1/ppmtolss16.1.gz
+-rw-r--r--	root/root	usr/man/man1/syslinux.1.gz
+-rw-r--r--	root/root	usr/man/man1/syslinux2ansi.1.gz
