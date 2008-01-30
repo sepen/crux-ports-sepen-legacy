@@ -2,11 +2,11 @@
 # URL: http://www.aqsis.org/
 # Maintainer: Jose V Beneyto, sepen at users dot souceforge dot net
 # Packager: Jose V Beneyto, sepen at users dot souceforge dot net
-# Depends on: zlib,libjpeg,libtiff,fltk,bison,flex,boost,libxslt,openexr,scons
+# Depends on: libtiff,fltk,bison,flex,boost,openexr,scons
 
 name=aqsis
 version=1.2.0
-release=1
+release=2
 source=(http://dl.sourceforge.net/sourceforge/${name}/${name}-${version}.tar.gz)
 
 build() {
