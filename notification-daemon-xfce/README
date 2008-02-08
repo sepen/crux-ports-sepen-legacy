@@ -15,4 +15,4 @@ USAGE
     $ notify-send "Test notification"
     
     For more information about using notify-send
-    $ notify-send help
+    $ notify-send --help
