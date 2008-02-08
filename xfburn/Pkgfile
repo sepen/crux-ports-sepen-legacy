@@ -2,23 +2,22 @@
 # URL: http://www.xfce.org/projects/xfburn/
 # Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Depends on: subversion,xfce4-dev-tools,libisofs,thunar
+# Depends on: subversion xfce4-dev-tools libisofs thunar exo startup-notification
 # Group: xfce4
 
 name=xfburn
-version=0.3.0svn-26453
+version=0.3.0svn-26602
 release=1
 source=()
 
 build() {
-  svn co -r26453 http://svn.xfce.org/svn/xfce/${name}/trunk ${name}
-  cd ${name}
-  sed -e 's|libburn-1|libburn-5|g' -i configure.in.in
+  svn co -r26602 http://svn.xfce.org/svn/xfce/$name/trunk $name
+  cd $name
   ./autogen.sh
   ./configure --prefix=/usr \
               --enable-thunar-vfs \
               --disable-debug
   make
-  make DESTDIR=${PKG} install
-  rm -rf ${PKG}/usr/share/locale
+  make DESTDIR=$PKG install
+  rm -rf $PKG/usr/share/locale
 }
