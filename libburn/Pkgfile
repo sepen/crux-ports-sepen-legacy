@@ -2,18 +2,18 @@
 # URL: http://libburnia.pykix.org/
 # Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Depends on: 
+# Depends on:
 
 name=libburn
-version=0.4.0
+version=0.4.2
 release=1
-source=(http://files.libburnia-project.org/releases/${name}-${version}.tar.gz)
+source=(http://files.libburnia-project.org/releases/$name-$version.tar.gz)
 
 build() {
-  cd ${name}-${version}
+  cd $name-$version
   ./configure --prefix=/usr \
               --mandir=/usr/man \
               --disable-debug
   make
-  make DESTDIR=${PKG} install
+  make DESTDIR=$PKG install
 }
