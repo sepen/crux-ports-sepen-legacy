@@ -1,0 +1,29 @@
+# Description: Frets on Fire is a game of musical skill and fast fingers.
+# URL: http://fretsonfire.sourceforge.net/
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Depends on: pyopengl,pygame,numpy,pil,sdl_mixer,sdl_ttf
+
+name=fretsonfire
+version=1.2.512
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/FretsOnFire-$version-linux.tar.gz)
+
+build() {
+  install -d $PKG/usr/{bin,share}
+  rm FretsOnFire/FretsOnFire
+  mv FretsOnFire $PKG/usr/share/$name
+  cat > $PKG/usr/bin/$name <<EOF
+#!/bin/sh
+
+FRETSONFIRE_PATH=/usr/share/$name
+
+export LD_LIBRARY_PATH=\$LD_LIBRARY_PATH:\$FRETSONFIRE_PATH
+cd \$FRETSONFIRE_PATH
+./FretsOnFire.bin \$@
+cd -
+
+# End of file
+EOF
+  chmod 0755 $PKG/usr/bin/$name
+}
