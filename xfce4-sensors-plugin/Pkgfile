@@ -2,19 +2,24 @@
 # URL: http://goodies.xfce.org/projects/panel-plugins/xfce4-sensors-plugin
 # Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Depends on: xfce4-panel,lm_sensors
+# Depends on: xfce4-panel lm_sensors
 # Group: xfce4
 
 name=xfce4-sensors-plugin
-version=0.10.99.3
+version=0.10.99.2
 release=1
-source=(http://goodies.xfce.org/releases/${name}/${name}-${version}.tar.bz2)
+source=(http://goodies.xfce.org/releases/$name/$name-$version.tar.bz2 \
+        lm_sensors3x.patch)
 
 build() {
-  cd ${name}-${version}
+  cd $name-$version
+  patch -p1 < $SRC/lm_sensors3x.patch
   autoconf
-  ./configure --prefix=/usr               --libexecdir=/usr/lib               --disable-debug
+  ./configure --prefix=/usr \
+              --libexecdir=/usr/lib \
+              --disable-static \
+              --disable-debug
   make
-  make DESTDIR=${PKG} install
-  rm -rf ${PKG}/usr/share/locale
+  make DESTDIR=$PKG install
+  rm -rf $PKG/usr/share/locale
 }
