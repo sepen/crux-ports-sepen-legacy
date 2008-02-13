@@ -1,0 +1,21 @@
+# Description: collection of utility scripts used to convert and analyze SGML.
+# URL: http://www.linuxfromscratch.org/blfs/view/stable/pst/docbook-utils.html
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Depends on: docbook-xsl openjade
+
+name=docbook-utils
+version=0.6.14
+release=1
+source=(ftp://sources.redhat.com/pub/docbook-tools/SOURCES/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+  sed -e 's|/html||' -i doc/HTML/Makefile.in
+  ./configure --prefix=/usr
+  make
+  make DESTDIR=$PKG install
+  for doctype in html ps dvi man pdf rtf tex texi txt; do
+    ln -sf docbook2$doctype /usr/bin/db2$doctype
+  done
+}
