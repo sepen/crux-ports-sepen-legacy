@@ -5,8 +5,8 @@
 # Depends on: prt-utils,portdb-search
 
 name=crux-scripts-sepen
-version=2.4-svn
-release=3
+version=2.4-svn-862
+release=1
 source=()
 
 build() {
