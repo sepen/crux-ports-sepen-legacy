@@ -1,6 +1,5 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
--rwxr-xr-x	root/root	usr/bin/cln-config
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/cln/
 -rw-r--r--	root/root	usr/include/cln/GV.h
@@ -18,7 +17,6 @@ drwxr-xr-x	root/root	usr/include/cln/
 -rw-r--r--	root/root	usr/include/cln/SV_real.h
 -rw-r--r--	root/root	usr/include/cln/SV_ringelt.h
 -rw-r--r--	root/root	usr/include/cln/V.h
--rw-r--r--	root/root	usr/include/cln/abort.h
 -rw-r--r--	root/root	usr/include/cln/cln.h
 -rw-r--r--	root/root	usr/include/cln/complex.h
 -rw-r--r--	root/root	usr/include/cln/complex_class.h
@@ -29,6 +27,7 @@ drwxr-xr-x	root/root	usr/include/cln/
 -rw-r--r--	root/root	usr/include/cln/dfloat.h
 -rw-r--r--	root/root	usr/include/cln/dfloat_class.h
 -rw-r--r--	root/root	usr/include/cln/dfloat_io.h
+-rw-r--r--	root/root	usr/include/cln/exception.h
 -rw-r--r--	root/root	usr/include/cln/ffloat.h
 -rw-r--r--	root/root	usr/include/cln/ffloat_class.h
 -rw-r--r--	root/root	usr/include/cln/ffloat_io.h
@@ -84,16 +83,14 @@ drwxr-xr-x	root/root	usr/include/cln/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libcln.a
 -rwxr-xr-x	root/root	usr/lib/libcln.la
-lrwxrwxrwx	root/root	usr/lib/libcln.so -> libcln.so.4.0.2
-lrwxrwxrwx	root/root	usr/lib/libcln.so.4 -> libcln.so.4.0.2
--rwxr-xr-x	root/root	usr/lib/libcln.so.4.0.2
+lrwxrwxrwx	root/root	usr/lib/libcln.so -> libcln.so.5.0.0
+lrwxrwxrwx	root/root	usr/lib/libcln.so.5 -> libcln.so.5.0.0
+-rwxr-xr-x	root/root	usr/lib/libcln.so.5.0.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/cln.pc
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
--rw-r--r--	root/root	usr/man/man1/cln-config.1.gz
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/aclocal/
--rw-r--r--	root/root	usr/share/aclocal/cln.m4
 drwxr-xr-x	root/root	usr/share/dvi/
 -rw-r--r--	root/root	usr/share/dvi/cln.dvi
