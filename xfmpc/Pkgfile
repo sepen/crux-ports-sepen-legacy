@@ -2,7 +2,7 @@
 # URL: http://goodies.xfce.org/projects/applications/xfmpc
 # Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Depends on: gtk libxfcegui4 xfce4util libmpd
+# Depends on: libxfcegui4 xfce4util libmpd
 
 name=xfmpc
 version=0.0.2
