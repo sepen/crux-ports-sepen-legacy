@@ -5,13 +5,13 @@
 # Depends on: mtools
 
 name=syslinux
-version=3.60
+version=3.61
 release=1
-source=(http://www.kernel.org/pub/linux/utils/boot/${name}/${name}-${version}.tar.bz2)
+source=(http://www.kernel.org/pub/linux/utils/boot/$name/$name-$version.tar.bz2)
 
 build() {
-  cd ${name}-${version}
+  cd $name-$version
   make
   sed -e 's|/sbin|/usr/bin|' -i Makefile
-  make INSTALLROOT=${PKG} install
+  make INSTALLROOT=$PKG install
 }

@@ -111,6 +111,7 @@ drwxr-xr-x	root/root	usr/lib/syslinux/com32/include/syslinux/
 -rw-r--r--	root/root	usr/lib/syslinux/mboot.c32
 -rw-r--r--	root/root	usr/lib/syslinux/mbr.bin
 -rw-r--r--	root/root	usr/lib/syslinux/memdisk
+-rw-r--r--	root/root	usr/lib/syslinux/meminfo.c32
 -rw-r--r--	root/root	usr/lib/syslinux/menu.c32
 -rw-r--r--	root/root	usr/lib/syslinux/pcitest.c32
 -rw-r--r--	root/root	usr/lib/syslinux/pmload.c32
