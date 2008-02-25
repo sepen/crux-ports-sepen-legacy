@@ -5,7 +5,7 @@
 # Depends on: 
 
 name=at
-version=3.1.10
+version=3.1.10.1
 release=1
 source=(ftp://ftp.debian.org/debian/pool/main/a/${name}/${name}_${version}.tar.gz \
         atd)
