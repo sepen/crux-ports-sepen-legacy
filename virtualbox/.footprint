@@ -497,6 +497,7 @@ drwxr-xr-x	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/xpcom/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/include/xpcom/xpcom/xptinfo.h
 drwxr-xr-x	root/root	usr/share/virtualbox/bin/sdk/lib/
 -rw-r--r--	root/root	usr/share/virtualbox/bin/sdk/lib/VBoxXPCOMGlue.a
+-rw-r--r--	root/root	usr/share/virtualbox/bin/vboxkeyboard.tar.gz
 -rwxr-xr-x	root/root	usr/share/virtualbox/bin/vditool
 drwxr-xr-x	root/root	usr/share/virtualbox/lib/
 -rw-r--r--	root/root	usr/share/virtualbox/lib/Debugger.a
