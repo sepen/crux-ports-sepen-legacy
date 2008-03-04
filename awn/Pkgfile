@@ -1,0 +1,24 @@
+# Description: Avant Window Navigator (Awn) is a dock-like bar which sits at the bottom of the screen.
+# URL: https://launchpad.net/awn
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Depends on: thunar libwnck pygtk pyxdg
+
+name=awn
+version=0.2.6
+release=1
+source=()
+
+build() {
+  wget --no-check-certificate https://launchpad.net/$name/0.2/$version/+download/avant-window-navigator-$version.tar.gz && \
+  tar xvzf avant-window-navigator-$version.tar.gz
+  cd avant-window-navigator-$version
+  ./configure --prefix=/usr \
+              --disable-static \
+              --without-vala \
+              --without-gconf \
+              --with-desktop=xfce4
+  make
+  make DESTDIR=$PKG install
+  rm -rf $PKG/usr/share/{locale,gtk-doc}
+}
