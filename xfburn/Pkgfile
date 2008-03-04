@@ -6,13 +6,14 @@
 # Group: xfce4
 
 name=xfburn
-version=0.3.0svn-26602
+version=0.3.0svn-26662
 release=1
-source=()
+source=(xfburn-libisofs-0.6.2.patch)
 
 build() {
-  svn co -r26602 http://svn.xfce.org/svn/xfce/$name/trunk $name
+  svn co -r26662 http://svn.xfce.org/svn/xfce/$name/trunk $name
   cd $name
+  patch -p0 < $SRC/xfburn-libisofs-0.6.2.patch
   ./autogen.sh
   ./configure --prefix=/usr \
               --enable-thunar-vfs \
