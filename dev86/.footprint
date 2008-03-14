@@ -2,12 +2,14 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/ar86
 -rwxr-xr-x	root/root	usr/bin/bcc
--rwxr-xr-x	root/root	usr/bin/bcc-cc1
--rwxr-xr-x	root/root	usr/bin/bcc-cpp
+-rwxr-xr-x	root/root	usr/bin/dis86
 -rwxr-xr-x	root/root	usr/bin/elksemu
+-rwxr-xr-x	root/root	usr/bin/makeboot
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/bcc/
 -rwxr-xr-x	root/root	usr/lib/bcc/as86_encap
+-rwxr-xr-x	root/root	usr/lib/bcc/bcc-cc1
+-rwxr-xr-x	root/root	usr/lib/bcc/bcc-cpp
 -rwxr-xr-x	root/root	usr/lib/bcc/copt
 -rw-r--r--	root/root	usr/lib/bcc/crt0.o
 drwxr-xr-x	root/root	usr/lib/bcc/i386/
@@ -134,5 +136,6 @@ drwxr-xr-x	root/root	usr/lib/bcc/include/sys/
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
 -rw-r--r--	root/root	usr/man/man1/bcc.1.gz
+-rw-r--r--	root/root	usr/man/man1/dis86.1.gz
 -rw-r--r--	root/root	usr/man/man1/elks.1.gz
 -rw-r--r--	root/root	usr/man/man1/elksemu.1.gz
