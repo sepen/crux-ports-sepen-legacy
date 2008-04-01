@@ -6,8 +6,8 @@
 
 name=xe
 version=2.13.2
-release=1
-source=(http://www.xe-emulator.com/files/xe-x86-32-bin.${version}.tar.bz2 \
+release=2
+source=(http://www.xe-emulator.com/files/xe-x86-32-bin.$version.tar.bz2 \
         http://www.xe-emulator.com/files/bios.zip)
 
 build() {
