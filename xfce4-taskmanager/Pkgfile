@@ -8,14 +8,14 @@
 name=xfce4-taskmanager
 version=0.3.2
 release=1
-source=(http://goodies.xfce.org/releases/${name}/${name}-${version}.tar.bz2)
+source=(http://goodies.xfce.org/releases/$name/$name-$version.tar.bz2)
 
 build() {
-  cd ${name}-${version}
+  cd $name-$version
   ./configure --prefix=/usr \
               --disable-estatic \
               --disable-debug
   make 
-  make DESTDIR=${PKG} install
-  rm -rf ${PKG}/usr/share
+  make DESTDIR=$PKG install
+  rm -rf $PKG/usr/share
 }

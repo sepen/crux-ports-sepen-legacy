@@ -8,12 +8,12 @@
 name=xfce4-dev-tools
 version=4.4.0
 release=3
-source=(http://foo-projects.org/~benny/files/${name}/4.4/${name}-${version}.tar.bz2)
+source=(http://foo-projects.org/~benny/files/$name/4.4/$name-$version.tar.bz2)
 
 build() {
-	cd ${name}-${version}
+	cd $name-$version
   autoconf
 	./configure --prefix=/usr
 	make
-	make DESTDIR=${PKG} install
+	make DESTDIR=$PKG install
 }

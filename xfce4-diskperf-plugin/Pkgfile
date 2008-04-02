@@ -8,15 +8,15 @@
 name=xfce4-diskperf-plugin
 version=2.1.0
 release=1
-source=(http://goodies.xfce.org/releases/${name}/${name}-${version}.tar.bz2)
+source=(http://goodies.xfce.org/releases/$name/$name-$version.tar.bz2)
 
 build() {
-  cd ${name}-${version}
+  cd $name-$version
   autoconf
   ./configure --prefix=/usr \
               --libexecdir=/usr/lib \
               --disable-debug
   make
-  make DESTDIR=${PKG} install
-  rm -rf ${PKG}/usr/share/locale
+  make DESTDIR=$PKG install
+  rm -rf $PKG/usr/share/locale
 }

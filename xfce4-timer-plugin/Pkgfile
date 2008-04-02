@@ -7,16 +7,18 @@
 
 name=xfce4-timer-plugin
 version=0.5.1
-release=1
-source=(http://goodies.xfce.org/releases/${name}/${name}-${version}.tar.bz2)
+release=2
+source=(http://goodies.xfce.org/releases/$name/$name-$version.tar.bz2)
 
 build() {
-  cd ${name}-${version}
+  cd $name-$version
   autoconf
   ./configure --prefix=/usr \
               --libexecdir=/usr/lib \
               --disable-debug
   make
-  make DESTDIR=${PKG} install
-  rm -rf ${PKG}/usr/share/locale
+  make DESTDIR=$PKG install
+  rm -rf $PKG/usr/share/locale
+  find $PKG/usr/share/xfce4/panel-plugins -type f -name '*.desktop' \
+    -exec sed -r '/^(Comment|Name)\[/d' -i {} \;
 }

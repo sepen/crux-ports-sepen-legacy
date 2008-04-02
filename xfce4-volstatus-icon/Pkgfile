@@ -8,14 +8,14 @@
 name=xfce4-volstatus-icon
 version=0.1.0
 release=2
-source=(http://goodies.xfce.org/releases/${name}/${name}-${version}.tar.bz2)
+source=(http://goodies.xfce.org/releases/$name/$name-$version.tar.bz2)
 
 build() {
-  cd ${name}-${version}
+  cd $name-$version
   autoconf
   ./configure --prefix=/usr \
               --with-x \
               --disable-debug
   make
-  install -D ${name}/${name} ${PKG}/usr/bin/${name}
+  install -D $name/$name $PKG/usr/bin/$name
 }
