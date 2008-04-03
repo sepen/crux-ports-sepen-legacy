@@ -2,7 +2,7 @@
 README for ati
 
 
-*** NOTE for kernel ***
+*** NOTE for kernel 2.6 ***
 
 Check that you enabled the following config options:
 
@@ -14,8 +14,8 @@ Processor type and features  --->
  [*] MTRR (Memory Type Range Register) support
 
 Device Drivers --->
- Character Devices ---> 
-  <M> /dev/agpgart (AGP Support)  
+ Character Devices ---> (Graphics support for kernels up to 2.6.24.1)
+  <M> /dev/agpgart (AGP Support)
   <M>   Your_AGP_Chipset_Here
   < > Direct Rendering Manager (XFree86 4.1.0 and higher DRI support)
  Graphics support --->
