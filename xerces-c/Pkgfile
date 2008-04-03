@@ -2,15 +2,16 @@
 # URL: http://xml.apache.org/xerces-c/
 # Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Packager: Matt Housh, jaeger at morpheus dot net
+# Depends on: 
 
 name=xerces-c
 version=2.8.0
 release=1
-source=(http://www.apache.org/dist/xerces/c/sources/${name}-src_${version//./_}.tar.gz)
+source=(http://www.apache.org/dist/xerces/c/sources/$name-src_${version//./_}.tar.gz)
 
 build() {
-  export XERCESCROOT=${SRC}/${name}-src_${version//./_}
-  cd ${XERCESCROOT}/src/xercesc
+  export XERCESCROOT=$SRC/$name-src_${version//./_}
+  cd $XERCESCROOT/src/xercesc
   autoconf
   ./runConfigure -P/usr \
                  -plinux \
@@ -21,6 +22,6 @@ build() {
                  -tnative \
                  -rpthread
   make -j1
-  make DESTDIR=${PKG} install
+  make DESTDIR=$PKG install
   unset XERCESCROOT
 }
