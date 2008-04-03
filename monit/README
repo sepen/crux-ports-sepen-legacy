@@ -1,6 +1,4 @@
-
 README for monit
-
 
 POST-INSTALL
 
@@ -12,6 +10,4 @@ POST-INSTALL
   in monitrc and then edit your /etc/inittab as:
   
   # Run monit in standard run-levels
-  mo:2345:respawn:/usr/bin/monit -I -c /usr/etc/monitrc
-
-  See also monit(1) for more information.
+  mo:2345:respawn:/usr/bin/monit -Ic /usr/etc/monitrc

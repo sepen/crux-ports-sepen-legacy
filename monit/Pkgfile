@@ -6,7 +6,7 @@
 
 name=monit
 version=4.10.1
-release=2
+release=1
 source=(http://www.tildeslash.com/${name}/dist/${name}-${version}.tar.gz \
         monitd)
 
@@ -18,5 +18,5 @@ build() {
   make
   make DESTDIR=${PKG} install
   install -D -m 0755 ${SRC}/monitd ${PKG}/etc/rc.d/monitd
-  install -D -m 0600 ${SRC}/${name}-${version}/monitrc ${PKG}/usr/etc/monitrc
+  install -D -m 0700 ${SRC}/${name}-${version}/monitrc ${PKG}/usr/etc/monitrc
 }
