@@ -5,7 +5,7 @@
 # Depends on: prt-utils,portdb-search
 
 name=crux-scripts-sepen
-version=2.4-svn-1080
+version=2.4-svn-1112
 release=1
 source=()
 
