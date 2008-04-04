@@ -1,0 +1,27 @@
+# Description: Netscape navigator
+# URL: http://browser.netscape.com/
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Depends on: gtk
+
+name=netscape-navigator
+version=9.0.0.6
+release=1
+source=(http://ftp.netscape.com/pub/netscape9/en-US/9.0/unix/linux/$name-$version.tar.gz)
+
+build() {
+  install -d $PKG/usr/{bin,lib}
+  sed -e 's|http://www.netscape.com/|http://crux.nu/|' \
+      -i navigator/browserconfig.properties
+  rm -rf navigator/{.autoreg,readme.txt,extensions/*}
+  mv navigator $PKG/usr/lib/$name
+  cat > $PKG/usr/bin/$name <<EOF
+#!/bin/sh
+
+cd /usr/lib/$name
+./navigator
+cd --
+
+# End of file
+EOF
+}
