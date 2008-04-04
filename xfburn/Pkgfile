@@ -6,12 +6,12 @@
 # Group: xfce4
 
 name=xfburn
-version=0.3.0svn-26680
+version=0.3.0svn-4508
 release=1
 source=()
 
 build() {
-  svn co -r26680 http://svn.xfce.org/svn/xfce/$name/trunk $name
+  svn co -r4508 http://svn.xfce.org/svn/goodies/$name/trunk $name
   cd $name
   ./autogen.sh
   ./configure --prefix=/usr \
@@ -21,3 +21,4 @@ build() {
   make DESTDIR=$PKG install
   rm -rf $PKG/usr/share/locale
 }
+http://svn.xfce.org/svn/goodies/xfburn
