@@ -24,4 +24,5 @@ cd --
 
 # End of file
 EOF
+  chmod 0755 $PKG/usr/bin/$name
 }
