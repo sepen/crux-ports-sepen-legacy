@@ -6,8 +6,9 @@
 
 name=netscape-navigator
 version=9.0.0.6
-release=1
-source=(http://ftp.netscape.com/pub/netscape9/en-US/9.0/unix/linux/$name-$version.tar.gz)
+release=2
+source=(http://ftp.netscape.com/pub/netscape9/en-US/9.0/unix/linux/$name-$version.tar.gz \
+        $name.desktop crux.src crux.png)
 
 build() {
   install -d $PKG/usr/{bin,lib}
@@ -15,14 +16,10 @@ build() {
       -i navigator/browserconfig.properties
   rm -rf navigator/{.autoreg,readme.txt,extensions/*}
   mv navigator $PKG/usr/lib/$name
-  cat > $PKG/usr/bin/$name <<EOF
-#!/bin/sh
-
-cd /usr/lib/$name
-./navigator
-cd --
-
-# End of file
-EOF
-  chmod 0755 $PKG/usr/bin/$name
+  ln -sf /usr/lib/$name/navigator $PKG/usr/bin/$name
+  install -D -m 0644 $SRC/$name.desktop $PKG/usr/share/applications/$name.desktop
+  install -D -m 0644 $PKG/usr/lib/netscape-navigator/chrome/icons/default/default.xpm \
+    $PKG/usr/share/pixmaps/$name.xpm
+  install -D -m 0644 $SRC/crux.png $PKG/usr/lib/$name/searchplugins/crux.png
+  install -D -m 0644 $SRC/crux.src $PKG/usr/lib/$name/searchplugins/crux.src
 }
