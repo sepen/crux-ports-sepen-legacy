@@ -1,0 +1,15 @@
+# Description: Macromedia Flash Plugin for Netscape Navigator
+# URL: http://www.macromedia.com/shockwave/download/
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Depends on: netscape-navigator
+
+name=netscape-navigator-flash-plugin
+version=9.0.115.0
+release=1
+source=(http://fpdownload.macromedia.com/get/flashplayer/current/install_flash_player_9_linux.tar.gz)
+
+build() {
+  install -D -m 0755 install_flash_player_9_linux/libflashplayer.so \
+    $PKG/usr/lib/netscape-navigator/plugins/libflashplayer.so 
+}

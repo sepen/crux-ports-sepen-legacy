@@ -1,0 +1,5 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/netscape-navigator/
+drwxr-xr-x	root/root	usr/lib/netscape-navigator/plugins/
+-rwxr-xr-x	root/root	usr/lib/netscape-navigator/plugins/libflashplayer.so
