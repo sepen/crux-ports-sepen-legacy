@@ -5,16 +5,16 @@
 # Depends on: gtk
 
 name=flock
-version=0.9.1.5
-release=3
-source=(http://mirror2.flock.com/releases/${version}/${name}-${version}.en-US.linux-i686.tar.gz \
-        ${name}.desktop ${name}.png ${name}-browser)
+version=1.1
+release=1
+source=(http://mirror2.flock.com/releases/$version/$name-$version.en-US.linux-i686.tar.gz \
+        $name.desktop $name.png $name-browser)
 
 build() {
-  rm -f ${name}/${name}
-  install -d ${PKG}/usr/lib
-  mv ${name} ${PKG}/usr/lib
-  install -D -m 0644 ${SRC}/${name}.desktop ${PKG}/usr/share/applications/${name}.desktop
-  install -D -m 0644 ${SRC}/${name}.png ${PKG}/usr/share/pixmaps/${name}.png
-  install -D -m 0755 ${SRC}/${name}-browser ${PKG}/usr/bin/${name}-browser
+  rm -f $name/$name
+  install -d $PKG/usr/lib
+  mv $name $PKG/usr/lib
+  install -D -m 0644 $SRC/$name.desktop $PKG/usr/share/applications/$name.desktop
+  install -D -m 0644 $SRC/$name.png $PKG/usr/share/pixmaps/$name.png
+  install -D -m 0755 $SRC/$name-browser $PKG/usr/bin/$name-browser
 }
