@@ -5,7 +5,7 @@
 # Depends on:
 
 name=inadyn-mt
-version=02.11.87
+version=02.11.96
 release=1
 source=(http://dl.sourceforge.net/sourceforge/$name/$name.v.$version.tar.gz)
 
