@@ -6,15 +6,15 @@
 
 name=flock
 version=1.1
-release=1
+release=2
 source=(http://mirror2.flock.com/releases/$version/$name-$version.en-US.linux-i686.tar.gz \
-        $name.desktop $name.png $name-browser)
+        $name.desktop $name.png)
 
 build() {
-  rm -f $name/$name
-  install -d $PKG/usr/lib
+  install -d $PKG/usr/{bin,lib}
+  rm -f $name/.autoreg
   mv $name $PKG/usr/lib
+  ln -sf /usr/lib/$name/$name $PKG/usr/bin/$name-browser
   install -D -m 0644 $SRC/$name.desktop $PKG/usr/share/applications/$name.desktop
   install -D -m 0644 $SRC/$name.png $PKG/usr/share/pixmaps/$name.png
-  install -D -m 0755 $SRC/$name-browser $PKG/usr/bin/$name-browser
 }

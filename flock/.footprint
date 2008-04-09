@@ -1,9 +1,8 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
--rwxr-xr-x	root/root	usr/bin/flock-browser
+lrwxrwxrwx	root/root	usr/bin/flock-browser -> /usr/lib/flock/flock
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/flock/
--rw-r--r--	root/root	usr/lib/flock/.autoreg (EMPTY)
 -rw-r--r--	root/root	usr/lib/flock/browserconfig.properties
 drwxr-xr-x	root/root	usr/lib/flock/chrome/
 -rw-r--r--	root/root	usr/lib/flock/chrome/browser.jar
@@ -164,6 +163,7 @@ drwxr-xr-x	root/root	usr/lib/flock/dictionaries/
 drwxr-xr-x	root/root	usr/lib/flock/extensions/
 drwxr-xr-x	root/root	usr/lib/flock/extensions/{b01bf10c-302a-11da-b67b-000d60ca027b}/
 -rw-r--r--	root/root	usr/lib/flock/extensions/{b01bf10c-302a-11da-b67b-000d60ca027b}/install.rdf
+-rwxr-xr-x	root/root	usr/lib/flock/flock
 -rwxr-xr-x	root/root	usr/lib/flock/flock-bin
 -rwxr-xr-x	root/root	usr/lib/flock/gm
 drwxr-xr-x	root/root	usr/lib/flock/greprefs/
