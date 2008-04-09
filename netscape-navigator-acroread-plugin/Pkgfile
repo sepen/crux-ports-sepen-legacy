@@ -1,0 +1,16 @@
+# Description: Acrobat Reader plugin for Netscape Navigator
+# URL: http://www.adobe.com
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Depends on: netscape-navigator acroread
+
+name=netscape-navigator-acroread-plugin
+version=7.0.0
+release=1
+source=()
+
+build() {
+  install -d $PKG/usr/lib/netscape-navigator/plugins
+  ln -s /usr/lib/Acrobat7/Browser/intellinux/nppdf.so \
+    $PKG/usr/lib/netscape-navigator/plugins
+}

@@ -1,0 +1,5 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/netscape-navigator/
+drwxr-xr-x	root/root	usr/lib/netscape-navigator/plugins/
+lrwxrwxrwx	root/root	usr/lib/netscape-navigator/plugins/nppdf.so -> /usr/lib/Acrobat7/Browser/intellinux/nppdf.so
