@@ -6,8 +6,8 @@
 # Optional: mtools
 
 name=syslinux
-version=3.62
-release=2
+version=3.63
+release=1
 source=(http://www.kernel.org/pub/linux/utils/boot/$name/$name-$version.tar.bz2)
 
 build() {
