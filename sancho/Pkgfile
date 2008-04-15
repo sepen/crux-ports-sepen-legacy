@@ -7,15 +7,15 @@
 name=sancho
 version=0.9.4-58
 release=1
-source=(http://sancho-gui.sourceforge.net/files/wborunfm6asq/${name}-${version}-linux-gtk.sh \
-        ${name} ${name}.desktop)
+source=(http://sancho-gui.sourceforge.net/files/alnec34six6k/$name-$version-linux-gtk.sh \
+        $name $name.desktop)
 
 build() {
-  chmod +x ${name}-${version}-linux-gtk.sh
-  ./${name}-${version}-linux-gtk.sh --noexec --target ${PKG}/usr/share/${name}
-  install -D -m 0644 ${PKG}/usr/share/${name}/distrib/${name}-48.xpm \
-    ${PKG}/usr/share/pixmaps/${name}.xpm
-  rm -rf ${PKG}/usr/share/${name}/distrib
-  install -D -m 0755 ${SRC}/${name} ${PKG}/usr/bin/${name}
-  install -D -m 0644 ${SRC}/${name}.desktop ${PKG}/usr/share/applications/${name}.desktop
+  chmod +x $name-$version-linux-gtk.sh
+  ./$name-$version-linux-gtk.sh --noexec --target $PKG/usr/share/$name
+  install -D -m 0644 $PKG/usr/share/$name/distrib/$name-48.xpm \
+    $PKG/usr/share/pixmaps/$name.xpm
+  rm -rf $PKG/usr/share/$name/distrib
+  install -D -m 0755 $SRC/$name $PKG/usr/bin/$name
+  install -D -m 0644 $SRC/$name.desktop $PKG/usr/share/applications/$name.desktop
 }
