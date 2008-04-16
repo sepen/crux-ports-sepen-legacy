@@ -5,8 +5,8 @@
 # Depends on: gtk
 
 name=flock
-version=1.1
-release=2
+version=1.1.1
+release=1
 source=(http://mirror2.flock.com/releases/$version/$name-$version.en-US.linux-i686.tar.gz \
         $name.desktop $name.png)
 
