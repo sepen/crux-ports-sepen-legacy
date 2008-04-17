@@ -6,12 +6,12 @@
 # Group: xfce4
 
 name=xfburn
-version=0.3.0svn-4508
+version=0.3.0svn-4597
 release=1
 source=()
 
 build() {
-  svn co -r4508 http://svn.xfce.org/svn/goodies/$name/trunk $name
+  svn co -r4597 http://svn.xfce.org/svn/goodies/$name/trunk $name
   cd $name
   ./autogen.sh
   ./configure --prefix=/usr \
