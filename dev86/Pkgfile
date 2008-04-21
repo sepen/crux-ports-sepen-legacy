@@ -15,7 +15,7 @@ build() {
   patch -p0 < $SRC/dev86-pic.patch
   patch -p1 < $SRC/nostrict.patch
   echo quit | make -j1 PREFIX=/usr
-  make install-all DIST=$PKG
+  make -j1 install-all DIST=$PKG
   rm -f $PKG/usr/bin/{as,ld,nm,objdump,size}86
   rm -f $PKG/usr/man/man1/{as,ld}86.1
 }
