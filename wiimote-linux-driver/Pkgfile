@@ -1,5 +1,5 @@
 # Description: A Linux mouse driver for the Wii remote that doesn't need Python or uniput.
-# URL: http://wld.sourceforge.net/
+# URL: http://sourceforge.net/projects/wld
 # Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Depends on: bluez-libs
@@ -7,14 +7,14 @@
 name=wiimote-linux-driver
 version=1.0
 release=1
-source=(http://dl.sourceforge.net/sourceforge/wld/Wiimote_Linux_Driver_${version}_src.zip \
+source=(http://dl.sourceforge.net/sourceforge/wld/Wiimote_Linux_Driver_$version_src.zip \
         wmd)
 
 build() {
   cd wii_source
   make clean
   make
-  install -D -m 0644 wm.ko ${PKG}/lib/modules/`uname -r`/kernel/misc/wm.ko
-  install -D -m 0755 wmd ${PKG}/usr/bin/wmd
-  install -D -m 0755 ${SRC}/wmd ${PKG}/etc/rc.d/wmd
+  install -D -m 0644 wm.ko $PKG/lib/modules/$(uname -r)/kernel/misc/wm.ko
+  install -D -m 0755 wmd $PKG/usr/bin/wmd
+  install -D -m 0755 $SRC/wmd ${PKG}/etc/rc.d/wmd
 }
