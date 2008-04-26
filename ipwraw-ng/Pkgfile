@@ -1,0 +1,18 @@
+# Description: Enhanced Injection driver for Intel ipw3945
+# URL: http://homepages.tu-darmstadt.de/~p_larbig/wlan/
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Depends on: openssl
+
+name=ipwraw-ng
+version=2.3.4-04022008
+release=1
+source=(http://homepages.tu-darmstadt.de/~p_larbig/wlan/$name-$version.tar.bz2 \
+        Makefile.patch)
+
+build() {
+  cd $name
+  patch -p0 -i $SRC/Makefile.patch
+  make
+  make DESTDIR=$PKG install
+}

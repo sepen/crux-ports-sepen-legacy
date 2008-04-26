@@ -6,32 +6,19 @@
 
 name=qca
 version=2.0.0
-release=5
-source=(http://delta.affinix.com/download/${name}/2.0/${name}-${version}.tar.bz2)
+release=6
+source=(http://delta.affinix.com/download/$name/2.0/$name-$version.tar.bz2)
 
 build() {
-  cd ${name}-${version}
+  cd $name-$version
   ./configure --prefix=/usr \
               --qtdir=/usr/share/qt4 \
               --includedir=/usr/include/qca \
               --libdir=/usr/lib/qca
   make
-  export INSTALL_ROOT=${PKG}
-  make install
-  mv ${PKG}/usr/share/man ${PKG}/usr
-  rm -f `find ${PKG} -name '*.debug'` `find ${PKG} -name 'README'`
-  mv ${PKG}/usr/bin/qcatool2 ${PKG}/usr/share/${name}/qcatool2
-  ln -sf /usr/include/qca ${PKG}/usr/share/${name}/include
-  ln -sf /usr/lib/qca ${PKG}/usr/share/${name}/lib
-  cat > ${PKG}/usr/bin/qcatool2 <<EOF
-#!/bin/sh
-
-export LD_LIBRARY_PATH=\$LD_LIBRARY_PATH:/usr/lib/qca
-/usr/share/${name}/qcatool2
-
-# End of file
-EOF
-  chmod 0755 ${PKG}/usr/bin/qcatool2
-  ln -sf /usr/bin/qcatool2 ${PKG}/usr/bin/qcatool
+  read
+  make INSTALL_ROOT=$PKG install
+  mv $PKG/usr/share/man $PKG/usr
+  rm -f $(find $PKG -name '*.debug') $(find $PKG -name 'README')
 }
 

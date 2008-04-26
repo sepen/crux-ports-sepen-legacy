@@ -1,0 +1,31 @@
+--- Makefile.old        2008-04-26 03:16:49.927254937 +0200
++++ Makefile    2008-04-26 03:22:17.699298029 +0200
+@@ -14,6 +14,8 @@
+ #      and configured it for inclusion, these settings will be
+ #      overridden by your kernel configuration.
+
++DESTDIR=
++
+ FIRMWARE :=   iwlwifi-3945.ucode
+ ifndef FIRM_DIR
+ FIRM_DIR :=   /lib/firmware
+@@ -62,8 +64,8 @@ else
+ # modules are installed into KMISC
+ KVER  := $(shell uname -r)
+ KSRC := /lib/modules/$(KVER)/build
+-KMISC := /lib/modules/$(KVER)/kernel/drivers/net/wireless/
+-KMISC_INC := /lib/modules/$(KVER)/include
++KMISC := $(DESTDIR)/lib/modules/$(KVER)/kernel/drivers/net/wireless/
++KMISC_INC := $(DESTDIR)/lib/modules/$(KVER)/include
+
+ # KSRC_OUTPUT should be overridden if you are using a 2.6 kernel that
+ # has it's output sent elsewhere via KBUILD_OUTPUT= or O=
+@@ -123,7 +125,7 @@ install: ipwraw.ko
+        @echo -n "Installing to $(KMISC) ... "
+        @install -d $(KMISC)
+        @install -m 644 -c $(addsuffix .ko,$(list-m)) $(KMISC)
+-       @/sbin/depmod -a ${KVER}
++       @/sbin/depmod -a $(KVER)
+        @echo "done"
+        @echo
+        @if [ -e $(FIRM_DIR)/$(FIRMWARE) ]; then \
