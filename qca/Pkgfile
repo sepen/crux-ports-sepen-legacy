@@ -12,11 +12,8 @@ source=(http://delta.affinix.com/download/$name/2.0/$name-$version.tar.bz2)
 build() {
   cd $name-$version
   ./configure --prefix=/usr \
-              --qtdir=/usr/share/qt4 \
-              --includedir=/usr/include/qca \
-              --libdir=/usr/lib/qca
+              --qtdir=/usr/share/qt4
   make
-  read
   make INSTALL_ROOT=$PKG install
   mv $PKG/usr/share/man $PKG/usr
   rm -f $(find $PKG -name '*.debug') $(find $PKG -name 'README')
