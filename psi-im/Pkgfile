@@ -14,6 +14,7 @@ build() {
   ./configure --prefix=/usr \
               --qtdir=/usr/share/qt4 \
               --disable-bundled-qca
+  sed -e 's|/usr/X11R6/include|/usr/include/X11|g' -i Makefile
   make
   make INSTALL_ROOT=$PKG install
   install -D -m 0644 $PKG/usr/share/icons/hicolor/48x48/apps/psi.png \
