@@ -12,7 +12,6 @@ source=(http://goodies.xfce.org/releases/verve-plugin/verve-plugin-$version.tar.
 
 build() {
   cd verve-plugin-$version
-  autoconf
   ./configure --prefix=/usr \
               --libexecdir=/usr/lib \
               --disable-debug

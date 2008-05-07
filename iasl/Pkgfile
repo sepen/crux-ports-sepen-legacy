@@ -6,13 +6,13 @@
 
 name=iasl
 version=20080321
-release=1
+release=2
 source=(http://www.acpica.org/download/acpica-unix-$version.tar.gz)
 
 build() {
   cd acpica-unix-$version/compiler
-  make aslcompilerlex.c
+  make -j1 aslcompilerlex.c
   sed 's/\#undef\ yytext_ptr//' -i aslcompilerlex.c
-  make
+  make -j1
   install -D -m 0755 $name $PKG/usr/bin/$name
 }

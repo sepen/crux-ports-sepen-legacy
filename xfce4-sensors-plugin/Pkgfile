@@ -14,7 +14,6 @@ source=(http://goodies.xfce.org/releases/$name/$name-$version.tar.bz2 \
 build() {
   cd $name-$version
   patch -p1 < $SRC/lm_sensors3x.patch
-  autoconf
   ./configure --prefix=/usr \
               --libexecdir=/usr/lib \
               --disable-static \
