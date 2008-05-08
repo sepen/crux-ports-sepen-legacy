@@ -1,4 +1,8 @@
-drwxr-xr-x	root/root	bin/
--rwxr-xr-x	root/root	bin/dyndnsup
 drwxr-xr-x	root/root	etc/
--rw-r--r--	root/root	etc/dyndnsup.conf
+-rw-------	root/root	etc/dyndnsup.conf
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/dyndnsup
+drwxr-xr-x	root/root	usr/man/
+drwxr-xr-x	root/root	usr/man/man1/
+-rw-r--r--	root/root	usr/man/man1/dyndnsup.1.gz
