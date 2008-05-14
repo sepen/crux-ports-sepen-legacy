@@ -2,24 +2,20 @@
 # URL: http://plib.sourceforge.net/
 # Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Depends on: xorg,freeglut
+# Depends on: freeglut
 
 name=plib
-version=1.8.4
-release=2
-source=(http://plib.sourceforge.net/dist/${name}-${version}.tar.gz \
-        ${name}-${version}-gcc41.patch \
-        ${name}-${version}-too-many-axes.patch)
+version=1.8.5
+release=1
+source=(http://plib.sourceforge.net/dist/$name-$version.tar.gz)
 
 build() {
-  cd ${name}-${version}
-  patch -p0 < ${SRC}/${name}-${version}-gcc41.patch
-  patch -p0 < ${SRC}/${name}-${version}-too-many-axes.patch
+  cd $name-$version
   ./configure --prefix=/usr \
               --with-GL=/usr/lib \
               --x-includes=/usr/include/X11 \
               --x-libraries=/usr/lib/X11 \
-              --with-x 
+              --with-x
   make  
-  make DESTDIR=${PKG} install
+  make DESTDIR=$PKG install
 }
