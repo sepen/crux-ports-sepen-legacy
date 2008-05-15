@@ -1,12 +1,8 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
--rwxr-xr-x	root/root	usr/bin/makerepolog
 -rwxr-xr-x	root/root	usr/bin/mycontrib
 -rwxr-xr-x	root/root	usr/bin/mymaintained
 -rwxr-xr-x	root/root	usr/bin/newport
--rwxr-xr-x	root/root	usr/bin/ports-snapshot
--rwxr-xr-x	root/root	usr/bin/prtmissed
 -rwxr-xr-x	root/root	usr/bin/repodiff
 -rwxr-xr-x	root/root	usr/bin/reposync
 -rwxr-xr-x	root/root	usr/bin/repoverify
--rwxr-xr-x	root/root	usr/bin/xfce-portdiscover
