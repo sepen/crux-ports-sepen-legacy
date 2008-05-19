@@ -5,12 +5,12 @@
 # Depends on: libjpeg libpng ode fmod smpeg ftgl scons openexr freealut
 
 name=blender
-version=2.45
-release=2
-source=(http://download.blender.org/source/${name}-${version}.tar.gz)
+version=2.46
+release=1
+source=(http://download.blender.org/source/$name-$version.tar.gz)
 
 build() {
-  cd ${name}-${version}
+  cd $name-$version
   sed -i -e "s/-O2/${CFLAGS// /\' ,\'}/g" SConstruct
   scons \
     WITH_BF_OPENAL=yes \
