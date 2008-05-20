@@ -1,0 +1,47 @@
+
+README for ipwraw-ng
+
+
+REQUIREMENTS
+
+  KERNEL
+  
+  * Make sure that the following capabilities are ENABLED:
+  (see /lib/modules/$(uname -r)/build/include/linux/autoconf.h)
+  
+  #define CONFIG_FW_LOADER 1
+  
+  The driver loads the microcode image via the Linux firmware hotplug capability
+  
+  Device Drivers ->
+    Generic Driver Options ->
+      Hotplug firmware loading support
+
+  
+  * Make sure that the following capabilities are *NOT* ENABLED:
+
+  #define CONFIG_IPWRAW 1
+
+  If existing support is built into your kernel, you must disable that
+  capability and rebuild your kernel before upgrading the drivers.
+  
+  Device Drivers ->
+    Network device support ->
+      Network device support (NETDEVICES [=y]) ->
+        Wireless LAN (non-hamradio) ->
+          Intel PRO/Wireless 3945ABG Network Connection
+
+  
+  NOTE:  If the driver is supported as a module (this would show up as
+  #define CONFIG_IPWRAW_MODULE 1), you do not need to rebuild your kernel,
+  but you will need to remove the binary module and relevant include files
+  (see UPGRADING FROM PRIOR VERSIONS, below).
+
+
+  SYSFS
+
+  You will also need to have sysfs mounted.  This facility is used to query
+  and control the operation of the driver. You can mount sysfs this by adding
+  an entry to /etc/fstab similar to this:
+  
+  none            /sys            sysfs   defaults                0       0
