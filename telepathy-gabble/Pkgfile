@@ -1,0 +1,21 @@
+# Description: 
+# URL: http://telepathy.freedesktop.org/
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Depends on: loudmouth
+
+name=telepathy-gabble
+version=0.7.6
+release=1
+source=(http://telepathy.freedesktop.org/releases/$name/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+  sed -i Makefile.in \
+      -e 's|docs tools extensions src data m4 tests|tools extensions src data m4|'
+  ./configure --prefix=/usr \
+              --libexecdir=/usr/lib \
+              --disable-debug
+  make
+  make DESTDIR=$PKG install
+}
