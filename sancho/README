@@ -1,9 +1,17 @@
-README for sancho 0.9.4-58
+README for sancho
 
+
+REQUERIMENTS
+
+  Download sancho-$version-linux-gtk.sh manually from
+  http://sancho-gui.sourceforge.net/download.phtml
+
+
+NOTES
   
- Sancho its a graphical user interface for p2p cores.
- Currently only supports mldonkey gui protocol, which can access trough
- donkey, overnet, fasttrack, bittorrent and gnutella networks.
+  Sancho its a graphical user interface for p2p cores.
+  Currently only supports mldonkey gui protocol, which can access trough
+  donkey, overnet, fasttrack, bittorrent and gnutella networks.
 
- Please, read the FAQ for more information:
- http://sancho-gui.sourceforge.net/faq.phtml
+  Please, read the FAQ for more information:
+  http://sancho-gui.sourceforge.net/faq.phtml
