@@ -7,7 +7,7 @@
 name=sancho
 version=0.9.4-58
 release=1
-source=(http://sancho-gui.sourceforge.net/files/alnec34six6k/$name-$version-linux-gtk.sh \
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version-linux-gtk.sh \
         $name $name.desktop)
 
 build() {
