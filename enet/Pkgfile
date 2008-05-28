@@ -1,16 +1,16 @@
-# Description:  Thin, simple and robust network communication layer on top of UDP
-# URL:          http://enet.cubik.org/
-# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
-# Depends on:   
+# Description: Thin, simple and robust network communication layer on top of UDP
+# URL: http://enet.bespin.org/
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Depends on: 
 
 name=enet
-version=1
+version=1.2
 release=1
-source=(http://enet.cubik.org/download/$name.tar.gz)
+source=(http://enet.bespin.org/download/$name-$version.tar.gz)
 
 build() {
-	cd $name
+	cd $name-$version
 	./configure --prefix=/usr
 	make
 	make DESTDIR=$PKG install
