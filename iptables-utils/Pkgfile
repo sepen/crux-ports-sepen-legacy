@@ -1,0 +1,16 @@
+# Description: Iptables utils and daemon scripts.
+# URL: NA
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Depends on: iptables
+
+name=iptables-utils
+version=0.1-rc1
+release=1
+source=(iptables.rc iptables.stop iptables.start)
+
+build() {
+  install -D -m 0755 $SRC/iptables.rc $PKG/etc/rc.d/iptables
+  install -D -m 0600 $SRC/iptables.stop $PKG/etc/iptables/stop
+  install -D -m 0600 $SRC/iptables.start $PKG/etc/iptables/start
+}

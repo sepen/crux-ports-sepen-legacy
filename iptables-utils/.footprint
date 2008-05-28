@@ -1,0 +1,6 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/iptables/
+-rw-------	root/root	etc/iptables/start (EMPTY)
+-rw-------	root/root	etc/iptables/stop (EMPTY)
+drwxr-xr-x	root/root	etc/rc.d/
+-rwxr-xr-x	root/root	etc/rc.d/iptables

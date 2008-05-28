@@ -1,0 +1,26 @@
+#!/bin/sh
+#
+# /etc/rc.d/iptables: iptables rc script 
+#
+
+START_FILE=/etc/iptables/start
+STOP_FILE=/etc/iptables/stop
+
+case $1 in
+  start)
+    [ -f $START_FILE ] && iptables-restore $START_FILE
+    ;;
+  stop)
+    [ -f $STOP_FILE ] && iptables-restore $STOP_FILE
+    ;;
+  restart)
+    $0 stop
+    sleep 1
+    $0 start
+    ;;
+  *)
+    echo "usage: $0 [start|stop|restart]"
+    ;;
+esac
+
+# End of file
