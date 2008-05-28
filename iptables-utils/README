@@ -1,0 +1,9 @@
+README for iptables-utils
+
+
+POST-INSTALL
+
+   Configure your iptables filter by adding rules manually.
+   After that, save your settings to /etc/iptables/start doing:
+   # iptables-save >/tmp/iptables.start
+   # [ $? -eq 0 ] && install -D -m 0600 /tmp/iptables.start /etc/iptables/start
