@@ -5,13 +5,12 @@
 # Depends on:
 
 name=fmod
-version=4.15.04
+version=4.15.05
 release=1
 
 source=(http://www.fmod.org/index.php/release/version/${name}api${version[@]//./}linux.tar.gz)
 
 build() {
-  # fmod api
   install -d $PKG/usr/{lib/$name/plugins,include/$name}
   install -m 0755 ${name}api${version[@]//./}linux/api/{lib/*.so.*,plugins/*} $PKG/usr/lib/$name
   install -m 0644 ${name}api${version[@]//./}linux/api/inc/* $PKG/usr/include/$name

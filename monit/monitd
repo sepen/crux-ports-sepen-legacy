@@ -3,26 +3,26 @@
 # /etc/rc.d/monitd: start/stop monit daemon
 #
 
-config_file=/etc/monitrc
+CONFIG=/usr/etc/monitrc
 
 case $1 in
   start)
-    /usr/bin/monit -c ${config_file}
-	  ;;
+    /usr/bin/monit -c $CONFIG
+    ;;
   stop)
-    killall -q /usr/bin/monit
+    /usr/bin/killall -q /usr/bin/monit
     ;;
   reload)
-    /usr/bin/monit -c ${config_file} reload
+    /usr/bin/monit -c $CONFIG reload
     ;;
   restart)
     $0 stop
     sleep 1
     $0 start
-	  ;;
+    ;;
   *)
-	  echo "usage: $0 [start|stop|reload|restart]"
-	  ;;
+    echo "usage: $0 [start|stop|reload|restart]"
+    ;;
 esac
 
 # End of File

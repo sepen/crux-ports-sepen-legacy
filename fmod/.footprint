@@ -46,10 +46,10 @@ drwxr-xr-x	root/root	usr/lib/fmod/
 -rwxr-xr-x	root/root	usr/lib/fmod/dsp_reverb.so
 -rwxr-xr-x	root/root	usr/lib/fmod/dsp_sfxreverb.so
 -rwxr-xr-x	root/root	usr/lib/fmod/libfmodevent.so
-lrwxrwxrwx	root/root	usr/lib/fmod/libfmodex.so -> libfmodex.so.4.15.04
--rwxr-xr-x	root/root	usr/lib/fmod/libfmodex.so.4.15.04
-lrwxrwxrwx	root/root	usr/lib/fmod/libfmodexp.so -> libfmodexp.so.4.15.04
--rwxr-xr-x	root/root	usr/lib/fmod/libfmodexp.so.4.15.04
+lrwxrwxrwx	root/root	usr/lib/fmod/libfmodex.so -> libfmodex.so.4.15.05
+-rwxr-xr-x	root/root	usr/lib/fmod/libfmodex.so.4.15.05
+lrwxrwxrwx	root/root	usr/lib/fmod/libfmodexp.so -> libfmodexp.so.4.15.05
+-rwxr-xr-x	root/root	usr/lib/fmod/libfmodexp.so.4.15.05
 -rwxr-xr-x	root/root	usr/lib/fmod/output_alsa.so
 -rwxr-xr-x	root/root	usr/lib/fmod/output_esd.so
 -rwxr-xr-x	root/root	usr/lib/fmod/output_nosound.so

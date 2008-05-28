@@ -4,7 +4,7 @@
 # Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
 
 name=di
-version=4.12
+version=4.13
 release=1
 source=(http://www.gentoo.com/$name/$name-$version.tar.gz)
 

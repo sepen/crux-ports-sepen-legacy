@@ -5,13 +5,13 @@
 # Depends on: mesa3d,gl-select
 
 name=ati
-version=8.493.1
+version=8.471
 release=1
-source=(http://www2.ati.com/drivers/linux/${name}-driver-installer-8-5-x86.x86_64.run atieventsd)
+source=(http://www2.ati.com/drivers/linux/${name}-driver-installer-8-3-x86.x86_64.run atieventsd)
 
 build() {
-  chmod +x ${name}-driver-installer-8-5-x86.x86_64.run
-  ./${name}-driver-installer-8-5-x86.x86_64.run --extract ${SRC}/tmp
+  chmod +x ${name}-driver-installer-8-3-x86.x86_64.run
+  ./${name}-driver-installer-8-3-x86.x86_64.run --extract ${SRC}/tmp
   
   # make
   cd ${SRC}/tmp/common/lib/modules/fglrx/build_mod

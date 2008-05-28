@@ -33,7 +33,6 @@ drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/dri/
 -rwxr-xr-x	root/root	usr/lib/dri/fglrx_dri.so
 -rw-r--r--	root/root	usr/lib/libGL_so_1_2_ati
--rwxr-xr-x	root/root	usr/lib/libatiadlxx.so
 -rw-r--r--	root/root	usr/lib/libfglrx_dm.a
 -rw-r--r--	root/root	usr/lib/libfglrx_dm.so.1.0
 -rw-r--r--	root/root	usr/lib/libfglrx_gamma.a
