@@ -6,7 +6,7 @@
 # Group: xfce4
 
 name=xfce4-radio-plugin
-version=0.2.1
+version=0.3.1
 release=1
 source=(http://goodies.xfce.org/releases/$name/$name-$version.tar.gz)
 

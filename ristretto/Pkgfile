@@ -6,7 +6,7 @@
 # Group: xfce4
 
 name=ristretto
-version=0.0.18
+version=0.0.20
 release=1
 source=(http://goodies.xfce.org/releases/$name/$name-$version.tar.gz)
 

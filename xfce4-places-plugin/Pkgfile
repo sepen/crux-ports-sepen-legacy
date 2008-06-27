@@ -6,8 +6,8 @@
 # Group: xfce4
 
 name=xfce4-places-plugin
-version=1.0.0
-release=2
+version=1.1.0
+release=1
 source=(http://goodies.xfce.org/releases/$name/$name-$version.tar.bz2)
 
 build() {
