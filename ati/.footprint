@@ -19,6 +19,8 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/amdcccle
 -rwxr-xr-x	root/root	usr/bin/aticonfig
+-rwxr-xr-x	root/root	usr/bin/atiodcli
+-rwxr-xr-x	root/root	usr/bin/atiode
 -rwxr-xr-x	root/root	usr/bin/fgl_glxgears
 -rwxr-xr-x	root/root	usr/bin/fglrx_xgamma
 -rwxr-xr-x	root/root	usr/bin/fglrxinfo
@@ -33,6 +35,7 @@ drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/dri/
 -rwxr-xr-x	root/root	usr/lib/dri/fglrx_dri.so
 -rw-r--r--	root/root	usr/lib/libGL_so_1_2_ati
+-rwxr-xr-x	root/root	usr/lib/libatiadlxx.so
 -rw-r--r--	root/root	usr/lib/libfglrx_dm.a
 -rw-r--r--	root/root	usr/lib/libfglrx_dm.so.1.0
 -rw-r--r--	root/root	usr/lib/libfglrx_gamma.a
@@ -45,6 +48,7 @@ lrwxrwxrwx	root/root	usr/lib/libfglrx_pp.so.1 -> /usr/lib/libfglrx_pp.so.1.0
 -rw-r--r--	root/root	usr/lib/libfglrx_tvout.so.1.0
 drwxr-xr-x	root/root	usr/lib/xorg/
 drwxr-xr-x	root/root	usr/lib/xorg/modules/
+-rwxr-xr-x	root/root	usr/lib/xorg/modules/amdxmm.so
 drwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/fglrx_drv.so
 -rwxr--r--	root/root	usr/lib/xorg/modules/esut.a

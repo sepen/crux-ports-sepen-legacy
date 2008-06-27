@@ -5,14 +5,14 @@
 # Depends on: qt4
 
 name=arora
-version=20080526
+version=20080627
 release=1
 source=(http://mikeux.dyndns.org/crux/distfiles/$name-$version.tar.bz2 \
         $name.xpm)
 
 build() {
   cd $name-$version
-  qmake-qt4
+  qmake-qt4 PREFIX=/usr
   make
   install -D -m 0755 $name $PKG/usr/bin/$name
   install -D -m 0644 $SRC/$name.xpm $PKG/usr/share/pixmaps/$name.xpm
