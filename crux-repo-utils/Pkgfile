@@ -5,11 +5,11 @@
 # Depends on: prt-utils
 
 name=crux-repo-utils
-version=2.4-svn-1333
+version=r1339
 release=1
-source=()
+source=(http://mikeux.dyndns.org/crux/distfiles/repo-utils-$version.tar.bz2)
 
 build() {
-  svn co -r 1333 svn://mikeux.dyndns.org/crux/branches/2.4/tools/repo-utils $name
-  make -C $name DESTDIR=$PKG install
+  cd repo-utils-$version
+  make DESTDIR=$PKG install
 }
