@@ -6,12 +6,14 @@
 # Group: xfce4
 
 name=xfce4-smartpm-plugin
-version=0.2.2
-release=2
-source=(http://goodies.xfce.org/releases/$name/$name-$version.tar.gz)
+version=0.3.2
+release=1
+source=(http://goodies.xfce.org/releases/$name/$name-$version.tar.gz \
+        xfcesmart.c.diff)
 
 build() {
   cd $name-$version
+  patch src/xfcesmart.c $SRC/xfcesmart.c.diff
   ./configure --prefix=/usr \
               --libexecdir=/usr/lib \
               --disable-debug
