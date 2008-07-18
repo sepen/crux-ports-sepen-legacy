@@ -1,5 +1,5 @@
 --- xfce4-smartpm-plugin-0.3.2.orig/src/xfcesmart.c	2008-04-18 17:26:00.000000000 +0200
-+++ xfce4-smartpm-plugin-0.3.2/src/xfcesmart.c	2008-07-18 09:06:48.000000000 +0200
++++ xfce4-smartpm-plugin-0.3.2/src/xfcesmart.c	2008-07-18 16:06:41.000000000 +0200
 @@ -1,4 +1,4 @@
 -/*  $Id: xfcesmart.c 4615 2008-04-18 15:25:52Z afb $
 +/*  $Id: xfcesmart.c 5018 2008-06-30 20:43:06Z afb $
@@ -137,7 +137,15 @@
      default:
        website = "http://goodies.xfce.org/";
        break;
-@@ -1510,7 +1552,8 @@
+@@ -1453,6 +1495,7 @@
+   gtk_combo_box_append_text (GTK_COMBO_BOX(combo), _("Yum+Extender"));
+   gtk_combo_box_append_text (GTK_COMBO_BOX(combo), _("APT+Synaptic"));
+   gtk_combo_box_append_text (GTK_COMBO_BOX(combo), _("slapt+gslapt"));
++  gtk_combo_box_append_text (GTK_COMBO_BOX(combo), _("ports+prt-get"));
+   gtk_combo_box_set_active (GTK_COMBO_BOX(combo), smart->package_manager);
+   gtk_widget_show (combo);
+   g_signal_connect (G_OBJECT(combo),"changed", G_CALLBACK(smart_combobox_changed_cb), smart);
+@@ -1510,7 +1553,8 @@
    g_object_set_data (G_OBJECT (plugin), "dist-upgrade", button);
    gtk_widget_set_sensitive (button,
       smart->package_manager == PACKAGE_MANAGER_APT ||
