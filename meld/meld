@@ -1,6 +1,6 @@
 #!/bin/sh
 
 cd /usr/share/meld
-python meld
+python meld $@
 
 # End of File
