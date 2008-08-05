@@ -1,9 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Name=Netscape Navigator
-Comment=Web Browser
-Exec=/usr/bin/netscape-navigator %U
-Icon=netscape-navigator.xpm
-Terminal=false
-Type=Application
-Categories=Application;Network;

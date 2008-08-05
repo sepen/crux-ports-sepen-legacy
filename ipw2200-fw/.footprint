@@ -1,5 +1,0 @@
-drwxr-xr-x	root/root	lib/
-drwxr-xr-x	root/root	lib/firmware/
--rw-r--r--	root/root	lib/firmware/ipw2200-bss.fw
--rw-r--r--	root/root	lib/firmware/ipw2200-ibss.fw
--rw-r--r--	root/root	lib/firmware/ipw2200-sniffer.fw
