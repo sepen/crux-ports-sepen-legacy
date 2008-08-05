@@ -1,8 +1,0 @@
-#!/bin/sh
-
-cd /usr/lib/flock
-export LD_LIBRARY_PATH:$LD_LIBRARY_PATH:.
-export PATH=$PATH:.
-./flock-bin
-
-# End of file
