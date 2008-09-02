@@ -1,0 +1,16 @@
+# Description: Plugin to check POP3 accounts in aMSN in the same way as hotmail ones.
+# URL: http://amsn.sourceforge.net/plugins.php
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Depends on: amsn
+
+name=amsn-plugins-pop3
+version=2.3
+release=1
+source=(http://dl.sourceforge.net/sourceforge/amsn/pop3-2.3.zip)
+
+build() {
+  install -d $PKG/usr/share/amsn/plugins
+  rm -rf $(find pop3 -type d -name '.svn')
+  mv pop3 $PKG/usr/share/amsn/plugins
+}

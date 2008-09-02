@@ -1,0 +1,9 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/amsn/
+drwxr-xr-x	root/root	usr/share/amsn/plugins/
+drwxr-xr-x	root/root	usr/share/amsn/plugins/pop3/
+drwxr-xr-x	root/root	usr/share/amsn/plugins/pop3/pixmaps/
+-rwxr-xr-x	root/root	usr/share/amsn/plugins/pop3/pixmaps/pop3_mailpic.gif
+-rw-r--r--	root/root	usr/share/amsn/plugins/pop3/plugininfo.xml
+-rw-r--r--	root/root	usr/share/amsn/plugins/pop3/pop3.tcl
