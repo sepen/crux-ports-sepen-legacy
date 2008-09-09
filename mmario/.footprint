@@ -343,6 +343,6 @@ drwxr-xr-x	root/root	usr/share/mmario/sfx/music/
 -rw-r--r--	root/root	usr/share/mmario/sfx/stomp.wav
 -rw-r--r--	root/root	usr/share/mmario/sfx/stomp_1.wav
 -rw-r--r--	root/root	usr/share/mmario/sfx/tock.wav
--rw-r--r--	root/root	usr/share/mmario/style.TTF
+-rw-r--r--	root/root	usr/share/mmario/style.ttf
 -rw-r--r--	root/root	usr/share/mmario/textures.txt
 -rw-r--r--	root/root	usr/share/mmario/variables.png

@@ -1,0 +1,47 @@
+--- Makefile.orig	2008-09-09 11:12:06.000000000 +0200
++++ Makefile	2008-09-09 11:15:37.000000000 +0200
+@@ -1,4 +1,6 @@
+-PREFIX  = /home/opt
++DESTDIR = 
++PREFIX  = /usr
++TARGET  = mmario
+ DATADIR = $(PREFIX)/share/$(TARGET)
+ CFLAGS  = -g -Wall -O2
+ CXXFLAGS= $(CFLAGS)
+@@ -10,7 +12,6 @@ OBJS    = src/bonus.o src/gamepad.o src/
+   src/firecircle.o  src/goombabig.o src/menu.o        src/SDL_gfxPrimitives.o \
+   src/flybrett.o    src/opengl.o    src/iniparser.o   src/unixutils.o \
+   src/functions.o   src/keyinput.o  src/particle.o
+-TARGET  = megamario
+ 
+ $(TARGET): $(OBJS)
+ 	$(CXX) $(LDFLAGS) -o $@ $^
+@@ -22,19 +23,19 @@ $(TARGET): $(OBJS)
+ 	$(CXX) $(CXXFLAGS) $(DEFINES) -o $@ -c $<
+ 
+ install: $(TARGET)
+-	rm -fr $(DATADIR)
+-	mkdir -p $(PREFIX)/bin
+-	mkdir -p $(PREFIX)/share
+-	install -p -m 755 $(TARGET) $(PREFIX)/bin
+-	cp -a data $(DATADIR)
++	install -D -m 0755 $(TARGET) $(DESTDIR)/$(PREFIX)/bin/$(TARGET)
++	install -d $(DESTDIR)/$(DATADIR)
++	cp -av data/* $(DESTDIR)/$(DATADIR)
+ 	# fix broken permission <sigh>
+-	chmod 755 $(DATADIR)/gfx/tiles/pipes/left
+-	for i in `find $(DATADIR) -name "*.PNG"`; do \
++	chmod 755 $(DESTDIR)/$(DATADIR)/gfx/tiles/pipes/left
++	for i in `find $(DESTDIR)/$(DATADIR) -name "*.PNG"`; do \
+ 		mv $$i `echo $$i|sed s/PNG/png/`; \
+ 	done
+-	for i in `find $(DATADIR) -name "*.JPG"`; do \
++	for i in `find $(DESTDIR)/$(DATADIR) -name "*.JPG"`; do \
+ 		mv $$i `echo $$i|sed s/JPG/jpg/`; \
+ 	done
+-	
++	for i in `find $(DESTDIR)/$(DATADIR) -name "*.TTF"`; do \
++		mv $$i `echo $$i|sed s/TTF/ttf/`; \
++	done	
+ clean:
+ 	rm -f $(OBJS) $(TARGET) *~ src/*~
