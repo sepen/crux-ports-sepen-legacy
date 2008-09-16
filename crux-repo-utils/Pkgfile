@@ -5,7 +5,7 @@
 # Depends on: prt-utils
 
 name=crux-repo-utils
-version=r1339
+version=r1362
 release=1
 source=(http://mikeux.dyndns.org/crux/distfiles/repo-utils-$version.tar.bz2)
 
