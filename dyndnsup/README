@@ -4,8 +4,10 @@ README for dyndnsup
 
 POST-INSTALLATION
 
-  - Setup to your needs dyndns.conf
-  
-  - Add a crontab line for doing auto-updates every month
-  
-  00 00 1 * * /usr/bin/dyndnsup 2>&1 >/var/log/dyndnsup.log
+    Edit the config file (dyndnsup.conf) and setup to your needs
+
+    Add a crontab line for doing auto-updates every 15 days
+
+    $ sudo crontab -e
+
+    00 00 1/16 * * /usr/bin/dyndnsup 2>&1 >/var/log/dyndnsup.log
