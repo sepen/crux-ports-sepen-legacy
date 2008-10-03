@@ -2,7 +2,7 @@
 # URL: http://www.pulia.nu/tss/
 # Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Depends on: xterm
+# Depends on:
 
 name=tss
 version=0.8.2
