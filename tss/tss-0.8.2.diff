@@ -1,0 +1,45 @@
+diff -purN tss-0.8.2.orig/Makefile tss-0.8.2/Makefile
+--- tss-0.8.2.orig/Makefile	2008-10-04 01:22:25.000000000 +0200
++++ tss-0.8.2/Makefile	2008-10-04 01:32:15.000000000 +0200
+@@ -1,4 +1,7 @@
+ #gmake Makefile
++
++DESTDIR =
++
+ EXECUTABLE = tss
+ 
+ SRC    = src/main.c
+@@ -14,6 +17,11 @@ $(EXECUTABLE): $(SRC)
+ %.o: %.c
+ 	$(COMPILE) -o $@ $<
+ 
++install: $(EXECUTABLE)
++	install -D -m 4555 $(EXECUTABLE) $(DESTDIR)/usr/bin/$(EXECUTABLE)
++	install -d $(DESTDIR)/usr/share/tss
++	install -m 0644 tss_art/* $(DESTDIR)/usr/share/tss
++
+ clean:
+ 	-rm -f $(OBJS) $(EXECUTABLE) src/*~
+ 	-rm -f ./*~
+diff -purN tss-0.8.2.orig/src/main.c tss-0.8.2/src/main.c
+--- tss-0.8.2.orig/src/main.c	2008-10-04 01:22:25.000000000 +0200
++++ tss-0.8.2/src/main.c	2008-10-04 01:32:28.000000000 +0200
+@@ -147,7 +147,7 @@
+ #endif
+ 
+ #define VERSION			"0.8.2"
+-#define DEFAULT_ASCII_DIR	"/etc/tss/"
++#define DEFAULT_ASCII_DIR	"/usr/share/tss/"
+ #define DEFAULT_ASCII		"default"
+ #define MAX_ASCII_SIZE		1024000
+ #define TIMEOUT			30
+@@ -319,7 +319,7 @@ void usage(char *me){
+   printf("  -r, --random                Choose random ascii file\n");
+   printf("  -l, --lock-terminal         Lock terminal\n");
+   printf("  -d, --delay=[delay]         Update every [delay] milliseconds\n");
+-  printf("  -a, --ascii=[ascii]         Use ascii [ascii]\n");
++  printf("  -a, --ascii=[ascii]         Use ascii file [ascii]\n");
+   printf("  -o, --object-speed=[speed]  Set ascii speed (0.001 - 1.00)\n");
+   printf("  -e, --uname-speed=[speed]   Set uname speed (0.001 - 1.00)\n");
+   printf("  -i, --info-speed=[speed]    Set info speed (0.001 - 1.00)\n");
+Binary files tss-0.8.2.orig/tss and tss-0.8.2/tss differ

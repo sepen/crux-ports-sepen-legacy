@@ -1,0 +1,18 @@
+# Description: Terminal ScreenSaver
+# URL: http://www.pulia.nu/tss/
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Depends on: xterm
+
+name=tss
+version=0.8.2
+release=1
+source=(http://www.pulia.nu/$name/src/$name-$version.tar.gz \
+        $name-$version.diff)
+
+build() {
+  cd $name-$version
+  patch -p1 -i $SRC/$name-$version.diff
+  make
+  make DESTDIR=$PKG install
+}
