@@ -5,9 +5,9 @@
 # Depends on: curl
 
 name=dyndnsup
-version=0.2
+version=0.2.2
 release=1
-source=(http://mikeux.dyndns.org/files/$name-$version.tar.bz2)
+source=(http://mikeux.dyndns.org/releases/$name-$version.tar.bz2)
 
 build() {
   cd $name-$version
