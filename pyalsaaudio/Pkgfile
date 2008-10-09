@@ -13,5 +13,5 @@ build() {
   cd $name-$version
   python setup.py install -f \
     --prefix=$PKG/usr \
-    --install-lib=$PKG/usr/lib/$name
+    --install-lib=$PKG/usr/lib/python2.5/site-packages/$name
 }
