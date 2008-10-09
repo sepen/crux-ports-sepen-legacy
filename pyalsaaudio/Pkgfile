@@ -12,6 +12,7 @@ source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
 build() {
   cd $name-$version
   python setup.py install -f \
-    --prefix=$PKG/usr \
-    --install-lib=$PKG/usr/lib/python2.5/site-packages/$name
+    --root=$PKG \
+    --prefix=/usr \
+    --install-lib=/usr/lib/python2.5/site-packages/alsaaudio
 }
