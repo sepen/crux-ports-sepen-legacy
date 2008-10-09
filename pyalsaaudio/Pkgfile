@@ -1,0 +1,17 @@
+# Description: ALSA wrapper for Python
+# URL: http://pyalsaaudio.sourceforge.net/
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Depends on: python
+
+name=pyalsaaudio
+version=0.3
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+  python setup.py install -f \
+    --prefix=$PKG/usr \
+    --install-lib=$PKG/usr/lib/$name
+}
