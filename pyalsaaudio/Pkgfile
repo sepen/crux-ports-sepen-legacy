@@ -14,5 +14,5 @@ build() {
   python setup.py install -f \
     --root=$PKG \
     --prefix=/usr \
-    --install-lib=/usr/lib/python2.5/site-packages/alsaaudio
+    --install-lib=/usr/lib/python2.5/site-packages
 }
