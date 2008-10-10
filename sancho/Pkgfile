@@ -5,7 +5,7 @@
 # Depends on:
 
 name=sancho
-version=0.9.4-58
+version=0.9.4-59
 release=1
 source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version-linux-gtk.sh \
         $name $name.desktop)
