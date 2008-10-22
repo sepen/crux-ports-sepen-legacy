@@ -4,10 +4,11 @@ README for dyndnsup
 
 POST-INSTALLATION
 
-    Edit the config file (dyndnsup.conf) and setup to your needs
+    Copy the sample config file and edit to your needs:
+    $ sudo cp /usr/etc/dydndnsup/dyndnsup.conf.sample \
+      /usr/etc/dyndnsup/yourdomain.conf
+    $ sudo $EDITOR /usr/etc/dyndnsup/yourdomain.conf
 
-    Add a crontab line for doing auto-updates every 15 days
-
+    Add a crontab line for doing auto-updates every 15 days:
     $ sudo crontab -e
-
-    00 00 1/16 * * /usr/bin/dyndnsup 2>&1 >/var/log/dyndnsup.log
+    00 00 1/16 * * /usr/bin/dyndnsup -c /usr/etc/yourdomain.conf
