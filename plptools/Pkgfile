@@ -1,0 +1,21 @@
+# Description: Libraries and utilities for communication between Unix and EPOC PDAs
+# URL: http://plptools.sourceforge.net/
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+
+name=plptools
+version=1.0.5
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+  ./configure --prefix=/usr \
+              --mandir=/usr/man \
+              --disable-nls \
+              --disable-debug \
+              --disable-readline
+  make
+  make DESTDIR=$PKG install
+  rm -rf $PKG/usr/etc
+}
