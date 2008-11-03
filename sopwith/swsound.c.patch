@@ -1,0 +1,11 @@
+--- sdl_sopwith-1.7.1/src/swsound.c.orig	2008-11-02 02:54:27.548537807 +0100
++++ sdl_sopwith-1.7.1/src/swsound.c	2008-11-02 03:03:56.044538170 +0100
+@@ -79,7 +79,7 @@ static  char     *expltune[7] = {
+ };
+ #endif
+ 
+-static BOOL titleflg;		/* Playing title tune               */
++BOOL titleflg;                 /* Playing title tune               */
+ static int titlplace;		/*  Place in title tune;            */
+ static int titlline;		/* Line in title tune               */
+ static unsigned titltone;	/*  Current title tone              */

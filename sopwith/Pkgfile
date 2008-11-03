@@ -1,0 +1,22 @@
+# Description: SDL port of the classic computer game "Sopwith"
+# URL: http://sdl-sopwith.sourceforge.net/index.shtml
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Depends on: libsdl
+
+name=sopwith
+version=1.7.1
+release=1
+source=(http://dl.sourceforge.net/sourceforge/sdl-$name/sdl_$name-$version.tar.gz \
+       swsound.c.patch)
+
+build() {
+  cd sdl_$name-$version
+  patch -p1 -i $SRC/swsound.c.patch
+  ./configure --prefix=/usr \
+              --disable-debug \
+              --disable-nls
+  make
+  make DESTDIR=$PKG install
+  rm -rf $PKG/usr/share
+}
