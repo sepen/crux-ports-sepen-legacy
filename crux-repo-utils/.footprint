@@ -1,5 +1,5 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/repock4up
 -rwxr-xr-x	root/root	usr/bin/repodiff
--rwxr-xr-x	root/root	usr/bin/reposync
 -rwxr-xr-x	root/root	usr/bin/repoverify
