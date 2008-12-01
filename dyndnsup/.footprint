@@ -1,4 +1,4 @@
-wdrwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/etc/
 drwxr-xr-x	root/root	usr/etc/dyndnsup/
 -rw-------	root/root	usr/etc/dyndnsup/ck4dns.conf.sample

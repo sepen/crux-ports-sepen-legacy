@@ -2,11 +2,11 @@
 # URL: http://mikeux.dyndns.org/
 # Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Depends on: 
+# Depends on: net-tools, curl
 
 name=dyndnsup
-version=0.2.2
-release=2
+version=0.2.3
+release=1
 source=(http://mikeux.dyndns.org/releases/$name-$version.tar.bz2)
 
 build() {
