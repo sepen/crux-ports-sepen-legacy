@@ -1,0 +1,16 @@
+# Description: Mac4Lin Leopard GTK Icon Theme
+# URL: htp://sourceforge.net/projects/mac4lin
+# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Depends on: tango-icon-theme
+
+name=leopard-icon-theme
+version=0.3a
+release=1
+source=(http://dl.sourceforge.net/sourceforge/mac4lin/Mac4Lin_Icons_v${version}_for_GNOME_2.20.tar.gz)
+
+build() {
+  install -d $PKG/usr/share/icons/leopard
+  sed 's|Name=.*|Name=leopard|' -i Mac4Lin_Icons_v${version}/index.theme
+  mv Mac4Lin_Icons_v${version}/* $PKG/usr/share/icons/leopard
+}

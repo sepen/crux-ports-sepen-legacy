@@ -1,0 +1,1388 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/icons/
+drwxr-xr-x	root/root	usr/share/icons/leopard/
+drwxr-xr-x	root/root	usr/share/icons/leopard/16x16/
+drwxr-xr-x	root/root	usr/share/icons/leopard/16x16/apps/
+-rw-r--r--	root/root	usr/share/icons/leopard/16x16/apps/deskbar-applet.png
+-rw-r--r--	root/root	usr/share/icons/leopard/16x16/apps/gpm-ac-adapter.png
+-rw-r--r--	root/root	usr/share/icons/leopard/16x16/apps/gpm-primary-000-charging.png
+-rw-r--r--	root/root	usr/share/icons/leopard/16x16/apps/gpm-primary-000.png
+-rw-r--r--	root/root	usr/share/icons/leopard/16x16/apps/gpm-primary-020-charging.png
+-rw-r--r--	root/root	usr/share/icons/leopard/16x16/apps/gpm-primary-020.png
+-rw-r--r--	root/root	usr/share/icons/leopard/16x16/apps/gpm-primary-040-charging.png
+-rw-r--r--	root/root	usr/share/icons/leopard/16x16/apps/gpm-primary-040.png
+-rw-r--r--	root/root	usr/share/icons/leopard/16x16/apps/gpm-primary-060-charging.png
+-rw-r--r--	root/root	usr/share/icons/leopard/16x16/apps/gpm-primary-060.png
+-rw-r--r--	root/root	usr/share/icons/leopard/16x16/apps/gpm-primary-080-charging.png
+-rw-r--r--	root/root	usr/share/icons/leopard/16x16/apps/gpm-primary-080.png
+-rw-r--r--	root/root	usr/share/icons/leopard/16x16/apps/gpm-primary-100-charging.png
+-rw-r--r--	root/root	usr/share/icons/leopard/16x16/apps/gpm-primary-100.png
+-rw-r--r--	root/root	usr/share/icons/leopard/16x16/apps/gpm-primary-charged.png
+-rw-r--r--	root/root	usr/share/icons/leopard/16x16/apps/gpm-primary-missing.png
+-rw-r--r--	root/root	usr/share/icons/leopard/16x16/apps/update-manager.png
+-rw-r--r--	root/root	usr/share/icons/leopard/16x16/apps/updates-notifier.png
+drwxr-xr-x	root/root	usr/share/icons/leopard/22x22/
+drwxr-xr-x	root/root	usr/share/icons/leopard/22x22/apps/
+-rw-r--r--	root/root	usr/share/icons/leopard/22x22/apps/deskbar-applet.png
+-rw-r--r--	root/root	usr/share/icons/leopard/22x22/apps/gpm-ac-adapter.png
+-rw-r--r--	root/root	usr/share/icons/leopard/22x22/apps/gpm-primary-000-charging.png
+-rw-r--r--	root/root	usr/share/icons/leopard/22x22/apps/gpm-primary-000.png
+-rw-r--r--	root/root	usr/share/icons/leopard/22x22/apps/gpm-primary-020-charging.png
+-rw-r--r--	root/root	usr/share/icons/leopard/22x22/apps/gpm-primary-020.png
+-rw-r--r--	root/root	usr/share/icons/leopard/22x22/apps/gpm-primary-040-charging.png
+-rw-r--r--	root/root	usr/share/icons/leopard/22x22/apps/gpm-primary-040.png
+-rw-r--r--	root/root	usr/share/icons/leopard/22x22/apps/gpm-primary-060-charging.png
+-rw-r--r--	root/root	usr/share/icons/leopard/22x22/apps/gpm-primary-060.png
+-rw-r--r--	root/root	usr/share/icons/leopard/22x22/apps/gpm-primary-080-charging.png
+-rw-r--r--	root/root	usr/share/icons/leopard/22x22/apps/gpm-primary-080.png
+-rw-r--r--	root/root	usr/share/icons/leopard/22x22/apps/gpm-primary-100-charging.png
+-rw-r--r--	root/root	usr/share/icons/leopard/22x22/apps/gpm-primary-100.png
+-rw-r--r--	root/root	usr/share/icons/leopard/22x22/apps/gpm-primary-charged.png
+-rw-r--r--	root/root	usr/share/icons/leopard/22x22/apps/gpm-primary-missing.png
+-rw-r--r--	root/root	usr/share/icons/leopard/22x22/apps/opera.png
+-rw-r--r--	root/root	usr/share/icons/leopard/22x22/apps/update-manager.png
+drwxr-xr-x	root/root	usr/share/icons/leopard/24x24/
+drwxr-xr-x	root/root	usr/share/icons/leopard/24x24/actions/
+-rwxr-xr-x	root/root	usr/share/icons/leopard/24x24/actions/gtk-book.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/24x24/actions/gtk-copy.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/24x24/actions/gtk-disconnect.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/24x24/actions/gtk-sort-ascending.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/24x24/actions/gtk-sort-descending.png
+-rw-r--r--	root/root	usr/share/icons/leopard/24x24/actions/rhythmbox-podcast.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/24x24/actions/rhythmbox-tray-icon.png
+-rw-r--r--	root/root	usr/share/icons/leopard/24x24/actions/stock_channel.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/24x24/actions/stock_connect.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/24x24/actions/stock_disconnect.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/24x24/actions/stock_music-library.png
+-rw-r--r--	root/root	usr/share/icons/leopard/24x24/actions/stock_playlist.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/24x24/actions/stock_repeat.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/24x24/actions/stock_shuffle.png
+-rw-r--r--	root/root	usr/share/icons/leopard/24x24/actions/stock_smart-playlist.png
+drwxr-xr-x	root/root	usr/share/icons/leopard/24x24/apps/
+-rw-r--r--	root/root	usr/share/icons/leopard/24x24/apps/deskbar-applet.png
+-rw-r--r--	root/root	usr/share/icons/leopard/24x24/apps/gpm-ac-adapter.png
+-rw-r--r--	root/root	usr/share/icons/leopard/24x24/apps/gpm-primary-000-charging.png
+-rw-r--r--	root/root	usr/share/icons/leopard/24x24/apps/gpm-primary-000.png
+-rw-r--r--	root/root	usr/share/icons/leopard/24x24/apps/gpm-primary-020-charging.png
+-rw-r--r--	root/root	usr/share/icons/leopard/24x24/apps/gpm-primary-020.png
+-rw-r--r--	root/root	usr/share/icons/leopard/24x24/apps/gpm-primary-040-charging.png
+-rw-r--r--	root/root	usr/share/icons/leopard/24x24/apps/gpm-primary-040.png
+-rw-r--r--	root/root	usr/share/icons/leopard/24x24/apps/gpm-primary-060-charging.png
+-rw-r--r--	root/root	usr/share/icons/leopard/24x24/apps/gpm-primary-060.png
+-rw-r--r--	root/root	usr/share/icons/leopard/24x24/apps/gpm-primary-080-charging.png
+-rw-r--r--	root/root	usr/share/icons/leopard/24x24/apps/gpm-primary-080.png
+-rw-r--r--	root/root	usr/share/icons/leopard/24x24/apps/gpm-primary-100-charging.png
+-rw-r--r--	root/root	usr/share/icons/leopard/24x24/apps/gpm-primary-100.png
+-rw-r--r--	root/root	usr/share/icons/leopard/24x24/apps/gpm-primary-charged.png
+-rw-r--r--	root/root	usr/share/icons/leopard/24x24/apps/gpm-primary-missing.png
+-rw-r--r--	root/root	usr/share/icons/leopard/24x24/apps/update-manager.png
+drwxr-xr-x	root/root	usr/share/icons/leopard/32x32/
+drwxr-xr-x	root/root	usr/share/icons/leopard/32x32/actions/
+-rw-r--r--	root/root	usr/share/icons/leopard/32x32/actions/format-indent-less.png
+-rw-r--r--	root/root	usr/share/icons/leopard/32x32/actions/format-indent-more.png
+-rw-r--r--	root/root	usr/share/icons/leopard/32x32/actions/format-justify-center.png
+-rw-r--r--	root/root	usr/share/icons/leopard/32x32/actions/format-justify-fill.png
+-rw-r--r--	root/root	usr/share/icons/leopard/32x32/actions/format-justify-left.png
+-rw-r--r--	root/root	usr/share/icons/leopard/32x32/actions/format-justify-right.png
+-rw-r--r--	root/root	usr/share/icons/leopard/32x32/actions/format-text-bold.png
+-rw-r--r--	root/root	usr/share/icons/leopard/32x32/actions/format-text-direction-ltr.png
+-rw-r--r--	root/root	usr/share/icons/leopard/32x32/actions/format-text-direction-rtl.png
+-rw-r--r--	root/root	usr/share/icons/leopard/32x32/actions/format-text-italic.png
+-rw-r--r--	root/root	usr/share/icons/leopard/32x32/actions/format-text-strikethrough.png
+-rw-r--r--	root/root	usr/share/icons/leopard/32x32/actions/format-text-underline.png
+drwxr-xr-x	root/root	usr/share/icons/leopard/32x32/apps/
+-rw-r--r--	root/root	usr/share/icons/leopard/32x32/apps/deskbar-applet.png
+-rw-r--r--	root/root	usr/share/icons/leopard/32x32/apps/opera.png
+drwxr-xr-x	root/root	usr/share/icons/leopard/48x48/
+drwxr-xr-x	root/root	usr/share/icons/leopard/48x48/apps/
+-rw-------	root/root	usr/share/icons/leopard/48x48/apps/gnome-netstatus-0-24.png
+-rw-------	root/root	usr/share/icons/leopard/48x48/apps/gnome-netstatus-25-49.png
+-rw-------	root/root	usr/share/icons/leopard/48x48/apps/gnome-netstatus-50-74.png
+-rw-------	root/root	usr/share/icons/leopard/48x48/apps/gnome-netstatus-75-100.png
+-rw-r--r--	root/root	usr/share/icons/leopard/48x48/apps/opera.png
+-rw-r--r--	root/root	usr/share/icons/leopard/48x48/apps/un-reboot.png
+drwxr-xr-x	root/root	usr/share/icons/leopard/EXTRAS/
+drwxr-xr-x	root/root	usr/share/icons/leopard/EXTRAS/Alternative Folders/
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/Alternative Folders/folder1.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/Alternative Folders/folder10.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/Alternative Folders/folder11.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/Alternative Folders/folder12.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/Alternative Folders/folder13.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/Alternative Folders/folder14.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/Alternative Folders/folder15.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/Alternative Folders/folder16.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/Alternative Folders/folder17.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/Alternative Folders/folder18.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/Alternative Folders/folder19.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/Alternative Folders/folder2.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/Alternative Folders/folder20.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/Alternative Folders/folder21.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/Alternative Folders/folder3.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/Alternative Folders/folder4.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/Alternative Folders/folder5.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/Alternative Folders/folder6.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/Alternative Folders/folder7.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/Alternative Folders/folder8.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/Alternative Folders/folder9.png
+-rwx------	root/root	usr/share/icons/leopard/EXTRAS/Alternative Folders/gnome-fs-directory-accept.png
+-rwx------	root/root	usr/share/icons/leopard/EXTRAS/Alternative Folders/gnome-fs-directory.png
+drwxr-xr-x	root/root	usr/share/icons/leopard/EXTRAS/Folders/
+-rwxr-x---	root/root	usr/share/icons/leopard/EXTRAS/Folders/folder.png
+-rwxr-x---	root/root	usr/share/icons/leopard/EXTRAS/Folders/folder10.png
+-rwxr-x---	root/root	usr/share/icons/leopard/EXTRAS/Folders/folder11.png
+-rwxr-x---	root/root	usr/share/icons/leopard/EXTRAS/Folders/folder12.png
+-rwxr-x---	root/root	usr/share/icons/leopard/EXTRAS/Folders/folder14.png
+-rwxr-x---	root/root	usr/share/icons/leopard/EXTRAS/Folders/folder16.png
+-rwxr-x---	root/root	usr/share/icons/leopard/EXTRAS/Folders/folder17.png
+-rwxr-x---	root/root	usr/share/icons/leopard/EXTRAS/Folders/folder18.png
+-rwxr-x---	root/root	usr/share/icons/leopard/EXTRAS/Folders/folder19.png
+-rwxr-x---	root/root	usr/share/icons/leopard/EXTRAS/Folders/folder2.png
+-rwxr-x---	root/root	usr/share/icons/leopard/EXTRAS/Folders/folder20.png
+-rwxr-x---	root/root	usr/share/icons/leopard/EXTRAS/Folders/folder21.png
+-rwxr-x---	root/root	usr/share/icons/leopard/EXTRAS/Folders/folder22.png
+-rwxr-x---	root/root	usr/share/icons/leopard/EXTRAS/Folders/folder23.png
+-rwxr-x---	root/root	usr/share/icons/leopard/EXTRAS/Folders/folder4.png
+-rwxr-x---	root/root	usr/share/icons/leopard/EXTRAS/Folders/folder5.png
+-rwxr-x---	root/root	usr/share/icons/leopard/EXTRAS/Folders/folder6.png
+-rwxr-x---	root/root	usr/share/icons/leopard/EXTRAS/Folders/folder7.png
+-rwxr-x---	root/root	usr/share/icons/leopard/EXTRAS/Folders/folder8.png
+-rwxr-x---	root/root	usr/share/icons/leopard/EXTRAS/Folders/folder9.png
+drwxr-xr-x	root/root	usr/share/icons/leopard/EXTRAS/More/
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/3G.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Adium.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Adobe Acrobat.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Airport Assitant.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Airport.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Alert Note.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/AppleScript.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Assistant.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Audio MIDI.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Automator Applet.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Automator.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Classic.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Disk Image.ico
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Dreamweaver 8.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Fireworks 8.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Flash 8 Video Encoder.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Flash 8.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Garage Band.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Google Earth.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Illustrator CS2.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Image Ready CS2.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/InDesign 1.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/InDesign 2.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/InDesign CS2.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Keynote.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/LimeWire.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/MSN Messenger.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Net Info.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Photoshop CS2.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Popcorn.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/QuickTimePlayer.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Sherlock.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Toast.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/Unsupported.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/VLC.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/WMP.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/X11.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/bluetooth-icon.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/bluetooth48.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/firefox-document.png
+-rwx------	root/root	usr/share/icons/leopard/EXTRAS/More/hdd.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/iCal empty.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/iCal.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/iTunes.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/modem.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/More/time machine hdd.png
+drwxr-xr-x	root/root	usr/share/icons/leopard/EXTRAS/spare/
+-rwxr-xr-x	root/root	usr/share/icons/leopard/EXTRAS/spare/BackUp.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/EXTRAS/spare/Battery.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/EXTRAS/spare/battery_charged.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/EXTRAS/spare/battery_empty.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/EXTRAS/spare/battery_low.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/EXTRAS/spare/battery_plugged.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/EXTRAS/spare/battery_two_thirds.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/spare/ecran.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/EXTRAS/spare/gasbombcrate.png
+-rw-r--r--	root/root	usr/share/icons/leopard/EXTRAS/spare/gnome-dev-battery.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/EXTRAS/spare/temp.png
+-rw-r--r--	root/root	usr/share/icons/leopard/index.theme
+drwxr-xr-x	root/root	usr/share/icons/leopard/scalable/
+drwxr-xr-x	root/root	usr/share/icons/leopard/scalable/actions/
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/actions/access.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/actions/accessibility-directory.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/actions/dialog-error.svg
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/dialog-info.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/dialog-question.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/dialog-warning.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/actions/document-new.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/document-open-recent.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/document-open.png -> ../places/gnome-fs-directory-accept.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/actions/document-properties.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/actions/document-save-as.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/actions/document-save.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/error.svg -> dialog-error.svg
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/actions/filenew.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/fileopen.png -> ../places/gnome-fs-directory-accept.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/actions/filesave.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/actions/filesaveas.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/folder-drag-accept.png -> ../places/gnome-fs-directory-accept.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/actions/folder-new.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/folder-open.png -> ../places/gnome-fs-directory-accept.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/folder_new.png -> folder-new.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/folder_open.png -> ../places/gnome-fs-directory-accept.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/gnome-fs-direcotry-accpet.png -> ../places/gnome-fs-directory-accept.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/gnome-help.png -> help-browser.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/gnome-searchtool.png -> search.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/actions/gnome-settings-accessibility-technologies.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/actions/gnome-status.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/actions/gnome-tourist-info.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/actions/gtk-about.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/gtk-bold.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/actions/gtk-cdrom.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/gtk-dialog-error.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/gtk-dialog-error.svg -> dialog-error.svg
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/gtk-dialog-info.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/gtk-dialog-question.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/gtk-dialog-warning.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/gtk-directory.png -> ../places/gnome-fs-directory-accept.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/gtk-disconnect.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/gtk-edit.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/gtk-help.png -> help-browser.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/gtk-italic.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/gtk-open.png -> ../places/gnome-fs-directory-accept.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/actions/gtk-properties.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/actions/gtk-save-as.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/actions/gtk-save.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/gtk-strikethrough.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/gtk-underline.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/actions/help-browser.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/help.png -> help-browser.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/important.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/khelpcenter.png -> help-browser.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/mail-mark-not-junk.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/messagebox_critical.svg -> dialog-error.svg
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/messagebox_warning.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/object-flip-horizontal.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/object-flip-vertical.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/object-rotate-left.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/object-rotate-right.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/actions/preferences-desktop-accessibility.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/actions/process-stop.svg
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/search.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/stock-info.png -> system-about.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/actions/stock_about.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/stock_connect.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/stock_dialog-error.svg -> dialog-error.svg
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/stock_dialog-question.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/stock_dialog-warning.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/stock_disconnect.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/stock_help.png -> help-browser.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/actions/stock_menu_about.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/stock_new-dir.png -> folder-new.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/stock_open.png -> ../places/gnome-fs-directory-accept.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/actions/stock_properties.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/actions/stock_save-as.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/actions/stock_save.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/stock_stop.svg -> process-stop.svg
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/stop.svg -> process-stop.svg
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/susehelpcenter.png -> help-browser.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/actions/system-about.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/system-search.png -> search.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/actions/xfce-man.png -> help-browser.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/actions/zoom-best-fit.png
+drwxr-xr-x	root/root	usr/share/icons/leopard/scalable/animations/
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/animations/process-idle.png_.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/animations/process-working.png_
+drwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/
+drwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/48/
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/48/beast.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/48/cache.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/48/default-applications-capplet.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/48/disks.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/48/distributor-logo.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/48/distributor-logo1.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/48/distributor-logo2.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/48/distributor-logo3.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/48/distributor-logo4.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/48/distributor-logo5.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/48/distributor-logo6.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/apps/48/file-manager.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/48/gnome-color-browser.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/48/gnome-cromagnon.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/48/gnome-devel.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/48/gnome-graphics.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/48/gnome-info.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/48/gnome-multimedia.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/48/gnome-note.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/48/gnome-panel-type-corner.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/48/gnome-server-config.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/48/gnome-settings-default-applications.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/48/gnome-settings-ui-behavior.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/48/gnome-system-config.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/48/gnome-system.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/48/gnome-system2.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/48/gnome-system3.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/48/gnome-tourist-info.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/48/gnome-util.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/48/gnome-warning.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/48/gnome-window-manager.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/48/login-photo.png
+-rw-------	root/root	usr/share/icons/leopard/scalable/apps/48/nvu.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/48/palm-pilot-sync.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/48/panel-force-quit.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/48/panel-window-list.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/48/panel-window-menu.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/48/password.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/48/samba.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/48/system-config-httpd.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/48/system-config-kickstart.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/48/system-config-nfs.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/48/system-config-rootpassword.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/48/usermount.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/48/vlc.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/48/vmware.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/48/win4lin.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/48/xsane.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/apps/DvD AppIcon.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/LimeWire.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/Link.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/Pictures.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/VBox.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/abiword.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/access.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/accessibility-directory.png -> preferences-desktop-accessibility.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/accessories-calculator.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/accessories-dictionary.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/accessories-text-editor.png -> text-editor.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/acroread.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/addressbook.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/administration.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/agave-icon.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/amarok.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/apacheconf.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/applets-screenshooter.png -> ../devices/camera-photo.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/applications-accessories.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/applications-development.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/applications-games.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/applications-graphics.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/applications-internet.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/applications-multimedia.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/applications-office.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/applications-other.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/applications-system.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/audacious.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/audacity.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/avant-window-navigator.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/avidemux.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/ax-applet.png -> preferences-desktop-accessibility.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/background.png -> preferences-desktop-wallpaper.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/banshee.png -> rhythmbox.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/baobab.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/beagled.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/blender.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/blueradio-48.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/blueradio.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/bluetooth-48.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/bluetooth-black.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/bluetooth.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/bmp.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/boot.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/bootcamp.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/brasero.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/bug-buddy.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/calc.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/apps/charpick.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/clock.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/colorscheme.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/computer.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/conduit.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/config-date.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/config-language.png -> system-config-language.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/config-users.png -> system-users.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/contacts.png -> addressbook.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/cowbell.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/dashcode.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/dates.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/deluge.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/deskbar-applet.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/deskbar.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/desktop-effects.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/desktops.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/dia_gnome_icon.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/dialog-password.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/display capplet.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/display-capplet.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/doc.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/document-print.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/eclipse.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/ekiga.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/elisa.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/emacs.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/eog.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/ethereal.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/evince.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/evolution-2.8.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/evolution.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/expose.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/f-spot-logo.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/f-spot.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/file-roller.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/filelight.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/fileshare.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/firefox.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/folder-remote.png -> shares.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gaim.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gajim.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/galeon.png -> web-browser.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gconf-editor.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/gdebi.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/gdm-setup.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/gdm.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gftp.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/ghostview.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gimp2_0.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gksu-root-terminal.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/glade-2.png -> glade.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/glade-3.png -> glade.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/glade.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/glchess.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/gnome-about-logo.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-accessibility-keyboard.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/gnome-applets.png -> panel.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/gnome-applications.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-btdownload.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/gnome-calculator.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/gnome-cd.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-cpu.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/gnome-desktop-config.png -> gnome-settings.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/gnome-devel.png -> applications-development.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/gnome-dictionary.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/gnome-display-properties.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/gnome-eterm.png -> gnome-terminal.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/apps/gnome-fs-client.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-fs-network.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/gnome-fs-server.png -> system-config-services.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/gnome-fs-share.png -> system-config-samba.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/gnome-fs-trash-empty.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/gnome-fs-trash-full.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-gimp.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/gnome-globe.png -> applications-internet.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-graphics.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/gnome-grecord.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-help.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/gnome-joystick.png -> applications-games.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-lockscreen.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/gnome-logo-icon-transparent.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/gnome-logo-icon.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-logout.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/gnome-mixer.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/gnome-modem.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-monitor.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-netstatus-disconn.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-netstatus-error.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-netstatus-idle.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-netstatus-rx.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-netstatus-tx.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-netstatus-txrx.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/gnome-nettool.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/gnome-network-preferences.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/gnome-networktool.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/gnome-other.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/gnome-palm.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/gnome-panel-workspace-switcher.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/apps/gnome-panel.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/gnome-ppp.png -> gnome-modem.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-remote-desktop.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-run.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-searchtool.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-session-halt.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/gnome-session-hibernate.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/gnome-session-logout.png -> system-config-securitylevel.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-session-reboot.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-session-suspend.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-session-switch.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/gnome-session.png -> preferences-system-session.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-setting.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/gnome-settings-accessibility-technologies.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/gnome-settings-background.png -> preferences-desktop-wallpaper.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-settings-font.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-settings-keybindings.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/gnome-settings-sound.png -> preferences-desktop-sound.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-settings-theme.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-settings.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-system-config.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/gnome-system.png -> applications-system.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-terminal.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/gnome-util.png -> applications-accessories.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/gnome-window-manager.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnome-workspace.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/gnome-xterm.png -> gnome-terminal.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gnomebaker.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/gnucash.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/gparted.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/graveman.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/grsync.png -> conduit.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/gstreamer-properties.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gthumb.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gtk-gnutella.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/gtkam.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gucharmap.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/gwget.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/gxine.png -> totem.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/hwbrowser.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/iPod-black.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/ifolder.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/image-viewer.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/inkscape.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/java.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/jokosher.png -> audacity.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/jscalibrator.png -> ../devices/input-gaming.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/k3b.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/kaffeine.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/kino.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/kmail.png -> evolution.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/konqueror.png -> web-browser.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/konsole.png -> gnome-terminal.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/kontact.png -> evolution.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/kopete.png -> gaim.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/kscreensaver.png -> screensaver.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/kuser.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/labyrinth.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/language-selector.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/laptop-battery.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/launcher-program.png -> panel.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/leafpad.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/licq.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/liferea.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/login-photo.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/logviewer.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/media-player-48.png -> totem.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/mozilla-firefox.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/mozilla-mail-icon.png -> evolution.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/mozilla-thunderbird.png -> evolution.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/mplayer.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/msn.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/muine.png -> rhythmbox.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/nautilus-cd-burner.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/apps/nautilus.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/neat-control.png -> neat.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/neat.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/netscape.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/nicotine_clear.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/noatun.png -> rhythmbox.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/ogle.png -> totem.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/oh-contacts.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/ooo-base.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/ooo-calc.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/ooo-draw.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/ooo-gulls.png -> openoffice.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/ooo-impress.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/ooo-math.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/ooo-web.svg
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/ooo-writer.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/openoffice.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/openofficeorg-21-base.svg
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/openofficeorg-21-calc.svg
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/openofficeorg-21-draw.svg
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/openofficeorg-21-impress.svg
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/openofficeorg-21-math.svg
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/openofficeorg-21-printeradmin.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/openofficeorg-21-template.svg
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/openofficeorg-21-writer.svg
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/apps/opera.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/orca.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/package_development.png -> applications-development.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/package_edutainment.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/package_games.png -> applications-games.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/package_graphics.png -> applications-graphics.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/package_multimedia.png -> applications-multimedia.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/package_network.png -> applications-internet.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/package_office.png -> applications-office.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/package_system.png -> applications-system.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/package_utilities.png -> applications-accessories.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/palm-pilot.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/pan.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/panel-drawer.png -> panel.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/panel-searchtool.png -> gnome-searchtool.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/panel.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/pidgin.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/pitivi.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/poedit.png -> system-config-language.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/preferences-desktop-accessibility.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/preferences-desktop-peripherals.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/preferences-desktop-screensaver.png -> screensaver.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/preferences-desktop-sound.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/preferences-desktop-wallpaper.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/preferences-system-session.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/print-manager.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/printer.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/pybackpack.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/realplay.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/redhat-accessories.png -> applications-accessories.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/redhat-email.png -> evolution.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/redhat-extras.png -> web-browser.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/redhat-games.png -> applications-games.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/redhat-graphics.png -> applications-graphics.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/redhat-internet.png -> applications-internet.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/redhat-office.png -> applications-office.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/redhat-programming.png -> applications-development.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/redhat-system_settings.png -> gnome-settings.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/redhat-system_tools.png -> applications-system.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/redhat-web-browser.png -> web-browser.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/redhat-word-processor.png -> ooo-writer.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/restricted-manager.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/revelation.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/rhythmbox.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/scim-setup.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/screenlets.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/screensaver.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/scribus.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/seahorse-preferences.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/seahorse.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/serviceconf.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/session-properties.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/shares.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/skype.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/sodipodi.png -> inkscape.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/software-properties.png -> update-manager.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/spe.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/specto.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/stock_bluetooth.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/stock_internet.png -> applications-internet.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/stock_keyring.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/stock_proxy.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/synaptic.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/system-config-bind.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/system-config-language.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/system-config-samba.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/system-config-securitylevel.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/system-config-services.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/system-floppy.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/system-run.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/system-search.png -> beagled.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/system-users.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/text-editor.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/time.png -> clock.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/timemachine.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/tomboy.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/totem.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/tsclient.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/up2date.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/update-manager.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/user-info.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/users.png -> config-users.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/utilities-system-monitor.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/utilities-terminal.png -> gnome-terminal.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/visor.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/volume-knob.png -> gnome-mixer.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/web-browser.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/wilber-icon.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/wine.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/workspace.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/xchat-gnome.png -> xchat.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/apps/xchat.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/xfce-devel.png -> applications-development.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/xfce-internet.png -> applications-internet.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/xfce-office.png -> applications-office.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/xfce-system.png -> applications-system.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/xfce-utils.png -> applications-accessories.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/xine.png -> totem.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/apps/xkill.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/apps/xmms.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/apps/xscreensaver.png -> screensaver.png
+drwxr-xr-x	root/root	usr/share/icons/leopard/scalable/devices/
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/devices/audio-input-microphone.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/devices/battery.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/devices/camera-photo.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/devices/camera-video.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/camera.png -> camera-photo.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/camera_mount.png -> camera-photo.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/camera_unmount.png -> camera-photo.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/devices/cd-audio.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/devices/cd-r.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/devices/cd-rw.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/devices/cdrecord.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/devices/cdrom.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/cdrom_mount.png -> cdrom.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/cdrom_unmount.png -> cdrom.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/cdwriter_mount.png -> cd-r.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/cdwriter_unmount.png -> cd-r.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/devices/document-print.svg
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/devices/dvd-r.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/dvd-r_mount.png -> dvd-r.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/dvd-r_unmount.png -> dvd-r.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/devices/dvd-ram.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/dvd-ram_mount.png -> dvd-ram.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/dvd-ram_unmount.png -> dvd-ram.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/devices/dvd-rw.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/dvd-rw_mount.png -> dvd-rw.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/dvd-rw_unmount.png -> dvd-rw.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/devices/dvd.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/dvd_mount.png -> dvd.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/dvd_unmount.png -> dvd.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-battery.png -> battery.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-camera.png -> camera-photo.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-cdrom-audio.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-cdrom.png -> cdrom.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-cdwriter.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-disc-cdr.png -> cd-r.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-disc-cdrw.png -> cd-rw.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-disc-dvdr-plus.png -> dvd-r.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-disc-dvdr.png -> dvd-r.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-disc-dvdram.png -> dvd-ram.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-disc-dvdrom.png -> dvd.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-disc-dvdrw.png -> dvd-rw.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-dvd.png -> dvd.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-floppy.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-harddisk-1394.png -> gnome-dev-removable-1394.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-harddisk-usb.png -> gnome-dev-removable-usb.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-harddisk.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-ipod.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-jazdisk.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-keyboard.png -> input-keyboard.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-media-cf.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-media-ms.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-media-sm.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-memory.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-mouse-ball.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-mouse-optical.png -> input-mouse.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-network.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-pcmcia.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-printer-network.svg
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-printer-new.svg
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-printer.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-printer.svg
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-removable-1394.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-removable-usb.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-removable.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-symlink.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/devices/gnome-dev-zipdisk.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/devices/gnome-fs-trash-empty.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/devices/gnome-fs-trash-full.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/devices/gtk-floppy.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/devices/gtk-print-preview.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/devices/gtk-print.svg
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/devices/input-gaming.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/devices/input-keyboard.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/devices/input-mouse.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/devices/input-tablet.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/joystick.png -> input-gaming.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/kxkb.png -> input-keyboard.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/devices/media-floppy.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/devices/multimedia-player.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/devices/network-wired.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/devices/nfs_mount.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/devices/nfs_unmount.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/devices/print-manager.svg
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/devices/printer.svg
+-rwx------	root/root	usr/share/icons/leopard/scalable/devices/scanner.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/devices/stock_print.svg
+-rwx------	root/root	usr/share/icons/leopard/scalable/devices/system-floppy.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/devices/tvm-dev-tablet.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/devices/video-display.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/devices/xsane.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/devices/yast-joystick.png -> input-gaming.png
+drwxr-xr-x	root/root	usr/share/icons/leopard/scalable/emblems/
+drwxr-xr-x	root/root	usr/share/icons/leopard/scalable/emblems/48/
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/emblems/48/emblem-OK.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/emblems/48/emblem-certified.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/emblems/48/emblem-cvs-added.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/emblems/48/emblem-cvs-conflict.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/emblems/48/emblem-cvs-controlled.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/emblems/48/emblem-cvs-modified.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/emblems/48/emblem-cvs-new-file.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/emblems/48/emblem-cvs-removed.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/emblems/48/emblem-cvs-sticky-tag.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/emblems/48/emblem-desktop.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/emblems/48/emblem-distinguished.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/emblems/48/emblem-generic.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/emblems/48/emblem-new.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/emblems/48/emblem-noread.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/emblems/48/emblem-personal.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/emblems/48/emblem-plan.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/emblems/48/emblem-presentation.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/emblems/48/emblem-sales.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/emblems/48/emblem-symbolic-link.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/emblems/emblem-art.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/emblems/emblem-bin.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/emblems/emblem-camera.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/emblems/emblem-cool.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/emblems/emblem-danger.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/emblems/emblem-documents.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/emblems/emblem-draft.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/emblems/emblem-favorite.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/emblems/emblem-handshake.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/emblems/emblem-important.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/emblems/emblem-keys.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/emblems/emblem-multimedia.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/emblems/emblem-note.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/emblems/emblem-nowrite.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/emblems/emblem-ohno.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/emblems/emblem-package.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/emblems/emblem-people.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/emblems/emblem-pictures.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/emblems/emblem-question.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/emblems/emblem-shared.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/emblems/emblem-sound.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/emblems/emblem-special.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/emblems/emblem-symbolic-link.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/emblems/emblem-urgent.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/emblems/emblem-web.png
+drwxr-xr-x	root/root	usr/share/icons/leopard/scalable/folders/
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/folders/folder10.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/folders/folder11.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/folders/folder12.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/folders/folder14.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/folders/folder16.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/folders/folder17.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/folders/folder18.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/folders/folder19.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/folders/folder2.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/folders/folder20.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/folders/folder4.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/folders/folder5.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/folders/folder6.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/folders/folder7.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/folders/folder8.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/folders/folder9.png
+drwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-docboox+xml.png -> application-vnd.oasis.opendocument.text-master.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-illustrator.png -> image-x-svg+xml.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/application-msword.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-octet-stream.png -> multipart-encrypted.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-ogg.png -> audio-x-vorbis+ogg.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/application-pdf.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/application-pgp-keys.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/application-pgp.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/application-postscript.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-rtf.png -> text-richtext.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-vnd.ms-access.png -> application-vnd.oasis.opendocument.database.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/application-vnd.ms-excel.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-vnd.ms-powerpoint.png -> application-vnd.oasis.opendocument.presentation.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/application-vnd.oasis.opendocument.chart.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/application-vnd.oasis.opendocument.database.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/application-vnd.oasis.opendocument.graphics.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/application-vnd.oasis.opendocument.presentation.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/application-vnd.oasis.opendocument.spreadsheet.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/application-vnd.oasis.opendocument.text-master.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-vnd.oasis.opendocument.text-template.png -> application-vnd.oasis.opendocument.text-master.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/application-vnd.oasis.opendocument.text-web.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/application-vnd.oasis.opendocument.text.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-vnd.rn-realmedia.png -> video-x-generic.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-vnd.sun.xml.calc.png -> application-vnd.oasis.opendocument.spreadsheet.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-vnd.sun.xml.draw.png -> application-vnd.oasis.opendocument.graphics.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-vnd.sun.xml.impress.png -> application-vnd.oasis.opendocument.presentation.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-vnd.sun.xml.writer.png -> application-vnd.oasis.opendocument.text.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-vnd.wordperfect.png -> application-msword.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-7z-compressed.png -> application-x-compress.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-abiword.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-bittorrent.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-blender.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-bzip-compressed-tar.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-bzip.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-cd-image.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-compress.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-compressed-tar.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-deb.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-executable.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-flash-video.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-glade.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-gnumeric.png -> text-spreadsheet.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-gzip.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-jar.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-java.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-javascript.png -> application-x-java.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-m4.png -> text-x-generic.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-matroska.png -> video-x-generic.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-ms-dos-executable.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-object.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-ole-storage.png -> multipart-encrypted.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-perl.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-php.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-planner.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-python-bytecode.png -> text-x-python.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-rar.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-reject.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-rpm.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-sharedlib.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-shellscript.png -> text-x-script.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-shockwave-flash.png -> application-x-flash-video.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-sqlite2.png -> text-x-sql.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-sqlite3.png -> text-x-sql.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-ssh-key.png -> application-pgp-keys.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-tar.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-tar2.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-theme.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/application-x-trash.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/application-xml.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/application-zip.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/audio-mpeg.png -> audio-x-mpeg.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/audio-x-adpcm.png -> audio-x-wav.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/audio-x-flac+ogg.png -> audio-x-vorbis+ogg.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/audio-x-generic.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/audio-x-mp3-playlist.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/audio-x-mpeg.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/audio-x-mpegurl.png -> audio-x-mp3-playlist.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/audio-x-ms-wma.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/audio-x-scpls.png -> audio-x-mp3-playlist.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/audio-x-speex+ogg.png -> audio-x-vorbis+ogg.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/audio-x-vorbis+ogg.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/audio-x-wav.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/font-x-generic.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-image-bmp.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-image-cgm.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-image-gif.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-image-ico.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-image-jng.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-image-jpeg.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-image-pcx.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-image-png.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-image-ppm.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-image-preview.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-image-psd.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-image-svg.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-image-tga.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-image-tiff.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-image-wmf.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-image-xbm.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-image-xcf.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-image-xpm.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-video-asf.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-video-avi.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-video-flic.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-video-mng.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-video-mpeg.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-video-real.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-video-x-ms-wmv.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/gnome-mime-video.png -> ../devices/camera-video.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/image-bmp.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/image-gif.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/image-jpeg.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/image-jpeg2000.png -> image-jpeg.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/image-png.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/image-tiff.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/image-x-3ds.png -> application-x-blender.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/image-x-compressed-xcf.png -> image-x-xcf.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/image-x-generic.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/image-x-ico.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/image-x-portable-bitmap.png -> image-bmp.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/image-x-psd.png -> image-x-xcf.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/image-x-svg+xml.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/image-x-tga.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/image-x-win-bitmap.png -> image-bmp.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/image-x-xcf.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/message-x-gnu-rmail.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/multipart-encrypted.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/package-x-generic.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/packages-gdebi.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/text-css.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/text-enriched.png -> text-richtext.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/text-html.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/text-htmlh.png -> text-html.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/text-plain.png -> text-x-generic.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/text-richtext.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/text-spreadsheet.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/text-x-authors.png -> text-x-credits.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/text-x-c++.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/text-x-c++src.png -> text-x-c++.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/text-x-c.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/text-x-chdr.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/text-x-copying.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/text-x-credits.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/mimetypes/text-x-csrc.png -> text-x-c.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/text-x-fortran.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/text-x-generic.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/text-x-gtkrc.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/text-x-install.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/text-x-java.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/text-x-log.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/text-x-makefile.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/text-x-nemerle.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/text-x-patch.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/text-x-python.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/text-x-readme.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/text-x-script.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/text-x-sql.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/mimetypes/unknown.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/video-x-generic.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/vnd.oasis.opendocument.drawing.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/mimetypes/x-office-address-book.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/mimetypes/x-office-calendar.png
+drwxr-xr-x	root/root	usr/share/icons/leopard/scalable/places/
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/places/desktop.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/places/distributor-logo.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/places/document-open-recent.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/edit-clear.png -> user-trash.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/editclear.png -> user-trash.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/edittrash.png -> user-trash-full.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/emptytrash.png -> user-trash.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/folder_home.png -> user-home.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/places/gnome-dev-harddisk.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/places/gnome-fs-blockdev.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/places/gnome-fs-client.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/places/gnome-fs-desktop.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/places/gnome-fs-directory-accept.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/places/gnome-fs-directory-visiting.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/places/gnome-fs-directory.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/places/gnome-fs-executable.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/places/gnome-fs-ftp.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/gnome-fs-home.png -> user-home.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/gnome-fs-loading-icon.png -> image-loading.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/places/gnome-fs-network.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/places/gnome-fs-nfs.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/places/gnome-fs-regular.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/places/gnome-fs-server.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/gnome-fs-share.png -> gnome-fs-nfs.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/places/gnome-fs-smb.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/gnome-fs-ssh.png -> gnome-fs-nfs.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/gnome-fs-trash-empty-accept.png -> gnome-fs-trash-full.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/gnome-fs-trash-empty.png -> user-trash.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/gnome-fs-trash-full.png -> user-trash-full.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/places/gnome-main-menu.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/gnome-mime-x-directory-nfs-server.png -> network-server.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/gnome-mime-x-directory-smb-server.png -> network-server.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/gnome-stock-trash-full.png -> user-trash-full.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/gnome-stock-trash.png -> user-trash.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/gtk-clear.png -> user-trash.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/gtk-delete.png -> user-trash.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/places/image-loading.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/places/network-server.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/server.png -> network-server.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/places/start-here.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/stock_delete.png -> user-trash.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/stock_folder.png -> gnome-fs-directory.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/stock_trash_full.png -> user-trash-full.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/trashcan_empty.png -> user-trash.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/trashcan_full.png -> user-trash-full.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/places/user-desktop.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/places/user-home.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/places/user-trash-empty.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/places/user-trash-full.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/places/user-trash.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/xfce-trash_empty.png -> user-trash.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/places/xfce-trash_full.png -> user-trash-full.png
+drwxr-xr-x	root/root	usr/share/icons/leopard/scalable/spinner/
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/spinner/gnome-spinner-rest.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/spinner/gnome-spinner.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/spinner/process-working.png
+drwxr-xr-x	root/root	usr/share/icons/leopard/scalable/status/
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/status/audio-volume-high.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/status/audio-volume-low.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/status/audio-volume-medium.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/status/audio-volume-muted.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/status/connect_creating.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/status/connect_established.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/status/connect_no.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/status/document-new.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/status/document-open.png -> ../places/gnome-fs-directory-accept.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/status/filenew.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/status/fileopen.png -> ../places/gnome-fs-directory-accept.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/status/folder-drag-accept.png -> ../places/gnome-fs-directory-accept.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/status/folder-new.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/status/folder-open.png -> ../places/gnome-fs-directory-accept.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/status/folder_new.png -> folder-new.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/status/folder_open.png -> ../places/gnome-fs-directory-accept.png
+-rw-------	root/root	usr/share/icons/leopard/scalable/status/gnome-dev-wavelan-encrypted.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/status/gnome-fs-direcotry-accpet.png -> ../places/gnome-fs-directory-accept.png
+-rw-------	root/root	usr/share/icons/leopard/scalable/status/gnome-netstatus-0-24.png
+-rw-------	root/root	usr/share/icons/leopard/scalable/status/gnome-netstatus-25-49.png
+-rw-------	root/root	usr/share/icons/leopard/scalable/status/gnome-netstatus-50-74.png
+-rw-------	root/root	usr/share/icons/leopard/scalable/status/gnome-netstatus-75-100.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/status/gnome-netstatus-disconn.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/status/gnome-netstatus-error.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/status/gnome-netstatus-idle.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/status/gnome-netstatus-rx.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/status/gnome-netstatus-tx.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/status/gnome-netstatus-txrx.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/status/gtk-directory.png -> ../places/gnome-fs-directory-accept.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/status/gtk-open.png -> ../places/gnome-fs-directory-accept.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/status/multimedia-volume-control.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/status/network-error.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/status/network-idle.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/status/network-offline.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/status/network-receive.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/status/network-transmit-receive.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/status/network-transmit.png
+-rw-------	root/root	usr/share/icons/leopard/scalable/status/network-wireless-encrypted.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/status/nm-adhoc.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/status/nm-device-wired.png
+-rw-------	root/root	usr/share/icons/leopard/scalable/status/nm-device-wireless.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/status/nm-no-connection.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/status/stock_new-dir.png -> folder-new.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/status/stock_open.png -> ../places/gnome-fs-directory-accept.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/status/stock_volume-0.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/status/stock_volume-max.png -> audio-volume-high.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/status/stock_volume-med.png -> audio-volume-medium.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/status/stock_volume-min.png -> audio-volume-low.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/status/stock_volume-mute.png -> audio-volume-muted.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/status/stock_volume.png -> audio-volume-high.png
+drwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/
+drwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/48/
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/48/config-date.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/48/package-available-locked.svg
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/48/package-available.svg
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/48/package-broken.svg
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/48/package-downgrade.svg
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/48/package-install.svg
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/48/package-installed-locked.svg
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/48/package-installed-outdated.svg
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/48/package-installed-updated.svg
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/48/package-new.svg
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/48/package-purge.svg
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/48/package-reinstall.svg
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/48/package-remove.svg
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/48/package-supported.svg
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/48/package-upgrade.svg
+-rwx------	root/root	usr/share/icons/leopard/scalable/stock/48/stock-delete.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/48/stock-save.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/48/stock_attach.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/48/stock_keyring.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/48/stock_print.png
+drwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/64/
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/64/gtk-dialog-error.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/64/gtk-dialog-info.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/64/gtk-dialog-question.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/64/gtk-dialog-warning.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/a-open.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/active.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/audio-volume-high.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/audio-volume-low.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/audio-volume-medium.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/audio-volume-muted.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/cdplayer-backward.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/cdplayer-forward.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/cdplayer-next.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/cdplayer-pause.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/cdplayer-play.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/cdplayer-prev.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/cdplayer-stop.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/config-date.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/deskbar-applet.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/dialog-error.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/epiphany-bookmark-page.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/epiphany-bookmarks.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/epiphany-download.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gnome-app-install.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gnome-cpu-frequency-applet.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gnome-eyes-applet.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/gnome-logout.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gnome-modem-monitor-applet.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gnome-panel-clock.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gnome-panel-drawer.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gnome-panel-fish.png
+-rwx------	root/root	usr/share/icons/leopard/scalable/stock/gnome-panel-force-quit.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gnome-panel-notification-area.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gnome-panel-window-list.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gnome-panel-window-menu.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gnome-panel-workspace-switcher.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gnome-sticky-notes-applet.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gnome-stock-export.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gnome-stock-import.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gswitchit-applet.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-about.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-add.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/gtk-apply.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-bookmarks.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-cancel.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-clear.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-close.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-convert.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-copy.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-cut.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-delete.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-find-and-replace.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-find.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-fullscreen.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-go-back-ltr.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-go-back-rtl.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-go-back.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-go-down.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-go-forward-ltr.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-go-forward-rtl.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-go-forward.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-go-left.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-go-right.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-go-up.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-got-back-rtl.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-goto-bottom.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-goto-first-ltr.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-goto-first-rtl.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-goto-first.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-goto-last-ltr.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-goto-last-rtl.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-goto-last.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-goto-top.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-help.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-home.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-jump-to-ltr.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-jump-to-rtl.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-jump-to.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-media-forward-ltr.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-media-forward-rtl.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-media-next-ltr.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-media-next-rtl.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-media-pause.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-media-play-ltr.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-media-previous-ltr.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-media-previous-rtl.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-media-record.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-media-rewind-ltr.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-media-rewind-rtl.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-media-stop.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-new.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-no.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/gtk-ok.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-open.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-paste.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-preferences.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-print-preview.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-print.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-properties.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-quit.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-redo-ltr.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-redo-rtl.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-refresh.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-remove.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-revert-to-saved-ltr.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-revert-to-saved-rtl.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-save-as.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-save.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-select-all.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-spell-check.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-stop.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-undo-ltr.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-undo-rtl.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/gtk-yes.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-zoom-100.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-zoom-fit.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-zoom-in.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/gtk-zoom-out.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/invest-big.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/invest.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/mail-forward.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/mail-mark-junk.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/mail-message-new.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/mail-reply-sender.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/mail-send-receive.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/mail_forward.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/mail_new.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/mail_reply.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/mail_replyall.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/mail_spam.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/media-eject.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/media-next.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/media-play.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/media-playback-pause.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/media-playback-start.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/media-playback-stop.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/media-prev.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/media-rewind.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/media-seek-backward.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/media-seek-forward.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/media-skip-backward.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/media-skip-forward.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/multimedia-volume-control.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/mute.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/nautilus-cd-burner.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/player_eject.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/player_end.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/player_fwd.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/player_pause.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/player_play.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/player_record.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/player_rew.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/player_start.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/player_stop.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/rhythmbox-play.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/rhythmbox-previous.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/rhythmbox-tray-icon.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock-add.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock-convert.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock-refresh.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock-select-all.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_add.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/stock_addressbook.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/stock_appointment-reminder.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/stock_appointment.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_back.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_book_open.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_bottom.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_calendar-view-day.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_calendar-view-list.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_calendar-view-month.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_calendar-view-week.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_calendar-view-work-week.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_calendar.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_cancel.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/stock_contact-list.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/stock_contact.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/stock_delete.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_down.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_first-page.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/stock/stock_folder.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_forward.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_gohome.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_goto_first.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_goto_last.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_help-agent.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_help-book-open.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_help.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_inbox.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_insert-note.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_keyring.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_last-page.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_mail-compose.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_mail-copy.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_mail-delete.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_mail-filters-apply.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_mail-find.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_mail-flag-for-followup.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_mail-forward.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_mail-move.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_mail-open-multiple.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_mail-open.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_mail-priority-high.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_mail-receive.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_mail-replied.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_mail-reply-to-all.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_mail-reply.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_mail-send-receive.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_mail-send.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_mail-unread-multiple.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_mail-unread.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_mail.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_media-fwd.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_media-next.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_media-pause.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_media-play.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_media-prev.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_media-rew.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_media-stop.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_new-appointment.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_new-meeting.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/stock_new-template.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_next.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_not-spam.png
+-rwxr-x---	root/root	usr/share/icons/leopard/scalable/stock/stock_notebook.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_notes.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_ok.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_outbox.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_previous.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_quit.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_refresh.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_send-fax.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_sent-mail.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_spam.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/stock_task.png
+-rwxr-xr-x	root/root	usr/share/icons/leopard/scalable/stock/stock_todo.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_top.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_undo.png
+-rwxr--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_up.png
+-rw-r--r--	root/root	usr/share/icons/leopard/scalable/stock/stock_volume-0.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/stock/stock_volume-max.png -> audio-volume-high.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/stock/stock_volume-med.png -> audio-volume-medium.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/stock/stock_volume-min.png -> audio-volume-low.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/stock/stock_volume-mute.png -> audio-volume-muted.png
+lrwxrwxrwx	root/root	usr/share/icons/leopard/scalable/stock/stock_volume.png -> audio-volume-high.png
