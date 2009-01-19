@@ -2,23 +2,24 @@
 # URL: http://supertuxkart.sourceforge.net/
 # Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
 # Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Depends on: plib
+# Depends on: plib, openal
 
 name=supertuxkart
 version=0.6rc1
-release=1
+release=2
 source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version-src.tar.bz2)
 
 build() {
   cd $name-$version
-  ./configure --prefix=/usr 
+  for i in $(grep -i '/games' -r * | cut -d':' -f1); do
+    sed -e 's|$(datadir)/games|$(datadir)|g' \
+        -e 's|@prefix@/games|@prefix@/bin|g' \
+        -e 's|local/share/games|share|g' \
+        -e 's|PREFIX/games|PREFIX/bin|g' \
+        -e 's|= /usr/games|= /usr/bin|g' -i $i; done
+  ./configure --prefix=/usr
   make
   make DESTDIR=$PKG install
-  mv $PKG/usr/{games,bin}
-  mv $PKG/usr/{share/games/$name,share/$name}
-  rm -rf $PKG/usr/share/{doc,games}
-  sed -e 's|usr/games|usr/bin|g' \
-      -e 's|usr/share/games|usr/share|g' \
-      -i $PKG/usr/share/applications/$name.desktop
+  rm -rf $PKG/usr/share/doc
   sed -r '/\[.+\]=/d' -i $PKG/usr/share/applications/$name.desktop
 }
