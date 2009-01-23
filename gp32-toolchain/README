@@ -1,8 +1,0 @@
-
-README for gp32-toolchain
-
-
-POST-INSTALL
-
-    Add an environment variable to your ~/.bash_profile like this:
-    'export PATH=$PATH:/usr/share/gp32-toolchain/bin'
