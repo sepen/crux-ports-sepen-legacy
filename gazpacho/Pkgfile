@@ -1,0 +1,16 @@
+# Description: Gazpacho is a fresh new GUI builder for the GTK+ toolkit designed to be ultra easy to use
+# URL: http://gazpacho.sicem.biz/
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
+# Depends on: kiwi
+
+name=gazpacho
+version=0.7.2
+release=1
+source=(http://ftp.gnome.org/pub/GNOME/sources/$name/0.7/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+  python setup.py install --root=$PKG
+  rm -rf $PKG/usr/share/{doc,locale}
+}
