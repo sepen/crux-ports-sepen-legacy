@@ -11,6 +11,8 @@ source=(http://ftp.gnome.org/pub/GNOME/sources/$name/0.7/$name-$version.tar.gz)
 
 build() {
   cd $name-$version
-  python setup.py install --root=$PKG
-  rm -rf $PKG/usr/share/{doc,locale}
+  sed "s|share/doc/$name|share/$name/doc|g" -i setup.py 
+  python setup.py install -O2 --prefix=/usr --root=$PKG
+  rm -rf $PKG/usr/share/locale
 }
+
