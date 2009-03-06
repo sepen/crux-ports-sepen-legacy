@@ -1,29 +1,35 @@
 # Description: Frets on Fire is a game of musical skill and fast fingers.
 # URL: http://fretsonfire.sourceforge.net/
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Depends on: pyopengl,pygame,numpy,pil,sdl_mixer,sdl_ttf
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
+# Depends on: pyopengl pygame numpy pil sdl_mixer sdl_ttf
 
 name=fretsonfire
-version=1.2.512
+version=1.3.110
 release=1
-source=(http://dl.sourceforge.net/sourceforge/$name/FretsOnFire-$version-linux.tar.gz)
+source=(http://dl.sourceforge.net/sourceforge/$name/FretsOnFire-$version.tar.gz)
 
 build() {
-  install -d $PKG/usr/{bin,share}
-  rm FretsOnFire/FretsOnFire
-  mv FretsOnFire $PKG/usr/share/$name
+  cd "Frets on Fire"-$version
+  python setup.py build
+  install -d $PKG/usr/{bin,share/$name/lib}
+  cp -r src/* $PKG/usr/share/$name/lib
+  rm -rf data/win32
+  mv data $PKG/usr/share/$name
   cat > $PKG/usr/bin/$name <<EOF
 #!/bin/sh
 
-FRETSONFIRE_PATH=/usr/share/$name
+FRETSONFIRE_PATH=/usr/share/$name/lib
 
 export LD_LIBRARY_PATH=\$LD_LIBRARY_PATH:\$FRETSONFIRE_PATH
 cd \$FRETSONFIRE_PATH
-./FretsOnFire.bin \$@
+python FretsOnFire.py "\$@"
 cd -
 
 # End of file
 EOF
   chmod 0755 $PKG/usr/bin/$name
+  find $PKG -type f -name 'setup*' -or -name 'Makefile' -delete
+  find $PKG -type f -name '*.svg' -exec \
+    sed 's|sodipodi:docbase=.*|sodipodi:docbase=/usr/share/fretsonfire/data|g' -i {} \;
 }
