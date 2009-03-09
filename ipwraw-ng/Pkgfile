@@ -1,7 +1,7 @@
 # Description: Enhanced Injection driver for Intel ipw3945
 # URL: http://homepages.tu-darmstadt.de/~p_larbig/wlan/
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on: openssl
 
 name=ipwraw-ng

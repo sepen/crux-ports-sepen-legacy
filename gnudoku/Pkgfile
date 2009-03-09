@@ -1,7 +1,7 @@
 # Description: GNUDoku is a free program for creating and solving Su Doku puzzles.
 # URL: http://icculus.org/~jcspray/GNUDoku/
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on: xorg-libx11,gtkmm
 
 name=gnudoku

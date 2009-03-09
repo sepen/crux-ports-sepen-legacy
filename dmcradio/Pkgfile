@@ -1,7 +1,7 @@
 # Description:  ncurses-based console program for radio tuner cards supported by the Video4Linux system.
 # URL:          http://dmcradio.sourceforge.net/
-# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer:   Jose V Beneyto, sepen at crux dot nu
+# Packager:     Jose V Beneyto, sepen at crux dot nu
 # Depends on:   ncurses
 
 name=dmcradio

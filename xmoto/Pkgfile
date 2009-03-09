@@ -1,6 +1,6 @@
 # Description: a challenging 2D motocross platform game, where physics play an all important role in the gameplay
 # URL: http://xmoto.tuxfamily.org
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
 # Packager: sten, nick dot steeves at shaw dot ca
 # Depends on: mesa3d, lua, ode, sdl_mixer, sdl_net, sdl_ttf
 

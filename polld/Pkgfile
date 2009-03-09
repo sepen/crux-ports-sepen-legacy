@@ -1,7 +1,7 @@
 # Description: This is simple daemon which periodically opens files (defined in /etc/polld). I use this for scanning partitions in card reader, which does not report card insertion/removal.
 # URL: http://cihar.com/software/polld/
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on:
 
 name=polld

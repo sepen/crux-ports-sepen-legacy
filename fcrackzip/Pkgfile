@@ -1,7 +1,7 @@
 # Description: 	fcrackzip is a zip password cracker, similar to fzc, zipcrack and others.
 # URL: 		http://www.goof.com/pcg/marc/fcrackzip.html
-# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer:   Jose V Beneyto, sepen at crux dot nu
+# Packager:     Jose V Beneyto, sepen at crux dot nu
 # Depends on:
 
 name=fcrackzip

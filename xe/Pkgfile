@@ -1,7 +1,7 @@
 # Description: Multi System Emulator that emulates many console and handheld video game systems of the past.
 # URL: http://www.xe-emulator.com/
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on: gtk
 
 name=xe

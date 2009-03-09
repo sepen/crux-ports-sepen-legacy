@@ -1,7 +1,7 @@
 # Description: 	Python instantaneous mail videoconference based on Jabber protocol.
 # URL: 		http://www.polinux.upv.es/drupal/pymeet/
-# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer:   Jose V Beneyto, sepen at crux dot nu
+# Packager:     Jose V Beneyto, sepen at crux dot nu
 # Depends on: 	python-imaging,wxpython,wxwidgets,pyjabber,pyv4l
 
 name=pymeet

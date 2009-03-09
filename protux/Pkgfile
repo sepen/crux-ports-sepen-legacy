@@ -1,7 +1,7 @@
 # Description: complete Digital Media Production tool, or Digital Media Workstation.
 # URL: http://protux.sourceforge.net/
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on: xorg,jdk
 
 name=protux

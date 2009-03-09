@@ -1,7 +1,7 @@
 # Description: Editor for manipulating PDF documents. GUI version + commandline interface.
 # URL: http://pdfedit.petricek.net/
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on: qt3
 
 name=pdfedit

@@ -1,7 +1,7 @@
 # Description: BlueJ is an integrated Java environment specifically designed for introductory teaching
 # URL: http://www.bluej.org/
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on: xorg,jdk
 
 name=bluej

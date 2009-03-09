@@ -1,7 +1,7 @@
 # Description: Avant Window Navigator (Awn) is a dock-like bar which sits at the bottom of the screen.
 # URL: https://launchpad.net/awn
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on: thunar libwnck pygtk pyxdg
 
 name=awn

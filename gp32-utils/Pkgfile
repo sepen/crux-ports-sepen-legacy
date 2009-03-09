@@ -1,7 +1,7 @@
 # Description: Collection of utilities for the GP32 developer
 # URL: http://www.scaramanga.co.uk/gp32/
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on:
 
 name=gp32-utils

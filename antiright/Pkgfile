@@ -1,7 +1,7 @@
 # Description: Antiright Configuration Environment.
 # URL: http://www.nongnu.org/antiright/
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on: gtkshell,gshterm
 
 name=antiright

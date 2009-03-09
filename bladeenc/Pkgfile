@@ -1,7 +1,7 @@
 # Description:  BladeEnc is a free cross-platform MP3 encoder released under the LGPL
 # URL:          http://bladeenc.mp3.no/
-# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer:   Jose V Beneyto, sepen at crux dot nu
+# Packager:     Jose V Beneyto, sepen at crux dot nu
 # Depends on:   
 
 name=bladeenc

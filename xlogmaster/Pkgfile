@@ -1,7 +1,7 @@
 # Description:  Xlogmaster is a program that lets you monitor everything that's going on on your system in a very quick and comfortable way.
 # URL:          http://www.gnu.org/software/xlogmaster/
-# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer:   Jose V Beneyto, sepen at crux dot nu
+# Packager:     Jose V Beneyto, sepen at crux dot nu
 # Depends on:   gtk
 
 name=xlogmaster

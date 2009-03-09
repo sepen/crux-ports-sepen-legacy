@@ -1,7 +1,7 @@
 # Description:  cross-platform GUI front-end for the Subversion revision system
 # URL:          http://rapidsvn.tigris.org/
-# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer:   Jose V Beneyto, sepen at crux dot nu
+# Packager:     Jose V Beneyto, sepen at crux dot nu
 # Depends on:   autogen,libtool,subversion,wxwidgets
 
 name=rapidsvn

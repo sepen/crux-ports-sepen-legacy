@@ -1,7 +1,7 @@
 # Description: Yet another HTML tag parser by pure Perl implementation
 # URL: http://search.cpan.org/~kawasaki/HTML-TagParser-0.14/
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on: p5-uri-fetch
 
 name=p5-html-tagparser

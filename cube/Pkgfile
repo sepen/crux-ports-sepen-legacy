@@ -1,7 +1,7 @@
 # Description:  Cube is an open source multiplayer and singleplayer first person 3d shooter game
 # URL: 		http://www.cubeengine.com
-# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer:   Jose V Beneyto, sepen at crux dot nu
+# Packager:     Jose V Beneyto, sepen at crux dot nu
 # Depends on: 	mesa3d,sdl_mixer,sdl_image
 
 name=cube

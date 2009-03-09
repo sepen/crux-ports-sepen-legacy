@@ -1,7 +1,7 @@
 # Description:  Gambas QT editor with syntax highlighting component
 # URL:          http://gambasdl.sourceforge.net/
-# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer:   Jose V Beneyto, sepen at crux dot nu
+# Packager:     Jose V Beneyto, sepen at crux dot nu
 # Depends on:   gambas-gb-qt
 
 name=gambas-gb-qt-editor

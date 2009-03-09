@@ -1,7 +1,7 @@
 # Description: 	Python bindings for video4linux
 # URL: 		http://pyv4ldl.sourceforge.net/
-# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer:   Jose V Beneyto, sepen at crux dot nu
+# Packager:     Jose V Beneyto, sepen at crux dot nu
 # Depends on: 	python
 
 name=pyv4l

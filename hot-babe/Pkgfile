@@ -1,7 +1,7 @@
 # Description: Small graphical utility which displays the system activity in a very special way.
 # URL: http://dindinx.net/hotbabe/
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on: gtk
 
 name=hot-babe

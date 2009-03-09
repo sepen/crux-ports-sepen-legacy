@@ -1,7 +1,7 @@
 # Description: SDL port of the classic computer game "Sopwith"
 # URL: http://sdl-sopwith.sourceforge.net/index.shtml
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on: libsdl
 
 name=sopwith

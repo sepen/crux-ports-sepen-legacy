@@ -1,7 +1,7 @@
 # Description: 	Python library that is targeted to provide easy scripting with Jabber
 # URL: 		http://xmpppydl.sourceforge.net/
-# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer:   Jose V Beneyto, sepen at crux dot nu
+# Packager:     Jose V Beneyto, sepen at crux dot nu
 # Depends on: 	python
 
 name=pyxmpp

@@ -1,7 +1,7 @@
 # Description:  DarkerIRC is a small chat application for websites, allowing you to communicate with your visitors.
 # URL:          http://pitr.net/darkerirc/
-# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer:   Jose V Beneyto, sepen at crux dot nu
+# Packager:     Jose V Beneyto, sepen at crux dot nu
 # Depends on:   
 
 name=darkerirc

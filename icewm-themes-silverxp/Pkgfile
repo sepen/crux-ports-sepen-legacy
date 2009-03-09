@@ -1,7 +1,7 @@
 # Description:  A theme for IceWM window manager inspired by the Silver theme of WindowsXP.
 # URL:          http://sourceforge.net/projects/icewmsilverxp/
-# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer:   Jose V Beneyto, sepen at crux dot nu
+# Packager:     Jose V Beneyto, sepen at crux dot nu
 # Depends on:   
 
 name=icewm-themes-silverxp

@@ -1,7 +1,7 @@
 # Description: 	F1 extra tracks for Racer
 # URL: 		http://www.racer-xtreme.com/track.php?tc=7
-# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer:   Jose V Beneyto, sepen at crux dot nu
+# Packager:     Jose V Beneyto, sepen at crux dot nu
 # Depends on: 	racer
 
 name=racer-tracks-f1

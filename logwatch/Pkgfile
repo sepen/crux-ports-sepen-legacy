@@ -1,7 +1,7 @@
 # Description: Logwatch is a customizable log analysis system.
 # URL: http://www.logwatch.org
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on: perl 
 
 name=logwatch

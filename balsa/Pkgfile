@@ -1,7 +1,7 @@
 # Description:  e-mail client for GNOME, highly configurable and incorporating all the features you would expect in a robust mail client.
 # URL:          http://balsa.gnome.org/
-# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer:   Jose V Beneyto, sepen at crux dot nu
+# Packager:     Jose V Beneyto, sepen at crux dot nu
 # Depends on:   gtk,aspell,libpcre,libesmtp
 name=balsa
 version=2.3.13

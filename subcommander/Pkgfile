@@ -1,7 +1,7 @@
 # Description: qt based multiplatform subversion client, diff & merge tool.
 # URL: http://subcommander.tigris.org/
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on: qt3,subversion,boost
 
 name=subcommander

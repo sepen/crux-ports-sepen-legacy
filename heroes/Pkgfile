@@ -1,7 +1,7 @@
 # Description:  Heroes is similar to the "Tron" and "Nibbles" games of yore, but includes many graphical improvements and new game feature
 # URL:          http://heroesdl.sourceforge.net/
-# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer:   Jose V Beneyto, sepen at crux dot nu
+# Packager:     Jose V Beneyto, sepen at crux dot nu
 # Depends on:   
 
 name=heroes

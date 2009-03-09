@@ -1,7 +1,7 @@
 # Description: Funny football game in 3D-comic-style
 # URL: http://www.bolzplatz2006.de/en/index.php
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on: jdk,swig
 
 name=slam-soccer

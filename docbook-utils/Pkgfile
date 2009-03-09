@@ -1,7 +1,7 @@
 # Description: collection of utility scripts used to convert and analyze SGML.
 # URL: http://www.linuxfromscratch.org/blfs/view/stable/pst/docbook-utils.html
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on: docbook-xsl openjade
 
 name=docbook-utils

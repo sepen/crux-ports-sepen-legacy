@@ -1,7 +1,7 @@
 # Description: Command line tool to fetch files from a web site using HTTP.
 # URL: http://tony.aiu.to/sa/webfetch/
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on: openssl
 
 name=webfetch

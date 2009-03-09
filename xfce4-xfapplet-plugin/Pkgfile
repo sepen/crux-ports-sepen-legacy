@@ -1,7 +1,7 @@
 # Description: Plugin which allows one to use applets designed for the Gnome Panel inside the Xfce Panel.
 # URL: http://goodies.xfce.org/projects/panel-plugins/xfce4-xfapplet-plugin
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on: xfce4-panel,
 # Group: xfce4
 

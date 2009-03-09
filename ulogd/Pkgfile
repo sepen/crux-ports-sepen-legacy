@@ -1,7 +1,7 @@
 # Description: userspace logging daemon for netfilter/iptables related logging.
 # URL: http://www.netfilter.org/projects/ulogd/
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on: libnetfilter_log,libnetfilter_conntrack
 
 name=ulogd

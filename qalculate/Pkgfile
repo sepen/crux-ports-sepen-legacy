@@ -1,7 +1,7 @@
 # Description: multi-purpose desktop calculator for GNU/Linux
 # URL: http://qalculate.sourceforge.net/
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on: libqalculate,libglade,scrollkeeper
 
 name=qalculate

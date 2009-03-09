@@ -1,7 +1,7 @@
 # Description: analog clock displaying the system-time
 # URL: http://macslow.thepimp.net/?page_id=23
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on: librsvg
 
 name=cairo-clock

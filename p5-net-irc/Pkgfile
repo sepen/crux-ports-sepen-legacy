@@ -1,7 +1,7 @@
 # Description: 	Perl interface to the Internet Relay Chat protocol 
 # URL: 		http://search.cpan.org/~jmuhlich/Net-IRC-0.75/
-# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer:   Jose V Beneyto, sepen at crux dot nu
+# Packager:     Jose V Beneyto, sepen at crux dot nu
 # Depends on:   p5-net
 
 name=p5-net-irc

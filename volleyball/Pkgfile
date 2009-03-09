@@ -1,7 +1,7 @@
 # Description:  A game similar to GNU Arcade Volleyball
 # URL:          http://www.losersjuegos.com.ar/juegos/volleyball/volleyball.php
-# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer:   Jose V Beneyto, sepen at crux dot nu
+# Packager:     Jose V Beneyto, sepen at crux dot nu
 # Depends on:   sdl_image
 
 name=volleyball

@@ -1,7 +1,7 @@
 # Description: basic front-end for gplink
 # URL: http://noshir.free.fr/gp32/gplink-tk/
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on: gplink, tk
 
 name=gplink-tk

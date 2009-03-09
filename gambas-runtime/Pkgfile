@@ -1,7 +1,7 @@
 # Description:  Runtime for Gambas. A free development environment based on a Basic interpreter with object extensions like vbasic
 # URL:          http://gambasdl.sourceforge.net/
-# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer:   Jose V Beneyto, sepen at crux dot nu
+# Packager:     Jose V Beneyto, sepen at crux dot nu
 # Depends on:   
 
 name=gambas-runtime

@@ -1,7 +1,7 @@
 # Description: A Linux mouse driver for the Wii remote that doesn't need Python or uniput.
 # URL: http://sourceforge.net/projects/wld
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on: bluez-libs
 
 name=wiimote-linux-driver

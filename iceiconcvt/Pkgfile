@@ -1,7 +1,7 @@
 # Description:  IceWM icons convertor
 # URL:          http://icecc.sourceforge.net/#icecursor
-# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer:   Jose V Beneyto, sepen at crux dot nu
+# Packager:     Jose V Beneyto, sepen at crux dot nu
 # Depends on:   pyqt
 
 name=iceiconcvt

@@ -1,7 +1,7 @@
 # Description: Dockapp mixer for OSS or ALSA.
 # URL: http://www.ne.jp/asahi/linux/timecop/#wmix
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on: xorg-libx11
 
 name=wmix

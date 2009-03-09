@@ -1,7 +1,7 @@
 # Description: 	Open Mortal is a parody of the once popular coin-up fighting game, Mortal Kombat.
 # URL: 		http://openmortaldl.sourceforge.net/
-# Maintainer:   Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager:     Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer:   Jose V Beneyto, sepen at crux dot nu
+# Packager:     Jose V Beneyto, sepen at crux dot nu
 # Depends on:   sdl_image,sdl_mixer,sdl_net
 #
 

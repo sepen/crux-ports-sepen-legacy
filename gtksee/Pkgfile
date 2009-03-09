@@ -1,7 +1,7 @@
 # Description: Simple image viewer similar to popular image viewer ACDSee
 # URL: http://gtksee.berlios.de/
-# Maintainer: Jose V Beneyto, sepen at users dot sourceforge dot net
-# Packager: Jose V Beneyto, sepen at users dot sourceforge dot net
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on: gtk
 
 name=gtksee
