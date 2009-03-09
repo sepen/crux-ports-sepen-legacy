@@ -1,0 +1,16 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/kietol
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/kietol/
+-rw-r--r--	root/root	usr/lib/kietol/control.pyc
+-rw-r--r--	root/root	usr/lib/kietol/kietol.pyc
+-rw-r--r--	root/root	usr/lib/kietol/menu.pyc
+-rw-r--r--	root/root	usr/lib/kietol/mplayer.pyc
+-rw-r--r--	root/root	usr/lib/kietol/playlist.pyc
+-rw-r--r--	root/root	usr/lib/kietol/prefs.pyc
+-rw-r--r--	root/root	usr/lib/kietol/remote.pyc
+-rw-r--r--	root/root	usr/lib/kietol/systray.pyc
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/pixmaps/
+-rw-r--r--	root/root	usr/share/pixmaps/kietol.png
