@@ -5,14 +5,14 @@
 # Depends on: xorg,jdk
 
 name=bluej
-version=2.2.0
+version=2.5.0
 release=1
-source=(http://www.bluej.org/download/files/$name-220.jar \
+source=(http://www.bluej.org/download/files/$name-${version//./}.jar \
         $name.sh)
 
 build() {
   export PATH=$PATH:/usr/lib/java/bin
-  jar xf $name-220.jar $name-dist.jar
+  jar xf $name-${version//./}.jar $name-dist.jar
   jar xf $name-dist.jar
   install -d $PKG/usr/lib/$name/lib
   mv lib/*.* $PKG/usr/lib/$name/lib
