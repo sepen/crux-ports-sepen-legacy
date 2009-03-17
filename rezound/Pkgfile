@@ -1,17 +1,17 @@
 # Description: ReZound aims to be a stable, open source, and graphical audio file editor.
 # URL: http://rezound.sourceforge.net/
-# Maintainer: Jose V Beneyto, joberui at ei dot upv dot es
-# Packager: Jose V Beneyto, joberui at ei dot upv dot es
-# Depends on: jack-audio-connection-kit,libvorbis,fox,ladspa
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
+# Depends on: jack-audio-connection-kit libvorbis fox ladspa
 
 name=rezound
 version=0.12.3beta
 release=2
-source=(http://dl.sourceforge.net/sourceforge/${name}/${name}-${version}.tar.gz \
-        ${name}.desktop)
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz \
+        $name.desktop)
 
 build() {
-  cd ${name}-${version}
+  cd $name-$version
   ./configure --prefix=/usr \
               --disable-oss \
               --disable-alsatest \
@@ -22,9 +22,8 @@ build() {
               --disable-rpath \
               --disable-nls
   make
-  make DESTDIR=${PKG} install
-  install -D -m 0644 ${PKG}/usr/share/rezound/icon_logo_32.gif ${PKG}/usr/share/pixmaps/${name}.gif
-  rm -f ${PKG}/usr/share/rezound/impulse_hall1.wav
-  install -D -m 0644 ${SRC}/${name}.desktop ${PKG}/usr/share/applications/${name}.desktop
-  rm -rf ${PKG}/usr/doc
+  make DESTDIR=$PKG install
+  install -D -m 0644 $PKG/usr/share/rezound/icon_logo_32.gif $PKG/usr/share/pixmaps/$name.gif
+  install -D -m 0644 $SRC/$name.desktop $PKG/usr/share/applications/$name.desktop
+  rm -rf $PKG/usr/doc
 }
