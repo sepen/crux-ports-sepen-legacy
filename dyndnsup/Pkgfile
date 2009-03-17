@@ -5,7 +5,7 @@
 # Depends on: net-tools, curl
 
 name=dyndnsup
-version=0.2.3
+version=0.2.5.1
 release=1
 source=(http://mikeux.dyndns.org/releases/$name-$version.tar.bz2)
 
