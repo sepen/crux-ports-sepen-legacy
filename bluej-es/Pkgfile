@@ -5,13 +5,13 @@
 # Depends on: bluej
 
 name=bluej-es
-version=2.2.0
+version=2.5.0
 release=1
-source=(http://www.bluej.org/download/files/bluej-220.jar)
+source=(http://www.bluej.org/download/files/bluej-${version//./}.jar)
 
 build() {
   export PATH=$PATH:/usr/lib/java/bin
-  jar xf bluej-220.jar bluej-dist.jar
+  jar xf bluej-${version//./}.jar bluej-dist.jar
   jar xf bluej-dist.jar
   install -d $PKG/usr/lib/bluej/lib/spanish
   mv lib/spanish $PKG/usr/lib/bluej/lib
