@@ -1,19 +1,19 @@
-# Description:  Examples for Bluej
-# URL:          http://www.bluej.org/
-# Maintainer:   Jose V Beneyto, sepen at crux dot nu
-# Packager:     Jose V Beneyto, sepen at crux dot nu
-# Depends on:   bluej
+# Description: Examples for Bluej
+# URL: http://www.bluej.org/
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
+# Depends on: bluej
 
 name=bluej-examples
-version=2.1.2
-release=2
-source=(http://www.bluej.org/download/files/bluej-212.jar)
+version=2.5.0
+release=1
+source=(http://www.bluej.org/download/files/bluej-${version//./}.jar)
 
 build() {
-        export PATH=$PATH:/usr/lib/java/bin
-        jar xf bluej-212.jar bluej-dist.jar
-        jar xf bluej-dist.jar
-        install -d $PKG/usr/lib/bluej
-        mv examples $PKG/usr/lib/bluej
-	rm $PKG/usr/lib/bluej/examples/*/README.TXT
+  export PATH=$PATH:/usr/lib/java/bin
+  jar xf bluej-${version//./}.jar bluej-dist.jar
+  jar xf bluej-dist.jar
+  install -d $PKG/usr/lib/bluej
+  mv examples $PKG/usr/lib/bluej
+  rm $PKG/usr/lib/bluej/examples/*/README.TXT
 }
