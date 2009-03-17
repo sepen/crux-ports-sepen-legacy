@@ -1,7 +1,7 @@
-# Description:  Program that scan a configure.in and generate a bootstrap script which will then be used to create a configure script.
-# URL:          http://bootstrapper.sourceforge.net/
-# Maintainer:   Jose V Beneyto, sepen at crux dot nu
-# Packager:     Jose V Beneyto, sepen at crux dot nu
+# Description: Program that scan a configure.in and generate a bootstrap script which will then be used to create a configure script.
+# URL: http://bootstrapper.sourceforge.net/
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
 # Depends on:   
 
 name=bootstrapper
