@@ -1,0 +1,21 @@
+# Description: A multitrack guitar tablature editor and player
+# URL: http://www.tuxguitar.com.ar/
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
+# Depends on: jre, gtk
+
+name=tuxguitar
+version=1.1
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version-linux-x86.tar.gz \
+        $name.desktop $name)
+
+build() {
+  install -d $PKG/usr/{bin,share/{applications,$name}}
+  cp -r $name-$version-linux-x86/* $PKG/usr/share/$name
+  cd $PKG/usr/share/$name/lib
+  unzip swt.jar libswt-*
+  zip swt.jar -d libswt-*
+  install -D -m 0755 $SRC/$name $PKG/usr/bin/$name
+  install -D -m 0644 $SRC/$name.desktop $PKG/usr/share/applications/$name.desktop
+}
