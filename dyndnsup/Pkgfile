@@ -2,10 +2,10 @@
 # URL: http://mikeux.dyndns.org/
 # Maintainer: Jose V Beneyto, sepen at crux dot nu
 # Packager: Jose V Beneyto, sepen at crux dot nu
-# Depends on: net-tools, curl
+# Depends on: net-tools, curl, gawk
 
 name=dyndnsup
-version=0.2.5.1
+version=0.2.6
 release=1
 source=(http://mikeux.dyndns.org/releases/$name-$version.tar.bz2)
 
