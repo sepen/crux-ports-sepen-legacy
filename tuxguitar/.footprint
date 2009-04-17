@@ -4,12 +4,9 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/tuxguitar.desktop
+drwxr-xr-x	root/root	usr/share/pixmaps/
+-rwxr-xr-x	root/root	usr/share/pixmaps/tuxguitar.png
 drwxr-xr-x	root/root	usr/share/tuxguitar/
-drwxr-xr-x	root/root	usr/share/tuxguitar/doc/
--rw-r--r--	root/root	usr/share/tuxguitar/doc/AUTHORS
--rw-r--r--	root/root	usr/share/tuxguitar/doc/CHANGES
--rw-r--r--	root/root	usr/share/tuxguitar/doc/LICENSE
--rw-r--r--	root/root	usr/share/tuxguitar/doc/README
 drwxr-xr-x	root/root	usr/share/tuxguitar/lib/
 -rw-r--r--	root/root	usr/share/tuxguitar/lib/itext.jar
 -rw-r--r--	root/root	usr/share/tuxguitar/lib/libswt-atk-gtk-3536.so

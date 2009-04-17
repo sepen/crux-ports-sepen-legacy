@@ -11,11 +11,13 @@ source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version-linux-x86.tar
         $name.desktop $name)
 
 build() {
-  install -d $PKG/usr/{bin,share/{applications,$name}}
-  cp -r $name-$version-linux-x86/* $PKG/usr/share/$name
+  install -d $PKG/usr/{bin,share/{applications,$name,pixmaps}}
+  cp -r $name-$version-linux-x86/{lib,share,$name*} $PKG/usr/share/$name
   cd $PKG/usr/share/$name/lib
   unzip swt.jar libswt-*
   zip swt.jar -d libswt-*
   install -D -m 0755 $SRC/$name $PKG/usr/bin/$name
   install -D -m 0644 $SRC/$name.desktop $PKG/usr/share/applications/$name.desktop
+  install -D $PKG/usr/share/$name/share/skins/blue_serious/icon.png \
+    $PKG/usr/share/pixmaps/$name.png
 }
