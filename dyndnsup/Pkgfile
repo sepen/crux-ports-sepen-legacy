@@ -13,7 +13,7 @@ build() {
   cd $name-$version
   make install DESTDIR=$PKG \
                BINDIR=/usr/sbin \
-               ETCDIR=/usr/etc/$name \
+               ETCDIR=/etc/$name \
                MANDIR=/usr/man \
                SHEEBANG=/usr/bin/bash
 }

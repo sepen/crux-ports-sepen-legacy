@@ -1,8 +1,8 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/dyndnsup/
+-rw-------	root/root	etc/dyndnsup/ck4dns.conf.sample
+-rw-------	root/root	etc/dyndnsup/dyndnsup.conf.sample
 drwxr-xr-x	root/root	usr/
-drwxr-xr-x	root/root	usr/etc/
-drwxr-xr-x	root/root	usr/etc/dyndnsup/
--rw-------	root/root	usr/etc/dyndnsup/ck4dns.conf.sample
--rw-------	root/root	usr/etc/dyndnsup/dyndnsup.conf.sample
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
 -rw-r--r--	root/root	usr/man/man1/dyndnsup.1.gz
