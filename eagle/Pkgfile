@@ -1,0 +1,26 @@
+# Description: Easily Applicable Graphical Layout Editor
+# URL: http://cadsoft.de/
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
+# Depends on: xorg-libxrandr, zlib, libjpeg, xorg-libxrender, xorg-libxcursor, freetype, expat, fontconfig, xorg-libxau, libpng, xorg-libxi, xorg-libxft
+
+name=eagle
+version=5.5.0
+release=1
+source=(ftp://ftp.cadsoft.de/$name/program/5.5/$name-lin-$version.run)
+
+build() {
+  install -d $PKG/usr/{bin,share}
+  chmod +x $name-lin-$version.run
+  ./$name-lin-$version.run $PKG/usr/share
+  mv $PKG/usr/share/{$name-$version,$name}
+  cat > $PKG/usr/bin/$name <<EOF
+#!/bin/sh
+
+export PATH=\$PATH:/usr/share/$name/bin
+eagle "\$@"
+
+# End of file
+EOF
+  chmod 0755 $PKG/usr/bin/$name
+}

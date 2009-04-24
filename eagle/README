@@ -1,0 +1,30 @@
+
+README for eagle
+
+
+PRECAUTION
+
+  On some systems EAGLE 5.x can have problems with the graphics performance.
+  For solving these issues, please check the file xorg.conf. If it is the case
+  that the composite extension is enabled or not explicitly disabled in the
+  file, change the corresponding section or add the following lines:
+
+    Section "Extensions"
+         Option "Composite" "Disable"
+    EndSection
+
+  Further information can be found at
+  https://bugzilla.novell.com/show_bug.cgi?id=227337
+
+  Disabling the Composite Extension on Linux systems that work with xorg-x11
+  packages of version 7.3 also avoids "X Error" messages that are shown while
+  starting or closing EAGLE 5.x in a bash window.
+
+  In the case the display gets corrupted when scrolling up or down in one of
+  the Editor windows or in the EAGLE Control Panel, set the environment
+  variable XLIB_SKIP_ARGB_VISUALS to 1.
+  This can be done, for example, with the help of a shell script:
+
+    #!/bin/sh
+    export XLIB_SKIP_ARGB_VISUALS=1 
+    /usr/bin/eagle
