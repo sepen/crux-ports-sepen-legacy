@@ -1,8 +1,8 @@
 # Description: Meta ports driver
-# URL: http://trac.mikeux.dyndns.org/kietol/wiki
+# URL: http://trac.mikeux.dyndns.org/crux.sepen/browser/trunk/tools/mpup
 # Maintainer: Jose V Beneyto, sepen at crux dot nu
 # Packager: Jose V Beneyto, sepen at crux dot nu
-# Depends on: pygtk mplayer
+# Depends on: ports
 
 name=mpup
 version=svn
