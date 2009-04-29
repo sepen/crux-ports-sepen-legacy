@@ -1,0 +1,22 @@
+# Description: Meta ports driver
+# URL: http://trac.mikeux.dyndns.org/kietol/wiki
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
+# Depends on: pygtk mplayer
+
+name=mpup
+version=svn
+release=1
+source=()
+
+build() {
+  if [ -d trunk ]; then
+    svn up trunk
+  else
+    svn co svn://mikeux.dyndns.org/crux.sepen/trunk/tools/mpup
+  fi
+  install -D -m 0755 $name/$name $PKG/etc/ports/drivers/$name
+  install -D -m 0644 $name/mp.$name $PKG/etc/ports/mp.$name
+  install -d -m 0755 $PKG/var/lib/$name
+  touch $PKG/var/lib/$name/mp.list
+}

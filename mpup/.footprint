@@ -1,0 +1,9 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/ports/
+drwxr-xr-x	root/root	etc/ports/drivers/
+-rwxr-xr-x	root/root	etc/ports/drivers/mpup
+-rw-r--r--	root/root	etc/ports/mp.mpup
+drwxr-xr-x	root/root	var/
+drwxr-xr-x	root/root	var/lib/
+drwxr-xr-x	root/root	var/lib/mpup/
+-rw-r--r--	root/root	var/lib/mpup/mp.list (EMPTY)
