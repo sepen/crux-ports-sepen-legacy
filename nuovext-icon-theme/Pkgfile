@@ -1,0 +1,17 @@
+# Description: Icon theme
+# URL: http://nuovext.pwsp.net/
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
+# Depends on:
+
+name=nuovext-icon-theme
+version=2.2
+release=1
+source=(http://nuovext.pwsp.net/files/nuoveXT.$version.tar.bz2)
+
+build() {
+  install -d $PKG/usr/share/icons
+  rm nuoveXT.$version/*~
+  mv nuoveXT.$version $PKG/usr/share/icons
+}
+
