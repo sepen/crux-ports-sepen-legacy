@@ -1,0 +1,21 @@
+#!/bin/sh
+#
+# /etc/rc.d/rsyslogd: start/stop rsyslog logging daemons
+#
+
+case $1 in
+start)
+        /usr/sbin/rsyslogd -c3
+        ;;
+stop)
+        /usr/bin/killall rsyslogd
+        ;;
+restart)
+        $0 stop
+        sleep 2
+        $0 start
+        ;;
+*)
+        echo "usage: $0 [start|stop|restart]"
+        ;;
+esac
