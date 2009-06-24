@@ -5,7 +5,7 @@
 
 case $1 in
 start)
-        /usr/sbin/rsyslogd -c3
+        /usr/sbin/rsyslogd
         ;;
 stop)
         /usr/bin/killall rsyslogd
