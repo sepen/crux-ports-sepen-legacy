@@ -5,15 +5,15 @@
 # Depends on: glibc zlib
 
 name=rsyslog
-version=3.20.6
-release=3
+version=4.2.0
+release=1
 source=(http://download.$name.com/$name/$name-$version.tar.gz \
         $name.conf $name.rc rotatelog syslog)
 
 build() {
   cd $name-$version
   ./configure --prefix=/usr \
-              --mandir=/usr/man 
+              --mandir=/usr/man
   make
   make DESTDIR=$PKG install
   install -D -m 0755 $SRC/$name.rc $PKG/etc/rc.d/${name}d

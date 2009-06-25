@@ -1,5 +1,5 @@
 b379693c8b89c99994e58efd49f98a71  rotatelog
-38eee660a3a3d4a2821a9c35916be6f7  rsyslog-3.20.6.tar.gz
-7bbc48e38c40eb62bf7f67e9577c3c0f  rsyslog.conf
-e8a32dbd74d9570dbbd3f85f009bcc0b  rsyslog.rc
+c66650e961f23253fc926da5d35bd71f  rsyslog-4.2.0.tar.gz
+29b8b8fe5ed5069d62d1314ba0f55aee  rsyslog.conf
+959d0f103506f3e4786334e12bec5428  rsyslog.rc
 bf5c13b44ab9fa15cda9bfa9df9b584e  syslog
