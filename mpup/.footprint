@@ -6,3 +6,4 @@ drwxr-xr-x	root/root	etc/ports/drivers/
 drwxr-xr-x	root/root	var/
 drwxr-xr-x	root/root	var/lib/
 drwxr-xr-x	root/root	var/lib/mpup/
+-rw-r--r--	root/root	var/lib/mpup/meta.list
