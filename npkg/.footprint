@@ -1,0 +1,6 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/npkg
+drwxr-xr-x	root/root	var/
+drwxr-xr-x	root/root	var/cache/
+drwxr-xr-x	root/root	var/cache/npkg/

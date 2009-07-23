@@ -1,0 +1,15 @@
+# Description: Network abstraction layer for pkgutils
+# URL: http://mikeux.dyndns.org/
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
+# Depends on: pkgutils wget bash
+
+name=npkg
+version=0.1
+release=1
+source=(http://mikeux.dyndns.org/releases/$name-$version.tar.bz2)
+
+build() {
+  install -d $PKG/var/cache/npkg
+  install -D -m 0755 $name-$version/$name $PKG/usr/bin/$name  
+}
