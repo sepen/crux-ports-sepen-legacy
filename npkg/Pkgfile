@@ -5,11 +5,12 @@
 # Depends on: pkgutils wget bash
 
 name=npkg
-version=0.1
+version=0.2
 release=1
 source=(http://mikeux.dyndns.org/releases/$name-$version.tar.bz2)
 
 build() {
   install -d $PKG/var/cache/npkg
-  install -D -m 0755 $name-$version/$name $PKG/usr/bin/$name  
+  install -D -m 0755 $name-$version/$name $PKG/usr/bin/$name
+  install -D -m 0644 $name-$version/$name.conf $PKG/etc/$name.conf
 }
