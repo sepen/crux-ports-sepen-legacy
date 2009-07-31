@@ -5,13 +5,13 @@
 # Depends on: sdl_image,sdl_mixer,sdl_ttf
 
 name=mmario
-version=1.5
-release=2
-source=(http://dl.sourceforge.net/sourceforge/$name/MegaMario_v1.5_w32_linux.zip \
+version=1.6c
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/MegaMario_v${version}_full.zip \
         Makefile.diff)
 
 build() {
   patch -p0 -i $SRC/Makefile.diff
-	make
+  make
   make DESTDIR=$PKG install
 }

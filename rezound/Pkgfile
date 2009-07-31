@@ -6,14 +6,15 @@
 
 name=rezound
 version=0.12.3beta
-release=2
+release=3
 source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz \
-        $name.desktop)
+        gcc43.patch flac.patch $name.desktop)
 
 build() {
   cd $name-$version
+  patch -p1 -i $SRC/gcc43.patch
+  patch -p1 -i $SRC/flac.patch
   ./configure --prefix=/usr \
-              --disable-oss \
               --disable-alsatest \
               --disable-portaudio \
               --enable-jack \
