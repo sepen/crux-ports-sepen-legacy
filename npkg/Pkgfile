@@ -5,7 +5,7 @@
 # Depends on: pkgutils wget bash
 
 name=npkg
-version=0.2
+version=0.2c
 release=1
 source=(http://mikeux.dyndns.org/releases/$name-$version.tar.bz2)
 
