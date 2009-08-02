@@ -1,0 +1,18 @@
+# Description: Full-screen X11 task-switcher
+# URL: http://thegraveyard.org/skippy.php
+# Maintainer: 
+# Packager: 
+# Depends on: xorg-libx11 xorg-libxinerama xorg-libxft xorg-libxrender xorg-libxcomposite xorg-libxdamage xorg-libxfixes imlib2
+
+name=skippy-xd
+version=0.5.0
+release=1
+source=(http://thegraveyard.org/files/$name-$version.tar.bz2 \
+        Makefile.patch)
+
+build() {
+  cd $name-$version
+  patch -p0 -i $SRC/Makefile.patch
+  make
+  make DESTDIR=$PKG install
+}
