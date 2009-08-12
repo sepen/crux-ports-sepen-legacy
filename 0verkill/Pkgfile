@@ -1,0 +1,20 @@
+# Description: 2D action deathmatch-like game in ASCII-ART
+# URL: http://artax.karlin.mff.cuni.cz/~brain/0verkill/
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
+# Depends on: 
+
+name=0verkill
+version=0.16
+release=1
+source=(http://artax.karlin.mff.cuni.cz/~brain/$name/release/$name-$version.tgz \
+        $name-$version.patch)
+
+build() {
+  cd $name-$version
+  patch -p1 -i $SRC/$name-$version.patch
+  ./configure --prefix=/usr \
+              --with-x
+  make
+  make DESTDIR=$PKG install
+}

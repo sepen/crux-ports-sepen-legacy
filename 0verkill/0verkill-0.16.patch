@@ -1,0 +1,81 @@
+diff -purN 0verkill-0.16.orig/0verkill.sh.in 0verkill-0.16/0verkill.sh.in
+--- 0verkill-0.16.orig/0verkill.sh.in	1970-01-01 01:00:00.000000000 +0100
++++ 0verkill-0.16/0verkill.sh.in	2009-08-12 19:31:20.435907796 +0200
+@@ -0,0 +1,21 @@
++#!/bin/bash
++
++APPNAME=$(basename $0)
++DATAROOTDIR=@DATAROOTDIR@
++
++cd $DATAROOTDIR
++if [ $# -lt 1 ]; then
++  case $APPNAME in
++    0verkill) ./0verkill ;;
++    x0verkill) ./x0verkill ;;
++    *) exit 0 ;;
++  esac
++else
++  case $1 in
++    server|editor|xeditor|avi|bot) ./$@ ;;
++    *) exit 0 ;;
++  esac
++fi
++
++# End of file
++  
+diff -purN 0verkill-0.16.orig/Makefile.in 0verkill-0.16/Makefile.in
+--- 0verkill-0.16.orig/Makefile.in	2009-08-12 18:52:41.713637542 +0200
++++ 0verkill-0.16/Makefile.in	2009-08-12 19:44:17.891020901 +0200
+@@ -1,4 +1,10 @@
+-CFLAGS=@CFLAGS@ -O3 @X_CFLAGS@ -Wall -W -Wstrict-prototypes -Wno-parentheses -fomit-frame-pointer 
++DESTDIR=
++
++BINDIR=/usr/bin
++DATAROOTDIR=/usr/share/0verkill
++
++
++CFLAGS=@CFLAGS@ -O2 @X_CFLAGS@ -Wall -W -Wstrict-prototypes -Wno-parentheses -fomit-frame-pointer 
+ #-malign-functions=0
+ LDFLAGS=@LDFLAGS@
+ LIBS=@LIBS@ 
+@@ -6,10 +12,24 @@ XLIBS=@X_LIBS@
+ CC=@CC@
+ 
+ 
+-all: server 0verkill @X0VERKILL@ @XEDITOR@ editor test_server avi bot @XAVI@
++BINARIES=server 0verkill @X0VERKILL@ @XEDITOR@ editor test_server avi bot @XAVI@
++
++all: $(BINARIES) 0verkill.sh
++
++install:
++	@install -d -m 0755 $(DESTDIR)/{$(BINDIR),$(DATAROOTDIR)/{doc,grx,data}}
++	@install -m 0755 $(BINARIES) $(DESTDIR)/$(DATAROOTDIR)
++	@install -m 0755 0verkill.sh $(DESTDIR)/$(BINDIR)/0verkill
++	@if [ -f "x0verkill" ]; then ln -s 0verkill $(DESTDIR)/$(BINDIR)/x0verkill; fi
++	@install -m 0644 doc/*.txt $(DESTDIR)/$(DATAROOTDIR)/doc
++	@install -m 0644 grx/* $(DESTDIR)/$(DATAROOTDIR)/grx
++	@install -m 0644 data/* $(DESTDIR)/$(DATAROOTDIR)/data
+ 
+ clean:
+-	rm -f *.o server 0verkill editor test_server x0verkill xeditor avi xavi bot core
++	@rm -f *.o $(BINARIES)
++
++0verkill.sh: 0verkill.sh.in
++	@sed "s|@DATAROOTDIR@|$(DATAROOTDIR)|" 0verkill.sh.in > 0verkill.sh
+ 
+ bot.o: bot.c config.h sprite.h data.h cfg.h net.h hash.h time.h math.h getopt.h error.h
+ avi.o: avi.c console.h blit.h time.h help.h error.h
+diff -purN 0verkill-0.16.orig/configure.in 0verkill-0.16/configure.in
+--- 0verkill-0.16.orig/configure.in	2009-08-12 18:52:41.705635942 +0200
++++ 0verkill-0.16/configure.in	2009-08-12 18:59:50.982326078 +0200
+@@ -72,8 +72,8 @@ fi
+ 
+ if test "$with_x" = yes ; then
+ 	if test "$ac_cv_have_emx" = yes && test -n "$X11ROOT"; then
+-		CFLAGS="$CFLAGS -I$X11ROOT/XFree86/include"
+-		LDFLAGS="$LDFLAGS -L$X11ROOT/XFree86/lib"
++		CFLAGS="$CFLAGS -I/usr/include/X11"
++		LDFLAGS="$LDFLAGS -L/usr/lib/X11"
+ 	fi
+ 	AC_PATH_XTRA
+ 	dnl Replace `main' with a function in -lX11:
