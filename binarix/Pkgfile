@@ -1,0 +1,17 @@
+# Description: matrix styled linux console locker
+# URL: http://raffi.at/view/code/binarix
+# Maintainer: 
+# Packager: 
+# Depends on: 
+
+name=binarix
+version=0.2a
+release=1
+source=(http://raffi.at/code/$name-$version.tar.gz)
+
+build() {
+  cd $name
+  make CFLAGS="$CFLAGS"
+  install -d $PKG/usr/bin
+  make PREFIX=$PKG/usr install
+}
