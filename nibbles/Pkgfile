@@ -1,0 +1,18 @@
+# Description: Nibbles is a remake of the classic Snake/Nibbles game in ncurses
+# URL: http://www.earth.li/projectpurple/progs/nibbles.html
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
+# Depends on: ncurses
+
+name=nibbles
+version=0.0.4
+release=1
+source=(http://www.earth.li/projectpurple/files/$name-v$version.tar.gz \
+        $name-$version.patch)
+
+build() {
+  cd $name-v$version
+  patch -p1 -i $SRC/$name-$version.patch
+  make CFLAGS="$CFLAGS"
+  make DESTDIR=$PKG install
+}

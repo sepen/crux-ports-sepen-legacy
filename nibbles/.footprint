@@ -1,0 +1,17 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/nibbles
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/nibbles/
+drwxr-xr-x	root/root	usr/share/nibbles/levels/
+-rw-r--r--	root/root	usr/share/nibbles/levels/1.lev
+-rw-r--r--	root/root	usr/share/nibbles/levels/10.lev
+-rw-r--r--	root/root	usr/share/nibbles/levels/2.lev
+-rw-r--r--	root/root	usr/share/nibbles/levels/3.lev
+-rw-r--r--	root/root	usr/share/nibbles/levels/4.lev
+-rw-r--r--	root/root	usr/share/nibbles/levels/5.lev
+-rw-r--r--	root/root	usr/share/nibbles/levels/6.lev
+-rw-r--r--	root/root	usr/share/nibbles/levels/7.lev
+-rw-r--r--	root/root	usr/share/nibbles/levels/8.lev
+-rw-r--r--	root/root	usr/share/nibbles/levels/9.lev
+-rwxr-xr-x	root/root	usr/share/nibbles/nibbles

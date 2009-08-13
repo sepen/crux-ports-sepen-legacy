@@ -1,0 +1,116 @@
+diff -purN nibbles-v0.0.4.orig/Makefile nibbles-v0.0.4/Makefile
+--- nibbles-v0.0.4.orig/Makefile	2009-08-13 13:21:20.000000000 +0200
++++ nibbles-v0.0.4/Makefile	2009-08-13 13:55:54.000000000 +0200
+@@ -1,41 +1,28 @@
+-CC = gcc -Wall -g
++CC = gcc
++CFLAGS = -Wall -g
+ 
+ SRCS = player.c main.c loadMap.c cmdline.c ncdrawlib.c scoring.c 
+ OBJS = $(SRCS:.c=.o)
+ LIBS = -lncurses
+ 
+-INSTALL=/usr/bin/install -c
+-INSTALL_FOLDER=/usr/games
++DESTDIR=
++
++BINDIR=/usr/bin
++DATAROOTDIR=/usr/share/nibbles
+ 
+ all: nibbles
+ 
+ .c.o:
+-	$(CC) -c $*.c -o $*.o
++	$(CC) $(CFLAGS) -c $*.c -o $*.o
+ 
+ nibbles: $(OBJS)
+-	$(CC) $(LIBS) $(OBJS)  -o $@
++	$(CC) $(CFLAGS) $(LIBS) $(OBJS)  -o $@
+ 
+ clean: 
+ 	rm -f *~ *.o nibbles
+ 
+-install:
+-	$(INSTALL) nibbles $(INSTALL_FOLDER) -g games
+-	chmod g+s $(INSTALL_FOLDER)/nibbles
+-	touch /var/lib/games/nibbles.score
+-	chown root.games /var/lib/games/nibbles.score
+-	chmod 664 /var/lib/games/nibbles.score
+-	cp -a nibbles.levels $(INSTALL_FOLDER)
+-	chmod 644 $(INSTALL_FOLDER)/nibbles.levels/*
+-	chown root.games $(INSTALL_FOLDER)/nibbles.levels/*
+-
+-install-rpm:
+-	$(INSTALL) nibbles $(RPM_BUILD_ROOT)/$(INSTALL_FOLDER)
+-	touch $(RPM_BUILD_ROOT)/var/lib/games/nibbles.score
+-	chmod 664 $(RPM_BUILD_ROOT)/var/lib/games/nibbles.score
+-	cp -a nibbles.levels $(RPM_BUILD_ROOT)/$(INSTALL_FOLDER)
+-	chmod 644 $(RPM_BUILD_ROOT)/$(INSTALL_FOLDER)/nibbles.levels/*
+-
+-uninstall:
+-	rm $(INSTALL_FOLDER)/nibbles
+-	rm /var/lib/games/nibbles.score
+-	rm $(INSTALL_FOLDER)/nibbles.levels -rf
++install: nibbles nibbles.levels
++	install -d $(DESTDIR)/{$(BINDIR),$(DATAROOTDIR)/levels}
++	install -m 0755 nibbles $(DESTDIR)/$(DATAROOTDIR)
++	install -m 0644 nibbles.levels/* $(DESTDIR)/$(DATAROOTDIR)/levels
++	install -m 0755 nibbles.sh $(DESTDIR)/$(BINDIR)/nibbles
+diff -purN nibbles-v0.0.4.orig/main.c nibbles-v0.0.4/main.c
+--- nibbles-v0.0.4.orig/main.c	2009-08-13 13:21:20.000000000 +0200
++++ nibbles-v0.0.4/main.c	2009-08-13 14:03:00.000000000 +0200
+@@ -42,7 +42,7 @@ init_pair(7, COLOR_RED, COLOR_YELLOW);
+ init_pair(8, COLOR_YELLOW, COLOR_RED);
+ init_pair(9, COLOR_BLUE, COLOR_RED);
+ 
+-showCentreMessage(stdscr,"Nibble for Ncurses, Toby Jaffey, 1999");
++showCentreMessage(stdscr,"Nibbles by Toby Jaffey 1999");
+ 
+ drawMap(m,stdscr);
+ drawPlayer(p,stdscr);
+diff -purN nibbles-v0.0.4.orig/nibbles.h nibbles-v0.0.4/nibbles.h
+--- nibbles-v0.0.4.orig/nibbles.h	2009-08-13 13:21:20.000000000 +0200
++++ nibbles-v0.0.4/nibbles.h	2009-08-13 13:29:32.000000000 +0200
+@@ -39,9 +39,9 @@ typedef struct cell cell;
+ 
+ #define NUMLIVES	3
+ #define STARTLEN	4
+-#define LEVELDIR	"/usr/local/games/nibbles.levels/"
++#define LEVELDIR	"/usr/share/nibbles/levels/"
+ #define LEVELSUFFIX	".lev"
+-#define RCFILENAME	".nibblerc"
++#define RCFILENAME	".nibblesrc"
+ 
+ #define TIMEOUT		100000		// usleep() time on input
+ #define DELAYDEC	(15.0/16.0)	// speed factor between levels
+diff -purN nibbles-v0.0.4.orig/nibbles.sh nibbles-v0.0.4/nibbles.sh
+--- nibbles-v0.0.4.orig/nibbles.sh	1970-01-01 01:00:00.000000000 +0100
++++ nibbles-v0.0.4/nibbles.sh	2009-08-13 13:46:20.000000000 +0200
+@@ -0,0 +1,15 @@
++#!/bin/sh
++
++DATADIR=$HOME/.nibbles
++
++if [ ! -f "$DATADIR/score" ]; then
++  mkdir -p $DATADIR
++  touch $DATADIR/score
++fi
++
++cd /usr/share/nibbles
++./nibbles $@
++cd -
++
++# End of file
++
+diff -purN nibbles-v0.0.4.orig/scoring.h nibbles-v0.0.4/scoring.h
+--- nibbles-v0.0.4.orig/scoring.h	2009-08-13 13:21:20.000000000 +0200
++++ nibbles-v0.0.4/scoring.h	2009-08-13 14:05:24.000000000 +0200
+@@ -7,7 +7,7 @@
+ #include <time.h>
+ 
+ /* Default high score file location */
+-#define HIGHSCOREFILE "/var/lib/games/nibbles.score"
++#define HIGHSCOREFILE "~/.nibbles/score"
+ /* Max number of high scores we store */
+ #define MAXHIGHSCORES 20
+ 
