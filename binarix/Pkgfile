@@ -1,8 +1,8 @@
 # Description: matrix styled linux console locker
 # URL: http://raffi.at/view/code/binarix
-# Maintainer: 
-# Packager: 
-# Depends on: 
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
+# Depends on: ncurses glibc
 
 name=binarix
 version=0.2a
