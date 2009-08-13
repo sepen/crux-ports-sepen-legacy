@@ -1,0 +1,16 @@
+# Description: Space invaders-like game
+# URL: http://www.alessandropira.org/alienwave/aw.html
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
+# Depends on: ncurses
+
+name=alienwave
+version=0.3.0
+release=1
+source=(http://www.alessandropira.org/$name/$name-$version.tar.gz)
+
+build() {
+  cd $name
+  make CFLAGS="$CFLAGS"
+  install -D -m 0755 $name $PKG/usr/bin/$name
+}
