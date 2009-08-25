@@ -6,13 +6,14 @@
 
 name=nibbles
 version=0.0.4
-release=1
+release=2
 source=(http://www.earth.li/projectpurple/files/$name-v$version.tar.gz \
-        $name-$version.patch)
+        $name-$version.patch $name.sh)
 
 build() {
   cd $name-v$version
   patch -p1 -i $SRC/$name-$version.patch
   make CFLAGS="$CFLAGS"
   make DESTDIR=$PKG install
+  install -D -m 0755 $SRC/$name.sh $PKG/usr/bin/$name
 }

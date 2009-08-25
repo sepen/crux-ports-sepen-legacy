@@ -1,7 +1,7 @@
 diff -purN nibbles-v0.0.4.orig/Makefile nibbles-v0.0.4/Makefile
 --- nibbles-v0.0.4.orig/Makefile	2009-08-13 13:21:20.000000000 +0200
-+++ nibbles-v0.0.4/Makefile	2009-08-13 13:55:54.000000000 +0200
-@@ -1,41 +1,28 @@
++++ nibbles-v0.0.4/Makefile	2009-08-25 14:29:37.000000000 +0200
+@@ -1,41 +1,29 @@
 -CC = gcc -Wall -g
 +CC = gcc
 +CFLAGS = -Wall -g
@@ -16,6 +16,7 @@ diff -purN nibbles-v0.0.4.orig/Makefile nibbles-v0.0.4/Makefile
 +
 +BINDIR=/usr/bin
 +DATAROOTDIR=/usr/share/nibbles
++SCOREDIR=/var/spool/nibbles
  
  all: nibbles
  
@@ -25,7 +26,7 @@ diff -purN nibbles-v0.0.4.orig/Makefile nibbles-v0.0.4/Makefile
  
  nibbles: $(OBJS)
 -	$(CC) $(LIBS) $(OBJS)  -o $@
-+	$(CC) $(CFLAGS) $(LIBS) $(OBJS)  -o $@
++	$(CC) $(CFLAGS) $(LIBS) $(OBJS) -o $@
  
  clean: 
  	rm -f *~ *.o nibbles
@@ -52,22 +53,49 @@ diff -purN nibbles-v0.0.4.orig/Makefile nibbles-v0.0.4/Makefile
 -	rm /var/lib/games/nibbles.score
 -	rm $(INSTALL_FOLDER)/nibbles.levels -rf
 +install: nibbles nibbles.levels
-+	install -d $(DESTDIR)/{$(BINDIR),$(DATAROOTDIR)/levels}
++	install -d -m 0755 $(DESTDIR)/$(DATAROOTDIR)/levels
 +	install -m 0755 nibbles $(DESTDIR)/$(DATAROOTDIR)
 +	install -m 0644 nibbles.levels/* $(DESTDIR)/$(DATAROOTDIR)/levels
-+	install -m 0755 nibbles.sh $(DESTDIR)/$(BINDIR)/nibbles
++	install -d -m 0777 $(DESTDIR)/$(SCOREDIR)
 diff -purN nibbles-v0.0.4.orig/main.c nibbles-v0.0.4/main.c
 --- nibbles-v0.0.4.orig/main.c	2009-08-13 13:21:20.000000000 +0200
-+++ nibbles-v0.0.4/main.c	2009-08-13 14:03:00.000000000 +0200
-@@ -42,7 +42,7 @@ init_pair(7, COLOR_RED, COLOR_YELLOW);
++++ nibbles-v0.0.4/main.c	2009-08-25 14:25:05.000000000 +0200
+@@ -42,8 +42,6 @@ init_pair(7, COLOR_RED, COLOR_YELLOW);
  init_pair(8, COLOR_YELLOW, COLOR_RED);
  init_pair(9, COLOR_BLUE, COLOR_RED);
  
 -showCentreMessage(stdscr,"Nibble for Ncurses, Toby Jaffey, 1999");
-+showCentreMessage(stdscr,"Nibbles by Toby Jaffey 1999");
- 
+-
  drawMap(m,stdscr);
  drawPlayer(p,stdscr);
+ 
+@@ -65,22 +63,22 @@ while((key = cursGetch(&speed))!='q')
+ 		}
+ 	switch(key)
+ 		{
+-		case 'i':
++		case 259: // UP ARROW
+ 		p->yd = -1;
+ 		p->xd = 0;
+ 		break;
+ 
+-		case 'j':
++		case 260: // LEFT ARROW
+ 		p->xd = -1;
+ 		p->yd = 0;
+ 		break;
+ 
+-		case 'k':
++		case 258: // RIGHT ARROW
+ 		p->yd = 1;
+ 		p->xd = 0;
+ 		break;
+ 
+-		case 'l':
++		case 261: // DOWN ARROW
+ 		p->yd = 0;
+ 		p->xd = 1;
+ 		break;
 diff -purN nibbles-v0.0.4.orig/nibbles.h nibbles-v0.0.4/nibbles.h
 --- nibbles-v0.0.4.orig/nibbles.h	2009-08-13 13:21:20.000000000 +0200
 +++ nibbles-v0.0.4/nibbles.h	2009-08-13 13:29:32.000000000 +0200
@@ -83,34 +111,15 @@ diff -purN nibbles-v0.0.4.orig/nibbles.h nibbles-v0.0.4/nibbles.h
  
  #define TIMEOUT		100000		// usleep() time on input
  #define DELAYDEC	(15.0/16.0)	// speed factor between levels
-diff -purN nibbles-v0.0.4.orig/nibbles.sh nibbles-v0.0.4/nibbles.sh
---- nibbles-v0.0.4.orig/nibbles.sh	1970-01-01 01:00:00.000000000 +0100
-+++ nibbles-v0.0.4/nibbles.sh	2009-08-13 13:46:20.000000000 +0200
-@@ -0,0 +1,15 @@
-+#!/bin/sh
-+
-+DATADIR=$HOME/.nibbles
-+
-+if [ ! -f "$DATADIR/score" ]; then
-+  mkdir -p $DATADIR
-+  touch $DATADIR/score
-+fi
-+
-+cd /usr/share/nibbles
-+./nibbles $@
-+cd -
-+
-+# End of file
-+
 diff -purN nibbles-v0.0.4.orig/scoring.h nibbles-v0.0.4/scoring.h
 --- nibbles-v0.0.4.orig/scoring.h	2009-08-13 13:21:20.000000000 +0200
-+++ nibbles-v0.0.4/scoring.h	2009-08-13 14:05:24.000000000 +0200
++++ nibbles-v0.0.4/scoring.h	2009-08-25 14:08:54.000000000 +0200
 @@ -7,7 +7,7 @@
  #include <time.h>
  
  /* Default high score file location */
 -#define HIGHSCOREFILE "/var/lib/games/nibbles.score"
-+#define HIGHSCOREFILE "~/.nibbles/score"
++#define HIGHSCOREFILE "/var/spool/nibbles/score"
  /* Max number of high scores we store */
  #define MAXHIGHSCORES 20
  
