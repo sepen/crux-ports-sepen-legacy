@@ -1,0 +1,17 @@
+# Description: Ascii-Invaders is a clone of Space Invaders for text-terminals using the curses library.
+# URL: http://ip9.org/munro/invaders/
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
+# Depends on: ncurses
+
+name=ascii-invaders
+version=0.1b
+release=1
+source=(http://ip9.org/munro/invaders/invaders$version.tgz)
+
+build() {
+  cd invaders
+  gcc $CFLAGS -Wall -c -o invaders.o invaders.c
+  gcc $CFLAGS -Wall -lcurses invaders.o -o $name
+  install -D -m 0755 $name $PKG/usr/bin/$name
+}
