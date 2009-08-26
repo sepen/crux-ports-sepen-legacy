@@ -1,0 +1,16 @@
+# Description: Dwars is based on the game "Drug Wars"
+# URL: http://dwars.sourceforge.net/
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
+# Depends on: ncurses
+
+name=dwars
+version=0.1pre1
+release=1
+source=(http://dl.sourceforge.net/project/$name/$name/$name-$version/$name-$version.tar.bz2)
+
+build() {
+  cd $name-$version
+  gcc $CFLAGS -Wall -lncurses main.c -o dwars
+  install -D -m 0755 $name $PKG/usr/bin/$name
+}
