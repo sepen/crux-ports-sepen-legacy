@@ -3,9 +3,9 @@
 # Maintainer: Jose V Beneyto, sepen at crux dot nu
 # Packager: CRUX System Team, core-ports at crux dot nu
 
-name=glibc-compat
-version=2.10.1
-release=1
+name=glibc
+version=2.10.1-compat
+release=2
 source=(http://ftp.gnu.org/gnu/glibc/glibc-$version.tar.bz2
         http://ftp.gnu.org/gnu/glibc/glibc-libidn-$version.tar.bz2 
         http://crux.nu/files/distfiles/kernel-headers-2.6.29-1.tar.bz2
