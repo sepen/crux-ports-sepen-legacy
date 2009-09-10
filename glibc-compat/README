@@ -1,0 +1,10 @@
+
+README for glibc-compat
+
+NOTES
+
+This port is a duplicate of core/glibc which has support for
+old kernels lower than 2.6.27
+
+If you want to get more information:
+http://crux.nu/bugs/index.php?do=details&task_id=448
