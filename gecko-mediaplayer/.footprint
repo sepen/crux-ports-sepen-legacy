@@ -1,0 +1,8 @@
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/firefox/
+drwxr-xr-x	root/root	usr/lib/firefox/plugins/
+-rwxr-xr-x	root/root	usr/lib/firefox/plugins/gecko-mediaplayer-dvx.so
+-rwxr-xr-x	root/root	usr/lib/firefox/plugins/gecko-mediaplayer-qt.so
+-rwxr-xr-x	root/root	usr/lib/firefox/plugins/gecko-mediaplayer-rm.so
+-rwxr-xr-x	root/root	usr/lib/firefox/plugins/gecko-mediaplayer-wmp.so
+-rwxr-xr-x	root/root	usr/lib/firefox/plugins/gecko-mediaplayer.so

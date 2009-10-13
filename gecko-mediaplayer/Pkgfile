@@ -1,0 +1,18 @@
+# Description: Gecko media player
+# URL: http://code.google.com/p/gecko-mediaplayer/
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Depends on: xulrunner
+
+name=gecko-mediaplayer
+version=0.9.8
+release=1
+source=(http://gecko-mediaplayer.googlecode.com/files/$name-$version.tar.gz)
+
+build () {
+  cd $name-$version
+  sed 's|/mozilla/plugins|/firefox/plugins|' -i src/Makefile.in
+  ./configure --prefix=/usr
+  make
+  make DESTDIR=$PKG install
+  rm -rf $PKG/usr/share
+}

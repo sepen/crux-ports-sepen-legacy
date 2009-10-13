@@ -5,20 +5,21 @@
 # Depends on: mesa3d, aalib, libjpeg, libvorbis
 
 name=nexuiz
-version=2.5
+version=2.51
 release=1
 source=(http://dl.sourceforge.net/sourceforge/$name/$name-${version/./}.zip \
         http://dpsmac.com/img/Nexuiz.png \
         $name ${name}ded $name.desktop)
         
 build() {
+  RELEASE="20090501"
   cd Nexuiz/sources
-  unzip -qq -o -d $SRC/engine enginesource20090403.zip
-  unzip -qq -o -d $SRC/game gamesource20090403.zip
+  unzip -qq -o -d $SRC/engine enginesource$RELEASE.zip
+  unzip -qq -o -d $SRC/game gamesource$RELEASE.zip
+  unzip -qq -o -d $SRC fteqcc-binaries-and-source-rev1.zip
   cd $SRC/engine/darkplaces
   # compile
-  sed -e 's|/usr/X11R6/lib|/usr/lib/X11|' -i makefile
-  cp makefile Makefile
+  sed -e 's|/usr/X11R6/lib|/usr/lib/X11|' makefile > Makefile
   make clean
   make cl-nexuiz
   make sv-nexuiz
@@ -32,3 +33,4 @@ build() {
   install -D -m 0644 $SRC/$name.desktop $PKG/usr/share/applications/$name.desktop
   install -D -m 0644 $SRC/Nexuiz.png $PKG/usr/share/pixmaps/$name.png
 }
+work/src/fteqcc/fteqcc/source/Makefile
