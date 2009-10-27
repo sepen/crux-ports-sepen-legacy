@@ -1,0 +1,34 @@
+# Description: GTK+ based IRC client
+# URL: http://www.xchat.org/
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
+# Depends on: openssl 
+
+name=xchat-text
+version=2.8.6
+release=1
+source=(http://www.xchat.org/files/source/2.8/xchat-$version.tar.bz2 \
+	http://www.xchat.org/files/source/2.8/patches/xc286-smallfixes.diff \
+        xchat-$version.textfe.patch)
+
+build() {
+  cd xchat-$version
+  patch -p1 -i $SRC/xc286-smallfixes.diff
+  patch -p1 -i $SRC/xchat-$version.textfe.patch
+  ./configure --prefix=/usr \
+              --enable-openssl \
+              --enable-textfe \
+              --disable-xlib \
+              --disable-gtkfe \
+              --disable-gnome \
+              --disable-perl \
+              --disable-python \
+              --disable-tcl \
+              --disable-dbus \
+              --disable-nls \
+              --disable-gtktest \
+              --disable-glibtest
+  make
+  make DESTDIR=$PKG install
+  rm -rf $PKG/usr/share
+}

@@ -1,0 +1,14 @@
+diff -purN xchat-2.8.6.orig/src/fe-text/fe-text.c xchat-2.8.6/src/fe-text/fe-text.c
+--- xchat-2.8.6.orig/src/fe-text/fe-text.c	2009-10-28 00:37:56.445139392 +0100
++++ xchat-2.8.6/src/fe-text/fe-text.c	2009-10-28 00:38:42.093139369 +0100
+@@ -660,6 +660,10 @@ fe_userlist_rehash (struct session *sess
+ {
+ }
+ void
++fe_userlist_update (struct session *sess, struct User *user)
++{
++}
++void
+ fe_userlist_move (struct session *sess, struct User *user, int new_row)
+ {
+ }
