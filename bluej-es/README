@@ -1,4 +1,4 @@
 POST-INSTALL:
 
-                * Edit the file:  /usr/lib/bluej/lib/bluej.defs 
-		and set 'bluej.language' to spanish like: bluej.language=spanish
+  Edit the file:  /usr/lib/bluej/lib/bluej.defs
+  and set 'bluej.language' to spanish like: bluej.language=spanish
