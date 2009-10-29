@@ -5,7 +5,7 @@
 # Depends on: bluej
 
 name=bluej-examples
-version=2.5.0
+version=2.5.3
 release=1
 source=(http://www.bluej.org/download/files/bluej-${version//./}.jar)
 
