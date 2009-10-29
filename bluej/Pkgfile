@@ -2,10 +2,10 @@
 # URL: http://www.bluej.org/
 # Maintainer: Jose V Beneyto, sepen at crux dot nu
 # Packager: Jose V Beneyto, sepen at crux dot nu
-# Depends on: xorg,jdk
+# Depends on: xorg jdk
 
 name=bluej
-version=2.5.0
+version=2.5.3
 release=1
 source=(http://www.bluej.org/download/files/$name-${version//./}.jar \
         $name.sh)
