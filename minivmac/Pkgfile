@@ -5,9 +5,9 @@
 # Depends on: 
 
 name=minivmac
-version=3.0.0
+version=3.0.4
 release=1
-source=(http://dl.sourceforge.net/sourceforge/${name}/${name}-${version}.bin.bgclx86s.tgz
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version-lx86.bin.tgz \
         http://www.geocities.com/SiliconValley/Bit/6458/vmac-rom.zip \
         http://www.geocities.com/SiliconValley/Bit/6458/vMac.icon.tar.gz \
         http://www.rolli.ch/MacPlus/Archives/ZIP/Disk608.zip \
