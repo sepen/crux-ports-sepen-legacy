@@ -13,8 +13,8 @@ build() {
   if [ -d trunk ]; then
     svn up trunk
   else
-    svn co svn://mikeux.dyndns.org/$name/trunk
+    svn co svn://mikeux.dyndns.org/projects/$name
   fi
-  cd trunk
+  cd $name
   make DESTDIR=$PKG install
 }
