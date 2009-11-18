@@ -21,4 +21,6 @@ java -jar DIYLC.jar \$@
 # End of file
 EOF
   chmod +x $PKG/usr/bin/$name
+  find $PKG -type d -exec chmod 0755 {} \;
+  find $PKG/usr/share/$name -type f -exec chmod 0644 {} \;
 }
