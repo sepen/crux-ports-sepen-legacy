@@ -1,0 +1,24 @@
+# Description: DIY Layout Creator
+# URL: http://diy-fever.com/index.php?project=software
+# Maintainer: 
+# Packager: 
+# Depends on: jre
+
+name=diylc
+version=beta
+release=1
+source=(http://diy-fever.com/$name/${name}_${version}.zip)
+
+build() {
+  install -d $PKG/usr/{bin,share}
+  mv $SRC/${name}_${version} $PKG/usr/share/$name
+  cat > $PKG/usr/bin/$name <<EOF
+#!/bin/sh
+
+cd /usr/share/$name
+java -jar DIYLC.jar \$@
+
+# End of file
+EOF
+  chmod +x $PKG/usr/bin/$name
+}
