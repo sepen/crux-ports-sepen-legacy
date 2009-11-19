@@ -2,10 +2,10 @@
 # URL: http://xmoto.tuxfamily.org
 # Maintainer: Jose V Beneyto, sepen at crux dot nu
 # Packager: sten, nick dot steeves at shaw dot ca
-# Depends on: mesa3d, lua, ode, sdl_mixer, sdl_net, sdl_ttf
+# Depends on: mesa3d lua ode sdl_mixer sdl_net sdl_ttf
 
 name=xmoto
-version=0.5.1
+version=0.5.2
 release=1
 source=(http://download.tuxfamily.org/$name/$name/$version/$name-$version-src.tar.gz)
 
