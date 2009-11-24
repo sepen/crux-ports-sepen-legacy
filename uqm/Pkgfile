@@ -1,0 +1,20 @@
+# Description: The UR-Quan Masters Game
+# URL: http://sc2.sourceforge.net/
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
+# Depends on: mesa3d sdl_image libvorbis zlib libmikmod
+
+name=uqm
+version=0.6.2
+release=1
+source=(http://sourceforge.net/projects/sc2/files/UQM/$version/$name-$version-source.tgz)
+
+build() {
+  cd $name-$version/sc2
+  echo | make -f Makefile.build MAKE_VERBOSE=1
+  sed -i build.vars \
+      -e "s|uqm_INSTALL_BINDIR=.*|uqm_INSTALL_BINDIR='$PKG/usr/bin/'|" \
+      -e "s|uqm_INSTALL_LIBDIR=.*|uqm_INSTALL_LIBDIR='$PKG/usr/share/$name/lib/'|" \
+      -e "s|uqm_INSTALL_SHAREDIR=.*|uqm_INSTALL_SHAREDIR='$PKG/usr/share/$name/'|"
+  ./build.sh uqm install
+}
