@@ -1,4 +1,4 @@
-# Description: The UR-Quan Masters Game
+# Description: The UR-Quan Masters Game (a port of Star Control 2)
 # URL: http://sc2.sourceforge.net/
 # Maintainer: Jose V Beneyto, sepen at crux dot nu
 # Packager: Jose V Beneyto, sepen at crux dot nu
@@ -7,14 +7,21 @@
 name=uqm
 version=0.6.2
 release=1
-source=(http://sourceforge.net/projects/sc2/files/UQM/$version/$name-$version-source.tgz)
+source=(http://dl.sourceforge.net/project/sc2/UQM/$version/$name-$version-source.tgz \
+        http://dl.sourceforge.net/project/sc2/UQM/0.6/uqm-0.6.0-content.uqm \
+        $name config.state)
 
 build() {
   cd $name-$version/sc2
+  cp $SRC/config.state .
+  sed -e "/INPUT_install_prefix/ s|replaceme|$PKG/usr|" -i config.state
+
   echo | make -f Makefile.build MAKE_VERBOSE=1
-  sed -i build.vars \
-      -e "s|uqm_INSTALL_BINDIR=.*|uqm_INSTALL_BINDIR='$PKG/usr/bin/'|" \
-      -e "s|uqm_INSTALL_LIBDIR=.*|uqm_INSTALL_LIBDIR='$PKG/usr/share/$name/lib/'|" \
-      -e "s|uqm_INSTALL_SHAREDIR=.*|uqm_INSTALL_SHAREDIR='$PKG/usr/share/$name/'|"
   ./build.sh uqm install
+
+  install -D -m 0644 $SRC/$name-0.6.0-content.uqm \
+    $PKG/usr/share/$name/content/packages/$name-0.6.0-content.uqm
+  install -D -m 0755 $SRC/$name $PKG/usr/bin/$name
+  mv $PKG/usr/lib/$name/$name $PKG/usr/share/$name/
+  rm -rf $PKG/usr/lib
 }

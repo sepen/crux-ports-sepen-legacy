@@ -1,0 +1,5 @@
+#!/bin/sh
+
+exec "/usr/share/uqm/uqm" "--contentdir=/usr/share/uqm/content" "$@"
+
+# End of file
