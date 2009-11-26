@@ -1,0 +1,15 @@
+# Description: Ralink RT61 firmware
+# URL: http://rt2x00.serialmonkey.com/
+# Maintainer: 
+# Packager: 
+# Depends on: 
+
+name=rt61-firmware
+version=final-cvs
+release=1
+source=(http://downloads.sourceforge.net/project/rt2400/Final%20software%20release/rt61-legacy-$version/rt61-cvs-daily.tar.gz)
+
+build() {
+  install -d $PKG/lib/firmware
+  install -m 0644 $(find $SRC -type f -name 'rt*.bin') $PKG/lib/firmware
+}
