@@ -1,0 +1,32 @@
+# Description: mplay is a console based frontend for MPlayer written in Perl.
+# URL: http://mplay.sourceforge.net/
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
+# Depends on: perl mplayer
+
+name=mplay
+version=1.0-rc1
+release=1
+source=(http://dl.sourceforge.net/project/$name/$name/$name-$version/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+  
+  install -d $PKG/usr/{bin,man/man1,share/$name}
+  install -m 0644 help/help*_en $PKG/usr/share/$name/
+  install -m 0644 help/*.1 $PKG/usr/man/man1/
+  install -m 0755 $name files/xmplay $PKG/usr/bin/
+
+  rm -r src/{Cwd-*,Time-HiRes-*}
+
+  for i in src/*; do
+    tar -xzf $i
+    cd $(basename $i .tar.gz)
+    perl Makefile.PL
+    make
+    make DESTDIR=$PKG install
+    cd ..
+  done
+
+  find $PKG -name 'perllocal.pod' -delete
+}
