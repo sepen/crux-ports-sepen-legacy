@@ -1,0 +1,27 @@
+# Description: The Go Programming Language
+# URL: http://golang.org/
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Jose V Beneyto, sepen at crux dot nu
+# Depends on: bash bison gcc libc6-dev make mercurial ed
+
+name=go
+version=1
+release=1
+source=()
+
+build() {
+  hg clone -r release https://go.googlecode.com/hg/ $name
+
+  install -d $PKG/usr/bin
+  export GOROOT=$SRC/$name GOARCH=386 GOOS=linux GOBIN=$PKG/usr/bin
+  
+  (echo '#!/bin/sh'; echo 'exec '$MAKE' "$@"') > $GOBIN/gomake
+  chmod 0755 $GOBIN/gomake
+  
+  cd $GOROOT/src
+  sed "s|CFLAGS=|CFLAGS=$CFLAGS |" -i Make.conf
+  sed 's|&& which quietgcc||' -i make.bash
+
+  export PATH=$GOBIN:$PATH
+  ./all.bash
+}
